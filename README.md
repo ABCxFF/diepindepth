@@ -19,7 +19,7 @@ There are 4 sections that divide up the information collected.
 
 ## **Roadmap**
 
-Complete one check every 1-3 days.
+One check completes every 1-4 days.
 
 - [ ] Complete incoming packets
 - [ ] Complete outgoing packets
