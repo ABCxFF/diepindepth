@@ -19,6 +19,8 @@ There are 4 sections that divide up the information collected.
 
 ## **Roadmap**
 
+Complete one check every 1-3 days.
+
 - [ ] Complete incoming packets
 - [ ] Complete outgoing packets
 - [ ] Complete packet encoding stuff
@@ -28,7 +30,7 @@ There are 4 sections that divide up the information collected.
 - [ ] Add some constants into `extras/`
 - [ ] Complete all memory structs and vectors, and link up to reversal in wasm
 - [ ] Double check
-- [ ] Release  
+- [ ] Release
 *wow thats a lot lol*
 
 ## **Contributors**
