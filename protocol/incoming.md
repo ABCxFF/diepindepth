@@ -27,6 +27,28 @@ Also known as clientbound, these packets, after being encoded, are sent from the
 
 ## **`0x01` Outdated Client Packet**
 
+Sent when the client's build is not the same as the server's. The server sends the latest build, and when the client receives it, the page reloads. This packet is by naturally unencoded, meaning its data is sent raw unencoded. This is since if you have an invalid build you won't be able to decode packets.
+
+
+Format: 
+> `01 stringNT(newBuild)`
+
+Example convo:
+```js
+incoming <- 01 63 39 34 66 63 31 38 63 66 36 31 37 31 66 38 64 35 30 32 66 35 63 39 37 39 34 38 38 65 31 34 33 66 31 65 35 66 37 34 66 00 (c94fc18cf6171f8d502f5c979488e143f1e5f74f)
+
+response: // Reversed from source, see /wasm/ for more information on reversal
+function reload(version /* new build, read as a string from the packet */) {
+  if (window["setLoadingStatus"]) window["setLoadingStatus"]("Updating...");
+    setTimeout(function() {
+      window.location.reload(true)
+    }, 2e3)
+  }
+}
+reload()
+```
+
+
 ---
 
 ## **`0x02` Compressed Packet**
