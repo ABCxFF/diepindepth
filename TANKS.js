@@ -1,5 +1,4 @@
 module.exports = Array.from({
-     length: 56,
 	 0: "Tank",
 	 1: "Twin",
 	 2: "Triplet",
@@ -45,15 +44,17 @@ module.exports = Array.from({
 	42: "Spread Shot",
 	43: "Streamliner",
 	44: "Auto Trapper",
-	45: "Dominator",
-	46: "Dominator",
-	47: "Dominator",
+	45: "Dominator", // Destroyer
+	46: "Dominator", // Gunner
+	47: "Dominator", // Trapper
 	48: "Battleship",
 	49: "Annihilator",
 	50: "Auto Smasher",
 	51: "Spike",
 	52: "Factory",
-	53: "", // Nameless and initial tank value. Looks like the Ball tank
+	53: "", // Nameless and the "initial tank" value. Looks like the Ball tank
 	54: "Skimmer",
-	55: "Rocketeer"
+	55: "Rocketeer",
+
+	length: 56
 });
