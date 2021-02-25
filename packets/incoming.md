@@ -1,6 +1,6 @@
 # **Incoming Packets**
 
-Also known as clientbound, these packets, after being encoded, are sent from the server to the client. Most of these packets aren't too commplex once you understand the basics of a reader, with the exception of the incoming `0x00` packet.
+Also known as clientbound, these packets, after being encoded, are sent from the server to the client. Most of these packets aren't too complex once you understand the basics of a reader, with the exception of the incoming `0x00` packet.
 
 | Header                                              | Name              | Description                                                 |
 | --------------------------------------------------- | ----------------- | ----------------------------------------------------------- |
