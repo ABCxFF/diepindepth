@@ -112,6 +112,11 @@ incoming <- 07
 
 ## **`0x0C` Unnamed Packet**
 
+This packet has never been observed, and while the packet's format has been reversed, its never used and does not affect the client.
+
+Format:
+> `0C vu(unknown)`
+
 ---
 
 ## **`0x0D` Eval Challenge Packet**
