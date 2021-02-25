@@ -17,7 +17,7 @@ Also known as clientbound, these packets, after being encoded, are sent from the
 | `0x0A` | Player Count      | Global count of clients connected                      |
 | `0x0B` | PoW Challenge     | Sends a required proof of work challenge               |
 | `0x0C` | Unnamed           | Unused packet                                          |
-| `0x0D` | Eval              | Sends (obfuscated) ks code to be run. Result is an int |
+| `0x0D` | Eval              | Sends (obfuscated) js code to be run. Result is an int |
 
 ---
 
