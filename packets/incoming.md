@@ -43,6 +43,8 @@ Also known as clientbound, these packets, after being encoded, are sent from the
 
 ## **`0x05` Heartbeat Packet**
 
+Part of the game's latency system. Once receieved, the client immediately sends a `0x05` ping back. 🏓
+
 ---
 
 ## **`0x06` Party Link Packet**
