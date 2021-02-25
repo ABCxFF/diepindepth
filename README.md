@@ -8,7 +8,7 @@ What started off as an attempt to parse game leaderboards out of packets is now 
 
 There are 4 sections that divide up the information collected.
 
-1. Connection Protocol ([`protocol/`](./protocol/))  
+1. Game Protocol ([`protocol/`](./protocol/))  
    Including incoming and outgoing packets, encoding/decoding, m28 server list api and websocket connections
 2. WebAssembly Reversal ([`wasm/`](./wasm/))  
    Including any means necessary, asm.js conversion, specific functions, automation of reversing constants and pointers, understanding of emscripten
