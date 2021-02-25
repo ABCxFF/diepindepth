@@ -17,6 +17,20 @@ There are 4 sections that divide up the information collected.
 4. Extras ([`extras/`](./extras/))  
    Including any extra information, fun facts, misc algorithms, and any physics not provided in [Spade Squad](http://spade-squad.com)
 
+## **Roadmap**
+
+- [ ] Complete incoming packets
+- [ ] Complete outgoing packets
+- [ ] Complete packet encoding stuff
+- [ ] Complete rest of protocol
+- [ ] Start memory and wasm
+- [ ] Complete reversal of wasm code (lots of stuff here)
+- [ ] Add some constants into `extras/`
+- [ ] Complete all memory structs and vectors, and link up to reversal in wasm
+- [ ] Double check
+- [ ] Release  
+*wow thats a lot lol*
+
 ## **Contributors**
 
 This repository was made possible with the help of the Diep In Depth team. In order of join date, thank you to [ABC](https://github.com/ABCxFF), [ALPH2H](https://github.com/ALPH2H), [Excigma](https://github.com/Excigma), [HueHanaejistla](https://github.com/HueHanaejistla), [Diep7444](https://github.com/diepiodiscord), [Cazka](https://github.com/Cazka), [shlong](https://github.com/shlongisdookielol), [Pola](https://github.com/PiotrDabkowski), [Binary](https://github.com/binary-person), [Perunahamsteri](https://github.com/Perunahamsteri), [Shädam](https://github.com/supahero1), and [CX](https://github.com/CX88) for their work.
