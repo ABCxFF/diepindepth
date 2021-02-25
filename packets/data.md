@@ -114,6 +114,98 @@ inline void Encode(BinData &out) const {
 
 **Quick Misconception,** in diep's console, sometimes you'll see messages relating to _"possible desyncs"_ and alongside them you'll see two numbers inside of these `<triangular bracket things>`, these are NOT `<hash, id>`. Unlike the order they are read, entids are logged as `<id, hash>` - the full reason for this, and the meaning behind hashes is still unknown.
 
+---
+
 ### **Data Organization**
 
-In packets, mainly the 0x00
+Inside of a specifically 0x00 packets, there is a form of table which has come to be known as a `jumpTable`. Jump tables work differently than the standard arrays, by retrieving indexes from jumps, then parsing values based on index. The best way to explain the format is with an example, here is an example of a field group identification table, without any values.
+
+```
+
+initial index = -1
+
+01    ; u8 ; Jump Table Start (not always present)
+   00 ; vu ; xored jump = 0x00     = 0
+      ; true jump = xored jump ^ 1 = 1
+      ; index += true jump =-1 + 1 = 0
+no value being read
+
+   02 ; vu ; xored jump = 0x02     = 2
+      ; true jump = xored jump ^ 1 = 3
+      ; index += true jump = 0 + 3 = 3
+no value being read
+
+   00 ; vu ; xored jump = 0x00     = 0
+      ; true jump = xored jump ^ 1 = 1
+      ; index += true jump = 3 + 1 = 4
+no value being read
+
+   05 ; vu ; xored jump = 0x05     = 5
+      ; true jump = xored jump ^ 1 = 4
+      ; index += true jump = 4 + 4 = 8
+no value being read
+
+   03 ; vu ; xored jump = 0x03     = 3
+      ; true jump = xored jump ^ 1 = 2
+      ; index += true jump = 8 + 2 = 10
+no value being read
+
+   00 ; vu ; xored jump = 0x00     = 0
+      ; true jump = xored jump ^ 1 = 1
+      ; index +=true jump = 10 + 1 = 11
+no value being read
+
+   03 ; vu ; xored jump = 0x03     = 3
+      ; true jump = xored jump ^ 1 = 2
+      ; index +=true jump = 11 + 2 = 13
+no value being read
+
+01    ; u8 ; Jump Table End
+```
+
+The resulting indexes from this jump table were [0, 3, 4, 5, 8, 10, 11, 13]. More about what these values mean in [`incoming.md`](/packets/incoming.md)
+
+And for more understanding, here's two jump table readers written in Javascript and C++
+
+```c++
+template<typename function>
+auto jumpTable(function read) {
+
+    std::vector<std::any> table;
+    int index = -1; // Starting Index
+    int currentJump = 0;
+
+    while(1) {
+        currentJump = this->vu() ^ 1; // Read vu() and XOR 1 to retrieve the jump
+
+        if(currentJump == 0) break; // If there is no jump, exit
+
+        index += currentJump; // jump to the next index
+        table.push_back(read(index)); // Read according to index
+    }
+    return table;
+}
+```
+
+and in javascript
+
+```js
+jumpTable(read) {
+    const table = [];
+    let index = -1; // Starting Index
+    let currentJump = 0;
+
+    while (true) {
+        currentJump = this.vu() ^ 1; // Read vu() and XOR 1 to retrieve the jump
+
+        if (!currentJump) break; // If there is no jump, exit
+
+        index += currentJump; // jump to the next index
+        table[table.length++] = read.call(this, index); // Read according to index
+    }
+
+    return table;
+}
+```
+
+Understanding of this data structure takes practice, at first it may be difficult to understand, but over time it will be easily understandable and identifiable.
