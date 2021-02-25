@@ -92,4 +92,4 @@ incoming <- 07
 
 ---
 
-## **`0x0D` Eval Packet**
+## **`0x0D` Eval Challenge Packet**
