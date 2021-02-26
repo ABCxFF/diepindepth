@@ -2,22 +2,22 @@
 
 Also known as clientbound, these packets, after being encoded, are sent from the server to the client. Most of these packets aren't too complex once you understand the basics of a reader, with the exception of the incoming `0x00` packet.
 
-| Header                                              | Name              | Description                                                 |
-| --------------------------------------------------- | ----------------- | ----------------------------------------------------------- |
-| [`0x00`](./incoming.md#0x00-update-packet)          | Update            | Creates, updates, and deletes objects and entities          |
-| [`0x01`](./incoming.md#0x01-outdated-client-packet) | Outdated Client   | Response to invalid build in the init packet                |
-| [`0x02`](./incoming.md#0x02-compressed-packet)      | Compressed Packet | LZ4 compressed packet of any header                         |
-| [`0x03`](./incoming.md#0x03-notification-packet)    | Notification      | Sends notifications in game                                 |
-| [`0x04`](./incoming.md#0x04-server-info-packet)     | Server Info       | Send information about the server, host & region            |
-| [`0x05`](./incoming.md#0x05-heartbeat-packet)       | Heartbeat         | Ping pong packet                                            |
-| [`0x06`](./incoming.md#0x06-party-link-packet)      | Party Link        | Sends the party link if available                           |
-| [`0x07`](./incoming.md#0x07-accept-packet)          | Accept            | Sent after initial handshake, on client acceptance          |
-| [`0x08`](./incoming.md#0x08-achievement-packet)     | Achievement       | Updates clientside achievements from the server             |
-| [`0x09`](./incoming.md#0x09-invalid-party-packet)   | Invalid Party     | Sent when the party in the init packet is invalid           |
-| [`0x0A`](./incoming.md#0x0a-player-count-packet)    | Player Count      | Global count of clients connected                           |
-| [`0x0B`](./incoming.md#0x0b-pow-challenge-packet)   | PoW Challenge     | Sends a required proof of work challenge                    |
-| [`0x0C`](./incoming.md#0x0c-unnamed-packet)         | Unnamed           | Unnamed, Unused packet                                      |
-| [`0x0D`](./incoming.md#0x0d-eval-challenge-packet)  | Eval Challenge    | Sends (obfuscated) js code to be executed. Result is an int |
+| Header                                              | Name              | Description                                                  |
+| --------------------------------------------------- | ----------------- | ------------------------------------------------------------ |
+| [`0x00`](./incoming.md#0x00-update-packet)          | Update            | Creates, updates, and deletes objects and entities           |
+| [`0x01`](./incoming.md#0x01-outdated-client-packet) | Outdated Client   | Response to invalid build in the init packet                 |
+| [`0x02`](./incoming.md#0x02-compressed-packet)      | Compressed Packet | LZ4 compressed packet of any header                          |
+| [`0x03`](./incoming.md#0x03-notification-packet)    | Notification      | Sends notifications in game                                  |
+| [`0x04`](./incoming.md#0x04-server-info-packet)     | Server Info       | Send information about the server, host & region             |
+| [`0x05`](./incoming.md#0x05-heartbeat-packet)       | Heartbeat         | Ping pong packet                                             |
+| [`0x06`](./incoming.md#0x06-party-link-packet)      | Party Link        | Sends the party link if available                            |
+| [`0x07`](./incoming.md#0x07-accept-packet)          | Accept            | Sent after initial handshake, on client acceptance           |
+| [`0x08`](./incoming.md#0x08-achievement-packet)     | Achievement       | Updates clientside achievements from the server              |
+| [`0x09`](./incoming.md#0x09-invalid-party-packet)   | Invalid Party     | Sent when the party in the init packet is invalid            |
+| [`0x0A`](./incoming.md#0x0a-player-count-packet)    | Player Count      | Global count of clients connected                            |
+| [`0x0B`](./incoming.md#0x0b-pow-challenge-packet)   | PoW Challenge     | Sends a required proof of work challenge                     |
+| [`0x0C`](./incoming.md#0x0c-unnamed-packet)         | Unnamed           | Unnamed, Unused packet                                       |
+| [`0x0D`](./incoming.md#0x0d-eval-challenge-packet)  | Eval Challenge    | Sends (obfuscated) js code to be evaluated. Result is an int |
 
 ---
 
@@ -198,3 +198,20 @@ Format:
 ---
 
 ## **`0x0D` Eval Challenge Packet**
+
+This packet is sent only once, during the client -> server acceptance handshake. It sends highly obfuscated code to be evaluated by the client with the purpose of filtering out headless clients from clients on the web - part of diep.io's anti botting system. The result of this code is always an uint32 and is sent back to the client through the `0x0C` outgoing Eval Result packet.
+
+The code sent is obfuscated with [obfuscator.io](http://obfuscator.io/), almost all setting turned on max. This packet checks for global objects and specific properties on global objects, if all the checks pass their intended result, the code ends up returning the correct uint32 result, which the game server recognises and continues (or completes) the process of accepting the client. 
+
+> Fun fact:  
+> -  There are only 200 unique obfuscated evaluation codes that can be sent to the client, and they are generated on every build.
+
+Format:
+> `0D vu(id) stringNT(code)`
+
+Sample Packet and Response:
+```
+incoming <- 0D vu(0) stringNT(too long code)
+
+outgoing -> 0B vu(0) u32(result)
+```
