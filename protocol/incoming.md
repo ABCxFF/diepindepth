@@ -204,14 +204,25 @@ This packet is sent only once, during the client -> server acceptance handshake.
 The code sent is obfuscated with [obfuscator.io](http://obfuscator.io/), almost all setting turned on max. This packet checks for global objects and specific properties on global objects, if all the checks pass their intended result, the code ends up returning the correct uint32 result, which the game server recognises and continues (or completes) the process of accepting the client. 
 
 > Fun fact:  
-> -  There are only 200 unique obfuscated evaluation codes that can be sent to the client, and they are generated on every build.
+> -  There are only 200 unique obfuscated evaluation codes that can be sent to the client, and they are constant throughout rebuilds.
 
 Format:
 > `0D vu(id) stringNT(code)`
 
 Sample Packet and Response:
-```
+```js
 incoming <- 0D vu(0) stringNT(too long code)
+
+	
+try {
+  var f = new Function(UTF8ToString(code));
+  f()(function(v) {
+    _game_js_challenge_response(id, v)
+  })
+} catch (e) {
+  console.error(e);
+  _game_js_challenge_response(id, 0)
+}
 
 outgoing -> 0B vu(0) u32(result)
 ```
