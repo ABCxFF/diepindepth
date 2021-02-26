@@ -9,7 +9,7 @@
 | `varuint32`  | An unsigned 32 bit integer | 1-4  | `vu`     |
 | `varfloat32` | A float casted to a varint | 1-4  | `vf`     |
 | `float`      | A floating point number    | 4    | `f32`    |
-| `int32`      | A little-endian integer    | 4    | `i32`    |
+| `uint32`      | A little-endian integer   | 4    | `u32`    |
 | `stringNT`   | A null terminated string   | 1+   | `string` |
 
 ### **Special Types**
