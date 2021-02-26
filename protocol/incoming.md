@@ -104,9 +104,29 @@ incoming <- 07
 
 ## **`0x0A` Player Count Packet**
 
+This packet is sent occasionally, sending the total client count encoded in a varuint. This updates the text on the bottom right of the screen "*n* players". This packet is not sent globally across all server at the same time, but the exact ticks before a player count update is unknown.
+
+Format:
+> `0A vu(client count)`
+
 ---
 
 ## **`0x0B` PoW Challenge Packet**
+
+The packet that initiates the Proof of Work convos that are active throughout the connection. More info on how pow works [here](/protocol/pow.md)
+
+Format:
+> `0B vu(difficulty) stringNT(prefix)` 
+
+Something worth noting is that the prefix is always 16 chars long. Here's a sample:
+
+```js
+incoming <- 0B vu(20) stringNT("5X6qqhhfkp4v5zf2")
+
+m28.pow.solve(20, "5X6qqhhfkp4v5zf2").then(solveStr => {
+  outgoing -> 0A stringNT(solveStr);
+})
+```
 
 ---
 
