@@ -77,6 +77,17 @@ Format:
 
 ## **`0x04` Server Info Packet**
 
+This tells the client which gamemode is selected, and sets the server region which is displayed next to the ping when holding L.
+
+Format:
+> `04 stringNT(gamemode) stringNT(host-region)`
+
+Sample Packet (Decoded):
+
+```
+incoming <- 04 stringNT("sandbox") stringNT("vultr-amsterdam")
+```
+
 ---
 
 ## **`0x05` Heartbeat Packet**
