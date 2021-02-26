@@ -31,11 +31,11 @@ Sent when the client's build is not the same as the server's. The server sends t
 
 
 Format: 
-> `01 stringNT(newBuild)`
+> `01 stringNT(new build)`
 
 Example Packet and Response:
 ```js
-incoming <- 01 63 39 34 66 63 31 38 63 66 36 31 37 31 66 38 64 35 30 32 66 35 63 39 37 39 34 38 38 65 31 34 33 66 31 65 35 66 37 34 66 00 (c94fc18cf6171f8d502f5c979488e143f1e5f74f)
+incoming <- 01 stringNT(c94fc18cf6171f8d502f5c979488e143f1e5f74f)
 
 response: // Reversed from source, see /wasm/ for more information on reversal
 function reload(version /* new build, read as a string from the packet */) {
@@ -71,7 +71,7 @@ This packet sends data which trigger the notifications you see in game. For exam
 The red blue green values are encoded as an u32. For example, rgb(33, 130, 67) would be the same as u32(0x43822100) where each byte is a color. The time the notification appears in milliseconds is encoded as a float, and the final value part of this packet is the identifier. If one notification packet shares the same identifier as a previous notification (unless the identifier is empty), then before sending the new notification, it expires the previous, as if its timer was up.
 
 Format:
-> `03 stringNT(message) uint32(BGR0) float(timeInMs) stringNT(identifier)`
+> `03 stringNT(message) uint32(BGR0) float(time in ms) stringNT(identifier)`
 
 ---
 
@@ -113,6 +113,11 @@ incoming <- 07
 ---
 
 ## **`0x08` Achievement Packet**
+
+Out of all the packets, this one has been researched the least. An array of achievement hash strings which when received, update the localStorage so that you obtain the hash's corresponding achievement. The length of this array is read as a varuint.
+
+Format:
+> `08 vu(hash count):array( ...stringNT(achievement hash) )`
 
 ---
 
