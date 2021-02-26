@@ -33,7 +33,7 @@ Sent when the client's build is not the same as the server's. The server sends t
 Format: 
 > `01 stringNT(newBuild)`
 
-Example convo:
+Example Packet and Response:
 ```js
 incoming <- 01 63 39 34 66 63 31 38 63 66 36 31 37 31 66 38 64 35 30 32 66 35 63 39 37 39 34 38 38 65 31 34 33 66 31 65 35 66 37 34 66 00 (c94fc18cf6171f8d502f5c979488e143f1e5f74f)
 
@@ -67,8 +67,10 @@ reload()
 
 Part of the game's latency system. Once receieved, the client immediately echoes the single byte `0x05` packet back. 🏓
 
-Sample Packet (Decoded):
+Format:
+> `05`
 
+Sample Packet and Response (Decoded):
 ```
 incoming <- 05
 
@@ -100,6 +102,20 @@ incoming <- 07
 
 ## **`0x09` Invalid Party Packet**
 
+This single byte packet is sent whenever the party link you sent in the init packet (outgoing) is invalid.
+
+Format:
+> `09`
+
+Sample Packet and Response:
+```js
+incoming <- 09
+
+response:
+window.alert('Invalid party ID');
+```
+
+
 ---
 
 ## **`0x0A` Player Count Packet**
@@ -108,6 +124,7 @@ This packet is sent occasionally, sending the total client count encoded in a va
 
 Format:
 > `0A vu(client count)`
+
 
 ---
 
@@ -123,6 +140,7 @@ Something worth noting is that the prefix is always 16 chars long. Here's a samp
 ```js
 incoming <- 0B vu(20) stringNT("5X6qqhhfkp4v5zf2")
 
+response:
 m28.pow.solve(20, "5X6qqhhfkp4v5zf2").then(solveStr => {
   outgoing -> 0A stringNT(solveStr);
 })
