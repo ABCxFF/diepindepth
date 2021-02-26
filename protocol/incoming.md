@@ -34,6 +34,7 @@ Format:
 > `01 stringNT(new build)`
 
 Example Packet and Response:
+
 ```js
 incoming <- 01 stringNT(c94fc18cf6171f8d502f5c979488e143f1e5f74f)
 
@@ -98,6 +99,7 @@ Format:
 > `05`
 
 Sample Packet and Response (Decoded):
+
 ```
 incoming <- 05
 
@@ -139,7 +141,8 @@ This single byte packet is sent whenever the party link you sent in the init pac
 Format:
 > `09`
 
-Sample Packet and Response:
+Sample Packet and Response (Decoded):
+
 ```js
 incoming <- 09
 
@@ -157,6 +160,11 @@ This packet is sent occasionally, sending the total client count encoded in a va
 Format:
 > `0A vu(client count)`
 
+Sample Packet (Decoded):
+
+```
+incoming <- 0A vu(3364)
+```
 
 ---
 
@@ -173,9 +181,9 @@ Something worth noting is that the prefix is always 16 chars long. Here's a samp
 incoming <- 0B vu(20) stringNT("5X6qqhhfkp4v5zf2")
 
 response:
-m28.pow.solve(20, "5X6qqhhfkp4v5zf2").then(solveStr => {
+m28.pow.solve("5X6qqhhfkp4v5zf2", 20).then(solveStr => {
   outgoing -> 0A stringNT(solveStr);
-})
+});
 ```
 
 ---
