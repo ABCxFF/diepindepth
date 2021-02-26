@@ -57,7 +57,7 @@ A varint encoded tank id, defaults to -1. Tanks are listed [here](/TANKS.js)
 
 ---
 
-### **`flags`** - `vu`
+### **`bitflags`** - `vu`
 
 A varuint encoded series of bit flags with varying value. Example would be the outgoing input packet:
 
@@ -68,21 +68,21 @@ A varuint encoded series of bit flags with varying value. Example would be the o
 10001010 10100111 10000001 00001111 ; vf ; mouse y
 ```
 
-In this scenario, flags would be read as a varuint, which results in 2073. This can be expressed in binary as `100000011001`, and would be parsed as a flag like the following:
+The flags are read as a varuint, which for this example results in 2073. This can be expressed in binary as `100000011001`, and each bit gets parsed as a boolean flag starting from the lowest bit to the highest bit like the following:
 
 ```
-1 ; x800 ; constant of true ; (on always)
-0 ; x400 ; switch class     ; (off)
-0 ; x200 ; use gamepad      ; (off)
-0 ; x100 ; instant upgrade  ; (off)
-0 ; x080 ; right mouse      ; (off)
-0 ; x040 ; suicide key      ; (off)
-0 ; x020 ; god mode toggle  ; (off)
-1 ; x010 ; right key        ; (on)
-1 ; x008 ; down key         ; (on)
-0 ; x004 ; left key         ; (off)
-0 ; x002 ; up key           ; (off)
-1 ; x001 ; left mouse       ; (on)
+1 ; left mouse       ; (on)
+0 ; up key           ; (off)
+0 ; left key         ; (off)
+1 ; down key         ; (on)
+1 ; right key        ; (on)
+0 ; god mode toggle  ; (off)
+0 ; suicide key      ; (off)
+0 ; right mouse      ; (off)
+0 ; instant upgrade  ; (off)
+0 ; use gamepad      ; (off)
+0 ; switch class     ; (off)
+1 ; constant of true ; (on)
 ```
 
 ---
