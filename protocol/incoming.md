@@ -68,10 +68,10 @@ The decompressed result will include the packet header, you should feed this int
 
 This packet sends data which trigger the notifications you see in game. For example messages like "The Guardian has spawned" are considered notifications. 
 
-The red blue green values are encoded as an i32. For example, rgb(33, 130, 67) would be the same as i32(0x43822100) where each byte is a color. The time the notification appears in milliseconds is encoded as a float, and the final value part of this packet is the identifier. If one notification packet shares the same identifier as a previous notification (unless the identifier is empty), then instead of sending a new notification, it modifies the previous notification.
+The red blue green values are encoded as an u32. For example, rgb(33, 130, 67) would be the same as u32(0x43822100) where each byte is a color. The time the notification appears in milliseconds is encoded as a float, and the final value part of this packet is the identifier. If one notification packet shares the same identifier as a previous notification (unless the identifier is empty), then instead of sending a new notification, it modifies the previous notification.
 
 Format:
-> `03 stringNT(message) int32(BGR0) float(timeInMs) stringNT(identifier)`
+> `03 stringNT(message) uint32(BGR0) float(timeInMs) stringNT(identifier)`
 
 ---
 
