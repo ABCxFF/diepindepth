@@ -76,7 +76,7 @@ Format:
 
 ---
 
-It's worth nothing that not all notifications are sent throught this packet. Some notifcations are fully clientside such as the autofire and autospin notifications.
+It's worth nothing that not all notifications are sent throught this packet. Some notifcations are fully clientside, such as the autofire and autospin notifications.
 
 ## **`0x04` Server Info Packet**
 
