@@ -19,19 +19,7 @@ There are 4 sections that divide up the information collected.
 
 ## **Roadmap**
 
-One check completes every 1-4 days.
-
-- [ ] Complete incoming packets
-- [ ] Complete outgoing packets
-- [ ] Complete packet encoding stuff
-- [ ] Complete rest of protocol
-- [ ] Start memory and wasm
-- [ ] Complete reversal of wasm code (lots of stuff here)
-- [ ] Add some constants into `extras/`
-- [ ] Complete all memory structs and vectors, and link up to reversal in wasm
-- [ ] Double check
-- [ ] Release
-*wow thats a lot lol*
+https://github.com/ABCxFF/diepindepth/projects/2
 
 ## **Contributors**
 
