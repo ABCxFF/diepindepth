@@ -11,13 +11,13 @@ Also known as clientbound, these packets, after being encoded, are sent from the
 | [`0x04`](./incoming.md#0x04-server-info-packet)     | Server Info       | Send information about the server, host & region             |
 | [`0x05`](./incoming.md#0x05-heartbeat-packet)       | Heartbeat         | Ping pong packet                                             |
 | [`0x06`](./incoming.md#0x06-party-link-packet)      | Party Link        | Sends the party link if available                            |
-| [`0x07`](./incoming.md#0x07-accept-packet)          | Accept            | Sent after initial handshake, on client acceptance           |
+| [`0x07`](./incoming.md#0x07-accept-packet)          | Accept             | Sent after initial handshake, on client acceptance           |
 | [`0x08`](./incoming.md#0x08-achievement-packet)     | Achievement       | Updates clientside achievements from the server              |
 | [`0x09`](./incoming.md#0x09-invalid-party-packet)   | Invalid Party     | Sent when the party in the init packet is invalid            |
 | [`0x0A`](./incoming.md#0x0a-player-count-packet)    | Player Count      | Global count of clients connected                            |
 | [`0x0B`](./incoming.md#0x0b-pow-challenge-packet)   | PoW Challenge     | Sends a required proof of work challenge                     |
 | [`0x0C`](./incoming.md#0x0c-unnamed-packet)         | Unnamed           | Unnamed, Unused packet                                       |
-| [`0x0D`](./incoming.md#0x0d-eval-challenge-packet)  | Eval Challenge    | Sends (obfuscated) js code to be evaluated. Result is an int |
+| [`0x0D`](./incoming.md#0x0d-js-challenge-packet)    | JS Challenge      | Sends (obfuscated) js code to be evaluated. Result is an int |
 
 ---
 
@@ -33,10 +33,10 @@ Sent when the client's build is not the same as the server's. The server sends t
 Format: 
 > `01 stringNT(new build)`
 
-Example Packet and Response:
+Sample Packet and Response:
 
 ```js
-incoming <- 01 stringNT(c94fc18cf6171f8d502f5c979488e143f1e5f74f)
+incoming <- 01 stringNT("c94fc18cf6171f8d502f5c979488e143f1e5f74f")
 
 response: // Reversed from source, see /wasm/ for more information on reversal
 function reload(version /* new build, read as a string from the packet */) {
@@ -61,7 +61,7 @@ At the start of the packet there is a little-endian u32 specifying the final len
 Format:
 > `02 u32(decompressed output length) (LZ4 blocks)`
 
-The decompressed result will include the packet header, you should feed this into your parsing function recursively. The decompressed result is not [encoded](./encoding.md). Currently only [Update](./incoming.md#0x00-update-packet) and [Eval](./incoming.md#0x0d-eval-challenge-packet) packets can get large enough to be compressed.
+The decompressed result will include the packet header, you should feed this into your parsing function recursively. The decompressed result is not [encoded](./encoding.md). Currently only [Update](./incoming.md#0x00-update-packet) and [Eval](./incoming.md#0x0d-js-challenge-packet) packets can get large enough to be compressed.
 
 ---
 
@@ -117,7 +117,7 @@ outgoing -> 05
 
 ## **`0x07` Accept Packet**
 
-Packet sent once the game server has accepted the client. After this packet is sent, updates begin to pour in. As of Feb 25, the server only accepts the client once the client solves a [PoW](./incoming.md#0x0b-pow-challenge-packet) and [Eval](./incoming.md#0x0d-eval-challenge-packet) challenge
+Packet sent once the game server has accepted the client. After this packet is sent, updates begin to pour in. As of Feb 25, the server only accepts the client once the client solves a [JS](./incoming.md#0x0d-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenge.
 
 Sample Packet (Decoded):
 
@@ -134,11 +134,17 @@ Out of all the packets, this one has been researched the least. An array of achi
 Format:
 > `08 vu(hash count):array( ...stringNT(achievement hash) )`
 
+Sample Packet (Decoded):
+
+```
+incoming <- 08 vu(6) stringNT("9898db9ff6d3c1b3_1") stringNT("300ddd6f1fb3d69d_1") stringNT("8221180ec6d53232_1") stringNT("33e4cb47afd5602f_1") stringNT("6d671cfa6dceb09_1") stringNT("256245339c3742d2_1")
+```
+
 ---
 
 ## **`0x09` Invalid Party Packet**
 
-This single byte packet is sent whenever the party link you sent in the init packet (outgoing) is invalid.
+This single byte packet is sent whenever the party code you specified in the init packet (outgoing) is invalid. You will get this instead of the [`0x07`](./incoming.md#0x07-accept-packet) packet, only after solving the [JS](./incoming.md#0x0d-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenges.
 
 Format:
 > `09`
@@ -172,7 +178,7 @@ incoming <- 0A vu(3364)
 
 ## **`0x0B` PoW Challenge Packet**
 
-The packet that initiates the Proof of Work convos that are active throughout the connection. More info on how pow works [here](/protocol/pow.md)
+The packet that initiates the Proof of Work convos that are active throughout the connection. More info on how PoW works [here](/protocol/pow.md)
 
 Format:
 > `0B vu(difficulty) stringNT(prefix)` 
@@ -199,23 +205,23 @@ Format:
 
 ---
 
-## **`0x0D` Eval Challenge Packet**
+## **`0x0D` JS Challenge Packet**
 
 This packet is sent only once, during the client -> server acceptance handshake. It sends highly obfuscated code to be evaluated by the client with the purpose of filtering out headless clients from clients on the web - part of diep.io's anti botting system. The result of this code is always an uint32 and is sent back to the client through the `0x0C` outgoing Eval Result packet.
 
-The code sent is obfuscated with [obfuscator.io](http://obfuscator.io/), almost all setting turned on max. This packet checks for global objects and specific properties on global objects, if all the checks pass their intended result, the code ends up returning the correct uint32 result, which the game server recognises and continues (or completes) the process of accepting the client. 
+The code sent is obfuscated with [obfuscator.io](https://obfuscator.io/), almost all setting turned on max. This packet checks for global objects and specific properties on global objects, if all the checks pass their intended result, the code ends up returning the correct uint32 result, which the game server recognises and continues (or completes) the process of accepting the client. 
 
-> Fun fact:  
-> -  There are only 200 unique obfuscated evaluation codes that can be sent to the client, and they are constant throughout rebuilds.
+> Fun fact:
+> -  There are only 200 unique obfuscated evaluation codes that can be sent to the client, and they are reused across all servers and remain unchanged throughout rebuilds, though this is likely to change in the future.
 
 Format:
 > `0D vu(id) stringNT(code)`
 
-Sample Packet and Response:
+Sample Packet and Response (Decoded):
 ```js
 incoming <- 0D vu(0) stringNT(too long code)
 
-	
+response:
 try {
   var f = new Function(UTF8ToString(code));
   f()(function(v) {
