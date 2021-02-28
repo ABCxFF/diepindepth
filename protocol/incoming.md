@@ -10,8 +10,8 @@ Also known as clientbound, these packets, after being encoded, are sent from the
 | [`0x03`](./incoming.md#0x03-notification-packet)    | Notification      | Sends notifications in game                                  |
 | [`0x04`](./incoming.md#0x04-server-info-packet)     | Server Info       | Send information about the server, host & region             |
 | [`0x05`](./incoming.md#0x05-heartbeat-packet)       | Heartbeat         | Ping pong packet                                             |
-| [`0x06`](./incoming.md#0x06-party-link-packet)      | Party Link        | Sends the party link if available                            |
-| [`0x07`](./incoming.md#0x07-accept-packet)          | Accept             | Sent after initial handshake, on client acceptance           |
+| [`0x06`](./incoming.md#0x06-party-code-packet)      | Party Code        | Sends the party code if available                            |
+| [`0x07`](./incoming.md#0x07-accept-packet)          | Accept            | Sent after initial handshake, on client acceptance           |
 | [`0x08`](./incoming.md#0x08-achievement-packet)     | Achievement       | Updates clientside achievements from the server              |
 | [`0x09`](./incoming.md#0x09-invalid-party-packet)   | Invalid Party     | Sent when the party in the init packet is invalid            |
 | [`0x0A`](./incoming.md#0x0a-player-count-packet)    | Player Count      | Global count of clients connected                            |
@@ -48,7 +48,6 @@ function reload(version /* new build, read as a string from the packet */) {
 }
 reload()
 ```
-
 
 ---
 
@@ -111,13 +110,41 @@ outgoing -> 05
 
 ---
 
-## **`0x06` Party Link Packet**
+## **`0x06` Party Code Packet**
+
+This packet is only sent in the 2 Teams, 4 Teams, Domination and Sandbox gamemodes. When this packet is sent the `Copy party link` button appears, otherwise the button is not shown. It contains the un-swapped party code for the arena and team you are in.
+
+Format:
+> 06 ...bytes(party code)
+
+Sample Packet and Response (Decoded):
+
+```
+incoming <- 06 2D CD 03 54 C3
+
+response: show the Copy party link button
+```
+
+### Building a party link
+
+1. Write the M28 server ID (`brlm` in this example) as a stringNT and append the party code:
+   > stringNT("brlm") bytes(0x2D 0xCD 0x03 0x54 0xC3)
+   > 
+   > 62 72 6C 6D 00 2D CD 03 54 C3
+
+2. Swap the nibbles in every byte:
+   > 26 27 C6 D6 00 D2 DC 30 45 3C
+
+The final link is `diep.io/#2627C6D600D2DC30453C`
 
 ---
 
 ## **`0x07` Accept Packet**
 
-Packet sent once the game server has accepted the client. After this packet is sent, updates begin to pour in. As of Feb 25, the server only accepts the client once the client solves a [JS](./incoming.md#0x0d-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenge.
+This packet is sent once the game server has accepted the client (correct build, valid or no party). As of Feb 25, the server only accepts the client once the client solves a [JS](./incoming.md#0x0d-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenge.
+
+Format:
+> `07`
 
 Sample Packet (Decoded):
 
@@ -144,7 +171,7 @@ incoming <- 08 vu(6) stringNT("9898db9ff6d3c1b3_1") stringNT("300ddd6f1fb3d69d_1
 
 ## **`0x09` Invalid Party Packet**
 
-This single byte packet is sent whenever the party code you specified in the init packet (outgoing) is invalid. You will get this instead of the [`0x07`](./incoming.md#0x07-accept-packet) packet, only after solving the [JS](./incoming.md#0x0d-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenges.
+This single byte packet is sent whenever the party code you specified in the init packet (outgoing) is invalid. You will get this instead of the [`0x07`](./incoming.md#0x07-accept-packet) packet, only after solving a [JS](./incoming.md#0x0d-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenge.
 
 Format:
 > `09`
@@ -157,7 +184,6 @@ incoming <- 09
 response:
 window.alert('Invalid party ID');
 ```
-
 
 ---
 
