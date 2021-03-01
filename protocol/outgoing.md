@@ -4,11 +4,11 @@ Also known as serverbound, these packets, after being encoded, are sent from the
 
 | Header                                              | Name            | Description                                                        |
 | --------------------------------------------------- | --------------- | ------------------------------------------------------------------ |
-| [`0x00`](./outgoing.md#0x00-init-packet)            | Init            | Initiates the connection between the client and server. First      |
+| [`0x00`](./outgoing.md#0x00-init-packet)            | Init            | Initiates the connection between the client and server. First sent |
 | [`0x01`](./outgoing.md#0x01-input-packet)           | Input           | Sends client inputs including movement and mouse                   |
-| [`0x02`](./outgoing.md#0x02-spawn-packet)           | Spawn Packet    | Requests to spawn with the name inputted by this packet            |
-| [`0x03`](./outgoing.md#0x03-stat-upgrade-packet)    | Stat Upgrade    | Upgrades specific stats                                            |
-| [`0x04`](./outgoing.md#0x04-tank-upgrade-packet)    | Tank Upgrade    | Upgrades the tank                                                  |
+| [`0x02`](./outgoing.md#0x02-spawn-packet)           | Spawn Packet    | Sent when the client wants to spawn, contains chosen name          |
+| [`0x03`](./outgoing.md#0x03-stat-upgrade-packet)    | Stat Upgrade    | Upgrades the player's stats                                        |
+| [`0x04`](./outgoing.md#0x04-tank-upgrade-packet)    | Tank Upgrade    | Upgrades the player's tank                                         |
 | [`0x05`](./outgoing.md#0x05-heartbeat-packet)       | Heartbeat       | Ping pong packet                                                   |
 | [`0x06`](./outgoing.md#0x06-tcp-init-packet)        | TCP Init        | Lets the server "acknowledge" tcp connections. Unknown             |
 | [`0x07`](./outgoing.md#0x07-extension-found-packet) | Extension Found | Sent when the client detects any modifications made to the game    |
