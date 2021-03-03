@@ -41,6 +41,20 @@ Also known as serverbound, these packets, after being encoded, are sent from the
 
 ## **`0x05` Heartbeat Packet**
 
+Part of the game's latency system. Once sent, the server immediately echoes the single byte `0x05` packet back. 🏓
+
+Format:
+> `05`
+
+Sample Packet and Response (Decoded):
+
+```
+outgoing -> 05
+
+response:
+incoming -> 05
+```
+
 ---
 
 ## **`0x06` TCP Init Packet**
