@@ -31,11 +31,49 @@ Also known as serverbound, these packets, after being encoded, are sent from the
 
 ---
 
+The next 2 packets use a shuffler that is derived from the following function:
+
+```js
+function magicNum(build) {
+  for (var i = 0, seed = 1, res = 0, timer = 0; i < 40; i++) {
+   let nibble = parseInt(build[i], 16)
+   res ^= ((nibble << ((seed & 1) << 2)) << (timer << 3));
+   timer = (timer + 1) & 3;
+   seed ^= !timer;
+  };
+
+  return res >>> 0; // unsigned
+}
+
+// Where the magic shuffler is
+magicNum(latest build)
+```
+
+
 ## **`0x03` Stat Upgrade Packet**
+
+This packet requests to upgrade one of the tank's stats. If you don't have an adequate amount of levels for the next stat, nothing happens.
+
+(some1 finish this lol)
+
+```js
+magicNum(latest build) % STAT_COUNT; // STAT_COUNT is 8
+```
 
 ---
 
 ## **`0x04` Tank Upgrade Packet**
+
+This packet is sent to upgrade to a tank. Althought it takes the tank id as a parameter in the packet, if the tank selected is not in your upgrade path, or you don't have enough levels to reach it, nothing will happen. The tank id is xored by a remainder of the magicNum, very similar to the `0x03` outgoing packet. This was, like the stat upgrading packet, in an attempt to prevent scripting or automatic upgrading of tanks.
+
+Format:
+> `04 vi(tank id ^ tank xor)`
+
+Where tank xor is (using the function up above):
+
+```js
+magicNum(latest build) % TANK_COUNT; // TANK_COUNT is 54
+```
 
 ---
 
