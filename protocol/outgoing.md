@@ -59,6 +59,24 @@ incoming -> 05
 
 ## **`0x06` TCP Init Packet**
 
+This packet has never been observed and has only been seen in server code images sent by M28. The following code is the only information we have on it:
+```c++
+    }else if(cmd == 0x06){ // Aknowledged ES packet
+#ifndef USE_TPC_ES
+        if(m_pGame != nullptr){
+            m_pGame->Simulation()->Entities()->Acknowledged(ID(), view.NextUint32());
+        }
+#endif
+    ... code after unknown
+```
+
+He talks about it being related to the Mobile version of the game, and is involved in a tpc connection used on mobile.
+
+
+Format:
+> `06 u32(unknown) ...unknown`
+
+
 ---
 
 ## **`0x07` Extension Found Packet**
