@@ -29,6 +29,11 @@ Also known as serverbound, these packets, after being encoded, are sent from the
 
 ## **`0x02` Spawn Packet**
 
+This packet creates a spawn attempt, we call it an attempt / request and not a spawn since before you spawn, the server sends you a Proof Of Work challenge for you to solve, to prevent botters from being able to spawn too many bots, though this bot prevention has been easily bypassed, which may or may not be explained in the future.
+
+Format:
+> `02 stringNT(name)`
+
 ---
 
 The next 2 packets use a shuffler that is derived from the following function:
