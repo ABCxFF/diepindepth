@@ -128,6 +128,11 @@ Format:
 
 ## **`0x08` To Respawn Packet**
 
+This peculiar single byte packet is sent whenever you move past the death screen and to the respawn screen. The use of this is so that the server can redirect you to new arenas if the arena you were in was closed. An example of this would be if you die while / after an arena is closing in dom, after you move to the respawn screen you will be redirected to the new arena.
+
+Format:
+> `08`
+
 ---
 
 ## **`0x09` Take Tank Packet**
