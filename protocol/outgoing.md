@@ -21,6 +21,13 @@ Also known as serverbound, these packets, after being encoded, are sent from the
 
 ## **`0x00` Init Packet**
 
+The first packet, and the only unencoded one. This packet is sent to initiate the connection, and it gives information like build, admin password, party link, and some other "debug values."
+
+Format:
+> `00 string(build hash) string(dev password) string(party code) vu(debug val)`
+
+The dev confirmed that this format is correct, but did not give any information on the varuint at the end of the packet, only that it was only active during "debug builds". If the build sent by the client is the not the same as the one the server is expecting, the server responds with a 0x01 Invalid Build packet.
+
 ---
 
 ## **`0x01` Input Packet**
