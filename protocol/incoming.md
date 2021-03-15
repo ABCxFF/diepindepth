@@ -1,6 +1,6 @@
 # **Incoming Packets**
 
-Also known as clientbound, these packets, after being encoded, are sent from the server to the client. Most of these packets aren't too complex once you understand the basics of a reader, with the exception of the incoming `0x00` packet.
+Also known as clientbound, these packets, after being encoded, are sent from the server to the client. Most of these packets aren't too complex once you understand the basics of a reader, with the exception of the incoming [`0x00`](./incoming.md#0x00-update-packet) packet.
 
 | Header                                              | Name              | Description                                                  |
 | --------------------------------------------------- | ----------------- | ------------------------------------------------------------ |
@@ -27,7 +27,7 @@ Also known as clientbound, these packets, after being encoded, are sent from the
 
 ## **`0x01` Outdated Client Packet**
 
-Sent when the client's build is not the same as the server's. The server sends the latest build, and when the client receives it, the page reloads. This packet is by naturally unencoded, meaning its data is sent raw unencoded. This is since if you have an invalid build you won't be able to decode packets.
+Sent when the client's build (which is sent in the [`0x00` Init Packet](./outgoing.md#0x00-init-packet)) is not the same as the server's. The server sends the latest build, and when the client receives it, the page reloads. This packet is by naturally unencoded, meaning its data is sent raw unencoded. This is since if you have an invalid build you won't be able to decode packets.
 
 
 Format: 
@@ -94,7 +94,7 @@ incoming <- 04 stringNT("sandbox") stringNT("vultr-amsterdam")
 
 ## **`0x05` Heartbeat Packet**
 
-Part of the game's latency system. Once receieved, the client immediately echoes the single byte `0x05` packet back. 🏓
+Part of the game's latency system. Once receieved, the client immediately echoes the single byte [`0x05` packet](./outgoing.md#0x05-heartbeat-packet) back. 🏓
 
 Format:
 > `05`
@@ -115,7 +115,7 @@ outgoing -> 05
 This packet is only sent in the 2 Teams, 4 Teams, Domination and Sandbox gamemodes. When this packet is sent the `Copy party link` button appears, otherwise the button is not shown. It contains the un-swapped party code for the arena and team you are in.
 
 Format:
-> 06 ...bytes(party code)
+> `06 ...bytes(party code)`
 
 Sample Packet and Response (Decoded):
 
@@ -145,12 +145,6 @@ This packet is sent once the game server has accepted the client (correct build,
 
 Format:
 > `07`
-
-Sample Packet (Decoded):
-
-```
-incoming <- 07
-```
 
 ---
 
@@ -204,7 +198,7 @@ incoming <- 0A vu(3364)
 
 ## **`0x0B` PoW Challenge Packet**
 
-The packet that initiates the Proof of Work convos that are active throughout the connection. More info on how PoW works [here](/protocol/pow.md)
+The packet that initiates the Proof of Work convos that are active throughout the connection. Response is an outgoing [`0x0A` pow solve packet](./outgoing.md#0x0a-pow-solve-packet). More info on how PoW works [here](/protocol/pow.md)
 
 Format:
 > `0B vu(difficulty) stringNT(prefix)` 
@@ -224,7 +218,7 @@ m28.pow.solve("5X6qqhhfkp4v5zf2", 20).then(solveStr => {
 
 ## **`0x0C` Unnamed Packet**
 
-This packet has never been observed, and while the packet's format has been reversed, its never used and does not affect the client.
+This packet has never been observed, and while the packet's format has been reversed, its never used and does not affect the client. On an older version this was the same as the [`0x0D` JS Challenge](./incoming.md#0x0d-js-challenge-packet) packet, except it expected a string as a response. 
 
 Format:
 > `0C vu(unknown)`
@@ -233,7 +227,7 @@ Format:
 
 ## **`0x0D` JS Challenge Packet**
 
-This packet is sent only once, during the client -> server acceptance handshake. It sends highly obfuscated code to be evaluated by the client with the purpose of filtering out headless clients from clients on the web - part of diep.io's anti botting system. The result of this code is always an uint32 and is sent back to the client through the `0x0C` outgoing Eval Result packet.
+This packet is sent only once, during the client -> server acceptance handshake. It sends highly obfuscated code to be evaluated by the client with the purpose of filtering out headless clients from clients on the web - part of diep.io's anti botting system. The result of this code is always an uint32 and is sent back to the client through the outgoing [`0x0B` JS Result](./outgoing.md#0x0b-js-result-packet) packet.
 
 The code sent is obfuscated with [obfuscator.io](https://obfuscator.io/), almost all setting turned on max. This packet checks for global objects and specific properties on global objects, if all the checks pass their intended result, the code ends up returning the correct uint32 result, which the game server recognises and continues (or completes) the process of accepting the client. 
 
