@@ -61,6 +61,7 @@ function magicNum(build) {
 magicNum(latest build)
 ```
 
+---
 
 ## **`0x03` Stat Upgrade Packet**
 
