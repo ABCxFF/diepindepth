@@ -26,7 +26,7 @@ The first packet, and the only unencoded one. This packet is sent to initiate th
 Format:
 > `00 string(build hash) string(dev password) string(party code) vu(debug val)`
 
-The dev confirmed that this format is correct, but did not give any information on the varuint at the end of the packet, only that it was only active during "debug builds". If the build sent by the client is the not the same as the one the server is expecting, the server responds with a 0x01 Invalid Build packet.
+The dev confirmed that this format is correct, but did not give any information on the varuint at the end of the packet, only that it was only active during "debug builds". If the build sent by the client is the not the same as the one the server is expecting, the server responds with a [`0x01` Outdated Client](./incoming.md#0x01-outdated-client-packet) packet.
 
 ---
 
@@ -36,12 +36,14 @@ The dev confirmed that this format is correct, but did not give any information 
 
 ## **`0x02` Spawn Packet**
 
-This packet creates a spawn attempt, we call it an attempt / request and not a spawn since before you spawn, the server sends you a Proof Of Work challenge for you to solve, to prevent botters from being able to spawn too many bots, though this bot prevention has been easily bypassed, which may or may not be explained in the future.
+This packet creates a spawn attempt, we call it an attempt / request and not a spawn since before you spawn, the server sends you a [Proof Of Work challenge](./incoming.md#0x0b-pow-challenge-packet) for you to solve, to prevent botters from being able to spawn too many bots, though this bot prevention has been easily bypassed, which may or may not be explained in the future.
 
 Format:
 > `02 stringNT(name)`
 
 ---
+
+## **Magic Tank and Stat XOR**
 
 The next 2 packets use a shuffler that is derived from the following function:
 
@@ -105,7 +107,7 @@ magicNum(latest build) % TANK_COUNT; // TANK_COUNT is 54
 
 ## **`0x05` Heartbeat Packet**
 
-Part of the game's latency system. Once sent, the server immediately echoes the single byte `0x05` packet back. 🏓
+Part of the game's latency system. Once sent, the server immediately echoes the single byte [`0x05`](./incoming.md#0x05-heartbeat-packet) packet back. 🏓
 
 Format:
 > `05`
@@ -160,7 +162,7 @@ Format:
 
 ## **`0x09` Take Tank Packet**
 
-This packet is for requesting to control a tank, like a dominator or mothership. It can be sent in any gamemode, but if there is no tanks to take (or all tanks are already taken) then a notification with the text *"Someone has already taken that tank"* is sent.
+This packet is for requesting to control a tank, like a dominator or mothership. It can be sent in any gamemode, but if there is no tanks to take (or all tanks are already taken) then a [notification](./incoming.md#0x03-notification-packet) with the text *"Someone has already taken that tank"* is sent.
 
 Format:
 > `09`
@@ -169,7 +171,7 @@ Format:
 
 ## **`0x0A` PoW Solve Packet**
 
-This packet is the response to the PoW Challenge Packet - after solving the proof of work challenge, the answer string is sent.
+This packet is the response to the [`0x0B` PoW Challenge](./incoming.md#0x0b-pow-challenge-packet) packet - after solving the proof of work challenge, the answer string is sent.
 
 Format:
 > `0A stringNT(answer string)`
@@ -178,7 +180,7 @@ Format:
 
 ## **`0x0B` JS Result Packet**
 
-This packet is the response to the JS Eval Packet. It sends the evaluation id and the result. In older builds, this packet was known to be able encode any type result, meaning that it could send a string or integer back then.
+This packet is the evaluated result of the [`0x0D` JS Challenge](./incoming.md#0x0d-js-challenge-packet) packet. It sends the evaluation id and the result. In older builds, this packet was known to be able encode any type result, meaning that it could send a string or integer back then.
 
 Format:
 > `0B vu(id) any/vu(result)`
