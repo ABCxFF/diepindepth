@@ -64,9 +64,20 @@ magicNum(latest build)
 
 ## **`0x03` Stat Upgrade Packet**
 
-This packet requests to upgrade one of the tank's stats. If you don't have an adequate amount of levels for the next stat, nothing happens.
+This packet requests to upgrade one of the tank's stats. If you don't have an adequate amount of levels for the next stat, nothing happens. The second varint in the packet identifies the max upgrade level of that stat, so that if the stat is already at or past that varint encoded maximum, nothing will upgrade. Here's a quick example
 
-(some1 finish this lol)
+```js
+Current Stats: 1/1/1/1/1/1/1
+
+outgoing -> 03 vi(2 ^ stat xor) vi(-1)
+Current Stats: 1/1/1/1/2/1/1
+
+outgoing -> 03 vi(4 ^ stat xor) vi(0)
+Current Stats: 1/1/1/1/2/1/1 // nothing happens since 4th stat is already >= 0
+```
+
+Format:
+> `03 vi(stat index ^ stat xor) vi(max)`
 
 Where stat xor is (using the function up above):
 
@@ -132,6 +143,8 @@ Format:
 ---
 
 ## **`0x07` Extension Found Packet**
+
+
 
 ---
 
