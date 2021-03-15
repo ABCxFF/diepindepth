@@ -160,11 +160,25 @@ Format:
 
 ## **`0x09` Take Tank Packet**
 
+This packet is for requesting to control a tank, like a dominator or mothership. It can be sent in any gamemode, but if there is no tanks to take (or all tanks are already taken) then a notification with the text *"Someone has already taken that tank"* is sent.
+
+Format:
+> `09`
+
 ---
 
 ## **`0x0A` PoW Solve Packet**
+
+This packet is the response to the PoW Challenge Packet - after solving the proof of work challenge, the answer string is sent.
+
+Format:
+> `0A stringNT(answer string)`
 
 ---
 
 ## **`0x0B` JS Result Packet**
 
+This packet is the response to the JS Eval Packet. It sends the evaluation id and the result. In older builds, this packet was known to be able encode any type result, meaning that it could send a string or integer back then.
+
+Format:
+> `0B vu(id) any/vu(result)`
