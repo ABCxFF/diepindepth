@@ -68,6 +68,8 @@ This packet requests to upgrade one of the tank's stats. If you don't have an ad
 
 (some1 finish this lol)
 
+Where stat xor is (using the function up above):
+
 ```js
 magicNum(latest build) % STAT_COUNT; // STAT_COUNT is 8
 ```
