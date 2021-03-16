@@ -1,4 +1,4 @@
-***STARTING A HEADLESS CONNECTION***
+# STARTING A HEADLESS CONNECTION
 
 ## DISCLAIMER
 To start a headless WebSocket connection with Diep.io, you need to be familiar with the Node.js module "ws". If you aren't, please head over to [this](https://www.youtube.com/watch?v=FduLSXEHLng) tutorial before you begin making a Diep.io Headless Connection.
