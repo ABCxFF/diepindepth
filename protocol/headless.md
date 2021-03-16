@@ -6,6 +6,67 @@ To start a headless WebSocket connection with Diep.io, you need to be familiar w
 ## STARTING A CONNECTION
 To start a connection, you'll need to decide which gamemode and region you want to connect to. Refer to [here](#gamemode-and-region-tables) if you want to figure out how to validly express a gamemode or region.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## GAMEMODE AND REGION TABLES 
 | Short Names | Actual Names |
 | ----------- | ----------- |
