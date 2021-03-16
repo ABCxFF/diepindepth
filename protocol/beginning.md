@@ -1,8 +1,8 @@
 ***STARTING A HEADLESS CONNECITON***
 
-When establishing a connection, you need to send an initialization packet (outgoing): [0x00](https://github.com/ABCxFF/diepindepth/blob/main/protocol/outgoing.md#0x00-init-packet).
+When establishing a connection, you need to send an initialization packet (outgoing): [0x00](https://github.com/ABCxFF/diepindepth/blob/main/protocol/outgoing.md#0x00-init-packet)
 
-    - If an invalid build is sent, an outdated client packet will be sent (incoming): [0x01](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x01-outdated-client-packet)
+*If an invalid build is sent, an outdated client packet will be sent (incoming): [0x01](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x01-outdated-client-packet)*
 
 If the format and build is correct in the initialization packet, a JS Challenge packet (incoming, [0x0d](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x0b-pow-challenge-packet)] and a PoW Challenge packet (incoming, [0x0b](https://github.com/CoderSudaWuda/diepindepth/blob/main/protocol/incoming.md#0x0d-js-challenge-packet)) will be sent.
 
