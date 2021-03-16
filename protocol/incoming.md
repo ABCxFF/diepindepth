@@ -256,3 +256,5 @@ try {
 
 outgoing -> 0B vu(0) u32(result)
 ```
+
+Here's [wonderful [explanation by Shadam](https://github.com/supahero1/diep.io/blob/master/README.md) of deobfuscation which has information on code flow and deobfuscation of the eval packet's code.
