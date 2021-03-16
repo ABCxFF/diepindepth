@@ -220,7 +220,7 @@ m28.pow.solve("5X6qqhhfkp4v5zf2", 20).then(solveStr => {
 
 ## **`0x0C` Unnamed Packet**
 
-This packet has never been observed, and while the packet's format has been reversed, its never used and does not affect the client. On an older version this was the same as the [`0x0D` JS Challenge](./incoming.md#0x0d-js-challenge-packet) packet, except it expected a string as a response. 
+This packet has never been observed, and while the packet's format has been reversed, its never used and does not affect the client. On an older version this was the same as the [`0x0D` JS Challenge](./incoming.md#0x0d-js-challenge-packet) packet, except it expected a string as a response. So we can't be sure if this packet is still the same as it was and is just not fully present due to emscripten simplifications, or if it changed completely.
 
 Format:
 > `0C vu(unknown)`
