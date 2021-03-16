@@ -1,4 +1,4 @@
-This is still being worked on sem-actively, progress updates are posted in the [roadmap](https://github.com/ABCxFF/diepindepth#roadmap)
+This is still being worked on semi-actively, progress updates are posted in the [roadmap](https://github.com/ABCxFF/diepindepth#roadmap)
 
 ---
 
