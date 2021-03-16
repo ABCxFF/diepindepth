@@ -18,7 +18,7 @@ servers: {
    }
 }
 */
-const serverID = response.servers[`vultr-${region}`]; 
+const serverID = response.servers[`vultr-${region}`]?.id; 
 ```
 
 ## GAMEMODE AND REGION TABLES 
