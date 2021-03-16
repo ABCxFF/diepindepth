@@ -6,7 +6,7 @@ When establishing a connection, you need to send an initialization packet (outgo
 
 If the format and build is correct in the initialization packet, a JS Challenge packet (incoming, [0x0d](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x0b-pow-challenge-packet)] and a PoW Challenge packet (incoming, [0x0b](https://github.com/CoderSudaWuda/diepindepth/blob/main/protocol/incoming.md#0x0d-js-challenge-packet)) will be sent.
 
-**You must answer the JS Challenge packet first, then you can solve the PoW Challenge packet in order to successfully authorized by Diep.io**
+**You must answer the JS Challenge packet first, then you can solve the PoW Challenge packet in order to successfully authorized by Diep.io.**
 
 If the party in the initilization packet is invalid, an Invalid Party packet (incoming, [0x09](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x09-invalid-party-packet)) is sent.
 
