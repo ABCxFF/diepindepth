@@ -4,55 +4,12 @@
 To start a headless WebSocket connection with Diep.io, you need to be familiar with the Node.js module "ws". If you aren't, please head over to [this](https://www.youtube.com/watch?v=FduLSXEHLng) tutorial before you begin making a Diep.io Headless Connection.
 
 ## STARTING A CONNECTION
-To start a connection, you'll need to decide which gamemode and region you want to connect to. Refer to [here](#gamemode-and-region-tables) if you want to figure out how to validly express a gamemode or region.
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-s
-
-
+To start a connection, you'll need to decide which gamemode and region you want to connect to. Refer to [here](#gamemode-and-region-tables) if you want to figure out how to validly express a gamemode or region. To figure out the ID, you can use this snippet of code to find it.
+```js
+const body = await fetch('https://api.n.m28.io/endpoint/diepio-${gamemode}/findEach');
+const response = await body.json();
+const serverID = response.servers[`vultr-${region}`];
+```
 
 ## GAMEMODE AND REGION TABLES 
 | Short Names | Actual Names |
