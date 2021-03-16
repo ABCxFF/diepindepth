@@ -205,7 +205,7 @@ Format:
 
 ## **`0x0B` JS Result Packet**
 
-This packet is the evaluated result of the [`0x0D` JS Challenge](./incoming.md#0x0d-js-challenge-packet) packet. It sends the evaluation id and the result. In older builds, this packet was known to be able encode any type result, meaning that it could send a string or integer back then.
+This packet is the evaluated result of the [`0x0D` JS Challenge](./incoming.md#0x0d-js-challenge-packet) packet. It sends the evaluation id and the result. In older builds, this packet could also be a response to `0x0C` JS String Challenge, which is now no longer fully existing; so this packet is able to encode any type result, meaning that it could send a string or integer.
 
 Format:
 > `0B vu(id) any/vu(result)`
