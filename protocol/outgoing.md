@@ -2,6 +2,8 @@
 
 Also known as serverbound, these packets, after being encoded, are sent from the client to the server. These packets aren't at all complex, only with the exception of the outgoing `0x01` packet which is the most complex of the outgoing packets (but not too complex).
 
+For information on data types and encodings, see [`data.md`](./data.md)
+
 | Header                                              | Name            | Description                                                        |
 | --------------------------------------------------- | --------------- | ------------------------------------------------------------------ |
 | [`0x00`](./outgoing.md#0x00-init-packet)            | Init            | Initiates the connection between the client and server. First sent |
