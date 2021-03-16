@@ -19,7 +19,7 @@ For information on data types and encodings, see [`data.md`](./data.md)
 | [`0x0A`](./incoming.md#0x0a-player-count-packet)    | Player Count      | Global count of clients connected                            |
 | [`0x0B`](./incoming.md#0x0b-pow-challenge-packet)   | PoW Challenge     | Sends a required proof of work challenge                     |
 | [`0x0C`](./incoming.md#0x0c-unnamed-packet)         | Unnamed           | Unnamed, Unused packet                                       |
-| [`0x0D`](./incoming.md#0x0d-js-challenge-packet)    | JS Challenge      | Sends (obfuscated) js code to be evaluated. Result is an int |
+| [`0x0D`](./incoming.md#0x0d-int-js-challenge-packet)| Int JS Challenge  | Sends (obfuscated) js code to be evaluated. Result is an int |
 
 ---
 
@@ -62,7 +62,7 @@ At the start of the packet there is a little-endian u32 specifying the final len
 Format:
 > `02 u32(decompressed output length) (LZ4 blocks)`
 
-The decompressed result will include the packet header, you should feed this into your parsing function recursively. The decompressed result is not [encoded](./encoding.md). Currently only [Update](./incoming.md#0x00-update-packet) and [Eval](./incoming.md#0x0d-js-challenge-packet) packets can get large enough to be compressed.
+The decompressed result will include the packet header, you should feed this into your parsing function recursively. The decompressed result is not [encoded](./encoding.md). Currently only [Update](./incoming.md#0x00-update-packet) and [Eval](./incoming.md#0x0d-int-js-challenge-packet) packets can get large enough to be compressed.
 
 ---
 
@@ -143,7 +143,7 @@ The final link is `diep.io/#2627C6D600D2DC30453C`
 
 ## **`0x07` Accept Packet**
 
-This packet is sent once the game server has accepted the client (correct build, valid or no party). As of Feb 25, the server only accepts the client once the client solves a [JS](./incoming.md#0x0d-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenge.
+This packet is sent once the game server has accepted the client (correct build, valid or no party). As of Feb 25, the server only accepts the client once the client solves a [JS](./incoming.md#0x0d-int-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenge.
 
 Format:
 > `07`
@@ -167,7 +167,7 @@ incoming <- 08 vu(6) stringNT("9898db9ff6d3c1b3_1") stringNT("300ddd6f1fb3d69d_1
 
 ## **`0x09` Invalid Party Packet**
 
-This single byte packet is sent whenever the party code you specified in the init packet (outgoing) is invalid. You will get this instead of the [`0x07`](./incoming.md#0x07-accept-packet) packet, only after solving a [JS](./incoming.md#0x0d-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenge.
+This single byte packet is sent whenever the party code you specified in the init packet (outgoing) is invalid. You will get this instead of the [`0x07`](./incoming.md#0x07-accept-packet) packet, only after solving a [JS](./incoming.md#0x0d-int-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenge.
 
 Format:
 > `09`
@@ -220,14 +220,14 @@ m28.pow.solve("5X6qqhhfkp4v5zf2", 20).then(solveStr => {
 
 ## **`0x0C` Unnamed Packet**
 
-This packet has never been observed, and while the packet's format has been reversed, its never used and does not affect the client. On an older version this was the same as the [`0x0D` JS Challenge](./incoming.md#0x0d-js-challenge-packet) packet, except it expected a string as a response. So we can't be sure if this packet is still the same as it was and is just not fully present due to emscripten simplifications, or if it changed completely.
+This packet has never been observed, and while the packet's format has been reversed, its never used and does not affect the client. On an older version this was the same as the [`0x0D` Int JS Challenge](./incoming.md#0x0d-int-js-challenge-packet) packet, except it expected a string as a response. So we can't be sure if this packet is still the same as it was and is just not fully present due to emscripten simplifications, or if it changed completely.
 
 Format:
 > `0C vu(unknown)`
 
 ---
 
-## **`0x0D` JS Challenge Packet**
+## **`0x0D` Int JS Challenge Packet**
 
 This packet is sent only once, during the client -> server acceptance handshake. It sends highly obfuscated code to be evaluated by the client with the purpose of filtering out headless clients from clients on the web - part of diep.io's anti botting system. The result of this code is always an uint32 and is sent back to the client through the outgoing [`0x0B` JS Result](./outgoing.md#0x0b-js-result-packet) packet.
 
