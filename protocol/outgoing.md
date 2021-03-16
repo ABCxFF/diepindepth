@@ -34,6 +34,29 @@ The dev confirmed that this format is correct, but did not give any information 
 
 ## **`0x01` Input Packet**
 
+The most frequently sent packet coming from the client, sends movement flags, mouse pos, and other input data. 
+
+```
+bit  ; name             ; desc
+x001 ; left mouse       ; Set when left mouse / spacebar is down.
+x002 ; up key           ; Set when up key is down
+x004 ; left key         ; Set when left key is down
+x008 ; down key         ; Set when down key is down
+x010 ; right key        ; Set when right key is down
+x020 ; god mode toggle  ; Set when god mode is toggled
+x040 ; suicide key      ; Set when suicide key is down
+x080 ; right mouse      ; Set when shift / right click is down
+x100 ; instant upgrade  ; Set when upgrade key is down
+x200 ; use gamepad      ; Set when gamepad is being used instead of keyboard
+x400 ; switch class     ; Set when switch class key is toggled
+x800 ; constant of true ; Always set
+```
+
+For information on how these are encoded, see [`data.md`](./data.md#bitflags---vu) where the example is actually a sample input packet. If the gamepad flag is set, then two additional varfloats are appended to the packet, representing the gamepad's x axis movement and the gamepad's y axis movement.
+
+Format:
+> `01 flags(input flags) vf(world mouse x) vf(world mouse y) gamepad?[vf(gamepad x axis) vf(gamepad y axis)]`
+
 ---
 
 ## **`0x02` Spawn Packet**
