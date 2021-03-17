@@ -62,16 +62,16 @@ https.get = function (...args) {
 
 // You also need to specify some headers when starting a socket connection
 const WebSocket = require('ws');
-const ws = new WebSocket(`wss://${server-id}.s.m28n.net`, {
+const ws = new WebSocket(`wss://${serverID}.s.m28n.net`, {
     origin: 'https://diep.io', // CORS Policy
     rejectUnauthorized: false, // I forgot what this does, I don't think it's necessary either but meh
     headers: {
-			Pragma: 'no-cache',
-			'Cache-Control': 'no-cache',
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36',
-			'Accept-Encoding': 'gzip, deflate, br',
-			'Accept-Language': 'de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7',
-		},
+    	Pragma: 'no-cache',
+	'Cache-Control': 'no-cache',
+	'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36',
+	'Accept-Encoding': 'gzip, deflate, br',
+	'Accept-Language': 'de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7',
+     },
 });
 ```
 
