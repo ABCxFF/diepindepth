@@ -24,6 +24,11 @@ const serverID = response.servers[`vultr-${region}`]?.id; // ?. is Optional Chai
 ```
 Once you get your desired server, you can connect to it via the URL `wss://${serverID}.s.m28n.net`.
 
+### PRECAUTIONS
+The :DiepInDepth community and M28 have been waging a war since the beginning of 2020, starting with the [PoW Challenge Packet (`0x0b`)](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x0b-pow-challenge-packet) being created. Ever since then, M28 has continuiously made new updates to avert us from botting (to no avail). Here are precautions to take when attempting a socket connections, and any myths.
+
+As of 3/17/21, the [Eval Challenge Packet (`0x0d`)](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x0d-int-js-challenge-packet) does **not** run a fatal command to destroy your computer. However, sending an invalid result or ID will result in an IP ban from the server. 
+
 ### VALID CLIENT HEADERS
 Diep.io currently has many security measures to block out bots and only allow valid clients to connect. One of these features are checking for headers when a socket connection is being made, and the order of the headers. A WebSocket connection headlessly has a different order and does not have the same specific headers compared to browser. We can easily avoid this by overwriting the `https.get` function, from the built in Node.js module "https". The "ws" module in Node.js requires https.get to start a WebSocket connection with a server. We can edit the headers' order via this code snippet (credit to [Binary](https://github.com/binary-person)).
 ```js
@@ -54,4 +59,24 @@ https.get = function (...args) {
     }
     return _https_get(...args);
 };
+
+// You also need to specify some headers when starting a socket connection
+const WebSocket = require('ws');
+const ws = new WebSocket(`wss://${server-id}.s.m28n.net`, {
+    origin: 'https://diep.io', // CORS Policy
+    rejectUnauthorized: false, // I forgot what this does, I don't think it's necessary either but meh
+    headers: {
+			Pragma: 'no-cache',
+			'Cache-Control': 'no-cache',
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36',
+			'Accept-Encoding': 'gzip, deflate, br',
+			'Accept-Language': 'de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7',
+		},
+});
 ```
+
+Once doing this, you have successfully set up a WebSocket connection to Diep.io. However, we have yet to be authorized by Diep.io as a valid client.
+
+### MAKING THE CONNECTION USEFUL
+
+To start this process, we need to send an [initialization packet `(0x00)`](https://github.com/ABCxFF/diepindepth/blob/main/protocol/outgoing.md#0x00-init-packet). If the build sent is invalid, an [outdated client packet `0x01`](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x01-outdated-client-packet) will be sent
