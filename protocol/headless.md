@@ -79,4 +79,6 @@ Once doing this, you have successfully set up a WebSocket connection to Diep.io.
 
 ### MAKING THE CONNECTION USEFUL
 
-To start this process, we need to send an [initialization packet `(0x00)`](https://github.com/ABCxFF/diepindepth/blob/main/protocol/outgoing.md#0x00-init-packet). If the build sent is invalid, an [outdated client packet `0x01`](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x01-outdated-client-packet) will be sent
+To start this process, we need to send an [initialization packet `(0x00)`](https://github.com/ABCxFF/diepindepth/blob/main/protocol/outgoing.md#0x00-init-packet). If the build sent is invalid, an [outdated client packet `(0x01)`](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x01-outdated-client-packet) will be sent. Be wary of an invalid party, as an [invalid party packet (`0x09`)](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x09-invalid-party-packet) will be sent after solving two other packets.
+&nbsp;
+The 
