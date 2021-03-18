@@ -6,7 +6,7 @@ To start a headless WebSocket connection with Diep.io, you need to be familiar w
 ## STARTING A CONNECTION
 
 ### FINDING SERVER
-To start a connection, you'll need to decide which gamemode and region you want to connect to. Refer to [here](https://github.com/CoderSudaWuda/diepindepth/edit/main/protocol/m28api.md) if you want to figure out how to validly express a gamemode or region. To figure out the ID, you can use this snippet of code to find it.
+To start a connection, you'll need to decide which gamemode and region you want to connect to. Refer to [here](./m28api.md) if you want to figure out how to validly express a gamemode or region. To figure out the ID, you can use this snippet of code to find it.
 ```js
 const body = await fetch('https://api.n.m28.io/endpoint/diepio-${gamemode}/findEach'); // Fetches from M28's API in the specific gamemode you want to figure out server IDs.
 const response = await body.json(); // Make the response parsable as JSON.
@@ -27,7 +27,8 @@ Once you get your desired server, you can connect to it via the URL `wss://${ser
 ### PRECAUTIONS
 The :DiepInDepth community and M28 have been waging a war since the beginning of 2020, starting with the [PoW Challenge Packet (`0x0b`)](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x0b-pow-challenge-packet) being created. Ever since then, M28 has continuiously made new updates to avert us from botting (to no avail). Here are precautions to take when attempting a socket connections, and any myths.
 
-As of 3/17/21, the [Eval Challenge Packet (`0x0d`)](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x0d-int-js-challenge-packet) does **not** run a fatal command to destroy your computer. However, sending an invalid result or ID will result in an IP ban from the server. 
+- As of 3/17/21, the [Eval Challenge Packet (`0x0d`)](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x0d-int-js-challenge-packet) does **not** run a fatal command to destroy your computer. However, sending an invalid result or ID will result in an IP ban from the server. 
+- Every packet **except init packet and ping/pong packets** are encoded when being sent/received. You will need an unshuffler to unshuffle incoming packets (except incoming pong), and a shufflerto shuffle outgoing packets (except init and outgoing ping).
 
 ### VALID CLIENT HEADERS
 Diep.io currently has many security measures to block out bots and only allow valid clients to connect. One of these features are checking for headers when a socket connection is being made, and the order of the headers. A WebSocket connection headlessly has a different order and does not have the same specific headers compared to browser. We can easily avoid this by overwriting the `https.get` function, from the built in Node.js module "https". The "ws" module in Node.js requires https.get to start a WebSocket connection with a server. We can edit the headers' order via this code snippet (credit to [Binary](https://github.com/binary-person)).
@@ -81,4 +82,4 @@ Once doing this, you have successfully set up a WebSocket connection to Diep.io.
 
 To start this process, we need to send an [initialization packet `(0x00)`](https://github.com/ABCxFF/diepindepth/blob/main/protocol/outgoing.md#0x00-init-packet). If the build sent is invalid, an [outdated client packet `(0x01)`](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x01-outdated-client-packet) will be sent. Be wary of an invalid party, as an [invalid party packet (`0x09`)](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x09-invalid-party-packet) will be sent after solving two other packets.
 
-The
+The [JS Challenge Packet (`0x0d`)](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x0d-int-js-challenge-packet) and [PoW Challenge Packet (`0x0b`)](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x0b-pow-challenge-packet) will be sent. Usually, the JS Challenge Packet will be sent by a [Compressed Packet (`0x02`)](https://github.com/ABCxFF/diepindepth/blob/main/protocol/incoming.md#0x0b-pow-challenge-packet), which will require an LZ4 Decompressor to decompress.
