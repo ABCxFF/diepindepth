@@ -57,7 +57,7 @@ reload()
 
 When an incoming packet is big enough, the server sends you a compressed version of the packet instead. The compression algorithm used is LZ4, it is explained on [Ticki's blog](https://ticki.github.io/blog/how-lz4-works/)
 
-At the start of the packet there is a little-endian u32 specifying the final length of the decompressed packet, so you know the size of the buffer to allocate and can check at the end if there was an error while decompressing (though this should never happen)
+At the start of the packet there is a u32 specifying the final length of the decompressed packet, so you know the size of the buffer to allocate and can check at the end if there was an error while decompressing (though this should never happen)
 
 Format:
 > `02 u32(decompressed output length) (LZ4 blocks)`
@@ -68,16 +68,23 @@ The decompressed result will include the packet header, you should feed this int
 
 ## **`0x03` Notification Packet**
 
-This packet sends data which trigger the notifications you see in game. For example, messages like "The Guardian has spawned" are considered notifications. 
+This packet sends data which trigger the notifications you see in game, for example messages like "The Guardian has spawned". 
 
-The red blue green values are encoded as an u32. For example, rgb(33, 130, 67) would be the same as u32(0x43822100) where each byte is a color. The time the notification appears in milliseconds is encoded as a float, and the final value part of this packet is the identifier. If one notification packet shares the same identifier as a previous notification (unless the identifier is empty), then before sending the new notification, it expires the previous, as if its timer was up.
+The Red Green Blue values are encoded as an u32. For example, rgb(33, 130, 67) would be the same as u32(0x218243) where each byte is a color. The fourth byte is not used, there is no alpha channel. The time the notification appears in milliseconds is encoded as a float, and the final value part of this packet is the notification identifier. If a notification with the same identifier as the new one already exists (unless the identifier is an empty string) then the previous notification disappears immediately without waiting for its timer, only one notification may exist at a time with a given identifier. This is used to make sure duplicate notifications such as toggles do not spam your screen. The identifiers used in the game are the following, though note that there are many more types of notifications without one:
+
+- `autofire`
+- `autospin`
+- `godmode_toggle`
+- `gamepad_enabled`
+- `adblock`
+- [`cant_claim_info`](./outgoing.md#0x09-take-tank-packet)
 
 Format:
-> `03 stringNT(message) uint32(BGR0) float(time in ms) stringNT(identifier)`
+> `03 stringNT(message) u32(RGB) float(duration) stringNT(identifier)`
 
 ---
 
-It's worth nothing that not all notifications are sent throught this packet. Some notifcations are fully clientside, such as the autofire and autospin notifications.
+It's worth nothing that not all notifications are sent throught this packet. The autofire, autospin, gamepad_enabled and adblock notifications are fully clientside while the rest are received from the server.
 
 ## **`0x04` Server Info Packet**
 
@@ -167,7 +174,7 @@ incoming <- 08 vu(6) stringNT("9898db9ff6d3c1b3_1") stringNT("300ddd6f1fb3d69d_1
 
 ## **`0x09` Invalid Party Packet**
 
-This single byte packet is sent whenever the party code you specified in the init packet (outgoing) is invalid. You will get this instead of the [`0x07`](./incoming.md#0x07-accept-packet) packet, only after solving a [JS](./incoming.md#0x0d-int-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenge.
+This single byte packet is sent if the party code you specified in the [Init Packet](./outgoing.md#0x00-init-packet) is invalid. You will get this instead of the [`0x07`](./incoming.md#0x07-accept-packet) packet, only after solving a [JS](./incoming.md#0x0d-int-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenge.
 
 Format:
 > `09`
