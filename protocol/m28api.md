@@ -8,3 +8,13 @@ This endpoint retrieves info about a server via its ID, then sends it in JSON Fo
 Input URL -> `https://api.n.m28.io/server/{server-id}`
 
 Output Response -> `{ id, ipv4, ipv6 }`
+
+## DIEPIO ENDPOINT
+This endpoint gives all necessary data about a random cherry-picked server in each region of the gamemode specified.
+
+Input URL -> `https://api.n.m28.io/endpoint/diepio-{gamemode}/findEach`
+
+Output Response `{ servers: { RegionName: { id, ipv4, ipv6 } } }`
+
+## LATENCY ENDPOINT
+This endpoint is much different from the other two. T
