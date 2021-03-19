@@ -27,7 +27,7 @@ https://github.com/ABCxFF/diepindepth/projects/2
 
 ## **Contributors**
 
-This repository was made possible with the help of the Diep In Depth team. In order of join date, thank you to [ABC](https://github.com/ABCxFF), [ALPH2H](https://github.com/ALPH2H), [Excigma](https://github.com/Excigma), [HueHanaejistla](https://github.com/HueHanaejistla), [Diep7444](https://github.com/diepiodiscord), [Cazka](https://github.com/Cazka), [shlong](https://github.com/shlongisdookielol), [Pola](https://github.com/PiotrDabkowski), [Binary](https://github.com/binary-person), [Perunahamsteri](https://github.com/Perunahamsteri), [Shädam](https://github.com/supahero1), and [CX](https://github.com/CX88) for their work.
+This repository was made possible with the help of the Diep In Depth team. In order of join date, thank you to [ABC](https://github.com/ABCxFF), [ALPH2H](https://github.com/ALPH2H), [Excigma](https://github.com/Excigma), [HueHanaejistla](https://github.com/HueHanaejistla), [Diep7444](https://github.com/diepiodiscord), [Cazka](https://github.com/Cazka), [shlong](https://github.com/shlongisdookielol), [Pola](https://github.com/PiotrDabkowski), [Altanis](https://github.com/CoderSudaWuda), [Binary](https://github.com/binary-person), [Perunahamsteri](https://github.com/Perunahamsteri), [Shädam](https://github.com/supahero1), and [CX](https://github.com/CX88) for their work.
 
 
 If *you* have additional information you can / want to share, please, pull requests are welcome!
