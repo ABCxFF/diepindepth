@@ -14,8 +14,7 @@
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 0,
@@ -72,14 +71,12 @@
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 15,
@@ -132,20 +129,17 @@
       {
         "angle": 0,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 0,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 45,
@@ -202,20 +196,17 @@
       {
         "angle": -45,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 45,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 30,
@@ -271,26 +262,22 @@
       {
         "angle": 180,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": -90,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 90,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 30,
@@ -343,50 +330,42 @@
       {
         "angle": -45,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 45,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": -135,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 135,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 180,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": -90,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 90,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 45,
@@ -444,8 +423,7 @@
       {
         "angle": 0,
         "size": 110,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 15,
@@ -502,8 +480,7 @@
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 1,
-        "width": 1
+        "isTrapezoid": 1
       }
     ],
     "levelRequirement": 15,
@@ -561,14 +538,12 @@
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 180,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 15,
@@ -624,20 +599,17 @@
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 210,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 150,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 30,
@@ -695,8 +667,7 @@
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1.7
+        "isTrapezoid": 0.7
       }
     ],
     "levelRequirement": 30,
@@ -756,14 +727,12 @@
       {
         "angle": -90,
         "size": 70,
-        "isTrapezoid": 1,
-        "width": 1
+        "isTrapezoid": 1
       },
       {
         "angle": 90,
         "size": 70,
-        "isTrapezoid": 1,
-        "width": 1
+        "isTrapezoid": 1
       }
     ],
     "levelRequirement": 30,
@@ -816,26 +785,22 @@
       {
         "angle": -90,
         "size": 70,
-        "isTrapezoid": 1,
-        "width": 1
+        "isTrapezoid": 1
       },
       {
         "angle": 90,
         "size": 70,
-        "isTrapezoid": 1,
-        "width": 1
+        "isTrapezoid": 1
       },
       {
         "angle": 0,
         "size": 70,
-        "isTrapezoid": 1,
-        "width": 1
+        "isTrapezoid": 1
       },
       {
         "angle": 180,
         "size": 70,
-        "isTrapezoid": 1,
-        "width": 1
+        "isTrapezoid": 1
       }
     ],
     "levelRequirement": 45,
@@ -891,26 +856,22 @@
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 180,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 180,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 30,
@@ -963,32 +924,27 @@
       {
         "angle": -45,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 45,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": -22.5,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 22.5,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 0,
         "size": 110,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 45,
@@ -1044,8 +1000,7 @@
       {
         "angle": 0,
         "size": 120,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 30,
@@ -1098,8 +1053,7 @@
       {
         "angle": 0,
         "size": 75,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 0,
@@ -1152,14 +1106,12 @@
       {
         "angle": -90,
         "size": 70,
-        "isTrapezoid": 1,
-        "width": 1
+        "isTrapezoid": 1
       },
       {
         "angle": 90,
         "size": 70,
-        "isTrapezoid": 1,
-        "width": 1
+        "isTrapezoid": 1
       }
     ],
     "levelRequirement": 45,
@@ -1212,38 +1164,32 @@
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 120,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 120,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": -120,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": -120,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 45,
@@ -1299,14 +1245,12 @@
       {
         "angle": 0,
         "size": 110,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1.35
+        "isTrapezoid": 0.35
       }
     ],
     "levelRequirement": 30,
@@ -1363,26 +1307,22 @@
       {
         "angle": 0,
         "size": 65,
-        "isTrapezoid": 0,
-        "width": 0.6
+        "isTrapezoid": 0.6
       },
       {
         "angle": 0,
         "size": 65,
-        "isTrapezoid": 0,
-        "width": 0.6
+        "isTrapezoid": 0.6
       },
       {
         "angle": 0,
         "size": 85,
-        "isTrapezoid": 0,
-        "width": 0.6
+        "isTrapezoid": 0.6
       },
       {
         "angle": 0,
         "size": 85,
-        "isTrapezoid": 0,
-        "width": 0.6
+        "isTrapezoid": 0.6
       }
     ],
     "levelRequirement": 30,
@@ -1435,8 +1375,7 @@
       {
         "angle": 0,
         "size": 120,
-        "isTrapezoid": 1,
-        "width": 1
+        "isTrapezoid": 1
       }
     ],
     "levelRequirement": 45,
@@ -1489,8 +1428,7 @@
       {
         "angle": 0,
         "size": 120,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 45,
@@ -1543,32 +1481,27 @@
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 225,
         "size": 70,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 135,
         "size": 70,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 210,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 150,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 45,
@@ -1621,32 +1554,27 @@
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 90,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": -90,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 210,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 150,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 45,
@@ -1699,14 +1627,12 @@
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1.7
+        "isTrapezoid": 0.7
       },
       {
         "angle": 180,
         "size": 70,
-        "isTrapezoid": 1,
-        "width": 1
+        "isTrapezoid": 1
       }
     ],
     "levelRequirement": 45,
@@ -1759,8 +1685,7 @@
       {
         "angle": 0,
         "size": 70,
-        "isTrapezoid": 1,
-        "width": 1
+        "isTrapezoid": 1
       }
     ],
     "levelRequirement": 45,
@@ -1813,98 +1738,82 @@
       {
         "angle": 11.25,
         "size": 60,
-        "isTrapezoid": 1,
-        "width": 0.25
+        "isTrapezoid": 1.25
       },
       {
         "angle": 33.75,
         "size": 60,
-        "isTrapezoid": 1,
-        "width": 0.25
+        "isTrapezoid": 1.25
       },
       {
         "angle": 56.25,
         "size": 60,
-        "isTrapezoid": 1,
-        "width": 0.25
+        "isTrapezoid": 1.25
       },
       {
         "angle": 78.75,
         "size": 60,
-        "isTrapezoid": 1,
-        "width": 0.25
+        "isTrapezoid": 1.25
       },
       {
         "angle": 101.25,
         "size": 60,
-        "isTrapezoid": 1,
-        "width": 0.25
+        "isTrapezoid": 1.25
       },
       {
         "angle": 123.75,
         "size": 60,
-        "isTrapezoid": 1,
-        "width": 0.25
+        "isTrapezoid": 1.25
       },
       {
         "angle": 146.25,
         "size": 60,
-        "isTrapezoid": 1,
-        "width": 0.25
+        "isTrapezoid": 1.25
       },
       {
         "angle": 168.75,
         "size": 60,
-        "isTrapezoid": 1,
-        "width": 0.25
+        "isTrapezoid": 1.25
       },
       {
         "angle": 191.25,
         "size": 60,
-        "isTrapezoid": 1,
-        "width": 0.25
+        "isTrapezoid": 1.25
       },
       {
         "angle": 213.75,
         "size": 60,
-        "isTrapezoid": 1,
-        "width": 0.25
+        "isTrapezoid": 1.25
       },
       {
         "angle": 236.249975,
         "size": 60,
-        "isTrapezoid": 1,
-        "width": 0.25
+        "isTrapezoid": 1.25
       },
       {
         "angle": 258.75,
         "size": 60,
-        "isTrapezoid": 1,
-        "width": 0.25
+        "isTrapezoid": 1.25
       },
       {
         "angle": 281.25,
         "size": 60,
-        "isTrapezoid": 1,
-        "width": 0.25
+        "isTrapezoid": 1.25
       },
       {
         "angle": 303.749975,
         "size": 60,
-        "isTrapezoid": 1,
-        "width": 0.25
+        "isTrapezoid": 1.25
       },
       {
         "angle": 326.25,
         "size": 60,
-        "isTrapezoid": 1,
-        "width": 0.25
+        "isTrapezoid": 1.25
       },
       {
         "angle": 348.75,
         "size": 60,
-        "isTrapezoid": 1,
-        "width": 0.25
+        "isTrapezoid": 1.25
       }
     ],
     "levelRequirement": 0,
@@ -1957,20 +1866,17 @@
       {
         "angle": 0,
         "size": 110,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1.35
+        "isTrapezoid": 0.35
       },
       {
         "angle": 0,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 1.7
+        "isTrapezoid": 0.7
       }
     ],
     "levelRequirement": 45,
@@ -2023,14 +1929,12 @@
       {
         "angle": 0,
         "size": 110,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 1,
-        "width": 1
+        "isTrapezoid": 1
       }
     ],
     "levelRequirement": 45,
@@ -2090,8 +1994,7 @@
       {
         "angle": 0,
         "size": 60,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 30,
@@ -2144,20 +2047,17 @@
       {
         "angle": 0,
         "size": 75,
-        "isTrapezoid": 0,
-        "width": 0.5
+        "isTrapezoid": 0.5
       },
       {
         "angle": 0,
         "size": 75,
-        "isTrapezoid": 0,
-        "width": 0.5
+        "isTrapezoid": 0.5
       },
       {
         "angle": 180,
         "size": 60,
-        "isTrapezoid": 0,
-        "width": 1.3
+        "isTrapezoid": 0.3
       }
     ],
     "levelRequirement": 45,
@@ -2210,20 +2110,17 @@
       {
         "angle": 0,
         "size": 60,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 120,
         "size": 70,
-        "isTrapezoid": 1,
-        "width": 1
+        "isTrapezoid": 1
       },
       {
         "angle": 240,
         "size": 70,
-        "isTrapezoid": 1,
-        "width": 1
+        "isTrapezoid": 1
       }
     ],
     "levelRequirement": 45,
@@ -2276,8 +2173,7 @@
       {
         "angle": 0,
         "size": 60,
-        "isTrapezoid": 0,
-        "width": 1.3
+        "isTrapezoid": 0.3
       }
     ],
     "levelRequirement": 45,
@@ -2330,20 +2226,17 @@
       {
         "angle": 0,
         "size": 60,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 120,
         "size": 60,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 240,
         "size": 60,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 45,
@@ -2495,26 +2388,22 @@
       {
         "angle": 0,
         "size": 65,
-        "isTrapezoid": 0,
-        "width": 0.6
+        "isTrapezoid": 0.6
       },
       {
         "angle": 0,
         "size": 65,
-        "isTrapezoid": 0,
-        "width": 0.6
+        "isTrapezoid": 0.6
       },
       {
         "angle": 0,
         "size": 85,
-        "isTrapezoid": 0,
-        "width": 0.6
+        "isTrapezoid": 0.6
       },
       {
         "angle": 0,
         "size": 85,
-        "isTrapezoid": 0,
-        "width": 0.6
+        "isTrapezoid": 0.6
       }
     ],
     "levelRequirement": 45,
@@ -2664,68 +2553,57 @@
       {
         "angle": 75,
         "size": 65,
-        "isTrapezoid": 0,
-        "width": 0.7
+        "isTrapezoid": 0.7
       },
       {
         "angle": -75,
         "size": 65,
-        "isTrapezoid": 0,
-        "width": 0.7
+        "isTrapezoid": 0.7
       },
       {
         "angle": 60,
         "size": 71,
-        "isTrapezoid": 0,
-        "width": 0.7
+        "isTrapezoid": 0.7
       },
       {
         "angle": -60,
         "size": 71,
-        "isTrapezoid": 0,
-        "width": 0.7
+        "isTrapezoid": 0.7
       },
       {
         "angle": 45,
         "size": 77,
-        "isTrapezoid": 0,
-        "width": 0.7
+        "isTrapezoid": 0.7
       },
       {
         "angle": -45,
         "size": 77,
-        "isTrapezoid": 0,
-        "width": 0.7
+        "isTrapezoid": 0.7
       },
       {
         "angle": 30,
         "size": 83,
-        "isTrapezoid": 0,
-        "width": 0.7
+        "isTrapezoid": 0.7
       },
       {
         "angle": -30,
         "size": 83,
-        "isTrapezoid": 0,
-        "width": 0.7
+        "isTrapezoid": 0.7
       },
       {
         "angle": 15,
         "size": 89,
-        "isTrapezoid": 0,
-        "width": 0.7
+        "isTrapezoid": 0.7
       },
       {
         "angle": -15,
         "size": 89,
-        "isTrapezoid": 0,
-        "width": 0.7
+        "isTrapezoid": 0.7
       },
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 45,
@@ -2778,32 +2656,27 @@
       {
         "angle": 0,
         "size": 110,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 0,
         "size": 100,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 0,
         "size": 90,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 0,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       },
       {
         "angle": 0,
         "size": 70,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 45,
@@ -2856,8 +2729,7 @@
       {
         "angle": 0,
         "size": 60,
-        "isTrapezoid": 0,
-        "width": 1
+        "isTrapezoid": 0
       }
     ],
     "levelRequirement": 45,
@@ -2910,8 +2782,7 @@
       {
         "angle": 0,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 0.833325
+        "isTrapezoid": 0.833325
       }
     ],
     "levelRequirement": 0,
@@ -2964,20 +2835,17 @@
       {
         "angle": 0,
         "size": 75,
-        "isTrapezoid": 0,
-        "width": 0.416675
+        "isTrapezoid": 0.416675
       },
       {
         "angle": 0,
         "size": 75,
-        "isTrapezoid": 0,
-        "width": 0.416675
+        "isTrapezoid": 0.416675
       },
       {
         "angle": 0,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 0.416675
+        "isTrapezoid": 0.416675
       }
     ],
     "levelRequirement": 0,
@@ -3030,50 +2898,42 @@
       {
         "angle": 0,
         "size": 60,
-        "isTrapezoid": 0,
-        "width": 0.5
+        "isTrapezoid": 0.5
       },
       {
         "angle": 45,
         "size": 60,
-        "isTrapezoid": 0,
-        "width": 0.5
+        "isTrapezoid": 0.5
       },
       {
         "angle": 90,
         "size": 60,
-        "isTrapezoid": 0,
-        "width": 0.5
+        "isTrapezoid": 0.5
       },
       {
         "angle": 135,
         "size": 60,
-        "isTrapezoid": 0,
-        "width": 0.5
+        "isTrapezoid": 0.5
       },
       {
         "angle": 180,
         "size": 60,
-        "isTrapezoid": 0,
-        "width": 0.5
+        "isTrapezoid": 0.5
       },
       {
         "angle": 225,
         "size": 60,
-        "isTrapezoid": 0,
-        "width": 0.5
+        "isTrapezoid": 0.5
       },
       {
         "angle": 270,
         "size": 60,
-        "isTrapezoid": 0,
-        "width": 0.5
+        "isTrapezoid": 0.5
       },
       {
         "angle": 315,
         "size": 60,
-        "isTrapezoid": 0,
-        "width": 0.5
+        "isTrapezoid": 0.5
       }
     ],
     "levelRequirement": 0,
@@ -3126,26 +2986,22 @@
       {
         "angle": 90,
         "size": 75,
-        "isTrapezoid": 1,
-        "width": 0.7
+        "isTrapezoid": 1.7
       },
       {
         "angle": 270,
         "size": 75,
-        "isTrapezoid": 1,
-        "width": 0.7
+        "isTrapezoid": 1.7
       },
       {
         "angle": 90,
         "size": 75,
-        "isTrapezoid": 1,
-        "width": 0.7
+        "isTrapezoid": 1.7
       },
       {
         "angle": 270,
         "size": 75,
-        "isTrapezoid": 1,
-        "width": 0.7
+        "isTrapezoid": 1.7
       }
     ],
     "levelRequirement": 45,
@@ -3198,8 +3054,7 @@
       {
         "angle": 0,
         "size": 95,
-        "isTrapezoid": 0,
-        "width": 2.3
+        "isTrapezoid": 0.3
       }
     ],
     "levelRequirement": 45,
@@ -3346,8 +3201,7 @@
       {
         "angle": 0,
         "size": 70,
-        "isTrapezoid": 1,
-        "width": 1
+        "isTrapezoid": 1
       }
     ],
     "levelRequirement": 45,
@@ -3401,8 +3255,7 @@
       {
         "angle": 0,
         "size": 80,
-        "isTrapezoid": 0,
-        "width": 1.7
+        "isTrapezoid": 0.7
       }
     ],
     "levelRequirement": 45,
@@ -3455,8 +3308,7 @@
       {
         "angle": 0,
         "size": 80,
-        "isTrapezoid": 1,
-        "width": 1.25
+        "isTrapezoid": 1.25
       }
     ],
     "levelRequirement": 45,
