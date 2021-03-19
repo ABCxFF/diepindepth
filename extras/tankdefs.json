@@ -2,7 +2,9 @@
   {
     "id": 0,
     "name": "Tank",
-    "upgradeMsg": "",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 0,
     "upgrades": [
       1,
       6,
@@ -10,19 +12,8 @@
       8,
       36
     ],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 0,
+    "upgradeMsg": "",
     "fieldFactor": 1,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -55,36 +46,41 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 1,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 1,
     "name": "Twin",
-    "upgradeMsg": "",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 15,
     "upgrades": [
       3,
       4,
       13
     ],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 15,
+    "upgradeMsg": "",
     "fieldFactor": 1,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -117,37 +113,54 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.75,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.65,
+          "baseHealth": 0.9,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.75,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.65,
+          "baseHealth": 0.9,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 2,
     "name": "Triplet",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 80,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 0,
-        "size": 80,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 1,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 1,
     "stats": [
       {
         "name": "Movement Speed",
@@ -180,41 +193,75 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 80,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.5,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.6,
+          "baseHealth": 0.7,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 80,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.5,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.6,
+          "baseHealth": 0.7,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.5,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.6,
+          "baseHealth": 0.7,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 3,
     "name": "Triple Shot",
-    "upgradeMsg": "",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 30,
     "upgrades": [
       2,
       14,
       42
     ],
-    "barrels": [
-      {
-        "angle": -45,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 45,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 30,
+    "upgradeMsg": "",
     "fieldFactor": 1,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -247,45 +294,74 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": -45,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.7,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 45,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.7,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.7,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 4,
     "name": "Quad Tank",
-    "upgradeMsg": "",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 30,
     "upgrades": [
       5,
       40
     ],
-    "barrels": [
-      {
-        "angle": 180,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": -90,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 90,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 30,
+    "upgradeMsg": "",
     "fieldFactor": 1,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -318,62 +394,88 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 180,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.75,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": -90,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.75,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 90,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.75,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.75,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 5,
     "name": "Octo Tank",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": -45,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 45,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": -135,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 135,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 180,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": -90,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 90,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 1,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 1,
     "stats": [
       {
         "name": "Movement Speed",
@@ -406,32 +508,161 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": -45,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.65,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 45,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.65,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": -135,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.65,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 135,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.65,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 180,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.65,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": -90,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.65,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 90,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.65,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.65,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 6,
     "name": "Sniper",
-    "upgradeMsg": "",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 15,
     "upgrades": [
       15,
       11,
       19,
       31
     ],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 110,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 15,
+    "upgradeMsg": "",
     "fieldFactor": 0.9,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -464,31 +695,41 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 110,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 3,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 1,
+          "baseHealth": 1,
+          "deaccelRate": 0.3,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 7,
     "name": "Machine Gun",
-    "upgradeMsg": "",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 15,
     "upgrades": [
       10,
       20,
       29
     ],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 1
-      }
-    ],
-    "levelRequirement": 15,
+    "upgradeMsg": "",
     "fieldFactor": 1,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -521,37 +762,42 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 0.5,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.7,
+          "baseHealth": 1,
+          "deaccelRate": 3,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 8,
     "name": "Flank Guard",
-    "upgradeMsg": "",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 15,
     "upgrades": [
       9,
       4,
       13,
       41
     ],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 180,
-        "size": 80,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 15,
+    "upgradeMsg": "",
     "fieldFactor": 1,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -584,40 +830,57 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 1,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 180,
+        "size": 80,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 1,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 9,
     "name": "Tri-Angle",
-    "upgradeMsg": "",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 30,
     "upgrades": [
       23,
       24
     ],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 210,
-        "size": 80,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 150,
-        "size": 80,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 30,
+    "upgradeMsg": "",
     "fieldFactor": 1,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -650,32 +913,76 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 1,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 210,
+        "size": 80,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 2.5,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.2,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 0.5
+        }
+      },
+      {
+        "angle": 150,
+        "size": 80,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 2.5,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.2,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 0.5
+        }
       }
     ]
   },
   {
     "id": 10,
     "name": "Destroyer",
-    "upgradeMsg": "",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 30,
     "upgrades": [
       25,
       49,
       54,
       55
     ],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0.7
-      }
-    ],
-    "levelRequirement": 30,
+    "upgradeMsg": "",
     "fieldFactor": 1,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -709,12 +1016,33 @@
         "name": "Health Regen",
         "max": 7
       }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 24.705875,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 15,
+        "delay": 0,
+        "reload": 4,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 3,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      }
     ]
   },
   {
     "id": 11,
     "name": "Overseer",
-    "upgradeMsg": "Use your left mouse button to control the drones",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 30,
     "upgrades": [
       12,
       17,
@@ -723,24 +1051,8 @@
       48,
       52
     ],
-    "barrels": [
-      {
-        "angle": -90,
-        "size": 70,
-        "isTrapezoid": 1
-      },
-      {
-        "angle": 90,
-        "size": 70,
-        "isTrapezoid": 1
-      }
-    ],
-    "levelRequirement": 30,
+    "upgradeMsg": "Use your left mouse button to control the drones",
     "fieldFactor": 0.9,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -773,42 +1085,56 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": -90,
+        "size": 70,
+        "width": 42,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 4
+        }
+      },
+      {
+        "angle": 90,
+        "size": 70,
+        "width": 42,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 4
+        }
       }
     ]
   },
   {
     "id": 12,
     "name": "Overlord",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": -90,
-        "size": 70,
-        "isTrapezoid": 1
-      },
-      {
-        "angle": 90,
-        "size": 70,
-        "isTrapezoid": 1
-      },
-      {
-        "angle": 0,
-        "size": 70,
-        "isTrapezoid": 1
-      },
-      {
-        "angle": 180,
-        "size": 70,
-        "isTrapezoid": 1
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 0.9,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.9,
     "stats": [
       {
         "name": "Movement Speed",
@@ -842,44 +1168,94 @@
         "name": "Health Regen",
         "max": 7
       }
+    ],
+    "barrels": [
+      {
+        "angle": -90,
+        "size": 70,
+        "width": 42,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 90,
+        "size": 70,
+        "width": 42,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 0,
+        "size": 70,
+        "width": 42,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 180,
+        "size": 70,
+        "width": 42,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      }
     ]
   },
   {
     "id": 13,
     "name": "Twin Flank",
-    "upgradeMsg": "",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 30,
     "upgrades": [
       18,
       48
     ],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 180,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 180,
-        "size": 95,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 30,
+    "upgradeMsg": "",
     "fieldFactor": 1,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -912,47 +1288,88 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 180,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 180,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 14,
     "name": "Penta Shot",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": -45,
-        "size": 80,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 45,
-        "size": 80,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": -22.5,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 22.5,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 0,
-        "size": 110,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 1,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 1,
     "stats": [
       {
         "name": "Movement Speed",
@@ -985,30 +1402,108 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": -45,
+        "size": 80,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.7,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.55,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 45,
+        "size": 80,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.7,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.55,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": -22.5,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.7,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.55,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 22.5,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.7,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.55,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 110,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.7,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.55,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 15,
     "name": "Assassin",
-    "upgradeMsg": "",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 30,
     "upgrades": [
       22,
       21
     ],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 120,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 30,
+    "upgradeMsg": "",
     "fieldFactor": 0.8,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -1041,27 +1536,37 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 120,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 3,
+        "delay": 0,
+        "reload": 2,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 1,
+          "baseHealth": 1,
+          "deaccelRate": 0.3,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 16,
     "name": "Arena Closer",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 75,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 0,
-    "fieldFactor": 1,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 0,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 1,
     "stats": [
       {
         "name": "Movement Speed",
@@ -1095,31 +1600,36 @@
         "name": "Health Regen",
         "max": 7
       }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 75,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 7,
+          "baseHealth": 300,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      }
     ]
   },
   {
     "id": 17,
     "name": "Necromancer",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": -90,
-        "size": 70,
-        "isTrapezoid": 1
-      },
-      {
-        "angle": 90,
-        "size": 70,
-        "isTrapezoid": 1
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 0.9,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 1
-    },
+    "shape": "square",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.9,
     "stats": [
       {
         "name": "Movement Speed",
@@ -1153,51 +1663,55 @@
         "name": "Health Regen",
         "max": 7
       }
+    ],
+    "barrels": [
+      {
+        "angle": -90,
+        "size": 70,
+        "width": 42,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.42,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 0
+        }
+      },
+      {
+        "angle": 90,
+        "size": 70,
+        "width": 42,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.42,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 0
+        }
+      }
     ]
   },
   {
     "id": 18,
     "name": "Triple Twin",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 120,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 120,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": -120,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": -120,
-        "size": 95,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 1,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 1,
     "stats": [
       {
         "name": "Movement Speed",
@@ -1230,35 +1744,125 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 120,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 120,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": -120,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": -120,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 19,
     "name": "Hunter",
-    "upgradeMsg": "",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 30,
     "upgrades": [
       28,
       43
     ],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 110,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0.35
-      }
-    ],
-    "levelRequirement": 30,
+    "upgradeMsg": "",
     "fieldFactor": 0.85,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -1291,46 +1895,58 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 110,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.3,
+        "delay": 0,
+        "reload": 2.5,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.75,
+          "baseHealth": 1,
+          "deaccelRate": 0.3,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 31.1111,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.3,
+        "delay": 0.2,
+        "reload": 2.5,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.75,
+          "baseHealth": 1,
+          "deaccelRate": 0.3,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 20,
     "name": "Gunner",
-    "upgradeMsg": "",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 30,
     "upgrades": [
       39,
       32,
       43
     ],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 65,
-        "isTrapezoid": 0.6
-      },
-      {
-        "angle": 0,
-        "size": 65,
-        "isTrapezoid": 0.6
-      },
-      {
-        "angle": 0,
-        "size": 85,
-        "isTrapezoid": 0.6
-      },
-      {
-        "angle": 0,
-        "size": 85,
-        "isTrapezoid": 0.6
-      }
-    ],
-    "levelRequirement": 30,
+    "upgradeMsg": "",
     "fieldFactor": 1,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -1363,27 +1979,88 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 65,
+        "width": 70,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 0.45,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 65,
+        "width": 70,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0.75,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 0.45,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 85,
+        "width": 70,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 0.45,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 85,
+        "width": 70,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0.25,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 0.45,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 21,
     "name": "Stalker",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 120,
-        "isTrapezoid": 1
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 0.8,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.8,
     "stats": [
       {
         "name": "Movement Speed",
@@ -1416,27 +2093,37 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 120,
+        "width": 42,
+        "isTrapezoid": 1,
+        "trapezoidDir": 3.1416,
+        "recoil": 3,
+        "delay": 0,
+        "reload": 2,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 1,
+          "baseHealth": 1,
+          "deaccelRate": 0.3,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 22,
     "name": "Ranger",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 120,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 0.7,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.7,
     "stats": [
       {
         "name": "Movement Speed",
@@ -1469,47 +2156,37 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 120,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 3,
+        "delay": 0,
+        "reload": 2,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 1,
+          "baseHealth": 1,
+          "deaccelRate": 0.3,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 23,
     "name": "Booster",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 225,
-        "size": 70,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 135,
-        "size": 70,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 210,
-        "size": 80,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 150,
-        "size": 80,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 1,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 1,
     "stats": [
       {
         "name": "Movement Speed",
@@ -1542,47 +2219,105 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 1,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 225,
+        "size": 70,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0.66,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.2,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 0.5
+        }
+      },
+      {
+        "angle": 135,
+        "size": 70,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0.66,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.2,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 0.5
+        }
+      },
+      {
+        "angle": 210,
+        "size": 80,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 2.5,
+        "delay": 0.33,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.2,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 0.5
+        }
+      },
+      {
+        "angle": 150,
+        "size": 80,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 2.5,
+        "delay": 0.33,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.2,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 0.5
+        }
       }
     ]
   },
   {
     "id": 24,
     "name": "Fighter",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 90,
-        "size": 80,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": -90,
-        "size": 80,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 210,
-        "size": 80,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 150,
-        "size": 80,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 1,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 1,
     "stats": [
       {
         "name": "Movement Speed",
@@ -1615,32 +2350,105 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 1,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 90,
+        "size": 80,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.8,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": -90,
+        "size": 80,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.8,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 210,
+        "size": 80,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 2.5,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.2,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 0.5
+        }
+      },
+      {
+        "angle": 150,
+        "size": 80,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 2.5,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.2,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 0.5
+        }
       }
     ]
   },
   {
     "id": 25,
     "name": "Hybrid",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0.7
-      },
-      {
-        "angle": 180,
-        "size": 70,
-        "isTrapezoid": 1
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 1,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 1,
     "stats": [
       {
         "name": "Movement Speed",
@@ -1673,27 +2481,55 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 24.705875,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 15,
+        "delay": 0,
+        "reload": 4,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 3,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 180,
+        "size": 70,
+        "width": 42,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 1.4,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
       }
     ]
   },
   {
     "id": 26,
     "name": "Manager",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 70,
-        "isTrapezoid": 1
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 0.9,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.9,
     "stats": [
       {
         "name": "Movement Speed",
@@ -1726,102 +2562,38 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 70,
+        "width": 42,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 3,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 8
+        }
       }
     ]
   },
   {
     "id": 27,
     "name": "Mothership",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 11.25,
-        "size": 60,
-        "isTrapezoid": 1.25
-      },
-      {
-        "angle": 33.75,
-        "size": 60,
-        "isTrapezoid": 1.25
-      },
-      {
-        "angle": 56.25,
-        "size": 60,
-        "isTrapezoid": 1.25
-      },
-      {
-        "angle": 78.75,
-        "size": 60,
-        "isTrapezoid": 1.25
-      },
-      {
-        "angle": 101.25,
-        "size": 60,
-        "isTrapezoid": 1.25
-      },
-      {
-        "angle": 123.75,
-        "size": 60,
-        "isTrapezoid": 1.25
-      },
-      {
-        "angle": 146.25,
-        "size": 60,
-        "isTrapezoid": 1.25
-      },
-      {
-        "angle": 168.75,
-        "size": 60,
-        "isTrapezoid": 1.25
-      },
-      {
-        "angle": 191.25,
-        "size": 60,
-        "isTrapezoid": 1.25
-      },
-      {
-        "angle": 213.75,
-        "size": 60,
-        "isTrapezoid": 1.25
-      },
-      {
-        "angle": 236.249975,
-        "size": 60,
-        "isTrapezoid": 1.25
-      },
-      {
-        "angle": 258.75,
-        "size": 60,
-        "isTrapezoid": 1.25
-      },
-      {
-        "angle": 281.25,
-        "size": 60,
-        "isTrapezoid": 1.25
-      },
-      {
-        "angle": 303.749975,
-        "size": 60,
-        "isTrapezoid": 1.25
-      },
-      {
-        "angle": 326.25,
-        "size": 60,
-        "isTrapezoid": 1.25
-      },
-      {
-        "angle": 348.75,
-        "size": 60,
-        "isTrapezoid": 1.25
-      }
-    ],
+    "borderWidth": 0.803575,
+    "shape": "circle",
     "levelRequirement": 0,
+    "upgrades": [],
+    "upgradeMsg": "",
     "fieldFactor": 1,
-    "borderWidth": 0.8035714285714286,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -1855,36 +2627,307 @@
         "name": "Health Regen",
         "max": 7
       }
+    ],
+    "barrels": [
+      {
+        "angle": 11.25,
+        "size": 60,
+        "width": 168,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 33.75,
+        "size": 60,
+        "width": 168,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 56.25,
+        "size": 60,
+        "width": 168,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 78.75,
+        "size": 60,
+        "width": 168,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 101.25,
+        "size": 60,
+        "width": 168,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 123.75,
+        "size": 60,
+        "width": 168,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 146.25,
+        "size": 60,
+        "width": 168,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 168.75,
+        "size": 60,
+        "width": 168,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 191.25,
+        "size": 60,
+        "width": 168,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 213.75,
+        "size": 60,
+        "width": 168,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 236.249975,
+        "size": 60,
+        "width": 168,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 258.75,
+        "size": 60,
+        "width": 168,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 281.25,
+        "size": 60,
+        "width": 168,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 303.749975,
+        "size": 60,
+        "width": 168,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 326.25,
+        "size": 60,
+        "width": 168,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      },
+      {
+        "angle": 348.75,
+        "size": 60,
+        "width": 168,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 2
+        }
+      }
     ]
   },
   {
     "id": 28,
     "name": "Predator",
-    "upgradeMsg": "Use your right mouse button to look further in the direction you're facing",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 110,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0.35
-      },
-      {
-        "angle": 0,
-        "size": 80,
-        "isTrapezoid": 0.7
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 0.85,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "Use your right mouse button to look further in the direction you're facing",
+    "fieldFactor": 0.85,
     "stats": [
       {
         "name": "Movement Speed",
@@ -1917,32 +2960,71 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 110,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.3,
+        "delay": 0,
+        "reload": 3,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.75,
+          "baseHealth": 1,
+          "deaccelRate": 0.3,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 31.1111,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.3,
+        "delay": 0.2,
+        "reload": 3,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.75,
+          "baseHealth": 1,
+          "deaccelRate": 0.3,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 80,
+        "width": 24.705875,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.3,
+        "delay": 0.4,
+        "reload": 3,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.75,
+          "baseHealth": 1,
+          "deaccelRate": 0.3,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 29,
     "name": "Sprayer",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 110,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 1
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 1,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 1,
     "stats": [
       {
         "name": "Movement Speed",
@@ -1975,6 +3057,42 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 110,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.1,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 0.5,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.7,
+          "baseHealth": 1,
+          "deaccelRate": 3,
+          "decayRate": 1
+        }
       }
     ]
   },
@@ -1982,7 +3100,9 @@
   {
     "id": 31,
     "name": "Trapper",
-    "upgradeMsg": "",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 30,
     "upgrades": [
       35,
       32,
@@ -1990,19 +3110,8 @@
       34,
       44
     ],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 60,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 30,
+    "upgradeMsg": "",
     "fieldFactor": 0.9,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -2035,37 +3144,37 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 60,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "trap",
+          "damageFactor": 1,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 8
+        }
       }
     ]
   },
   {
     "id": 32,
     "name": "Gunner Trapper",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 75,
-        "isTrapezoid": 0.5
-      },
-      {
-        "angle": 0,
-        "size": 75,
-        "isTrapezoid": 0.5
-      },
-      {
-        "angle": 180,
-        "size": 60,
-        "isTrapezoid": 0.3
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 0.9,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.9,
     "stats": [
       {
         "name": "Movement Speed",
@@ -2098,37 +3207,71 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 75,
+        "width": 84,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0.66,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 75,
+        "width": 84,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0.33,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 180,
+        "size": 60,
+        "width": 32.3077,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 3,
+        "bullet": {
+          "type": "trap",
+          "damageFactor": 1,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 8
+        }
       }
     ]
   },
   {
     "id": 33,
     "name": "Overtrapper",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 60,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 120,
-        "size": 70,
-        "isTrapezoid": 1
-      },
-      {
-        "angle": 240,
-        "size": 70,
-        "isTrapezoid": 1
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 0.9,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.9,
     "stats": [
       {
         "name": "Movement Speed",
@@ -2161,27 +3304,73 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 60,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "trap",
+          "damageFactor": 1,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 8
+        }
+      },
+      {
+        "angle": 120,
+        "size": 70,
+        "width": 42,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 1.4,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 1
+        }
+      },
+      {
+        "angle": 240,
+        "size": 70,
+        "width": 42,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 6,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 1.4,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 1
+        }
       }
     ]
   },
   {
     "id": 34,
     "name": "Mega Trapper",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 60,
-        "isTrapezoid": 0.3
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 0.9,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.9,
     "stats": [
       {
         "name": "Movement Speed",
@@ -2214,37 +3403,37 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 60,
+        "width": 32.3077,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 3.3,
+        "bullet": {
+          "type": "trap",
+          "damageFactor": 1.6,
+          "baseHealth": 3.2,
+          "deaccelRate": 1,
+          "decayRate": 8
+        }
       }
     ]
   },
   {
     "id": 35,
     "name": "Tri-Trapper",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 60,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 120,
-        "size": 60,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 240,
-        "size": 60,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 0.9,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.9,
     "stats": [
       {
         "name": "Movement Speed",
@@ -2277,25 +3466,75 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 60,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "trap",
+          "damageFactor": 1,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 3.2
+        }
+      },
+      {
+        "angle": 120,
+        "size": 60,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "trap",
+          "damageFactor": 1,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 3.2
+        }
+      },
+      {
+        "angle": 240,
+        "size": 60,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "trap",
+          "damageFactor": 1,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 3.2
+        }
       }
     ]
   },
   {
     "id": 36,
     "name": "Smasher",
-    "upgradeMsg": "",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 30,
     "upgrades": [
       38,
       50,
       51
     ],
-    "barrels": [],
-    "levelRequirement": 30,
+    "upgradeMsg": "",
     "fieldFactor": 0.9,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -2329,21 +3568,19 @@
         "name": "Health Regen",
         "max": 10
       }
-    ]
+    ],
+    "barrels": []
   },
   null,
   {
     "id": 38,
     "name": "Landmine",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [],
-    "levelRequirement": 45,
-    "fieldFactor": 0.9,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.9,
     "stats": [
       {
         "name": "Movement Speed",
@@ -2377,41 +3614,18 @@
         "name": "Health Regen",
         "max": 10
       }
-    ]
+    ],
+    "barrels": []
   },
   {
     "id": 39,
     "name": "Auto Gunner",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 65,
-        "isTrapezoid": 0.6
-      },
-      {
-        "angle": 0,
-        "size": 65,
-        "isTrapezoid": 0.6
-      },
-      {
-        "angle": 0,
-        "size": 85,
-        "isTrapezoid": 0.6
-      },
-      {
-        "angle": 0,
-        "size": 85,
-        "isTrapezoid": 0.6
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 1,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 1,
     "stats": [
       {
         "name": "Movement Speed",
@@ -2444,21 +3658,88 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 65,
+        "width": 70,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0.5,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 0.45,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 65,
+        "width": 70,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0.75,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 0.45,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 85,
+        "width": 70,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 0.45,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 85,
+        "width": 70,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0.25,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.5,
+          "baseHealth": 0.45,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 40,
     "name": "Auto 5",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [],
-    "levelRequirement": 45,
-    "fieldFactor": 1,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 1,
     "stats": [
       {
         "name": "Movement Speed",
@@ -2492,23 +3773,21 @@
         "name": "Health Regen",
         "max": 7
       }
-    ]
+    ],
+    "barrels": []
   },
   {
     "id": 41,
     "name": "Auto 3",
-    "upgradeMsg": "",
+    "borderWidth": 7.5,
+    "shape": "circle",
+    "levelRequirement": 30,
     "upgrades": [
       40,
       39
     ],
-    "barrels": [],
-    "levelRequirement": 30,
+    "upgradeMsg": "",
     "fieldFactor": 1,
-    "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
     "stats": [
       {
         "name": "Movement Speed",
@@ -2542,76 +3821,18 @@
         "name": "Health Regen",
         "max": 7
       }
-    ]
+    ],
+    "barrels": []
   },
   {
     "id": 42,
     "name": "Spread Shot",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 75,
-        "size": 65,
-        "isTrapezoid": 0.7
-      },
-      {
-        "angle": -75,
-        "size": 65,
-        "isTrapezoid": 0.7
-      },
-      {
-        "angle": 60,
-        "size": 71,
-        "isTrapezoid": 0.7
-      },
-      {
-        "angle": -60,
-        "size": 71,
-        "isTrapezoid": 0.7
-      },
-      {
-        "angle": 45,
-        "size": 77,
-        "isTrapezoid": 0.7
-      },
-      {
-        "angle": -45,
-        "size": 77,
-        "isTrapezoid": 0.7
-      },
-      {
-        "angle": 30,
-        "size": 83,
-        "isTrapezoid": 0.7
-      },
-      {
-        "angle": -30,
-        "size": 83,
-        "isTrapezoid": 0.7
-      },
-      {
-        "angle": 15,
-        "size": 89,
-        "isTrapezoid": 0.7
-      },
-      {
-        "angle": -15,
-        "size": 89,
-        "isTrapezoid": 0.7
-      },
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 1,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 1,
     "stats": [
       {
         "name": "Movement Speed",
@@ -2644,47 +3865,207 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 75,
+        "size": 65,
+        "width": 60,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.1,
+        "delay": 0,
+        "reload": 2,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.6,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": -75,
+        "size": 65,
+        "width": 60,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.1,
+        "delay": 0,
+        "reload": 2,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.6,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 60,
+        "size": 71,
+        "width": 60,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.1,
+        "delay": 0,
+        "reload": 2,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.6,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": -60,
+        "size": 71,
+        "width": 60,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.1,
+        "delay": 0,
+        "reload": 2,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.6,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 45,
+        "size": 77,
+        "width": 60,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.1,
+        "delay": 0,
+        "reload": 2,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.6,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": -45,
+        "size": 77,
+        "width": 60,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.1,
+        "delay": 0,
+        "reload": 2,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.6,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 30,
+        "size": 83,
+        "width": 60,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.1,
+        "delay": 0,
+        "reload": 2,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.6,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": -30,
+        "size": 83,
+        "width": 60,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.1,
+        "delay": 0,
+        "reload": 2,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.6,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 15,
+        "size": 89,
+        "width": 60,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.1,
+        "delay": 0,
+        "reload": 2,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.6,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": -15,
+        "size": 89,
+        "width": 60,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.1,
+        "delay": 0,
+        "reload": 2,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.6,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.1,
+        "delay": 0,
+        "reload": 2,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 1,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 43,
     "name": "Streamliner",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 110,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 0,
-        "size": 100,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 0,
-        "size": 90,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 0,
-        "size": 80,
-        "isTrapezoid": 0
-      },
-      {
-        "angle": 0,
-        "size": 70,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 0.85,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.85,
     "stats": [
       {
         "name": "Movement Speed",
@@ -2717,27 +4098,105 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 110,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.2,
+          "baseHealth": 1,
+          "deaccelRate": 0.3,
+          "decayRate": 0.8
+        }
+      },
+      {
+        "angle": 0,
+        "size": 100,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0.2,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.2,
+          "baseHealth": 1,
+          "deaccelRate": 0.3,
+          "decayRate": 0.8
+        }
+      },
+      {
+        "angle": 0,
+        "size": 90,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0.4,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.2,
+          "baseHealth": 1,
+          "deaccelRate": 0.3,
+          "decayRate": 0.8
+        }
+      },
+      {
+        "angle": 0,
+        "size": 80,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0.6,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.2,
+          "baseHealth": 1,
+          "deaccelRate": 0.3,
+          "decayRate": 0.8
+        }
+      },
+      {
+        "angle": 0,
+        "size": 70,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0.2,
+        "delay": 0.8,
+        "reload": 1,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 0.2,
+          "baseHealth": 1,
+          "deaccelRate": 0.3,
+          "decayRate": 0.8
+        }
       }
     ]
   },
   {
     "id": 44,
     "name": "Auto Trapper",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 60,
-        "isTrapezoid": 0
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 0.9,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.9,
     "stats": [
       {
         "name": "Movement Speed",
@@ -2770,27 +4229,37 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 60,
+        "width": 42,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "trap",
+          "damageFactor": 1,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 8
+        }
       }
     ]
   },
   {
     "id": 45,
     "name": "Dominator",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 80,
-        "isTrapezoid": 0.833325
-      }
-    ],
-    "levelRequirement": 0,
-    "fieldFactor": 1,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 0,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 1,
     "stats": [
       {
         "name": "Movement Speed",
@@ -2823,37 +4292,37 @@
       {
         "name": "Health Regen",
         "max": 0
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 80,
+        "width": 50.4,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0.001,
+        "reload": 3,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 10,
+          "baseHealth": 100,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 46,
     "name": "Dominator",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 75,
-        "isTrapezoid": 0.416675
-      },
-      {
-        "angle": 0,
-        "size": 75,
-        "isTrapezoid": 0.416675
-      },
-      {
-        "angle": 0,
-        "size": 80,
-        "isTrapezoid": 0.416675
-      }
-    ],
-    "levelRequirement": 0,
-    "fieldFactor": 1,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 0,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 1,
     "stats": [
       {
         "name": "Movement Speed",
@@ -2886,62 +4355,71 @@
       {
         "name": "Health Regen",
         "max": 0
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 75,
+        "width": 100.8,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0.666,
+        "reload": 0.3,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 1,
+          "baseHealth": 5,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 75,
+        "width": 100.8,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0.333,
+        "reload": 0.3,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 1,
+          "baseHealth": 5,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
+      },
+      {
+        "angle": 0,
+        "size": 80,
+        "width": 100.8,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0.001,
+        "reload": 0.3,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 1,
+          "baseHealth": 5,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 47,
     "name": "Dominator",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 60,
-        "isTrapezoid": 0.5
-      },
-      {
-        "angle": 45,
-        "size": 60,
-        "isTrapezoid": 0.5
-      },
-      {
-        "angle": 90,
-        "size": 60,
-        "isTrapezoid": 0.5
-      },
-      {
-        "angle": 135,
-        "size": 60,
-        "isTrapezoid": 0.5
-      },
-      {
-        "angle": 180,
-        "size": 60,
-        "isTrapezoid": 0.5
-      },
-      {
-        "angle": 225,
-        "size": 60,
-        "isTrapezoid": 0.5
-      },
-      {
-        "angle": 270,
-        "size": 60,
-        "isTrapezoid": 0.5
-      },
-      {
-        "angle": 315,
-        "size": 60,
-        "isTrapezoid": 0.5
-      }
-    ],
-    "levelRequirement": 0,
-    "fieldFactor": 1,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 0,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 1,
     "stats": [
       {
         "name": "Movement Speed",
@@ -2974,42 +4452,156 @@
       {
         "name": "Health Regen",
         "max": 0
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 60,
+        "width": 84,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "trap",
+          "damageFactor": 3,
+          "baseHealth": 20,
+          "deaccelRate": 1,
+          "decayRate": 3.2
+        }
+      },
+      {
+        "angle": 45,
+        "size": 60,
+        "width": 84,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "trap",
+          "damageFactor": 3,
+          "baseHealth": 20,
+          "deaccelRate": 1,
+          "decayRate": 3.2
+        }
+      },
+      {
+        "angle": 90,
+        "size": 60,
+        "width": 84,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "trap",
+          "damageFactor": 3,
+          "baseHealth": 20,
+          "deaccelRate": 1,
+          "decayRate": 3.2
+        }
+      },
+      {
+        "angle": 135,
+        "size": 60,
+        "width": 84,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "trap",
+          "damageFactor": 3,
+          "baseHealth": 20,
+          "deaccelRate": 1,
+          "decayRate": 3.2
+        }
+      },
+      {
+        "angle": 180,
+        "size": 60,
+        "width": 84,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "trap",
+          "damageFactor": 3,
+          "baseHealth": 20,
+          "deaccelRate": 1,
+          "decayRate": 3.2
+        }
+      },
+      {
+        "angle": 225,
+        "size": 60,
+        "width": 84,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "trap",
+          "damageFactor": 3,
+          "baseHealth": 20,
+          "deaccelRate": 1,
+          "decayRate": 3.2
+        }
+      },
+      {
+        "angle": 270,
+        "size": 60,
+        "width": 84,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "trap",
+          "damageFactor": 3,
+          "baseHealth": 20,
+          "deaccelRate": 1,
+          "decayRate": 3.2
+        }
+      },
+      {
+        "angle": 315,
+        "size": 60,
+        "width": 84,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 0,
+        "delay": 0,
+        "reload": 1.5,
+        "bullet": {
+          "type": "trap",
+          "damageFactor": 3,
+          "baseHealth": 20,
+          "deaccelRate": 1,
+          "decayRate": 3.2
+        }
       }
     ]
   },
   {
     "id": 48,
     "name": "Battleship",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 90,
-        "size": 75,
-        "isTrapezoid": 1.7
-      },
-      {
-        "angle": 270,
-        "size": 75,
-        "isTrapezoid": 1.7
-      },
-      {
-        "angle": 90,
-        "size": 75,
-        "isTrapezoid": 1.7
-      },
-      {
-        "angle": 270,
-        "size": 75,
-        "isTrapezoid": 1.7
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 0.9,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.9,
     "stats": [
       {
         "name": "Movement Speed",
@@ -3042,27 +4634,92 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 90,
+        "size": 75,
+        "width": 60,
+        "isTrapezoid": 1,
+        "trapezoidDir": 3.1416,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.15,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": -1
+        }
+      },
+      {
+        "angle": 270,
+        "size": 75,
+        "width": 60,
+        "isTrapezoid": 1,
+        "trapezoidDir": 3.1416,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.15,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": -1
+        }
+      },
+      {
+        "angle": 90,
+        "size": 75,
+        "width": 60,
+        "isTrapezoid": 1,
+        "trapezoidDir": 3.1416,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.15,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": -1
+        }
+      },
+      {
+        "angle": 270,
+        "size": 75,
+        "width": 60,
+        "isTrapezoid": 1,
+        "trapezoidDir": 3.1416,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 1,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.15,
+          "baseHealth": 1,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": -1
+        }
       }
     ]
   },
   {
     "id": 49,
     "name": "Annihilator",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 95,
-        "isTrapezoid": 0.3
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 1,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 1,
     "stats": [
       {
         "name": "Movement Speed",
@@ -3095,21 +4752,37 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "width": 18.260875,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 17,
+        "delay": 0,
+        "reload": 4,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 3,
+          "baseHealth": 2,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   },
   {
     "id": 50,
     "name": "Auto Smasher",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [],
-    "levelRequirement": 45,
-    "fieldFactor": 0.9,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.9,
     "stats": [
       {
         "name": "Movement Speed",
@@ -3143,20 +4816,18 @@
         "name": "Health Regen",
         "max": 10
       }
-    ]
+    ],
+    "barrels": []
   },
   {
     "id": 51,
     "name": "Spike",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [],
-    "levelRequirement": 45,
-    "fieldFactor": 0.9,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.9,
     "stats": [
       {
         "name": "Movement Speed",
@@ -3190,26 +4861,18 @@
         "name": "Health Regen",
         "max": 10
       }
-    ]
+    ],
+    "barrels": []
   },
   {
     "id": 52,
     "name": "Factory",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 70,
-        "isTrapezoid": 1
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 0.9,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 1
-    },
+    "shape": "square",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.9,
     "stats": [
       {
         "name": "Movement Speed",
@@ -3243,27 +4906,38 @@
         "name": "Health Regen",
         "max": 7
       }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 70,
+        "width": 42,
+        "isTrapezoid": 1,
+        "trapezoidDir": 0,
+        "recoil": 1,
+        "delay": 0,
+        "reload": 3,
+        "bullet": {
+          "type": "drone",
+          "damageFactor": 0.7,
+          "baseHealth": 4,
+          "deaccelRate": 1,
+          "decayRate": 1,
+          "maxDrones": 6
+        }
+      }
     ]
   },
   null,
   {
     "id": 54,
     "name": "Skimmer",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 80,
-        "isTrapezoid": 0.7
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 0.9,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.9,
     "stats": [
       {
         "name": "Movement Speed",
@@ -3296,27 +4970,37 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 80,
+        "width": 24.705875,
+        "isTrapezoid": 0,
+        "trapezoidDir": 0,
+        "recoil": 3,
+        "delay": 0,
+        "reload": 4,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 1,
+          "baseHealth": 3,
+          "deaccelRate": 1,
+          "decayRate": 1.3
+        }
       }
     ]
   },
   {
     "id": 55,
     "name": "Rocketeer",
-    "upgradeMsg": "",
-    "upgrades": [],
-    "barrels": [
-      {
-        "angle": 0,
-        "size": 80,
-        "isTrapezoid": 1.25
-      }
-    ],
-    "levelRequirement": 45,
-    "fieldFactor": 0.9,
     "borderWidth": 7.5,
-    "flags": {
-      "isSquare": 0
-    },
+    "shape": "circle",
+    "levelRequirement": 45,
+    "upgrades": [],
+    "upgradeMsg": "",
+    "fieldFactor": 0.9,
     "stats": [
       {
         "name": "Movement Speed",
@@ -3349,6 +5033,25 @@
       {
         "name": "Health Regen",
         "max": 7
+      }
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 80,
+        "width": 33.6,
+        "isTrapezoid": 1,
+        "trapezoidDir": 3.1416,
+        "recoil": 3,
+        "delay": 0,
+        "reload": 4,
+        "bullet": {
+          "type": "bullet",
+          "damageFactor": 1,
+          "baseHealth": 5,
+          "deaccelRate": 1,
+          "decayRate": 1
+        }
       }
     ]
   }
