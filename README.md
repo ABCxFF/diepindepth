@@ -4,9 +4,9 @@ This is still being worked on semi-actively, progress updates are posted in the 
 
 # **:DiepInDepth**
 
-Largest and most accurate collection of information on the browser game [diep.io](https://diep.io/).
+Largest collection of protocol, memory, and other hacky information for the browser game [diep.io](https://diep.io/).
 
-What started off as an attempt to parse game leaderboards out of packets is now a collection of information about the insides of diep.io. Including information such as packet encoding/decoding, packet protocol, memory structures, physics, wasm parsing, game code reversal, physics, and much more.
+What started off as an attempt to parse game leaderboards out of packets is now a collection of information about the insides of diep.io. Including information such as packet encoding/decoding, packet protocol, memory structures, a bit of physics, wasm parsing, game code reversal, and much more.
 
 ### **Sections**
 
