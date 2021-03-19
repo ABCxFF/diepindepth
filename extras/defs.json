@@ -1,0 +1,3503 @@
+[
+  {
+    "id": 0,
+    "name": "Tank",
+    "upgradeMsg": "",
+    "upgrades": [
+      1,
+      6,
+      7,
+      8,
+      36
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 0,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Twin",
+    "upgradeMsg": "",
+    "upgrades": [
+      3,
+      4,
+      13
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 15,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Triplet",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Triple Shot",
+    "upgradeMsg": "",
+    "upgrades": [
+      2,
+      14,
+      42
+    ],
+    "barrels": [
+      {
+        "angle": -45,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 45,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 30,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Quad Tank",
+    "upgradeMsg": "",
+    "upgrades": [
+      5,
+      40
+    ],
+    "barrels": [
+      {
+        "angle": 180,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": -90,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 90,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 30,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Octo Tank",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": -45,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 45,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": -135,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 135,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 180,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": -90,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 90,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Sniper",
+    "upgradeMsg": "",
+    "upgrades": [
+      15,
+      11,
+      19,
+      31
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 110,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 15,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Machine Gun",
+    "upgradeMsg": "",
+    "upgrades": [
+      10,
+      20,
+      29
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 1,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 15,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Flank Guard",
+    "upgradeMsg": "",
+    "upgrades": [
+      9,
+      4,
+      13,
+      41
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 180,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 15,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Tri-Angle",
+    "upgradeMsg": "",
+    "upgrades": [
+      23,
+      24
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 210,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 150,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 30,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Destroyer",
+    "upgradeMsg": "",
+    "upgrades": [
+      25,
+      49,
+      54,
+      55
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1.7
+      }
+    ],
+    "levelRequirement": 30,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Overseer",
+    "upgradeMsg": "Use your left mouse button to control the drones",
+    "upgrades": [
+      12,
+      17,
+      26,
+      33,
+      48,
+      52
+    ],
+    "barrels": [
+      {
+        "angle": -90,
+        "size": 70,
+        "isTrapezoid": 1,
+        "width": 1
+      },
+      {
+        "angle": 90,
+        "size": 70,
+        "isTrapezoid": 1,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 30,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Drone Damage",
+        "max": 7
+      },
+      {
+        "name": "Drone Health",
+        "max": 7
+      },
+      {
+        "name": "Drone Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Overlord",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": -90,
+        "size": 70,
+        "isTrapezoid": 1,
+        "width": 1
+      },
+      {
+        "angle": 90,
+        "size": 70,
+        "isTrapezoid": 1,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 70,
+        "isTrapezoid": 1,
+        "width": 1
+      },
+      {
+        "angle": 180,
+        "size": 70,
+        "isTrapezoid": 1,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Drone Damage",
+        "max": 7
+      },
+      {
+        "name": "Drone Health",
+        "max": 7
+      },
+      {
+        "name": "Drone Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Twin Flank",
+    "upgradeMsg": "",
+    "upgrades": [
+      18,
+      48
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 180,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 180,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 30,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Penta Shot",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": -45,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 45,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": -22.5,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 22.5,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 110,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Assassin",
+    "upgradeMsg": "",
+    "upgrades": [
+      22,
+      21
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 120,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 30,
+    "fieldFactor": 0.8,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Arena Closer",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 75,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 0,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Necromancer",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": -90,
+        "size": 70,
+        "isTrapezoid": 1,
+        "width": 1
+      },
+      {
+        "angle": 90,
+        "size": 70,
+        "isTrapezoid": 1,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 1
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Drone Count",
+        "max": 7
+      },
+      {
+        "name": "Drone Damage",
+        "max": 7
+      },
+      {
+        "name": "Drone Health",
+        "max": 7
+      },
+      {
+        "name": "Drone Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Triple Twin",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 120,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 120,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": -120,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": -120,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Hunter",
+    "upgradeMsg": "",
+    "upgrades": [
+      28,
+      43
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 110,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1.35
+      }
+    ],
+    "levelRequirement": 30,
+    "fieldFactor": 0.85,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Gunner",
+    "upgradeMsg": "",
+    "upgrades": [
+      39,
+      32,
+      43
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 65,
+        "isTrapezoid": 0,
+        "width": 0.6
+      },
+      {
+        "angle": 0,
+        "size": 65,
+        "isTrapezoid": 0,
+        "width": 0.6
+      },
+      {
+        "angle": 0,
+        "size": 85,
+        "isTrapezoid": 0,
+        "width": 0.6
+      },
+      {
+        "angle": 0,
+        "size": 85,
+        "isTrapezoid": 0,
+        "width": 0.6
+      }
+    ],
+    "levelRequirement": 30,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Stalker",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 120,
+        "isTrapezoid": 1,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 0.8,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Ranger",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 120,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 0.7,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Booster",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 225,
+        "size": 70,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 135,
+        "size": 70,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 210,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 150,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Fighter",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 90,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": -90,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 210,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 150,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Hybrid",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1.7
+      },
+      {
+        "angle": 180,
+        "size": 70,
+        "isTrapezoid": 1,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Manager",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 70,
+        "isTrapezoid": 1,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Drone Damage",
+        "max": 7
+      },
+      {
+        "name": "Drone Health",
+        "max": 7
+      },
+      {
+        "name": "Drone Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Mothership",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 11.25,
+        "size": 60,
+        "isTrapezoid": 1,
+        "width": 0.25
+      },
+      {
+        "angle": 33.75,
+        "size": 60,
+        "isTrapezoid": 1,
+        "width": 0.25
+      },
+      {
+        "angle": 56.25,
+        "size": 60,
+        "isTrapezoid": 1,
+        "width": 0.25
+      },
+      {
+        "angle": 78.75,
+        "size": 60,
+        "isTrapezoid": 1,
+        "width": 0.25
+      },
+      {
+        "angle": 101.25,
+        "size": 60,
+        "isTrapezoid": 1,
+        "width": 0.25
+      },
+      {
+        "angle": 123.75,
+        "size": 60,
+        "isTrapezoid": 1,
+        "width": 0.25
+      },
+      {
+        "angle": 146.25,
+        "size": 60,
+        "isTrapezoid": 1,
+        "width": 0.25
+      },
+      {
+        "angle": 168.75,
+        "size": 60,
+        "isTrapezoid": 1,
+        "width": 0.25
+      },
+      {
+        "angle": 191.25,
+        "size": 60,
+        "isTrapezoid": 1,
+        "width": 0.25
+      },
+      {
+        "angle": 213.75,
+        "size": 60,
+        "isTrapezoid": 1,
+        "width": 0.25
+      },
+      {
+        "angle": 236.249975,
+        "size": 60,
+        "isTrapezoid": 1,
+        "width": 0.25
+      },
+      {
+        "angle": 258.75,
+        "size": 60,
+        "isTrapezoid": 1,
+        "width": 0.25
+      },
+      {
+        "angle": 281.25,
+        "size": 60,
+        "isTrapezoid": 1,
+        "width": 0.25
+      },
+      {
+        "angle": 303.749975,
+        "size": 60,
+        "isTrapezoid": 1,
+        "width": 0.25
+      },
+      {
+        "angle": 326.25,
+        "size": 60,
+        "isTrapezoid": 1,
+        "width": 0.25
+      },
+      {
+        "angle": 348.75,
+        "size": 60,
+        "isTrapezoid": 1,
+        "width": 0.25
+      }
+    ],
+    "levelRequirement": 0,
+    "fieldFactor": 1,
+    "borderWidth": 0.8035714285714286,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Drone Damage",
+        "max": 7
+      },
+      {
+        "name": "Drone Health",
+        "max": 7
+      },
+      {
+        "name": "Drone Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Predator",
+    "upgradeMsg": "Use your right mouse button to look further in the direction you're facing",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 110,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1.35
+      },
+      {
+        "angle": 0,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 1.7
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 0.85,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Sprayer",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 110,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 1,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  null,
+  {
+    "id": 31,
+    "name": "Trapper",
+    "upgradeMsg": "",
+    "upgrades": [
+      35,
+      32,
+      33,
+      34,
+      44
+    ],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 60,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 30,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Gunner Trapper",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 75,
+        "isTrapezoid": 0,
+        "width": 0.5
+      },
+      {
+        "angle": 0,
+        "size": 75,
+        "isTrapezoid": 0,
+        "width": 0.5
+      },
+      {
+        "angle": 180,
+        "size": 60,
+        "isTrapezoid": 0,
+        "width": 1.3
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Overtrapper",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 60,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 120,
+        "size": 70,
+        "isTrapezoid": 1,
+        "width": 1
+      },
+      {
+        "angle": 240,
+        "size": 70,
+        "isTrapezoid": 1,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Mega Trapper",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 60,
+        "isTrapezoid": 0,
+        "width": 1.3
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Tri-Trapper",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 60,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 120,
+        "size": 60,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 240,
+        "size": 60,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Smasher",
+    "upgradeMsg": "",
+    "upgrades": [
+      38,
+      50,
+      51
+    ],
+    "barrels": [],
+    "levelRequirement": 30,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 10
+      },
+      {
+        "name": "Reload",
+        "max": 0
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 0
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 0
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 0
+      },
+      {
+        "name": "Body Damage",
+        "max": 10
+      },
+      {
+        "name": "Max Health",
+        "max": 10
+      },
+      {
+        "name": "Health Regen",
+        "max": 10
+      }
+    ]
+  },
+  null,
+  {
+    "id": 38,
+    "name": "Landmine",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [],
+    "levelRequirement": 45,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 10
+      },
+      {
+        "name": "Reload",
+        "max": 0
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 0
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 0
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 0
+      },
+      {
+        "name": "Body Damage",
+        "max": 10
+      },
+      {
+        "name": "Max Health",
+        "max": 10
+      },
+      {
+        "name": "Health Regen",
+        "max": 10
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Auto Gunner",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 65,
+        "isTrapezoid": 0,
+        "width": 0.6
+      },
+      {
+        "angle": 0,
+        "size": 65,
+        "isTrapezoid": 0,
+        "width": 0.6
+      },
+      {
+        "angle": 0,
+        "size": 85,
+        "isTrapezoid": 0,
+        "width": 0.6
+      },
+      {
+        "angle": 0,
+        "size": 85,
+        "isTrapezoid": 0,
+        "width": 0.6
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Auto 5",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [],
+    "levelRequirement": 45,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Auto 3",
+    "upgradeMsg": "",
+    "upgrades": [
+      40,
+      39
+    ],
+    "barrels": [],
+    "levelRequirement": 30,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Spread Shot",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 75,
+        "size": 65,
+        "isTrapezoid": 0,
+        "width": 0.7
+      },
+      {
+        "angle": -75,
+        "size": 65,
+        "isTrapezoid": 0,
+        "width": 0.7
+      },
+      {
+        "angle": 60,
+        "size": 71,
+        "isTrapezoid": 0,
+        "width": 0.7
+      },
+      {
+        "angle": -60,
+        "size": 71,
+        "isTrapezoid": 0,
+        "width": 0.7
+      },
+      {
+        "angle": 45,
+        "size": 77,
+        "isTrapezoid": 0,
+        "width": 0.7
+      },
+      {
+        "angle": -45,
+        "size": 77,
+        "isTrapezoid": 0,
+        "width": 0.7
+      },
+      {
+        "angle": 30,
+        "size": 83,
+        "isTrapezoid": 0,
+        "width": 0.7
+      },
+      {
+        "angle": -30,
+        "size": 83,
+        "isTrapezoid": 0,
+        "width": 0.7
+      },
+      {
+        "angle": 15,
+        "size": 89,
+        "isTrapezoid": 0,
+        "width": 0.7
+      },
+      {
+        "angle": -15,
+        "size": 89,
+        "isTrapezoid": 0,
+        "width": 0.7
+      },
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Streamliner",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 110,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 100,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 90,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 1
+      },
+      {
+        "angle": 0,
+        "size": 70,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 0.85,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Auto Trapper",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 60,
+        "isTrapezoid": 0,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Dominator",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 0.833325
+      }
+    ],
+    "levelRequirement": 0,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 0
+      },
+      {
+        "name": "Reload",
+        "max": 0
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 0
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 0
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 0
+      },
+      {
+        "name": "Body Damage",
+        "max": 0
+      },
+      {
+        "name": "Max Health",
+        "max": 0
+      },
+      {
+        "name": "Health Regen",
+        "max": 0
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Dominator",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 75,
+        "isTrapezoid": 0,
+        "width": 0.416675
+      },
+      {
+        "angle": 0,
+        "size": 75,
+        "isTrapezoid": 0,
+        "width": 0.416675
+      },
+      {
+        "angle": 0,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 0.416675
+      }
+    ],
+    "levelRequirement": 0,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 0
+      },
+      {
+        "name": "Reload",
+        "max": 0
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 0
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 0
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 0
+      },
+      {
+        "name": "Body Damage",
+        "max": 0
+      },
+      {
+        "name": "Max Health",
+        "max": 0
+      },
+      {
+        "name": "Health Regen",
+        "max": 0
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Dominator",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 60,
+        "isTrapezoid": 0,
+        "width": 0.5
+      },
+      {
+        "angle": 45,
+        "size": 60,
+        "isTrapezoid": 0,
+        "width": 0.5
+      },
+      {
+        "angle": 90,
+        "size": 60,
+        "isTrapezoid": 0,
+        "width": 0.5
+      },
+      {
+        "angle": 135,
+        "size": 60,
+        "isTrapezoid": 0,
+        "width": 0.5
+      },
+      {
+        "angle": 180,
+        "size": 60,
+        "isTrapezoid": 0,
+        "width": 0.5
+      },
+      {
+        "angle": 225,
+        "size": 60,
+        "isTrapezoid": 0,
+        "width": 0.5
+      },
+      {
+        "angle": 270,
+        "size": 60,
+        "isTrapezoid": 0,
+        "width": 0.5
+      },
+      {
+        "angle": 315,
+        "size": 60,
+        "isTrapezoid": 0,
+        "width": 0.5
+      }
+    ],
+    "levelRequirement": 0,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 0
+      },
+      {
+        "name": "Reload",
+        "max": 0
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 0
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 0
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 0
+      },
+      {
+        "name": "Body Damage",
+        "max": 0
+      },
+      {
+        "name": "Max Health",
+        "max": 0
+      },
+      {
+        "name": "Health Regen",
+        "max": 0
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Battleship",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 90,
+        "size": 75,
+        "isTrapezoid": 1,
+        "width": 0.7
+      },
+      {
+        "angle": 270,
+        "size": 75,
+        "isTrapezoid": 1,
+        "width": 0.7
+      },
+      {
+        "angle": 90,
+        "size": 75,
+        "isTrapezoid": 1,
+        "width": 0.7
+      },
+      {
+        "angle": 270,
+        "size": 75,
+        "isTrapezoid": 1,
+        "width": 0.7
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Annihilator",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 95,
+        "isTrapezoid": 0,
+        "width": 2.3
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 1,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Auto Smasher",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [],
+    "levelRequirement": 45,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 10
+      },
+      {
+        "name": "Reload",
+        "max": 10
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 10
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 10
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 10
+      },
+      {
+        "name": "Body Damage",
+        "max": 10
+      },
+      {
+        "name": "Max Health",
+        "max": 10
+      },
+      {
+        "name": "Health Regen",
+        "max": 10
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Spike",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [],
+    "levelRequirement": 45,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 10
+      },
+      {
+        "name": "Reload",
+        "max": 0
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 0
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 0
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 0
+      },
+      {
+        "name": "Body Damage",
+        "max": 10
+      },
+      {
+        "name": "Max Health",
+        "max": 10
+      },
+      {
+        "name": "Health Regen",
+        "max": 10
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Factory",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 70,
+        "isTrapezoid": 1,
+        "width": 1
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 1
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Drone Damage",
+        "max": 7
+      },
+      {
+        "name": "Drone Health",
+        "max": 7
+      },
+      {
+        "name": "Drone Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  null,
+  {
+    "id": 54,
+    "name": "Skimmer",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 80,
+        "isTrapezoid": 0,
+        "width": 1.7
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Rocketeer",
+    "upgradeMsg": "",
+    "upgrades": [],
+    "barrels": [
+      {
+        "angle": 0,
+        "size": 80,
+        "isTrapezoid": 1,
+        "width": 1.25
+      }
+    ],
+    "levelRequirement": 45,
+    "fieldFactor": 0.9,
+    "borderWidth": 7.5,
+    "flags": {
+      "isSquare": 0
+    },
+    "stats": [
+      {
+        "name": "Movement Speed",
+        "max": 7
+      },
+      {
+        "name": "Reload",
+        "max": 7
+      },
+      {
+        "name": "Bullet Damage",
+        "max": 7
+      },
+      {
+        "name": "Bullet Penetration",
+        "max": 7
+      },
+      {
+        "name": "Bullet Speed",
+        "max": 7
+      },
+      {
+        "name": "Body Damage",
+        "max": 7
+      },
+      {
+        "name": "Max Health",
+        "max": 7
+      },
+      {
+        "name": "Health Regen",
+        "max": 7
+      }
+    ]
+  }
+]
