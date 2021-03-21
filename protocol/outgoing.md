@@ -61,7 +61,7 @@ Format:
 
 ## **`0x02` Spawn Packet**
 
-This packet creates a spawn attempt, we call it an attempt / request because the server waits for you to solve a [Proof Of Work challenge](./incoming.md#0x0b-pow-challenge-packet) first before spawning you in. If you are waiting to be spawned in (due to PoW or game starting countdown / players needed), sending another one will change the name you will spawn in with.
+This packet creates a spawn attempt, we call it an attempt / request because the server waits for you to solve a [Proof of Work challenge](./incoming.md#0x0b-pow-challenge-packet) first before spawning you in. If you are waiting to be spawned in (due to PoW or game starting countdown / players needed), sending another one will change the name you will spawn in with.
 
 Format:
 > `02 stringNT(name)`
@@ -117,7 +117,7 @@ magicNum(latest build) % STAT_COUNT; // STAT_COUNT is 8
 
 ## **`0x04` Tank Upgrade Packet**
 
-This packet is sent to upgrade to a tank. Althought it takes the tank id as a parameter in the packet, if the tank selected is not in your upgrade path, or you don't have enough levels to reach it, nothing will happen. The [tank id](../extras/tanks.js) is xored by a remainder of the magicNum, very similar to the `0x03` outgoing packet. This was, like the stat upgrading packet, in an attempt to prevent scripting or automatic upgrading of tanks.
+This packet is sent to upgrade to a tank. Althought it takes the tank id as a parameter in the packet, if the tank selected is not in your upgrade path, or you don't have enough levels to reach it, nothing will happen. The [tank id](/extras/tanks.js) is xored by a remainder of the magicNum, very similar to the `0x03` outgoing packet. This was, like the stat upgrading packet, in an attempt to prevent scripting or automatic upgrading of tanks.
 
 Format:
 > `04 vi(tank id ^ tank xor)`
@@ -196,7 +196,7 @@ Format:
 
 ## **`0x0A` PoW Answer Packet**
 
-This packet is the response to the [`0x0B` PoW Challenge](./incoming.md#0x0b-pow-challenge-packet) packet - after solving the proof of work challenge, the answer is sent.
+This packet is the response to the [`0x0B` PoW Challenge](./incoming.md#0x0b-pow-challenge-packet) packet - after solving the Proof of Work challenge, the answer is sent.
 
 Format:
 > `0A stringNT(answer)`
