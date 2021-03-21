@@ -13,23 +13,22 @@
 "use strict";
 
 /*
-  Usage is explained in the console on run. This __is__ Not Safe For Script Kiddies. 
+  Usage is explained in the console on run
 
   For buid c7b5ddda7d3d664b61ba63cb817de22645853562
 
   The way this script works will be explained in /memory or /wasm someday, but ignore that for now
 */
-const nsfsk = false;
 
 class PacketHook extends EventTarget {
   static get CONST() {
     return {
-      BUILD: "c7b5ddda7d3d664b61ba63cb817de22645853562",
-      SEND_PACKET_INDEX: 106,
-      RECV_PACKET_INDEX: 466,
+      BUILD: "19274154bed4f3e8d39f8fd2654ef6f135a4ff9e",
+      SEND_PACKET_INDEX: 107,
+      RECV_PACKET_INDEX: 407,
       MALLOC: 'R',
       FREE: 't',
-      SOCKET_PTR: 106508,
+      SOCKET_PTR: 106364,
     }
   }
   
@@ -171,7 +170,6 @@ class PacketHook extends EventTarget {
     free(ptr);
   }
 }
-if (!nsfsk) throw 'PacketHook';
 
 const TYPE = ['clientbound', 'serverbound']
 
