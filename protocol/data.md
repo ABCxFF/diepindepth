@@ -53,7 +53,7 @@ enum class ID {
 
 ### **`tank`** - `vi`
 
-A varint encoded tank id, defaults to -1. Tanks are listed [here](/extras/tanks.js), and their in depth definitions [here](/extras/tankdefs.js)
+A varint encoded tank id, defaults to -1. Tanks are listed [here](/extras/tanks.js), and their in depth definitions [here](/extras/tankdefs.json)
 
 ---
 
