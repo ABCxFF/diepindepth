@@ -16,7 +16,7 @@ For information on data types and encodings, see [`data.md`](./data.md)
 | [`0x07`](./outgoing.md#0x07-extension-found-packet) | Extension Found | Sent when the client detects any modifications made to the game    |
 | [`0x08`](./outgoing.md#0x08-to-respawn-packet)      | To Respawn      | Sent when the client leaves the death screen, and moves to respawn |
 | [`0x09`](./outgoing.md#0x09-take-tank-packet)       | Take Tank       | Sent when the client wants to control another tank (Dom for ex)    |
-| [`0x0A`](./outgoing.md#0x0a-pow-solve-packet)       | PoW Solve       | Sends the solved value for the proof of work challenge             |
+| [`0x0A`](./outgoing.md#0x0a-pow-answer-packet)      | PoW Answer      | Sends the solved answer for the proof of work challenge             |
 | [`0x0B`](./outgoing.md#0x0b-js-result-packet)       | JS Result       | Sends the result of the js challenge sent by the server            |
 
 ---
@@ -38,7 +38,7 @@ The most frequently sent packet coming from the client, sends movement flags, mo
 
 ```
 bit  ; name             ; desc
-x001 ; left mouse       ; Set when left mouse / spacebar is down.
+x001 ; fire             ; Set when left mouse / spacebar is down or autofire is on
 x002 ; up key           ; Set when up key is down
 x004 ; left key         ; Set when left key is down
 x008 ; down key         ; Set when down key is down
@@ -49,7 +49,7 @@ x080 ; right mouse      ; Set when shift / right click is down
 x100 ; instant upgrade  ; Set when upgrade key is down
 x200 ; use gamepad      ; Set when gamepad is being used instead of keyboard
 x400 ; switch class     ; Set when switch class key is toggled
-x800 ; constant of true ; Always set
+x800 ; unknown          ; Always set
 ```
 
 For information on how these are encoded, see [`data.md`](./data.md#bitflags---vu) where the example is actually a sample input packet. If the gamepad flag is set, then two additional varfloats are appended to the packet, representing the gamepad's x axis movement and the gamepad's y axis movement.
@@ -61,7 +61,7 @@ Format:
 
 ## **`0x02` Spawn Packet**
 
-This packet creates a spawn attempt, we call it an attempt / request and not a spawn since before you spawn, the server sends you a [Proof Of Work challenge](./incoming.md#0x0b-pow-challenge-packet) for you to solve, to prevent botters from being able to spawn too many bots, though this bot prevention has been easily bypassed, which may or may not be explained in the future.
+This packet creates a spawn attempt, we call it an attempt / request because the server waits for you to solve a [Proof Of Work challenge](./incoming.md#0x0b-pow-challenge-packet) first before spawning you in. If you are waiting to be spawned in (due to PoW or game starting countdown / players needed), sending another one will change the name you will spawn in with.
 
 Format:
 > `02 stringNT(name)`
@@ -75,7 +75,7 @@ The next 2 packets use a shuffler that is derived from the following function:
 ```js
 function magicNum(build) {
   for (var i = 0, seed = 1, res = 0, timer = 0; i < 40; i++) {
-   let nibble = parseInt(build[i], 16)
+   let nibble = parseInt(build[i], 16);
    res ^= ((nibble << ((seed & 1) << 2)) << (timer << 3));
    timer = (timer + 1) & 3;
    seed ^= !timer;
@@ -178,7 +178,7 @@ Format:
 
 ## **`0x08` To Respawn Packet**
 
-This peculiar single byte packet is sent whenever you move past the death screen and to the respawn screen. The use of this is so that the server can redirect you to new arenas if the arena you were in was closed. An example of this would be if you die while / after an arena is closing in dom, after you move to the respawn screen you will be redirected to the new arena.
+This peculiar single byte packet is sent whenever you move past the death screen into the respawn screen. The use of this is so that if the arena is closed the server can redirect you to a new arena or disconnect you to cause the client to connect to another server. An example of this would be after an arena is closing in dom, when you move to the respawn screen you will be redirected to the next game.
 
 Format:
 > `08`
@@ -187,19 +187,19 @@ Format:
 
 ## **`0x09` Take Tank Packet**
 
-This packet is for requesting to control a tank, like a dominator or mothership. It can be sent in any gamemode, but if there is no tanks to take (or all tanks are already taken) then a [notification](./incoming.md#0x03-notification-packet) with the text *"Someone has already taken that tank"* is sent.
+This packet is for requesting to control a tank, like a dominator. It can be sent in any gamemode, but if there is no available tank to take then a [notification](./incoming.md#0x03-notification-packet) with the text *"Someone has already taken that tank"* is sent.
 
 Format:
 > `09`
 
 ---
 
-## **`0x0A` PoW Solve Packet**
+## **`0x0A` PoW Answer Packet**
 
-This packet is the response to the [`0x0B` PoW Challenge](./incoming.md#0x0b-pow-challenge-packet) packet - after solving the proof of work challenge, the answer string is sent.
+This packet is the response to the [`0x0B` PoW Challenge](./incoming.md#0x0b-pow-challenge-packet) packet - after solving the proof of work challenge, the answer is sent.
 
 Format:
-> `0A stringNT(answer string)`
+> `0A stringNT(answer)`
 
 ---
 
