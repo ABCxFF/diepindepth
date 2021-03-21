@@ -2,8 +2,8 @@
 // @name         Diep.io Packet WASM Hook
 // @author       ABC
 // @version      1.0.0
-// @namespace    c7b5ddda7d3d664b61ba63cb817de22645853562
-// @description  c7b5ddda7d3d664b61ba63cb817de22645853562
+// @namespace    19274154bed4f3e8d39f8fd2654ef6f135a4ff9e
+// @description  19274154bed4f3e8d39f8fd2654ef6f135a4ff9e
 // @match        *://diep.io/
 // @run-at       document-start
 // @require      https://raw.githubusercontent.com/Qwokka/wail.min.js/5e32d36bd7a5e0830d1ff4b64d3587aea13f77da/wail.min.js
@@ -15,7 +15,7 @@
 /*
   Usage is explained in the console on run
 
-  For buid c7b5ddda7d3d664b61ba63cb817de22645853562
+  For buid 19274154bed4f3e8d39f8fd2654ef6f135a4ff9e
 
   The way this script works will be explained in /memory or /wasm someday, but ignore that for now
 */
