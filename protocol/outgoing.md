@@ -117,7 +117,7 @@ magicNum(latest build) % STAT_COUNT; // STAT_COUNT is 8
 
 ## **`0x04` Tank Upgrade Packet**
 
-This packet is sent to upgrade to a tank. Althought it takes the tank id as a parameter in the packet, if the tank selected is not in your upgrade path, or you don't have enough levels to reach it, nothing will happen. The tank id is xored by a remainder of the magicNum, very similar to the `0x03` outgoing packet. This was, like the stat upgrading packet, in an attempt to prevent scripting or automatic upgrading of tanks.
+This packet is sent to upgrade to a tank. Althought it takes the tank id as a parameter in the packet, if the tank selected is not in your upgrade path, or you don't have enough levels to reach it, nothing will happen. The [tank id](../extras/tanks.js) is xored by a remainder of the magicNum, very similar to the `0x03` outgoing packet. This was, like the stat upgrading packet, in an attempt to prevent scripting or automatic upgrading of tanks.
 
 Format:
 > `04 vi(tank id ^ tank xor)`
