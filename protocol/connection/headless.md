@@ -10,11 +10,33 @@ To find a server, you'll need to retrieve a server id from the m28 api, from the
 
 ---
 
-## Client Headers
+## HTTP Headers
 
-Diep.io currently has many security measures to block out headless connection. One of these securities is a strict checking of headers on incoming connections, and so we need to override this and connect with browser-like headers.
+Diep.io currently has many security measures to block out headless connection. One of these securities is a strict checking of HTTP headers on incoming websocket connections, and so we need to override this and connect with browser-like headers.
 
-> someone put info here, and on Binary's code
+Credit to Binary:
+
+```js
+const https = require('https');
+https.get = new Proxy(https.get, {apply(target, thisArg, args)
+{
+  if (args[0]?.headers?.Origin === "https://diep.io") // Don't interfere with other connections
+  {
+    args[0].headers = {
+      'Host': args[0].host,
+      'User-Agent': '',
+      'Pragma': '',
+      'Cache-Control': '',
+      ...args[0].headers
+    };
+  }
+  return target.apply(thisArg, args);
+}});
+```
+
+There are 2 rules the HTTP headers must satisfy:
+- The headers `User-Agent`, `Pragma` and `Cache-Control` must exist, otherwise your connection will get rejected with a [403](https://httpstatuses.com/403) response code. They can simply be left empty or have a fake value, however M28 may begin to check for this at any time so it is recommended to provide realistic values.
+- The `Host` header must be anywhere above the `Origin` and `Sec-WebSocket-Key` headers, this is true with every modern browser except for the [ws](https://www.npmjs.com/package/ws) module. Nothing happens if you fail this check, you will not get disconnected or banned. Instead, the server will send completely random packets to try trick you into thinking that you got packet shuffling wrong.
 
 ## Initiation and Packet Encoding / Decoding
 
