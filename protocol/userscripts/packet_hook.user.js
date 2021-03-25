@@ -63,7 +63,7 @@ class PacketHook extends EventTarget {
         fieldStr: "sendPacket",
         kind: "func",
     });
-    wail.addExportEntry(sendPacket, {
+    wail.addExportEntry(recvPacket, {
         fieldStr: "recvPacket",
         kind: "func",
     });
