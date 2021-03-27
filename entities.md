@@ -18,11 +18,13 @@ inline void Encode(BinData &out) const {
 }
 ```
 
+> Disclaimer: The names and labels (except the entity <id, hash> system) we came up for entity related stuff are not from the game, so if you understand these concepts easier with another name, by all means, use a name that helps you understand this stuff
+
 ---
 
 ## Fields
 
-> Discussing what fields are and how they are organized which leads into
+Fields, like stated earlier, are basically the equivalent of how properties are to objects, but for entities. Fields are used to describe all things in the game, for example the Arena entity has leaderX and leaderY fields, while also having fields that related to other things like sides. Fields can also have multi length values, like scoreboardNames, which is an array of scoreboard names (encoded as an xor jump table); also another property on the arena entity.
 
 ---
 
