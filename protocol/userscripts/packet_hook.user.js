@@ -124,7 +124,7 @@ class PacketHook extends EventTarget {
         this.wasm = wasm.instance;
         this.malloc = this.wasm.exports[PacketHook.CONST.MALLOC];
         this.free = this.wasm.exports[PacketHook.CONST.FREE];
-        console.log('Module exports done!\n\t- Hook.free\n\t- Hook.malloc\n\t- Hook.send\n\t- Hook.recv\n\t- Hook.addEventListener(\'clientbound\', ({data}) => console.log(buf));\n\t- Hook.addEventListener(\'serverbound\', ({data}) => console.log(buf));');
+        console.log('Module exports done!\n\t- Hook.free\n\t- Hook.malloc\n\t- Hook.send\n\t- Hook.recv\n\t- Hook.addEventListener(\'clientbound\', ({data}) => console.log(data));\n\t- Hook.addEventListener(\'serverbound\', ({data}) => console.log(data));');
         return wasm
       }).catch(err => {
         console.error('Err in loading up wasm:')
