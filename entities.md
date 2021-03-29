@@ -2,7 +2,7 @@
 
 This document will provide a perspective/overview on how the entire game's networking and entity management system works as whole.
 
-From a developer standpoint, you can think of an entity as an object, it has properties that are stored / sent to the client. Entities are identified by a (not fully understood) <id, hash> system. In this system there is a unique identifier `id` is given to every entity, and while that `id` is being used, no other entity may share it. There is also a hash that is sent, the purpose of this is not known, and few discoveries ahve been made on it.
+From a developer standpoint, you can think of an entity as an object, it has properties that are stored / sent to the client. Entities are identified by a (not fully understood) <id, hash> system. In this system there is a unique identifier `id` is given to every entity, and while that `id` is being used, no other entity may share it. There is also a hash that is sent, the purpose of this is not known, and few discoveries have been made on it.
 
 The following code was sent by Zeach in a screenshot during a conversation regarding the <id, hash> system. It shows how entity ids are encoded before being sent to the client. More information on entity id encodings can be found [here](/protocol/data.md#entid---vu-hash-vu-id)
 
