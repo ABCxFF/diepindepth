@@ -21,6 +21,8 @@ There are 4 sections that divide up the information collected.
 4. Extras ([`extras/`](./extras/))  
    Including any extra information, fun facts, misc algorithms, and any physics not provided in [Spade Squad](http://spade-squad.com)
 
+Before going to in depth into entity related memory and protocol, it is highly recommended you read [`entities.md`](./entities.md) to understand how entities work.
+
 ## **Roadmap**
 
 https://github.com/ABCxFF/diepindepth/projects/2
