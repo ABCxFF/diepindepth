@@ -49,7 +49,7 @@ x080 ; right mouse      ; Set when shift / right click is down
 x100 ; instant upgrade  ; Set when upgrade key is down
 x200 ; use gamepad      ; Set when gamepad is being used instead of keyboard
 x400 ; switch class     ; Set when switch class key is toggled
-x800 ; unknown          ; Always set
+x800 ; adblock          ; Set when an adblocker is detected, synced with localStorage.hadAdblocker
 ```
 
 For information on how these are encoded, see [`data.md`](./data.md#bitflags---vu) where the example is actually a sample input packet. If the gamepad flag is set, then two additional varfloats are appended to the packet, representing the gamepad's x axis movement and the gamepad's y axis movement.
