@@ -1,4 +1,4 @@
-# Automates
+# Automation Whale
 
 Parses wasm.wasm and wasm.js to find per-build values
 
