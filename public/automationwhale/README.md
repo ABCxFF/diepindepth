@@ -10,4 +10,4 @@ Parses wasm.wasm and wasm.js to find per-build values
 ![Example Response](demo.png)
 
 ## `-> build` Example Response
-> I have no image of this
+![Example Response](build_demo.png)
