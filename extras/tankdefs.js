@@ -1,9 +1,43 @@
+/*
+[]: { array of tank information:
+  id: tank's id
+  name: tank's name
+  borderWidth: width of the tank's borders
+  bodyShape: circle or square
+  levelRequirement: levels required to upgrade to this tank
+  upgrades[]: tanks in form of tank ids
+  upgradeMsg: notification sent when you upgrade to this tank, null if none sent
+  fieldFactor: factors into calculating fov, lower = more fov. http://spade-squad.com/physics.html#Ff
+  stats[]: { list of stats
+    name: name of the stat
+    max: maximum level of the stat
+  }
+  barrels[]: { list of barrels
+    angle: angle in degrees, facing direction
+    offset: offset from facing direction - for tanks like twin etc
+    size: height / length of the barrel at level 0
+    width: width of the barrel at level 0
+    isTrapezoid: determines where or not the barrel is a trapezoid
+    trapezoidDir: if is trapezoid, this is the direction its facing. example: machine gun=0, stalker=180
+    recoil: recoil from a given shot from this barrel
+    delay: delay of the barrel, allows for barrels to shoot at different times
+    reload: reload of the barrel (15 * for ticks iirc?)
+    bullet: { information on the bullet being shot out
+      type: bullet, drone, or trap
+      damageFactor: damage per tick related, and the reverse of knockback
+      baseHealth: maxHealth of the bullet
+      deaccelRate: rate at which it begins to deaccelerate
+      durability: life span, relating to how long it takes until the bullet decays and vanishes
+    }
+  }
+}
+*/
 [
   {
     "id": 0,
     "name": "Tank",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 0,
     "upgrades": [
       1,
@@ -51,6 +85,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -72,7 +107,7 @@
     "id": 1,
     "name": "Twin",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 15,
     "upgrades": [
       3,
@@ -118,6 +153,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": -26,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -135,6 +171,7 @@
       },
       {
         "angle": 0,
+        "offset": 26,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -156,7 +193,7 @@
     "id": 2,
     "name": "Triplet",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -198,6 +235,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": -26,
         "size": 80,
         "width": 42,
         "isTrapezoid": false,
@@ -215,6 +253,7 @@
       },
       {
         "angle": 0,
+        "offset": 26,
         "size": 80,
         "width": 42,
         "isTrapezoid": false,
@@ -232,6 +271,7 @@
       },
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -253,7 +293,7 @@
     "id": 3,
     "name": "Triple Shot",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 30,
     "upgrades": [
       2,
@@ -299,6 +339,7 @@
     "barrels": [
       {
         "angle": -45,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -316,6 +357,7 @@
       },
       {
         "angle": 45,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -333,6 +375,7 @@
       },
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -354,7 +397,7 @@
     "id": 4,
     "name": "Quad Tank",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 30,
     "upgrades": [
       5,
@@ -399,6 +442,7 @@
     "barrels": [
       {
         "angle": 180,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -416,6 +460,7 @@
       },
       {
         "angle": -90,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -433,6 +478,7 @@
       },
       {
         "angle": 90,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -450,6 +496,7 @@
       },
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -471,7 +518,7 @@
     "id": 5,
     "name": "Octo Tank",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -513,6 +560,7 @@
     "barrels": [
       {
         "angle": -45,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -530,6 +578,7 @@
       },
       {
         "angle": 45,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -547,6 +596,7 @@
       },
       {
         "angle": -135,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -564,6 +614,7 @@
       },
       {
         "angle": 135,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -581,6 +632,7 @@
       },
       {
         "angle": 180,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -598,6 +650,7 @@
       },
       {
         "angle": -90,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -615,6 +668,7 @@
       },
       {
         "angle": 90,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -632,6 +686,7 @@
       },
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -653,7 +708,7 @@
     "id": 6,
     "name": "Sniper",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 15,
     "upgrades": [
       15,
@@ -700,6 +755,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 110,
         "width": 42,
         "isTrapezoid": false,
@@ -721,7 +777,7 @@
     "id": 7,
     "name": "Machine Gun",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 15,
     "upgrades": [
       10,
@@ -767,6 +823,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": true,
@@ -788,7 +845,7 @@
     "id": 8,
     "name": "Flank Guard",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 15,
     "upgrades": [
       9,
@@ -835,6 +892,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -852,6 +910,7 @@
       },
       {
         "angle": 180,
+        "offset": 0,
         "size": 80,
         "width": 42,
         "isTrapezoid": false,
@@ -873,7 +932,7 @@
     "id": 9,
     "name": "Tri-Angle",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 30,
     "upgrades": [
       23,
@@ -918,6 +977,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -935,6 +995,7 @@
       },
       {
         "angle": 210,
+        "offset": 0,
         "size": 80,
         "width": 42,
         "isTrapezoid": false,
@@ -952,6 +1013,7 @@
       },
       {
         "angle": 150,
+        "offset": 0,
         "size": 80,
         "width": 42,
         "isTrapezoid": false,
@@ -973,7 +1035,7 @@
     "id": 10,
     "name": "Destroyer",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 30,
     "upgrades": [
       25,
@@ -1020,6 +1082,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 24.705875,
         "isTrapezoid": false,
@@ -1041,7 +1104,7 @@
     "id": 11,
     "name": "Overseer",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 30,
     "upgrades": [
       12,
@@ -1090,6 +1153,7 @@
     "barrels": [
       {
         "angle": -90,
+        "offset": 0,
         "size": 70,
         "width": 42,
         "isTrapezoid": true,
@@ -1108,6 +1172,7 @@
       },
       {
         "angle": 90,
+        "offset": 0,
         "size": 70,
         "width": 42,
         "isTrapezoid": true,
@@ -1130,7 +1195,7 @@
     "id": 12,
     "name": "Overlord",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -1172,6 +1237,7 @@
     "barrels": [
       {
         "angle": -90,
+        "offset": 0,
         "size": 70,
         "width": 42,
         "isTrapezoid": true,
@@ -1190,6 +1256,7 @@
       },
       {
         "angle": 90,
+        "offset": 0,
         "size": 70,
         "width": 42,
         "isTrapezoid": true,
@@ -1208,6 +1275,7 @@
       },
       {
         "angle": 0,
+        "offset": 0,
         "size": 70,
         "width": 42,
         "isTrapezoid": true,
@@ -1226,6 +1294,7 @@
       },
       {
         "angle": 180,
+        "offset": 0,
         "size": 70,
         "width": 42,
         "isTrapezoid": true,
@@ -1248,7 +1317,7 @@
     "id": 13,
     "name": "Twin Flank",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 30,
     "upgrades": [
       18,
@@ -1293,6 +1362,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": -26,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -1310,6 +1380,7 @@
       },
       {
         "angle": 0,
+        "offset": 26,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -1327,6 +1398,7 @@
       },
       {
         "angle": 180,
+        "offset": -26,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -1344,6 +1416,7 @@
       },
       {
         "angle": 180,
+        "offset": 26,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -1365,7 +1438,7 @@
     "id": 14,
     "name": "Penta Shot",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -1407,6 +1480,7 @@
     "barrels": [
       {
         "angle": -45,
+        "offset": 0,
         "size": 80,
         "width": 42,
         "isTrapezoid": false,
@@ -1424,6 +1498,7 @@
       },
       {
         "angle": 45,
+        "offset": 0,
         "size": 80,
         "width": 42,
         "isTrapezoid": false,
@@ -1441,6 +1516,7 @@
       },
       {
         "angle": -22.5,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -1458,6 +1534,7 @@
       },
       {
         "angle": 22.5,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -1475,6 +1552,7 @@
       },
       {
         "angle": 0,
+        "offset": 0,
         "size": 110,
         "width": 42,
         "isTrapezoid": false,
@@ -1496,7 +1574,7 @@
     "id": 15,
     "name": "Assassin",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 30,
     "upgrades": [
       22,
@@ -1541,6 +1619,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 120,
         "width": 42,
         "isTrapezoid": false,
@@ -1562,7 +1641,7 @@
     "id": 16,
     "name": "Arena Closer",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 0,
     "upgrades": [],
     "upgradeMsg": "",
@@ -1604,6 +1683,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 75,
         "width": 42,
         "isTrapezoid": false,
@@ -1625,7 +1705,7 @@
     "id": 17,
     "name": "Necromancer",
     "borderWidth": 7.5,
-    "shape": "square",
+    "bodyShape": "square",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -1667,6 +1747,7 @@
     "barrels": [
       {
         "angle": -90,
+        "offset": 0,
         "size": 70,
         "width": 42,
         "isTrapezoid": true,
@@ -1685,6 +1766,7 @@
       },
       {
         "angle": 90,
+        "offset": 0,
         "size": 70,
         "width": 42,
         "isTrapezoid": true,
@@ -1707,7 +1789,7 @@
     "id": 18,
     "name": "Triple Twin",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -1749,6 +1831,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": -26,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -1766,6 +1849,7 @@
       },
       {
         "angle": 0,
+        "offset": 26,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -1783,6 +1867,7 @@
       },
       {
         "angle": 120,
+        "offset": -26,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -1800,6 +1885,7 @@
       },
       {
         "angle": 120,
+        "offset": 26,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -1817,6 +1903,7 @@
       },
       {
         "angle": -120,
+        "offset": -26,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -1834,6 +1921,7 @@
       },
       {
         "angle": -120,
+        "offset": 26,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -1855,7 +1943,7 @@
     "id": 19,
     "name": "Hunter",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 30,
     "upgrades": [
       28,
@@ -1900,6 +1988,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 110,
         "width": 42,
         "isTrapezoid": false,
@@ -1917,6 +2006,7 @@
       },
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 31.1111,
         "isTrapezoid": false,
@@ -1938,7 +2028,7 @@
     "id": 20,
     "name": "Gunner",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 30,
     "upgrades": [
       39,
@@ -1984,6 +2074,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": -32,
         "size": 65,
         "width": 70,
         "isTrapezoid": false,
@@ -2001,6 +2092,7 @@
       },
       {
         "angle": 0,
+        "offset": 32,
         "size": 65,
         "width": 70,
         "isTrapezoid": false,
@@ -2018,6 +2110,7 @@
       },
       {
         "angle": 0,
+        "offset": -17,
         "size": 85,
         "width": 70,
         "isTrapezoid": false,
@@ -2035,6 +2128,7 @@
       },
       {
         "angle": 0,
+        "offset": 17,
         "size": 85,
         "width": 70,
         "isTrapezoid": false,
@@ -2056,7 +2150,7 @@
     "id": 21,
     "name": "Stalker",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "square",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -2098,10 +2192,11 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 120,
         "width": 42,
         "isTrapezoid": true,
-        "trapezoidDir": 3.1416,
+        "trapezoidDir": 180,
         "recoil": 3,
         "delay": 0,
         "reload": 2,
@@ -2119,7 +2214,7 @@
     "id": 22,
     "name": "Ranger",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -2161,6 +2256,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 120,
         "width": 42,
         "isTrapezoid": false,
@@ -2182,7 +2278,7 @@
     "id": 23,
     "name": "Booster",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -2224,6 +2320,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -2241,6 +2338,7 @@
       },
       {
         "angle": 225,
+        "offset": 0,
         "size": 70,
         "width": 42,
         "isTrapezoid": false,
@@ -2258,6 +2356,7 @@
       },
       {
         "angle": 135,
+        "offset": 0,
         "size": 70,
         "width": 42,
         "isTrapezoid": false,
@@ -2275,6 +2374,7 @@
       },
       {
         "angle": 210,
+        "offset": 0,
         "size": 80,
         "width": 42,
         "isTrapezoid": false,
@@ -2292,6 +2392,7 @@
       },
       {
         "angle": 150,
+        "offset": 0,
         "size": 80,
         "width": 42,
         "isTrapezoid": false,
@@ -2313,7 +2414,7 @@
     "id": 24,
     "name": "Fighter",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -2355,6 +2456,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -2372,6 +2474,7 @@
       },
       {
         "angle": 90,
+        "offset": 0,
         "size": 80,
         "width": 42,
         "isTrapezoid": false,
@@ -2389,6 +2492,7 @@
       },
       {
         "angle": -90,
+        "offset": 0,
         "size": 80,
         "width": 42,
         "isTrapezoid": false,
@@ -2406,6 +2510,7 @@
       },
       {
         "angle": 210,
+        "offset": 0,
         "size": 80,
         "width": 42,
         "isTrapezoid": false,
@@ -2423,6 +2528,7 @@
       },
       {
         "angle": 150,
+        "offset": 0,
         "size": 80,
         "width": 42,
         "isTrapezoid": false,
@@ -2444,7 +2550,7 @@
     "id": 25,
     "name": "Hybrid",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -2486,6 +2592,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 24.705875,
         "isTrapezoid": false,
@@ -2503,6 +2610,7 @@
       },
       {
         "angle": 180,
+        "offset": 0,
         "size": 70,
         "width": 42,
         "isTrapezoid": true,
@@ -2525,7 +2633,7 @@
     "id": 26,
     "name": "Manager",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "square",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -2567,6 +2675,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 70,
         "width": 42,
         "isTrapezoid": true,
@@ -2589,7 +2698,7 @@
     "id": 27,
     "name": "Mothership",
     "borderWidth": 0.803575,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 0,
     "upgrades": [],
     "upgradeMsg": "",
@@ -2631,6 +2740,7 @@
     "barrels": [
       {
         "angle": 11.25,
+        "offset": 0,
         "size": 60,
         "width": 168,
         "isTrapezoid": true,
@@ -2649,6 +2759,7 @@
       },
       {
         "angle": 33.75,
+        "offset": 0,
         "size": 60,
         "width": 168,
         "isTrapezoid": true,
@@ -2667,6 +2778,7 @@
       },
       {
         "angle": 56.25,
+        "offset": 0,
         "size": 60,
         "width": 168,
         "isTrapezoid": true,
@@ -2685,6 +2797,7 @@
       },
       {
         "angle": 78.75,
+        "offset": 0,
         "size": 60,
         "width": 168,
         "isTrapezoid": true,
@@ -2703,6 +2816,7 @@
       },
       {
         "angle": 101.25,
+        "offset": 0,
         "size": 60,
         "width": 168,
         "isTrapezoid": true,
@@ -2721,6 +2835,7 @@
       },
       {
         "angle": 123.75,
+        "offset": 0,
         "size": 60,
         "width": 168,
         "isTrapezoid": true,
@@ -2739,6 +2854,7 @@
       },
       {
         "angle": 146.25,
+        "offset": 0,
         "size": 60,
         "width": 168,
         "isTrapezoid": true,
@@ -2757,6 +2873,7 @@
       },
       {
         "angle": 168.75,
+        "offset": 0,
         "size": 60,
         "width": 168,
         "isTrapezoid": true,
@@ -2775,6 +2892,7 @@
       },
       {
         "angle": 191.25,
+        "offset": 0,
         "size": 60,
         "width": 168,
         "isTrapezoid": true,
@@ -2793,6 +2911,7 @@
       },
       {
         "angle": 213.75,
+        "offset": 0,
         "size": 60,
         "width": 168,
         "isTrapezoid": true,
@@ -2811,6 +2930,7 @@
       },
       {
         "angle": 236.249975,
+        "offset": 0,
         "size": 60,
         "width": 168,
         "isTrapezoid": true,
@@ -2829,6 +2949,7 @@
       },
       {
         "angle": 258.75,
+        "offset": 0,
         "size": 60,
         "width": 168,
         "isTrapezoid": true,
@@ -2847,6 +2968,7 @@
       },
       {
         "angle": 281.25,
+        "offset": 0,
         "size": 60,
         "width": 168,
         "isTrapezoid": true,
@@ -2865,6 +2987,7 @@
       },
       {
         "angle": 303.749975,
+        "offset": 0,
         "size": 60,
         "width": 168,
         "isTrapezoid": true,
@@ -2883,6 +3006,7 @@
       },
       {
         "angle": 326.25,
+        "offset": 0,
         "size": 60,
         "width": 168,
         "isTrapezoid": true,
@@ -2901,6 +3025,7 @@
       },
       {
         "angle": 348.75,
+        "offset": 0,
         "size": 60,
         "width": 168,
         "isTrapezoid": true,
@@ -2923,7 +3048,7 @@
     "id": 28,
     "name": "Predator",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "Use your right mouse button to look further in the direction you're facing",
@@ -2965,6 +3090,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 110,
         "width": 42,
         "isTrapezoid": false,
@@ -2982,6 +3108,7 @@
       },
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 31.1111,
         "isTrapezoid": false,
@@ -2999,6 +3126,7 @@
       },
       {
         "angle": 0,
+        "offset": 0,
         "size": 80,
         "width": 24.705875,
         "isTrapezoid": false,
@@ -3020,7 +3148,7 @@
     "id": 29,
     "name": "Sprayer",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -3062,6 +3190,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 110,
         "width": 42,
         "isTrapezoid": false,
@@ -3079,6 +3208,7 @@
       },
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": true,
@@ -3101,7 +3231,7 @@
     "id": 31,
     "name": "Trapper",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 30,
     "upgrades": [
       35,
@@ -3149,6 +3279,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 60,
         "width": 42,
         "isTrapezoid": false,
@@ -3170,7 +3301,7 @@
     "id": 32,
     "name": "Gunner Trapper",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -3212,6 +3343,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": -16,
         "size": 75,
         "width": 84,
         "isTrapezoid": false,
@@ -3229,6 +3361,7 @@
       },
       {
         "angle": 0,
+        "offset": 16,
         "size": 75,
         "width": 84,
         "isTrapezoid": false,
@@ -3246,6 +3379,7 @@
       },
       {
         "angle": 180,
+        "offset": 0,
         "size": 60,
         "width": 32.3077,
         "isTrapezoid": false,
@@ -3267,7 +3401,7 @@
     "id": 33,
     "name": "Overtrapper",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -3309,6 +3443,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 60,
         "width": 42,
         "isTrapezoid": false,
@@ -3326,6 +3461,7 @@
       },
       {
         "angle": 120,
+        "offset": 0,
         "size": 70,
         "width": 42,
         "isTrapezoid": true,
@@ -3344,6 +3480,7 @@
       },
       {
         "angle": 240,
+        "offset": 0,
         "size": 70,
         "width": 42,
         "isTrapezoid": true,
@@ -3366,7 +3503,7 @@
     "id": 34,
     "name": "Mega Trapper",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -3408,6 +3545,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 60,
         "width": 32.3077,
         "isTrapezoid": false,
@@ -3429,7 +3567,7 @@
     "id": 35,
     "name": "Tri-Trapper",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -3471,6 +3609,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 60,
         "width": 42,
         "isTrapezoid": false,
@@ -3488,6 +3627,7 @@
       },
       {
         "angle": 120,
+        "offset": 0,
         "size": 60,
         "width": 42,
         "isTrapezoid": false,
@@ -3505,6 +3645,7 @@
       },
       {
         "angle": 240,
+        "offset": 0,
         "size": 60,
         "width": 42,
         "isTrapezoid": false,
@@ -3526,7 +3667,7 @@
     "id": 36,
     "name": "Smasher",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 30,
     "upgrades": [
       38,
@@ -3576,7 +3717,7 @@
     "id": 38,
     "name": "Landmine",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "square",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -3621,7 +3762,7 @@
     "id": 39,
     "name": "Auto Gunner",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -3663,6 +3804,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": -32,
         "size": 65,
         "width": 70,
         "isTrapezoid": false,
@@ -3680,6 +3822,7 @@
       },
       {
         "angle": 0,
+        "offset": 32,
         "size": 65,
         "width": 70,
         "isTrapezoid": false,
@@ -3697,6 +3840,7 @@
       },
       {
         "angle": 0,
+        "offset": -17,
         "size": 85,
         "width": 70,
         "isTrapezoid": false,
@@ -3714,6 +3858,7 @@
       },
       {
         "angle": 0,
+        "offset": 17,
         "size": 85,
         "width": 70,
         "isTrapezoid": false,
@@ -3735,7 +3880,7 @@
     "id": 40,
     "name": "Auto 5",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -3780,7 +3925,7 @@
     "id": 41,
     "name": "Auto 3",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 30,
     "upgrades": [
       40,
@@ -3828,7 +3973,7 @@
     "id": 42,
     "name": "Spread Shot",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -3870,6 +4015,7 @@
     "barrels": [
       {
         "angle": 75,
+        "offset": 0,
         "size": 65,
         "width": 60,
         "isTrapezoid": false,
@@ -3887,6 +4033,7 @@
       },
       {
         "angle": -75,
+        "offset": 0,
         "size": 65,
         "width": 60,
         "isTrapezoid": false,
@@ -3904,6 +4051,7 @@
       },
       {
         "angle": 60,
+        "offset": 0,
         "size": 71,
         "width": 60,
         "isTrapezoid": false,
@@ -3921,6 +4069,7 @@
       },
       {
         "angle": -60,
+        "offset": 0,
         "size": 71,
         "width": 60,
         "isTrapezoid": false,
@@ -3938,6 +4087,7 @@
       },
       {
         "angle": 45,
+        "offset": 0,
         "size": 77,
         "width": 60,
         "isTrapezoid": false,
@@ -3955,6 +4105,7 @@
       },
       {
         "angle": -45,
+        "offset": 0,
         "size": 77,
         "width": 60,
         "isTrapezoid": false,
@@ -3972,6 +4123,7 @@
       },
       {
         "angle": 30,
+        "offset": 0,
         "size": 83,
         "width": 60,
         "isTrapezoid": false,
@@ -3989,6 +4141,7 @@
       },
       {
         "angle": -30,
+        "offset": 0,
         "size": 83,
         "width": 60,
         "isTrapezoid": false,
@@ -4006,6 +4159,7 @@
       },
       {
         "angle": 15,
+        "offset": 0,
         "size": 89,
         "width": 60,
         "isTrapezoid": false,
@@ -4023,6 +4177,7 @@
       },
       {
         "angle": -15,
+        "offset": 0,
         "size": 89,
         "width": 60,
         "isTrapezoid": false,
@@ -4040,6 +4195,7 @@
       },
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 42,
         "isTrapezoid": false,
@@ -4061,7 +4217,7 @@
     "id": 43,
     "name": "Streamliner",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -4103,6 +4259,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 110,
         "width": 42,
         "isTrapezoid": false,
@@ -4120,6 +4277,7 @@
       },
       {
         "angle": 0,
+        "offset": 0,
         "size": 100,
         "width": 42,
         "isTrapezoid": false,
@@ -4137,6 +4295,7 @@
       },
       {
         "angle": 0,
+        "offset": 0,
         "size": 90,
         "width": 42,
         "isTrapezoid": false,
@@ -4154,6 +4313,7 @@
       },
       {
         "angle": 0,
+        "offset": 0,
         "size": 80,
         "width": 42,
         "isTrapezoid": false,
@@ -4171,6 +4331,7 @@
       },
       {
         "angle": 0,
+        "offset": 0,
         "size": 70,
         "width": 42,
         "isTrapezoid": false,
@@ -4192,7 +4353,7 @@
     "id": 44,
     "name": "Auto Trapper",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -4234,6 +4395,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 60,
         "width": 42,
         "isTrapezoid": false,
@@ -4255,7 +4417,7 @@
     "id": 45,
     "name": "Dominator",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 0,
     "upgrades": [],
     "upgradeMsg": "",
@@ -4297,6 +4459,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 80,
         "width": 50.4,
         "isTrapezoid": false,
@@ -4318,7 +4481,7 @@
     "id": 46,
     "name": "Dominator",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 0,
     "upgrades": [],
     "upgradeMsg": "",
@@ -4360,6 +4523,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": -6,
         "size": 75,
         "width": 100.8,
         "isTrapezoid": false,
@@ -4377,6 +4541,7 @@
       },
       {
         "angle": 0,
+        "offset": 6,
         "size": 75,
         "width": 100.8,
         "isTrapezoid": false,
@@ -4394,6 +4559,7 @@
       },
       {
         "angle": 0,
+        "offset": 0,
         "size": 80,
         "width": 100.8,
         "isTrapezoid": false,
@@ -4415,7 +4581,7 @@
     "id": 47,
     "name": "Dominator",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 0,
     "upgrades": [],
     "upgradeMsg": "",
@@ -4457,6 +4623,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 60,
         "width": 84,
         "isTrapezoid": false,
@@ -4474,6 +4641,7 @@
       },
       {
         "angle": 45,
+        "offset": 0,
         "size": 60,
         "width": 84,
         "isTrapezoid": false,
@@ -4491,6 +4659,7 @@
       },
       {
         "angle": 90,
+        "offset": 0,
         "size": 60,
         "width": 84,
         "isTrapezoid": false,
@@ -4508,6 +4677,7 @@
       },
       {
         "angle": 135,
+        "offset": 0,
         "size": 60,
         "width": 84,
         "isTrapezoid": false,
@@ -4525,6 +4695,7 @@
       },
       {
         "angle": 180,
+        "offset": 0,
         "size": 60,
         "width": 84,
         "isTrapezoid": false,
@@ -4542,6 +4713,7 @@
       },
       {
         "angle": 225,
+        "offset": 0,
         "size": 60,
         "width": 84,
         "isTrapezoid": false,
@@ -4559,6 +4731,7 @@
       },
       {
         "angle": 270,
+        "offset": 0,
         "size": 60,
         "width": 84,
         "isTrapezoid": false,
@@ -4576,6 +4749,7 @@
       },
       {
         "angle": 315,
+        "offset": 0,
         "size": 60,
         "width": 84,
         "isTrapezoid": false,
@@ -4597,7 +4771,7 @@
     "id": 48,
     "name": "Battleship",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -4639,10 +4813,11 @@
     "barrels": [
       {
         "angle": 90,
+        "offset": -20,
         "size": 75,
         "width": 60,
         "isTrapezoid": true,
-        "trapezoidDir": 3.1416,
+        "trapezoidDir": 180,
         "recoil": 1,
         "delay": 0,
         "reload": 1,
@@ -4657,10 +4832,11 @@
       },
       {
         "angle": 270,
+        "offset": -20,
         "size": 75,
         "width": 60,
         "isTrapezoid": true,
-        "trapezoidDir": 3.1416,
+        "trapezoidDir": 180,
         "recoil": 1,
         "delay": 0,
         "reload": 1,
@@ -4675,10 +4851,11 @@
       },
       {
         "angle": 90,
+        "offset": 20,
         "size": 75,
         "width": 60,
         "isTrapezoid": true,
-        "trapezoidDir": 3.1416,
+        "trapezoidDir": 180,
         "recoil": 1,
         "delay": 0,
         "reload": 1,
@@ -4693,10 +4870,11 @@
       },
       {
         "angle": 270,
+        "offset": 20,
         "size": 75,
         "width": 60,
         "isTrapezoid": true,
-        "trapezoidDir": 3.1416,
+        "trapezoidDir": 180,
         "recoil": 1,
         "delay": 0,
         "reload": 1,
@@ -4715,7 +4893,7 @@
     "id": 49,
     "name": "Annihilator",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -4757,6 +4935,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 95,
         "width": 18.260875,
         "isTrapezoid": false,
@@ -4778,7 +4957,7 @@
     "id": 50,
     "name": "Auto Smasher",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -4823,7 +5002,7 @@
     "id": 51,
     "name": "Spike",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -4868,7 +5047,7 @@
     "id": 52,
     "name": "Factory",
     "borderWidth": 7.5,
-    "shape": "square",
+    "bodyShape": "square",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -4910,6 +5089,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 70,
         "width": 42,
         "isTrapezoid": true,
@@ -4933,7 +5113,7 @@
     "id": 54,
     "name": "Skimmer",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -4975,6 +5155,7 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 80,
         "width": 24.705875,
         "isTrapezoid": false,
@@ -4996,7 +5177,7 @@
     "id": 55,
     "name": "Rocketeer",
     "borderWidth": 7.5,
-    "shape": "circle",
+    "bodyShape": "circle",
     "levelRequirement": 45,
     "upgrades": [],
     "upgradeMsg": "",
@@ -5038,10 +5219,11 @@
     "barrels": [
       {
         "angle": 0,
+        "offset": 0,
         "size": 80,
         "width": 33.6,
         "isTrapezoid": true,
-        "trapezoidDir": 3.1416,
+        "trapezoidDir": 180,
         "recoil": 3,
         "delay": 0,
         "reload": 4,
