@@ -30,7 +30,7 @@ Fields, like stated earlier, are basically the equivalent of how properties are 
 
 ## Field Groups + Purpose
 
-These fields are all organized into groups, field groups. For each field there is a constant (throughout builds) id per field group. So for example, the field `maxHealth` is in the Health field group, and its field-group specific id is 2 across all updates. You can see the field groups and field ids per fields [here](about:blank). Here are the list of field group names by id (empty = deleted / not in code)
+These fields are all organized into groups, known as field groups. For each field there is a constant (throughout builds) id per field group. So for example, the field `maxHealth` is in the Health field group, and its field-group specific id is 2 across all updates. You can see the field groups and field ids per fields [here](about:blank). Here are the list of field group names by id (empty = deleted / not in code)
 ```
 0 : RELATIONSHIPS
 1 : 
