@@ -62,6 +62,6 @@ Field groups are also used for the organization of entities, but that will be ex
 
 ## Memory
 
-> Discuss basics how entities look / interact in the memory
+> Discuss basics how entities look / interact in the memory.
 
 
