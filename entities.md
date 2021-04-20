@@ -30,9 +30,27 @@ Fields, like stated earlier, are basically the equivalent of how properties are 
 
 ## Field Groups + Purpose
 
-These fields are all organized into groups, field groups. For each field there is a constant (throughout builds) id per field group. So for example, the field `maxHealth` is in the Health field group, and its field-group specific id is 2 across all updates.
+These fields are all organized into groups, field groups. For each field there is a constant (throughout builds) id per field group. So for example, the field `maxHealth` is in the Health field group, and its field-group specific id is 2 across all updates. You can see the field groups and field ids per fields [here](about:blank). Here are the list of field group names by id (empty = deleted / not in code)
+```
+0 : RELATIONSHIPS
+1 : 
+2 : BARREL
+3 : PHYSICS
+4 : HEALTH
+5 :
+6 : UNKNOWN
+7 : ARENA
+8 : NAME
+9 : GUI
+10: POS
+11: STYLE
+12:
+13: SCORE
+14: TEAM
+15:
+```
 
-> Discuss how the game organizes entities by field group, and list all
+Field groups are also used for the organization of entities, but that will be explained more in the memory section.
 
 ---
 
