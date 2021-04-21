@@ -4,7 +4,7 @@ This document will provide a perspective/overview on how the entire game's netwo
 
 From a developer standpoint, you can think of an entity as an object, it has properties that are stored / sent to the client. Entities are identified by a (not fully understood) <id, hash> system. In this system there is a unique identifier `id` is given to every entity, and while that `id` is being used, no other entity may share it. There is also a hash that is sent, the purpose of this is not known, and few discoveries have been made on it.
 
-The following code was sent by Zeach in a screenshot during a conversation regarding the <id, hash> system. It shows how entity ids are encoded before being sent to the client. More information on entity id encodings can be found [here](/protocol/data.md#entid---vu-hash-vu-id)
+The following code was sent by Zeach in a screenshot during a conversation regarding the <id, hash> system. It shows how entity ids are encoded before being sent to the client. More information on entity id encodings can be found [here](/protocol/data.md#entid---vu-hash-vu-id).
 
 ```c++
 inline void Encode(BinData &out) const {
@@ -30,9 +30,27 @@ Fields, like stated earlier, are basically the equivalent of how properties are 
 
 ## Field Groups + Purpose
 
-These fields are all organized into groups, field groups. For each field there is a constant (throughout builds) id per field group. So for example, the field `maxHealth` is in the Health field group, and its field-group specific id is 2 across all updates.
+These fields are all organized into groups, known as field groups. For each field there is a constant (throughout builds) id per field group. So for example, the field `maxHealth` is in the Health field group, and its field-group specific id is 2 across all updates. You can see the field groups and field ids per fields [here](about:blank). Here are the list of field group names by id (empty = deleted / not in code)
+```
+0 : RELATIONSHIPS
+1 : 
+2 : BARREL
+3 : PHYSICS
+4 : HEALTH
+5 :
+6 : UNKNOWN
+7 : ARENA
+8 : NAME
+9 : GUI
+10: POS
+11: STYLE
+12:
+13: SCORE
+14: TEAM
+15:
+```
 
-> Discuss how the game organizes entities by field group, and list all
+Field groups are also used for the organization of entities, but that will be explained more in the memory section.
 
 ---
 
@@ -44,6 +62,6 @@ These fields are all organized into groups, field groups. For each field there i
 
 ## Memory
 
-> Discuss basics how entities look / interact in the memory
+> Discuss basics how entities look / interact in the memory.
 
 
