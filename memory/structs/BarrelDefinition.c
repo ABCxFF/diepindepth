@@ -91,3 +91,5 @@ struct BarrelDefinition
   // - 96 (last) was (idk if it still is) 159 for all trappers
   int32_t _no_ideas[7];
 }
+
+sizeof(BarrelDefinition) == 100;
