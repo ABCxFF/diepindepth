@@ -25,7 +25,7 @@ cstr.write = function(buffer, addr, string) {
   const HEAP32 = new Int32Array(buffer);
   
   const textBuf = new TextEncoder().encode(string + '\00');
-  const len = textBuf.length - 1;
+  const len = string.length;
 
   if (HEAPU8[addr + 11] === 0x80) free(HEAP32[addr >> 2]);
 
