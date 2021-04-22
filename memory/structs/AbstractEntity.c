@@ -70,3 +70,5 @@ struct AbstractEntity {
     // 15: not present
     struct AbstractFieldGroup* field_groups[16]; // @48
 }
+
+sizeof(AbstractEntity) == 136;
