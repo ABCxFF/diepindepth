@@ -1,3 +1,11 @@
+/*
+    Barrel Definitions have all data relating to
+    barrels (and their bullets) `Barrel Definitions`
+    structs are 100 bytes of size
+    
+    In Emscripten, Pointers are 32 bit.
+*/
+
 struct BarrelDefinition
 {
   // In radians, direction the barrel is facing
@@ -91,5 +99,3 @@ struct BarrelDefinition
   // - 96 (last) was (idk if it still is) 159 for all trappers
   int32_t _no_ideas[7];
 }
-
-sizeof(BarrelDefinition) == 100;
