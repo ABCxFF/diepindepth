@@ -18,14 +18,46 @@ struct TankDefinition
   
   // see cstr.js
   struct cstr name; // @10
-  struct cstr upgrade_msg; // @14
+  struct cstr upgrade_msg; // @1C
   
   // see vector.c
   // Vector of tank ids
-  struct vector[int32_t] upgrades; // ignore the unusual syntax, this isn't made to be C, just to look nice
+  struct vector[int32_t] upgrades; // @28 - @30
   
   // Vector of barrel definitions - so, all to eachother (sizeof(BarrelDefinition) == 100)
-  struct vector[BarrelDefinition] barrels;
+  struct vector[BarrelDefinition] barrels; // @34 - @3C
   
+  // The level you need to be at to upgrade to this tank
+  int32_t level_requirement; // @40
   
+  // Field factor helps determine the fov, see extras/algo.md#fov
+  float field_factor; // @44
+  
+  int32_t _unknown0; // @48 - not in my notes
+  
+  // When this value is set (not 0), it means the tank is square shapes
+  int32_t is_square; // @4C
+  
+  int32_t _unknown1; // @50 - not in my notes
+  int32_t _unknown2; // @54 - not in my notes
+  int32_t _unknown3; // @58 - not in my notes
+  int32_t _unknown4; // @60 - not in my notes
+  
+  // Determines stuff like auto turret, spike / smasher, and other weird stuff like if its an auto three
+  // - Flags here change every update
+  // - Found a value for this once that made the entire gui grayscale
+  int32_t addons; // @64
+  
+  // Yeah, this is weird
+  // To get the border width present in the packets (7.5), you apply 112.5 / load_i32(barrelDefPtr + 0x68)
+  // - Someone should find out if this correlates with canvas or protocol, or both
+  int32_t border_width; // @68
+  
+  int32_t _unknown5; // @6C - not in my notes
+  int32_t _unknown6; // @70 - not in my notes
+  
+  struct cstr stat_names[8]; // @74 - @D4 
+  struct int32_t stat_maxes[8]; // @D4 - @F4
+  
+  // Nothing in my notes whether this is the end or not. Ill update later
 }
