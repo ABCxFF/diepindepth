@@ -1,4 +1,12 @@
 
+/*
+    Tank Definitions have all data relating to
+    tanks. `TankDefinition` structs are (probably)
+    244 bytes of size.
+    
+    In Emscripten, Pointers are 32 bit.
+*/
+
 // Tank Definitions are stored in a linked list, meaning each element
 // points to the next, they aren't all next to eachother in memory.
 //
@@ -61,5 +69,3 @@ struct TankDefinition
   
   // Nothing in my notes whether this is the end or not. Ill update later
 }
-
-sizeof(TankDefinition) == 244? - not sure
