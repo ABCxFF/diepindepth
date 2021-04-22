@@ -61,3 +61,5 @@ struct TankDefinition
   
   // Nothing in my notes whether this is the end or not. Ill update later
 }
+
+sizeof(TankDefinition) == 244? - not sure
