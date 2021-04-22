@@ -25,6 +25,8 @@ For information on data types and encodings, see [`data.md`](./data.md)
 
 ## **`0x00` Update Packet**
 
+Too much to explain here, it'd be easier just putting it in [`update.md`](./update.md).
+
 ---
 
 ## **`0x01` Outdated Client Packet**
