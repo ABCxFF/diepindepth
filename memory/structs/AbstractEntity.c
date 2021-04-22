@@ -1,3 +1,10 @@
+/*
+    Abstract Entity manages all data relating to an entity
+   `AbstractEntity` structs are 136 bytes of size
+
+    In Emscripten, Pointers are 32 bit.
+*/
+
 struct AbstractEntity {
     //** Entity Management Section **//
 
@@ -70,5 +77,3 @@ struct AbstractEntity {
     // 15: not present
     struct AbstractFieldGroup* field_groups[16]; // @48
 }
-
-sizeof(AbstractEntity) == 136;
