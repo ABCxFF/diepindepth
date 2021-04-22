@@ -1,6 +1,7 @@
 /*
-    Abstract Entity manages all data relating to an entity
-   `AbstractEntity` size depends on their type
+    Abstract Field Groupsc contain an entity's
+    field group's data. `AbstractFieldGroup`
+    size depends on its type
 
 ID : NAME      : SIZE
 0 : RELATIONS : 38
