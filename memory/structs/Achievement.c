@@ -19,8 +19,13 @@ struct Achievement
 {
   int32_t pointer; // idk where or why it points, but it does
   
+  // @04
   struct cstr name;
+  // @10
   struct cstr desc;
+  // @2c
+  int32_t index;
+  
 }
 
 
