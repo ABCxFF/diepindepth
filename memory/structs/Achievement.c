@@ -23,6 +23,7 @@ struct Achievement
   struct cstr name;
   // @10
   struct cstr desc;
+  /** gap kinda thing idk **/
   // @2c
   int32_t index;
   
