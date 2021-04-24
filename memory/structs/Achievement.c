@@ -15,19 +15,9 @@ int something = 54336;
 }
 */
 
-// this might be (definitely?) shifted 38 bytes off
 struct Achievement
 {
-  int32_t pointer; // idk where or why it points, but it does
-  
-  // @04
-  struct cstr name;
-  // @10
-  struct cstr desc;
-  /** gap kinda thing idk **/
-  // @2c
-  int32_t index;
-  
+  int32_t _unknown_0 = 0; // always 0  
 }
 
 
