@@ -15,6 +15,7 @@
 }
 */
 
+// this might be (definitely?) shifted 38 bytes off
 struct Achievement
 {
   int32_t pointer; // idk where or why it points, but it does
