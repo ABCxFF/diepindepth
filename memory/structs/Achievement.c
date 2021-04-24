@@ -17,7 +17,12 @@ int something = 54336;
 
 struct Achievement
 {
-  int32_t _unknown_0 = 0; // always 0  
+  int64_t _unknown_0 = 0; // always 0
+  int64_t _unknown_1 = 0; // always 0
+  int64_t _unknown_2 = 0; // always 0
+  int32_t _unknown_3; // always 1 or pointer
+  struct cstr name;
+  struct str desc;
 }
 
 
