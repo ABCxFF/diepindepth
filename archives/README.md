@@ -4,6 +4,7 @@ Although the goal is to be able to fetch and parse all data from any build at an
 Abstract Format:
 ```py
 utf8(build) length=40 or 20 # build hash
+f32(archive date)
 [
   ...{
     u8(entry type id)
