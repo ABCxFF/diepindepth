@@ -30,10 +30,10 @@ struct TankDefinition
   
   // see vector.c
   // Vector of tank ids
-  struct vector upgrades[]; // @28 - @30
+  struct vector[int32_t] upgrades; // @28 - @30
   
   // Vector of barrel definitions - so, all to eachother (sizeof(BarrelDefinition) == 100)
-  struct vector barrels[]; // @34 - @3C
+  struct vector[Barrel] barrels; // @34 - @3C
   
   // The level you need to be at to upgrade to this tank
   int32_t level_requirement; // @40
