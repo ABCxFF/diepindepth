@@ -29,13 +29,13 @@ struct AbstractEntity {
     // Self Ent Pointer @10
     // - points to this entity
     struct AbstractEntity* self_ptr1; // @10
-    char _gap_0[12];
+    uint8_t _gap_0[12];
 
     //** Maybe Empty? Section **//
     // Self Ent Pointer @20
     // - points to this entity
     struct AbstractEntity* self_ptr2; // @20
-    char _gap_1[12];
+    uint8_t _gap_1[12];
 
 
 
@@ -51,7 +51,7 @@ struct AbstractEntity {
     uint16_t id; // @36
     // Entity hash, part of the <id, hash> representation system
     uint32_t hash; // @38
-    char _gap_2[4];
+    uint8_t _gap_2[4];
 
 
 
@@ -76,4 +76,4 @@ struct AbstractEntity {
     // 14: TEAM
     // 15: not present
     struct AbstractFieldGroup* field_groups[16]; // @48
-}
+};
