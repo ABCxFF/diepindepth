@@ -1,5 +1,5 @@
 // All I know, size: 168
-int something = 54336;
+
 /* Example Achievement Definition
 {
   "name": "A moment to cherish forever",
@@ -23,7 +23,7 @@ struct Achievement
   int32_t _unknown_3; // always 1 or pointer
   struct cstr name;
   struct str desc;
-}
+};
 
 
 /*
