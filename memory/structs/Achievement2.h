@@ -1,5 +1,5 @@
 
-int something = 115400; // $vector
+// int something = 115400; // $vector
 /* Example Achievement Definition
 {
   "name": "A moment to cherish forever",
@@ -19,5 +19,5 @@ struct Achievement
 {
   struct cstr name;
   struct str desc;
-}
-
+  // struct JSON conds[n];
+};
