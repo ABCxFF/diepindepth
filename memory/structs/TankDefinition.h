@@ -30,10 +30,10 @@ struct TankDefinition
   
   // see vector.c
   // Vector of tank ids
-  struct vector[int32_t] upgrades; // @28 - @30
+  struct vector upgrades[]; // @28 - @30
   
   // Vector of barrel definitions - so, all to eachother (sizeof(BarrelDefinition) == 100)
-  struct vector[BarrelDefinition] barrels; // @34 - @3C
+  struct vector barrels[]; // @34 - @3C
   
   // The level you need to be at to upgrade to this tank
   int32_t level_requirement; // @40
@@ -68,4 +68,4 @@ struct TankDefinition
   struct int32_t stat_maxes[8]; // @D4 - @F4
   
   // Nothing in my notes whether this is the end or not. Ill update later
-}
+};
