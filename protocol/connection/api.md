@@ -14,7 +14,9 @@ URL -> `https://api.n.m28.io/server/{server-id}`
 
 Example request/response
 ```http
-GET /server HTTP/2 200
+GET /server HTTP/2
+
+HTTP/2 200 OK
 Host: api.n.m28.io
 Content-Type: application/json; charset=utf-8
 Content-Length: 87
@@ -36,7 +38,9 @@ URL `https://api.n.m28.io/endpoint/diepio-{gamemode}/findEach`
 
 Example request/response
 ```http
-GET /endpoint/diepio-sandbox/findEach HTTP/2 200
+GET /endpoint/diepio-sandbox/findEach HTTP/2
+
+HTTP/2 200 OK
 Host: api.n.m28.io
 Content-Type: application/json; charset=utf-8
 Content-Length: 523
@@ -86,7 +90,9 @@ URL -> `https://api.n.m28.io/endpoint/latency/findEach`
 
 Example request/response (minified for size)
 ```http
-GET /endpoint/latency/findEach HTTP/2 200
+GET /endpoint/latency/findEach HTTP/2
+
+HTTP/2 200 OK
 Host: api.n.m28.io
 Content-Type: application/json; charset=utf-8
 Content-Length: 1326
