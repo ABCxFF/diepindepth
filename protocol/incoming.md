@@ -72,7 +72,9 @@ The decompressed result will include the packet header, you should feed this int
 
 This packet sends data which trigger the notifications you see in game, for example messages like "The Guardian has spawned". 
 
-The Red Green Blue values are encoded as an uint32. For example, rgb(33, 130, 67) would be the same as u32(0x218243) where each byte is a color. The fourth byte is not used, there is no alpha channel. The time the notification appears in milliseconds is encoded as a float, and the final value part of this packet is the notification identifier. If a notification with the same identifier as the new one already exists (unless the identifier is an empty string) then the previous notification disappears immediately without waiting for its timer, only one notification may exist at a time with a given identifier. This is used to make sure duplicate notifications such as toggles do not spam your screen. The identifiers used in the game are the following, though note that there are many more types of notifications without one:
+The Red Green Blue values are encoded as an uint32. For example, rgb(33, 130, 67) would be the same as u32(0x218243) where each byte is a color. The fourth byte is not used, there is no alpha channel. The time the notification appears in milliseconds is encoded as a float, and the final value part of this packet is the notification identifier.  
+
+If a notification with the same identifier as the new one already exists (unless the identifier is an empty string) then the previous notification disappears immediately without waiting for its timer, only one notification may exist at a time with a given identifier. This is used to make sure duplicate notifications such as toggles do not spam your screen. The identifiers used in the game are the following, though note that there are many more types of notifications without one:
 
 - `autofire`
 - `autospin`
