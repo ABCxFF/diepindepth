@@ -10,15 +10,17 @@ What started off as an attempt to parse game leaderboards out of packets is now 
 
 ### **Sections**
 
-There are 4 sections that divide up the information collected.
+There are 5 sections that divide up the information collected.
 
 1. Game Protocol ([`protocol/`](./protocol/))  
    Including incoming and outgoing packets, encoding/decoding, m28 server list api and websocket connections
 2. WebAssembly Reversal ([`wasm/`](./wasm/))  
    Including any means necessary, asm.js conversion, specific functions, automation of reversing constants and pointers, understanding of emscripten
-3. Memory Management ([`memory/`](./memory/))  
+3. Canvas Reversal ([`canvas`](./canvas/))
+   Including shape sizes and scaling.
+4. Memory Management ([`memory/`](./memory/))  
    Including storage of entities, tanks, the gui, and the structure and way things are stored
-4. Extras ([`extras/`](./extras/))  
+5. Extras ([`extras/`](./extras/))  
    Including any extra information, fun facts, misc algorithms, and any physics not provided in [Spade Squad](http://spade-squad.com)
 
 Before going to in depth into entity related memory and protocol, it is highly recommended you read [`entities.md`](./entities.md) to understand how entities work.
