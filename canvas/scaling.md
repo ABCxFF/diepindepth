@@ -12,13 +12,14 @@ Unlike scalingFactor, this value does not change if our window dimensions change
 Calculated using the following:
 ```js
 function windowScaling() {
-  const a = window.innerHeight / 1080;
-  const b = window.innerWidth / 1920;
+  const canvas = document.getElementById('canvas');
+  const a = canvas.height / 1080;
+  const b = canvas.width / 1920;
   return b < a ? a : b;
 }
 ```
 
-Quick note: `window.innerHeight/Width` really should be `document.getElementById('canvas').width/height` if it weren't for simplicity purposes. It matters a lot if `window.devicePixelRatio` is not equal to 1.
+Quick note: It may be tempting to use `window.innerHeight/Width`, but the difference matters a lot if `window.devicePixelRatio` is not equal to 1.
 
 The values 1920 and 1080 are in a 16:9 ratio.
 
