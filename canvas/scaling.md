@@ -44,4 +44,4 @@ Examples of how to convert from one another:
 - 10 diep units * scalingFactor gives us canvas pixels
 - 10 canvas pixels / scalingFactor gives us diep units
 
-Some remarks: this value only appears when diep draws the grid. It draws the grid by first drawing a portion of the grid onto a separate canvas (with scaling of 1 canvas pixel = diep unit), then using createPattern to draw the entire grid. Before drawing the grid onto the main canvas however, it setTransforms the main canvas so that the horizontal and vertical scaling is equal to the scalingFactor.
+Some remarks: this value only appears when diep draws the grid. It draws the grid by first drawing a portion of the grid onto a separate canvas (with scaling of 1 canvas pixel = 1 diep unit), then using createPattern to draw the entire grid. Before drawing the grid onto the main canvas however, it setTransforms the main canvas so that the horizontal and vertical scaling is equal to the scalingFactor.
