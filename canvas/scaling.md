@@ -17,6 +17,9 @@ function windowScaling() {
   return b < a ? a : b;
 }
 ```
+
+Quick note: `window.innerHeight/Width` really should be `document.getElementById('canvas').width/height` if it weren't for simplicity purposes. It matters a lot if `window.devicePixelRatio` is not equal to 1.
+
 The values 1920 and 1080 are in a 16:9 ratio.
 
 To conceptualize this code, let's say that our current window is 1920 x 1080. `a` and `b` would be 1.
