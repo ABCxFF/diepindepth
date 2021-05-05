@@ -18,7 +18,7 @@
 
 ## Colors
 
-If any of the sections reference a color, refer to here.
+If any of the sections reference a color, refer to it here.
 
 - Gray
   - fill: #999999
@@ -111,6 +111,8 @@ Note: all the darkened colors are essentially the same color but with all three 
 
 - Copy party link
   - fill: #adadad
+  - fill dark: #8a8a8a
+  - fill light: #bdbdbd
 
 ### Cancerous florr ad
 
