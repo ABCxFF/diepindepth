@@ -16,8 +16,8 @@ There are 5 sections that divide up the information collected.
    Including incoming and outgoing packets, encoding/decoding, m28 server list api and websocket connections
 2. WebAssembly Reversal ([`wasm/`](./wasm/))  
    Including any means necessary, asm.js conversion, specific functions, automation of reversing constants and pointers, understanding of emscripten
-3. Canvas Reversal ([`canvas/`](./canvas/))
-   Including shape sizes and scaling.
+3. Canvas Reversal ([`canvas/`](./canvas/))  
+   Including shape sizes, draw sequences, scaling, and color constants.
 4. Memory Management ([`memory/`](./memory/))  
    Including storage of entities, tanks, the gui, and the structure and way things are stored
 5. Extras ([`extras/`](./extras/))  
