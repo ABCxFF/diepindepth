@@ -24,8 +24,8 @@ If any of the sections reference a color, refer to it here.
   - fill: #999999
   - stroke: #727272
 - Blue
-  - fill: #0085a8
-  - stroke: #00b2e1
+  - fill: #00b2e1
+  - stroke: #0085a8
 - Red
   - fill: #f14e54
   - stroke: #b43a3f
