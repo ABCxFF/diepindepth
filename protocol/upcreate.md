@@ -6,7 +6,7 @@ The infamous one and only 0x00 upcreate packet, containing almost all informatio
 The update packet contains server uptick, entity deletions (entities on screen that should be deleted), and entity upcreates (creations new entities or updates of older entities). The rough format of the 0x00 packet is as follows:
 > `0x00 vu(deleteCount) ...entity id deletes vu(upcreateCount) ...upcreates`
 
-Two types of things can happen in an upcreate, there can be a creation, and an update (hence the word upcrease). Creations and updates have their own format and are identified in their own way. Both of the data in creations updates though, are organized in a field order, which is the per-build order of all fields.
+Two types of things can happen in an upcreate, there can be a creation, and an update (hence the word upcreate). Creations and updates have their own format and are identified in their own way. Both of the data in creations updates though, are organized in a field order, which is the per-build order of all fields.
 > Being 68 fields, there are always 68 indexes. These field indexes are used for the protocol, and for the offsets in the memory. All fields and located here
 Read a bit more about field orders [here](/entities.md#fields)
 ---
