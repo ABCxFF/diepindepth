@@ -1,12 +1,12 @@
 # **Incoming Packets**
 
-Also known as clientbound, these packets, after being encoded, are sent from the server to the client. Most of these packets aren't too complex once you understand the basics of a reader, with the exception of the incoming [`0x00`](./incoming.md#0x00-update-packet) packet.
+Also known as clientbound, these packets, after being encoded, are sent from the server to the client. Most of these packets aren't too complex once you understand the basics of a reader, with the exception of the incoming [`0x00`](./incoming.md#0x00-upcreate-packet) packet.
 
 For information on data types and encodings, see [`data.md`](./data.md)
 
 | Header                                              | Name              | Description                                                  |
 | --------------------------------------------------- | ----------------- | ------------------------------------------------------------ |
-| [`0x00`](./incoming.md#0x00-update-packet)          | Update            | Creates, updates, and deletes objects and entities           |
+| [`0x00`](./incoming.md#0x00-upcreate-packet)        | upcreate          | Creates, updates, and deletes objects and entities           |
 | [`0x01`](./incoming.md#0x01-outdated-client-packet) | Outdated Client   | Response to invalid build in the init packet                 |
 | [`0x02`](./incoming.md#0x02-compressed-packet)      | Compressed Packet | LZ4 compressed packet of any header                          |
 | [`0x03`](./incoming.md#0x03-notification-packet)    | Notification      | Sends notifications in game                                  |
@@ -23,9 +23,9 @@ For information on data types and encodings, see [`data.md`](./data.md)
 
 ---
 
-## **`0x00` Update Packet**
+## **`0x00` Upcreate Packet**
 
-Too much to explain here, it'd be easier just putting it in [`update.md`](./update.md).
+Too much to explain here, it'd be easier just putting it in [`upcreate.md`](./upcreate.md).
 
 ---
 
