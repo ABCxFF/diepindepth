@@ -1,4 +1,4 @@
-# 0x00 Upcate Packet
+# 0x00 Upcreate Packet
 > `upcreate = update or creation`
 ---
 The infamous one and only 0x00 upcreate packet, containing almost all information you see in the game. If you have not read [`/entities.md`](/entities.md), I do highly advise reading it, as it relates directly to how update packets work.
