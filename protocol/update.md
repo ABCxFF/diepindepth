@@ -31,4 +31,30 @@ So in updates, after the entity id is a `00` byte, and in creation, its a `01` w
 
 ### 2. Parsing Creation
 
+Like stated in entities.md(`TODO: Link this`), entities are defined by their entity id, entity hash, field groups, and field data, all of which are present in creations. The entity id and hash is encoded in the entid format, spoken about in data.md (`TODO: Link this`), the field groups are encoded in a table / jumpTable, spoken about in as well data.md (`TODO: Link this`), then from the field groups, the fields are retrieved, ordered by the field order, then the data that corresponds with each field in order is written onto the packet. Here's a rough sketch of what it would look like:
+
+> ```less
+> 01 03 # entity id
+>    01 # signifies creation
+>       00 # now the following is read as a jump table, with no value only indexes
+>       02
+>       00
+>       02
+>    01 # close table
+>    
+>    ...byte /*
+>     *n* number of bytes that have all entity's data
+>     the fields in the field groups determined by the jump table are organized in order of the field order
+>     the bytes are then read in the order & types of these organized fields
+>     
+>     */
+> ```
+
+Note:
+- To parse tabled fields, such as `leaderboardNames`, you need to know the total amount of values they have, `leaderboardNames` for example has `10`, so you would read 10 null terminating strings, which its type.
+
+Abstract Format of a Creation:
+
+> `entid(entity id, hash) 0x01 jumpTable(fieldGroup indexes only) ...field data`
+
 ### 3. Parsing Update
