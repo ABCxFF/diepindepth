@@ -139,6 +139,8 @@ Note: the gameplay colors are combined with transparency, so it may seem counter
   - stroke: #43ff91
 - Level up bar
   - stroke: #ffde43
+- Health bar
+  - stroke: #85e37d
 - Blue notification
   - fill: #0000ff
 - Gray notification
