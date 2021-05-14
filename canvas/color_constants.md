@@ -129,7 +129,7 @@ Note: the gameplay colors are combined with transparency, so it may seem counter
 
 - Grid
   - fill: #cdcdcd
-  - stroke: \*varies\*
+  - stroke: #000000
 - Minimap background
   - fill: #cdcdcd
   - stroke: #555555
