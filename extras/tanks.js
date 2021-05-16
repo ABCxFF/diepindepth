@@ -12,7 +12,7 @@ module.exports = Array.from({
 	10: "Destroyer",
 	11: "Overseer",
 	12: "Overlord",
-	13: "Twin-Flank",
+	13: "Twin Flank",
 	14: "Penta Shot",
 	15: "Assassin",
 	16: "Arena Closer",
