@@ -1,4 +1,3 @@
-
 // ==UserScript==
 // @name         Diep.io Packet WASM Hook
 // @author       ABC
