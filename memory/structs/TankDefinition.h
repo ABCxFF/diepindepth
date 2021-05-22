@@ -32,7 +32,7 @@ struct TankDefinition
   // Vector of tank ids
   struct vector[int32_t] upgrades; // @28 - @30
   
-  // Vector of barrel definitions - so, all to eachother (sizeof(BarrelDefinition) == 100)
+  // Vector of barrel definitions - so, all to eachother (sizeof BarrelDefinition's == 100)
   struct vector[Barrel] barrels; // @34 - @3C
   
   // The level you need to be at to upgrade to this tank
@@ -44,15 +44,14 @@ struct TankDefinition
   // For all tanks it is set to one, except for mothership which is 0.01
   float movement_speed; // @48
   
-  // When this value is set (not 0), it means the tank is square shapes
-  int32_t is_square; // @4C
+  // When this value is set (not 0), it means the tank is square shape
+  bool is_square; // @4C
 
   float _unknown0; // @50 - Always set to 0.23, with exception to landmine and manager, which is set to 0
   float _unknown1; // @54 - Always 0.8, except for landmine which is 1.6
   float _unknown2; // @58 - Always 0.03, (landmine is interestingly expressed differently in float form though)
 
   // The following booleans are one byte in size
-
   // Unused boolean, always set to true
   bool _unknown3; // @5C
   // The following is only set for mothership, the assumption is that it has a team/arrow field group.
@@ -63,7 +62,7 @@ struct TankDefinition
   bool requires_devmode; // @5F
 
   // Determines stuff like auto turret, spike / smasher, and other weird stuff like if its an auto three
-  // - Flags here change every update
+  // - Values here change every update - not fully understood yet
   // - Found a value for this once that made the entire gui grayscale
   // - Auto 5 + Auto 3 is possible and beautiful (:
   int32_t addons[2]; // @60 - @64
@@ -75,10 +74,11 @@ struct TankDefinition
   
   // Defaults to 50, with dominator tanks it is 6000
   int32_t max_health; // @6C
+
   int32_t _unknown4; // @70 - not in my notes
   
   struct cstr stat_names[8]; // @74 - @D4 
-  struct int32_t stat_maxes[8]; // @D4 - @F4
+  int32_t stat_maxes[8]; // @D4 - @F4
   
   // Nothing in my notes whether this is the end or not. Ill update later
 };
