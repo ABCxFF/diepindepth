@@ -40,19 +40,21 @@ struct TankDefinition
   
   // Field factor helps determine the fov, see extras/algo.md#fov
   float field_factor; // @44
-  
-  int32_t _unknown0; // @48 - not in my notes
+
+  // For all tanks it is set to one, except for mothership which is 0.01
+  float movement_speed; // @48
   
   // When this value is set (not 0), it means the tank is square shapes
   int32_t is_square; // @4C
 
-  int32_t _unknown1; // @50 - not in my notes
-  int32_t _unknown2; // @54 - not in my notes
-  int32_t _unknown3; // @58 - not in my notes
+  float _unknown0; // @50 - Always set to 0.23, with exception to landmine and manager, which is set to 0
+  float _unknown1; // @54 - Always 0.8, except for landmine which is 1.6
+  float _unknown2; // @58 - Always 0.03, (landmine is interestingly expressed differently in float form though)
 
   // The following booleans are one byte in size
-  // Unused boolean, always set to true (1)
-  bool _unknown4; // @5C
+
+  // Unused boolean, always set to true
+  bool _unknown3; // @5C
   // The following is only set for mothership, the assumption is that it has a team/arrow field group.
   bool has_arrow; // @5D
   // The following is only set for predator, the assumption is that it allows for fov extending
@@ -71,8 +73,9 @@ struct TankDefinition
   // - Someone should find out if this correlates with canvas or protocol, or both
   int32_t border_width; // @68
   
-  int32_t _unknown5; // @6C - not in my notes
-  int32_t _unknown6; // @70 - not in my notes
+  // Defaults to 50, with dominator tanks it is 6000
+  int32_t max_health; // @6C
+  int32_t _unknown4; // @70 - not in my notes
   
   struct cstr stat_names[8]; // @74 - @D4 
   struct int32_t stat_maxes[8]; // @D4 - @F4
