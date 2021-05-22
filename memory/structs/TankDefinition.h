@@ -45,11 +45,20 @@ struct TankDefinition
   
   // When this value is set (not 0), it means the tank is square shapes
   int32_t is_square; // @4C
-  
+
   int32_t _unknown1; // @50 - not in my notes
   int32_t _unknown2; // @54 - not in my notes
   int32_t _unknown3; // @58 - not in my notes
-  int32_t _unknown4; // @5C - not in my notes
+
+  // The following booleans are one byte in size
+  // Unused boolean, always set to true (1)
+  bool _unknown4; // @5C
+  // The following is only set for mothership, the assumption is that it has a team/arrow field group.
+  bool has_arrow; // @5D
+  // The following is only set for predator, the assumption is that it allows for fov extending
+  bool has_fov_ability; // @5E
+  // The following is set for tanks that can no longer be selected in sandbox. They are considered dev mode tanks
+  bool requires_devmode; // @5F
 
   // Determines stuff like auto turret, spike / smasher, and other weird stuff like if its an auto three
   // - Flags here change every update
