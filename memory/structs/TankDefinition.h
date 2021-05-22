@@ -50,20 +50,20 @@ struct TankDefinition
   int32_t _unknown2; // @54 - not in my notes
   int32_t _unknown3; // @58 - not in my notes
   int32_t _unknown4; // @5C - not in my notes
-  int32_t _unknown5; // @60 - not in my notes
-  
+
   // Determines stuff like auto turret, spike / smasher, and other weird stuff like if its an auto three
   // - Flags here change every update
   // - Found a value for this once that made the entire gui grayscale
-  int32_t addons; // @64
+  // - Auto 5 + Auto 3 is possible and beautiful (:
+  int32_t addons[2]; // @60 - @64
   
   // Yeah, this is weird
   // To get the border width present in the packets (7.5), you apply 112.5 / load_i32(barrelDefPtr + 0x68)
   // - Someone should find out if this correlates with canvas or protocol, or both
   int32_t border_width; // @68
   
-  int32_t _unknown6; // @6C - not in my notes
-  int32_t _unknown7; // @70 - not in my notes
+  int32_t _unknown5; // @6C - not in my notes
+  int32_t _unknown6; // @70 - not in my notes
   
   struct cstr stat_names[8]; // @74 - @D4 
   struct int32_t stat_maxes[8]; // @D4 - @F4
