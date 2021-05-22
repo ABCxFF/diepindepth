@@ -49,7 +49,8 @@ struct TankDefinition
   int32_t _unknown1; // @50 - not in my notes
   int32_t _unknown2; // @54 - not in my notes
   int32_t _unknown3; // @58 - not in my notes
-  int32_t _unknown4; // @60 - not in my notes
+  int32_t _unknown4; // @5C - not in my notes
+  int32_t _unknown5; // @60 - not in my notes
   
   // Determines stuff like auto turret, spike / smasher, and other weird stuff like if its an auto three
   // - Flags here change every update
@@ -61,8 +62,8 @@ struct TankDefinition
   // - Someone should find out if this correlates with canvas or protocol, or both
   int32_t border_width; // @68
   
-  int32_t _unknown5; // @6C - not in my notes
-  int32_t _unknown6; // @70 - not in my notes
+  int32_t _unknown6; // @6C - not in my notes
+  int32_t _unknown7; // @70 - not in my notes
   
   struct cstr stat_names[8]; // @74 - @D4 
   struct int32_t stat_maxes[8]; // @D4 - @F4
