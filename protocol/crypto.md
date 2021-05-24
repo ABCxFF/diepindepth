@@ -1,6 +1,6 @@
 # Packet Encoding and Decoding
 
-Also known as shuffling/deshuffling, this encryption system is what annoys 80% of all the people who deal with diep protocol. No one has fully reverse engineered every part of the encryption system, but Shädam got close, and was able to reverse engineer (for the most partt) packet opcode/header encodings, and content encodings. Some of his old code is visible on repos in his account.
+Also known as shuffling/unshuffling, this encryption system is what annoys 80% of all the people who deal with diep protocol. No one has fully reverse engineered every part of the encryption system, but Shädam got close, and was able to reverse engineer (for the most partt) packet opcode/header encodings, and content encodings. Some of his old code is visible on repos in his account.
 
 > Add some broad statements here
 
