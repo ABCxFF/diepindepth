@@ -147,6 +147,10 @@ Note: the gameplay colors are combined with transparency, so it may seem counter
   - fill: #000000
 - Black fill background (outside area of arena and black background of score bars)
   - fill: #000000
+- White non-cheat name
+  - fill: #ffffff
+- Yellow cheat name
+  - fill: #ffff90
 
 ### Upgrade menu
 
