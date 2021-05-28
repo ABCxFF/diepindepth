@@ -74,8 +74,7 @@ struct TankDefinition
   // - Auto 5 + Auto 3 is possible and beautiful (:
   int32_t addons[2]; // @60 - @64
   
-  // Yeah, this is weird
-  // To get the border width present in the packets (480), you DO 32 * Load_i32(barrelDefPtr + 0x68)
+  // Yeah, this is weird. The larger this property is, the smaller the border width is
   // - Someone should find out if this correlates with canvas or protocol, or both.
   // - Fairly sure more with canvas than protocol
   int32_t border_width; // @68
