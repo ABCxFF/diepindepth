@@ -1,4 +1,4 @@
-module.exports = [
+[
   {
     "id": 0,
     "name": "Tank",
@@ -17,7 +17,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -28,7 +27,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 0,
@@ -79,7 +79,6 @@ module.exports = [
         "size": 95,
         "offset": -26,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.75,
         "bullet": {
           "type": "bullet",
@@ -90,7 +89,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -98,7 +98,6 @@ module.exports = [
         "size": 95,
         "offset": 26,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.75,
         "bullet": {
           "type": "bullet",
@@ -109,7 +108,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 15,
@@ -156,7 +156,6 @@ module.exports = [
         "size": 80,
         "offset": -26,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.5,
         "bullet": {
           "type": "bullet",
@@ -167,7 +166,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -175,7 +175,6 @@ module.exports = [
         "size": 80,
         "offset": 26,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.5,
         "bullet": {
           "type": "bullet",
@@ -186,7 +185,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -194,7 +194,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.5,
         "bullet": {
           "type": "bullet",
@@ -205,7 +204,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -256,7 +256,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": -0.7853981633974483,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -267,7 +266,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0.7853981633974483,
@@ -275,7 +275,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0.7853981633974483,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -286,7 +285,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -294,7 +294,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -305,7 +304,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 30,
@@ -355,7 +355,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 3.141592653589793,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -366,7 +365,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": -1.5707963267948966,
@@ -374,7 +374,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": -1.5707963267948966,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -385,7 +384,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 1.5707963267948966,
@@ -393,7 +393,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 1.5707963267948966,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -404,7 +403,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -412,7 +412,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -423,7 +422,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 30,
@@ -470,7 +470,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": -0.7853981633974483,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -481,7 +480,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0.7853981633974483,
@@ -489,7 +489,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0.7853981633974483,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -500,7 +499,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": -2.356194490192345,
@@ -508,7 +508,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": -2.356194490192345,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -519,7 +518,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 2.356194490192345,
@@ -527,7 +527,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 2.356194490192345,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -538,7 +537,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 3.141592653589793,
@@ -546,7 +546,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 3.141592653589793,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -557,7 +556,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": -1.5707963267948966,
@@ -565,7 +565,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": -1.5707963267948966,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -576,7 +575,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 1.5707963267948966,
@@ -584,7 +584,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 1.5707963267948966,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -595,7 +594,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -603,7 +603,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -614,7 +613,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -666,7 +666,6 @@ module.exports = [
         "size": 110,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 3,
         "bullet": {
           "type": "bullet",
@@ -677,7 +676,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1.5,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 15,
@@ -728,7 +728,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -739,7 +738,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 0.5,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 15,
@@ -791,7 +791,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -802,7 +801,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 3.141592653589793,
@@ -810,7 +810,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 3.141592653589793,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -821,7 +820,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 15,
@@ -871,7 +871,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -882,7 +881,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 3.6651914291880923,
@@ -890,7 +890,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 3.6651914291880923,
         "recoil": 2.5,
         "bullet": {
           "type": "bullet",
@@ -901,7 +900,8 @@ module.exports = [
           "durability": 0.5
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 2.6179938779914944,
@@ -909,7 +909,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 2.6179938779914944,
         "recoil": 2.5,
         "bullet": {
           "type": "bullet",
@@ -920,7 +919,8 @@ module.exports = [
           "durability": 0.5
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 30,
@@ -972,7 +972,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 15,
         "bullet": {
           "type": "bullet",
@@ -983,7 +982,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 4,
-        "width": 24.705875
+        "width": 24.705875,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 30,
@@ -1037,7 +1037,6 @@ module.exports = [
         "size": 70,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": -1.5707963267948966,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -1049,7 +1048,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 4,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 1.5707963267948966,
@@ -1057,7 +1057,6 @@ module.exports = [
         "size": 70,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 1.5707963267948966,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -1069,7 +1068,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 4,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 30,
@@ -1116,7 +1116,6 @@ module.exports = [
         "size": 70,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": -1.5707963267948966,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -1128,7 +1127,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 1.5707963267948966,
@@ -1136,7 +1136,6 @@ module.exports = [
         "size": 70,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 1.5707963267948966,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -1148,7 +1147,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -1156,7 +1156,6 @@ module.exports = [
         "size": 70,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -1168,7 +1167,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 3.141592653589793,
@@ -1176,7 +1176,6 @@ module.exports = [
         "size": 70,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 3.141592653589793,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -1188,7 +1187,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -1238,7 +1238,6 @@ module.exports = [
         "size": 95,
         "offset": -26,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -1249,7 +1248,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -1257,7 +1257,6 @@ module.exports = [
         "size": 95,
         "offset": 26,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -1268,7 +1267,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 3.141592653589793,
@@ -1276,7 +1276,6 @@ module.exports = [
         "size": 95,
         "offset": -26,
         "isTrapezoid": false,
-        "trapezoidDir": 3.141592653589793,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -1287,7 +1286,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 3.141592653589793,
@@ -1295,7 +1295,6 @@ module.exports = [
         "size": 95,
         "offset": 26,
         "isTrapezoid": false,
-        "trapezoidDir": 3.141592653589793,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -1306,7 +1305,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 30,
@@ -1353,7 +1353,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": -0.7853981633974483,
         "recoil": 0.7,
         "bullet": {
           "type": "bullet",
@@ -1364,7 +1363,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0.7853981633974483,
@@ -1372,7 +1372,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0.7853981633974483,
         "recoil": 0.7,
         "bullet": {
           "type": "bullet",
@@ -1383,7 +1382,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": -0.39269908169872414,
@@ -1391,7 +1391,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": -0.39269908169872414,
         "recoil": 0.7,
         "bullet": {
           "type": "bullet",
@@ -1402,7 +1401,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0.39269908169872414,
@@ -1410,7 +1410,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0.39269908169872414,
         "recoil": 0.7,
         "bullet": {
           "type": "bullet",
@@ -1421,7 +1420,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -1429,7 +1429,6 @@ module.exports = [
         "size": 110,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.7,
         "bullet": {
           "type": "bullet",
@@ -1440,7 +1439,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -1490,7 +1490,6 @@ module.exports = [
         "size": 120,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 3,
         "bullet": {
           "type": "bullet",
@@ -1501,7 +1500,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 30,
@@ -1548,7 +1548,6 @@ module.exports = [
         "size": 75,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -1559,7 +1558,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 0,
@@ -1606,7 +1606,6 @@ module.exports = [
         "size": 70,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": -1.5707963267948966,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -1618,7 +1617,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 0,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 1.5707963267948966,
@@ -1626,7 +1626,6 @@ module.exports = [
         "size": 70,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 1.5707963267948966,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -1638,7 +1637,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 0,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -1685,7 +1685,6 @@ module.exports = [
         "size": 95,
         "offset": -26,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -1696,7 +1695,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -1704,7 +1704,6 @@ module.exports = [
         "size": 95,
         "offset": 26,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -1715,7 +1714,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 2.0943951023931953,
@@ -1723,7 +1723,6 @@ module.exports = [
         "size": 95,
         "offset": -26,
         "isTrapezoid": false,
-        "trapezoidDir": 2.0943951023931953,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -1734,7 +1733,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 2.0943951023931953,
@@ -1742,7 +1742,6 @@ module.exports = [
         "size": 95,
         "offset": 26,
         "isTrapezoid": false,
-        "trapezoidDir": 2.0943951023931953,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -1753,7 +1752,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": -2.0943951023931953,
@@ -1761,7 +1761,6 @@ module.exports = [
         "size": 95,
         "offset": -26,
         "isTrapezoid": false,
-        "trapezoidDir": -2.0943951023931953,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -1772,7 +1771,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": -2.0943951023931953,
@@ -1780,7 +1780,6 @@ module.exports = [
         "size": 95,
         "offset": 26,
         "isTrapezoid": false,
-        "trapezoidDir": -2.0943951023931953,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -1791,7 +1790,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -1841,7 +1841,6 @@ module.exports = [
         "size": 110,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.3,
         "bullet": {
           "type": "bullet",
@@ -1852,7 +1851,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 2.5,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -1860,7 +1860,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.3,
         "bullet": {
           "type": "bullet",
@@ -1871,7 +1870,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 2.5,
-        "width": 31.1111
+        "width": 31.1111,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 30,
@@ -1922,7 +1922,6 @@ module.exports = [
         "size": 65,
         "offset": -32,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -1933,7 +1932,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 70
+        "width": 70,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -1941,7 +1941,6 @@ module.exports = [
         "size": 65,
         "offset": 32,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -1952,7 +1951,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 70
+        "width": 70,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -1960,7 +1960,6 @@ module.exports = [
         "size": 85,
         "offset": -17,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -1971,7 +1970,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 70
+        "width": 70,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -1979,7 +1979,6 @@ module.exports = [
         "size": 85,
         "offset": 17,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -1990,7 +1989,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 70
+        "width": 70,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 30,
@@ -2037,7 +2037,6 @@ module.exports = [
         "size": 120,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 0,
         "recoil": 3,
         "bullet": {
           "type": "bullet",
@@ -2048,7 +2047,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 3.141592653589793
       }
     ],
     "levelRequirement": 45,
@@ -2095,7 +2095,6 @@ module.exports = [
         "size": 120,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 3,
         "bullet": {
           "type": "bullet",
@@ -2106,7 +2105,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -2155,7 +2155,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -2166,7 +2165,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 3.9269908169872414,
@@ -2174,7 +2174,6 @@ module.exports = [
         "size": 70,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 3.9269908169872414,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -2185,7 +2184,8 @@ module.exports = [
           "durability": 0.5
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 2.356194490192345,
@@ -2193,7 +2193,6 @@ module.exports = [
         "size": 70,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 2.356194490192345,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -2204,7 +2203,8 @@ module.exports = [
           "durability": 0.5
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 3.6651914291880923,
@@ -2212,7 +2212,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 3.6651914291880923,
         "recoil": 2.5,
         "bullet": {
           "type": "bullet",
@@ -2223,7 +2222,8 @@ module.exports = [
           "durability": 0.5
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 2.6179938779914944,
@@ -2231,7 +2231,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 2.6179938779914944,
         "recoil": 2.5,
         "bullet": {
           "type": "bullet",
@@ -2242,7 +2241,8 @@ module.exports = [
           "durability": 0.5
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -2289,7 +2289,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -2300,7 +2299,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 1.5707963267948966,
@@ -2308,7 +2308,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 1.5707963267948966,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -2319,7 +2318,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1.5,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": -1.5707963267948966,
@@ -2327,7 +2327,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": -1.5707963267948966,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -2338,7 +2337,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1.5,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 3.6651914291880923,
@@ -2346,7 +2346,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 3.6651914291880923,
         "recoil": 2.5,
         "bullet": {
           "type": "bullet",
@@ -2357,7 +2356,8 @@ module.exports = [
           "durability": 0.5
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 2.6179938779914944,
@@ -2365,7 +2365,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 2.6179938779914944,
         "recoil": 2.5,
         "bullet": {
           "type": "bullet",
@@ -2376,7 +2375,8 @@ module.exports = [
           "durability": 0.5
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -2423,7 +2423,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 15,
         "bullet": {
           "type": "bullet",
@@ -2434,7 +2433,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 4,
-        "width": 24.705875
+        "width": 24.705875,
+        "trapezoidalDir": 0
       },
       {
         "angle": 3.141592653589793,
@@ -2442,7 +2442,6 @@ module.exports = [
         "size": 70,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 3.141592653589793,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -2454,7 +2453,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -2501,7 +2501,6 @@ module.exports = [
         "size": 70,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -2513,7 +2512,8 @@ module.exports = [
         },
         "reload": 3,
         "maxDrones": 8,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -2560,7 +2560,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 0.19634954084936207,
         "recoil": 0,
         "bullet": {
           "type": "drone",
@@ -2572,7 +2571,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168
+        "width": 168,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0.5890486225480862,
@@ -2580,7 +2580,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 0.5890486225480862,
         "recoil": 0,
         "bullet": {
           "type": "drone",
@@ -2592,7 +2591,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168
+        "width": 168,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0.9817477042468103,
@@ -2600,7 +2600,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 0.9817477042468103,
         "recoil": 0,
         "bullet": {
           "type": "drone",
@@ -2612,7 +2611,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168
+        "width": 168,
+        "trapezoidalDir": 0
       },
       {
         "angle": 1.3744467859455345,
@@ -2620,7 +2620,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 1.3744467859455345,
         "recoil": 0,
         "bullet": {
           "type": "drone",
@@ -2632,7 +2631,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168
+        "width": 168,
+        "trapezoidalDir": 0
       },
       {
         "angle": 1.7671458676442586,
@@ -2640,7 +2640,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 1.7671458676442586,
         "recoil": 0,
         "bullet": {
           "type": "drone",
@@ -2652,7 +2651,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168
+        "width": 168,
+        "trapezoidalDir": 0
       },
       {
         "angle": 2.159844949342983,
@@ -2660,7 +2660,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 2.159844949342983,
         "recoil": 0,
         "bullet": {
           "type": "drone",
@@ -2672,7 +2671,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168
+        "width": 168,
+        "trapezoidalDir": 0
       },
       {
         "angle": 2.552544031041707,
@@ -2680,7 +2680,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 2.552544031041707,
         "recoil": 0,
         "bullet": {
           "type": "drone",
@@ -2692,7 +2691,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168
+        "width": 168,
+        "trapezoidalDir": 0
       },
       {
         "angle": 2.9452431127404313,
@@ -2700,7 +2700,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 2.9452431127404313,
         "recoil": 0,
         "bullet": {
           "type": "drone",
@@ -2712,7 +2711,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168
+        "width": 168,
+        "trapezoidalDir": 0
       },
       {
         "angle": 3.3379421944391554,
@@ -2720,7 +2720,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 3.3379421944391554,
         "recoil": 0,
         "bullet": {
           "type": "drone",
@@ -2732,7 +2731,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168
+        "width": 168,
+        "trapezoidalDir": 0
       },
       {
         "angle": 3.7306412761378795,
@@ -2740,7 +2740,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 3.7306412761378795,
         "recoil": 0,
         "bullet": {
           "type": "drone",
@@ -2752,7 +2751,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168
+        "width": 168,
+        "trapezoidalDir": 0
       },
       {
         "angle": 4.12333992150429,
@@ -2760,7 +2760,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 4.12333992150429,
         "recoil": 0,
         "bullet": {
           "type": "drone",
@@ -2772,7 +2771,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168
+        "width": 168,
+        "trapezoidalDir": 0
       },
       {
         "angle": 4.516039439535327,
@@ -2780,7 +2780,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 4.516039439535327,
         "recoil": 0,
         "bullet": {
           "type": "drone",
@@ -2792,7 +2791,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168
+        "width": 168,
+        "trapezoidalDir": 0
       },
       {
         "angle": 4.908738521234052,
@@ -2800,7 +2800,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 4.908738521234052,
         "recoil": 0,
         "bullet": {
           "type": "drone",
@@ -2812,7 +2811,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168
+        "width": 168,
+        "trapezoidalDir": 0
       },
       {
         "angle": 5.301437166600463,
@@ -2820,7 +2820,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 5.301437166600463,
         "recoil": 0,
         "bullet": {
           "type": "drone",
@@ -2832,7 +2831,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168
+        "width": 168,
+        "trapezoidalDir": 0
       },
       {
         "angle": 5.6941366846315,
@@ -2840,7 +2840,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 5.6941366846315,
         "recoil": 0,
         "bullet": {
           "type": "drone",
@@ -2852,7 +2851,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168
+        "width": 168,
+        "trapezoidalDir": 0
       },
       {
         "angle": 6.086835766330224,
@@ -2860,7 +2860,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 6.086835766330224,
         "recoil": 0,
         "bullet": {
           "type": "drone",
@@ -2872,7 +2871,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168
+        "width": 168,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 0,
@@ -2919,7 +2919,6 @@ module.exports = [
         "size": 110,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.3,
         "bullet": {
           "type": "bullet",
@@ -2930,7 +2929,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 3,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -2938,7 +2938,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.3,
         "bullet": {
           "type": "bullet",
@@ -2949,7 +2948,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 3,
-        "width": 31.1111
+        "width": 31.1111,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -2957,7 +2957,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.3,
         "bullet": {
           "type": "bullet",
@@ -2968,7 +2967,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 3,
-        "width": 24.705875
+        "width": 24.705875,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -3015,7 +3015,6 @@ module.exports = [
         "size": 110,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0,
         "bullet": {
           "type": "bullet",
@@ -3026,7 +3025,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -3034,7 +3034,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -3045,7 +3044,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 0.5,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -3099,7 +3099,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "trap",
@@ -3110,7 +3109,8 @@ module.exports = [
           "durability": 8
         },
         "reload": 1.5,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 30,
@@ -3157,7 +3157,6 @@ module.exports = [
         "size": 75,
         "offset": -16,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -3168,7 +3167,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 84
+        "width": 84,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -3176,7 +3176,6 @@ module.exports = [
         "size": 75,
         "offset": 16,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "bullet",
@@ -3187,7 +3186,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 84
+        "width": 84,
+        "trapezoidalDir": 0
       },
       {
         "angle": 3.141592653589793,
@@ -3195,7 +3195,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 3.141592653589793,
         "recoil": 1,
         "bullet": {
           "type": "trap",
@@ -3206,7 +3205,8 @@ module.exports = [
           "durability": 8
         },
         "reload": 3,
-        "width": 32.3077
+        "width": 32.3077,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -3253,7 +3253,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "trap",
@@ -3264,7 +3263,8 @@ module.exports = [
           "durability": 8
         },
         "reload": 1.5,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 2.0943951023931953,
@@ -3272,7 +3272,6 @@ module.exports = [
         "size": 70,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 2.0943951023931953,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -3284,7 +3283,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 4.1887902047863905,
@@ -3292,7 +3292,6 @@ module.exports = [
         "size": 70,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 4.1887902047863905,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -3304,7 +3303,8 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -3351,7 +3351,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "trap",
@@ -3362,7 +3361,8 @@ module.exports = [
           "durability": 8
         },
         "reload": 3.3,
-        "width": 32.3077
+        "width": 32.3077,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -3409,7 +3409,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "trap",
@@ -3420,7 +3419,8 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 2.0943951023931953,
@@ -3428,7 +3428,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 2.0943951023931953,
         "recoil": 1,
         "bullet": {
           "type": "trap",
@@ -3439,7 +3438,8 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 4.1887902047863905,
@@ -3447,7 +3447,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 4.1887902047863905,
         "recoil": 1,
         "bullet": {
           "type": "trap",
@@ -3458,7 +3457,8 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -3590,7 +3590,6 @@ module.exports = [
         "size": 65,
         "offset": -32,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -3601,7 +3600,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 70
+        "width": 70,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -3609,7 +3609,6 @@ module.exports = [
         "size": 65,
         "offset": 32,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -3620,7 +3619,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 70
+        "width": 70,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -3628,7 +3628,6 @@ module.exports = [
         "size": 85,
         "offset": -17,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -3639,7 +3638,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 70
+        "width": 70,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -3647,7 +3647,6 @@ module.exports = [
         "size": 85,
         "offset": 17,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -3658,7 +3657,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 70
+        "width": 70,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -3790,7 +3790,6 @@ module.exports = [
         "size": 65,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 1.3089969389957472,
         "recoil": 0.1,
         "bullet": {
           "type": "bullet",
@@ -3801,7 +3800,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60
+        "width": 60,
+        "trapezoidalDir": 0
       },
       {
         "angle": -1.3089969389957472,
@@ -3809,7 +3809,6 @@ module.exports = [
         "size": 65,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": -1.3089969389957472,
         "recoil": 0.1,
         "bullet": {
           "type": "bullet",
@@ -3820,7 +3819,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60
+        "width": 60,
+        "trapezoidalDir": 0
       },
       {
         "angle": 1.0471975511965976,
@@ -3828,7 +3828,6 @@ module.exports = [
         "size": 71,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 1.0471975511965976,
         "recoil": 0.1,
         "bullet": {
           "type": "bullet",
@@ -3839,7 +3838,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60
+        "width": 60,
+        "trapezoidalDir": 0
       },
       {
         "angle": -1.0471975511965976,
@@ -3847,7 +3847,6 @@ module.exports = [
         "size": 71,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": -1.0471975511965976,
         "recoil": 0.1,
         "bullet": {
           "type": "bullet",
@@ -3858,7 +3857,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60
+        "width": 60,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0.7853981633974483,
@@ -3866,7 +3866,6 @@ module.exports = [
         "size": 77,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0.7853981633974483,
         "recoil": 0.1,
         "bullet": {
           "type": "bullet",
@@ -3877,7 +3876,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60
+        "width": 60,
+        "trapezoidalDir": 0
       },
       {
         "angle": -0.7853981633974483,
@@ -3885,7 +3885,6 @@ module.exports = [
         "size": 77,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": -0.7853981633974483,
         "recoil": 0.1,
         "bullet": {
           "type": "bullet",
@@ -3896,7 +3895,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60
+        "width": 60,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0.5235987755982988,
@@ -3904,7 +3904,6 @@ module.exports = [
         "size": 83,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0.5235987755982988,
         "recoil": 0.1,
         "bullet": {
           "type": "bullet",
@@ -3915,7 +3914,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60
+        "width": 60,
+        "trapezoidalDir": 0
       },
       {
         "angle": -0.5235987755982988,
@@ -3923,7 +3923,6 @@ module.exports = [
         "size": 83,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": -0.5235987755982988,
         "recoil": 0.1,
         "bullet": {
           "type": "bullet",
@@ -3934,7 +3933,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60
+        "width": 60,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0.2617993877991494,
@@ -3942,7 +3942,6 @@ module.exports = [
         "size": 89,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0.2617993877991494,
         "recoil": 0.1,
         "bullet": {
           "type": "bullet",
@@ -3953,7 +3952,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60
+        "width": 60,
+        "trapezoidalDir": 0
       },
       {
         "angle": -0.2617993877991494,
@@ -3961,7 +3961,6 @@ module.exports = [
         "size": 89,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": -0.2617993877991494,
         "recoil": 0.1,
         "bullet": {
           "type": "bullet",
@@ -3972,7 +3971,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60
+        "width": 60,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -3980,7 +3980,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.1,
         "bullet": {
           "type": "bullet",
@@ -3991,7 +3990,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -4038,7 +4038,6 @@ module.exports = [
         "size": 110,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -4049,7 +4048,8 @@ module.exports = [
           "durability": 0.8
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -4057,7 +4057,6 @@ module.exports = [
         "size": 100,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -4068,7 +4067,8 @@ module.exports = [
           "durability": 0.8
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -4076,7 +4076,6 @@ module.exports = [
         "size": 90,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -4087,7 +4086,8 @@ module.exports = [
           "durability": 0.8
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -4095,7 +4095,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -4106,7 +4105,8 @@ module.exports = [
           "durability": 0.8
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -4114,7 +4114,6 @@ module.exports = [
         "size": 70,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0.2,
         "bullet": {
           "type": "bullet",
@@ -4125,7 +4124,8 @@ module.exports = [
           "durability": 0.8
         },
         "reload": 1,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -4172,7 +4172,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "trap",
@@ -4183,7 +4182,8 @@ module.exports = [
           "durability": 8
         },
         "reload": 1.5,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -4232,7 +4232,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0,
         "bullet": {
           "type": "bullet",
@@ -4243,7 +4242,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 3,
-        "width": 50.4
+        "width": 50.4,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 0,
@@ -4293,7 +4293,6 @@ module.exports = [
         "size": 75,
         "offset": -6,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0,
         "bullet": {
           "type": "bullet",
@@ -4304,7 +4303,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 0.3,
-        "width": 100.8
+        "width": 100.8,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -4312,7 +4312,6 @@ module.exports = [
         "size": 75,
         "offset": 6,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0,
         "bullet": {
           "type": "bullet",
@@ -4323,7 +4322,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 0.3,
-        "width": 100.8
+        "width": 100.8,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0,
@@ -4331,7 +4331,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0,
         "bullet": {
           "type": "bullet",
@@ -4342,7 +4341,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 0.3,
-        "width": 100.8
+        "width": 100.8,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 0,
@@ -4392,7 +4392,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 0,
         "bullet": {
           "type": "trap",
@@ -4403,7 +4402,8 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 84
+        "width": 84,
+        "trapezoidalDir": 0
       },
       {
         "angle": 0.7853981633974483,
@@ -4411,7 +4411,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0.7853981633974483,
         "recoil": 0,
         "bullet": {
           "type": "trap",
@@ -4422,7 +4421,8 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 84
+        "width": 84,
+        "trapezoidalDir": 0
       },
       {
         "angle": 1.5707963267948966,
@@ -4430,7 +4430,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 1.5707963267948966,
         "recoil": 0,
         "bullet": {
           "type": "trap",
@@ -4441,7 +4440,8 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 84
+        "width": 84,
+        "trapezoidalDir": 0
       },
       {
         "angle": 2.356194490192345,
@@ -4449,7 +4449,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 2.356194490192345,
         "recoil": 0,
         "bullet": {
           "type": "trap",
@@ -4460,7 +4459,8 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 84
+        "width": 84,
+        "trapezoidalDir": 0
       },
       {
         "angle": 3.141592653589793,
@@ -4468,7 +4468,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 3.141592653589793,
         "recoil": 0,
         "bullet": {
           "type": "trap",
@@ -4479,7 +4478,8 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 84
+        "width": 84,
+        "trapezoidalDir": 0
       },
       {
         "angle": 3.9269908169872414,
@@ -4487,7 +4487,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 3.9269908169872414,
         "recoil": 0,
         "bullet": {
           "type": "trap",
@@ -4498,7 +4497,8 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 84
+        "width": 84,
+        "trapezoidalDir": 0
       },
       {
         "angle": 4.71238898038469,
@@ -4506,7 +4506,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 4.71238898038469,
         "recoil": 0,
         "bullet": {
           "type": "trap",
@@ -4517,7 +4516,8 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 84
+        "width": 84,
+        "trapezoidalDir": 0
       },
       {
         "angle": 5.497787143782138,
@@ -4525,7 +4525,6 @@ module.exports = [
         "size": 60,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 5.497787143782138,
         "recoil": 0,
         "bullet": {
           "type": "trap",
@@ -4536,7 +4535,8 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 84
+        "width": 84,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 0,
@@ -4585,7 +4585,6 @@ module.exports = [
         "size": 75,
         "offset": -20,
         "isTrapezoid": true,
-        "trapezoidDir": 1.5707963267948966,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -4597,7 +4596,8 @@ module.exports = [
         },
         "reload": 1,
         "maxDrones": -1,
-        "width": 60
+        "width": 60,
+        "trapezoidalDir": 3.141592653589793
       },
       {
         "angle": 4.71238898038469,
@@ -4605,7 +4605,6 @@ module.exports = [
         "size": 75,
         "offset": -20,
         "isTrapezoid": true,
-        "trapezoidDir": 4.71238898038469,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -4617,7 +4616,8 @@ module.exports = [
         },
         "reload": 1,
         "maxDrones": -1,
-        "width": 60
+        "width": 60,
+        "trapezoidalDir": 3.141592653589793
       },
       {
         "angle": 1.5707963267948966,
@@ -4625,7 +4625,6 @@ module.exports = [
         "size": 75,
         "offset": 20,
         "isTrapezoid": true,
-        "trapezoidDir": 1.5707963267948966,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -4637,7 +4636,8 @@ module.exports = [
         },
         "reload": 1,
         "maxDrones": -1,
-        "width": 60
+        "width": 60,
+        "trapezoidalDir": 3.141592653589793
       },
       {
         "angle": 4.71238898038469,
@@ -4645,7 +4645,6 @@ module.exports = [
         "size": 75,
         "offset": 20,
         "isTrapezoid": true,
-        "trapezoidDir": 4.71238898038469,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -4657,7 +4656,8 @@ module.exports = [
         },
         "reload": 1,
         "maxDrones": -1,
-        "width": 60
+        "width": 60,
+        "trapezoidalDir": 3.141592653589793
       }
     ],
     "levelRequirement": 45,
@@ -4704,7 +4704,6 @@ module.exports = [
         "size": 95,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 17,
         "bullet": {
           "type": "bullet",
@@ -4715,7 +4714,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 4,
-        "width": 18.260875
+        "width": 18.260875,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -4843,7 +4843,6 @@ module.exports = [
         "size": 70,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 0,
         "recoil": 1,
         "bullet": {
           "type": "drone",
@@ -4855,7 +4854,8 @@ module.exports = [
         },
         "reload": 3,
         "maxDrones": 6,
-        "width": 42
+        "width": 42,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -4903,7 +4903,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": false,
-        "trapezoidDir": 0,
         "recoil": 3,
         "bullet": {
           "type": "bullet",
@@ -4914,7 +4913,8 @@ module.exports = [
           "durability": 1.3
         },
         "reload": 4,
-        "width": 24.705875
+        "width": 24.705875,
+        "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
@@ -4963,7 +4963,6 @@ module.exports = [
         "size": 80,
         "offset": 0,
         "isTrapezoid": true,
-        "trapezoidDir": 0,
         "recoil": 3,
         "bullet": {
           "type": "bullet",
@@ -4974,7 +4973,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 4,
-        "width": 33.6
+        "width": 33.6,
+        "trapezoidalDir": 3.141592653589793
       }
     ],
     "levelRequirement": 45,
@@ -5011,4 +5011,4 @@ module.exports = [
       7
     ]
   }
-];
+]
