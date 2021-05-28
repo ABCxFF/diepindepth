@@ -27,7 +27,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       }
     ],
     "levelRequirement": 0,
@@ -51,7 +52,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -88,7 +89,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0,
@@ -106,7 +108,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       }
     ],
     "levelRequirement": 15,
@@ -130,7 +133,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -163,7 +166,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0,
@@ -181,7 +185,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0,
@@ -199,7 +204,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -223,7 +229,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -260,7 +266,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0.7853981633974483,
@@ -278,7 +285,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0,
@@ -296,7 +304,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       }
     ],
     "levelRequirement": 30,
@@ -320,7 +329,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -356,7 +365,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": -1.5707963267948966,
@@ -374,7 +384,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 1.5707963267948966,
@@ -392,7 +403,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0,
@@ -410,7 +422,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       }
     ],
     "levelRequirement": 30,
@@ -434,7 +447,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -467,7 +480,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0.7853981633974483,
@@ -485,7 +499,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": -2.356194490192345,
@@ -503,7 +518,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 2.356194490192345,
@@ -521,7 +537,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 3.141592653589793,
@@ -539,7 +556,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": -1.5707963267948966,
@@ -557,7 +575,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 1.5707963267948966,
@@ -575,7 +594,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0,
@@ -593,7 +613,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -617,7 +638,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -655,7 +676,8 @@ module.exports = [
           "deaccelRate": 0.3,
           "durability": 1
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 1
       }
     ],
     "levelRequirement": 15,
@@ -679,7 +701,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -716,7 +738,8 @@ module.exports = [
           "deaccelRate": 3,
           "durability": 1
         },
-        "reload": 0.5
+        "reload": 0.5,
+        "width": 1
       }
     ],
     "levelRequirement": 15,
@@ -740,7 +763,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -778,7 +801,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 3.141592653589793,
@@ -796,7 +820,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       }
     ],
     "levelRequirement": 15,
@@ -820,7 +845,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -856,7 +881,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 3.6651914291880923,
@@ -874,7 +900,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 0.5
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 2.6179938779914944,
@@ -892,7 +919,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 0.5
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       }
     ],
     "levelRequirement": 30,
@@ -916,7 +944,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -954,7 +982,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 4
+        "reload": 4,
+        "width": 1.7
       }
     ],
     "levelRequirement": 30,
@@ -978,7 +1007,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -1019,7 +1048,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 4
+        "maxDrones": 4,
+        "width": 1
       },
       {
         "angle": 1.5707963267948966,
@@ -1038,7 +1068,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 4
+        "maxDrones": 4,
+        "width": 1
       }
     ],
     "levelRequirement": 30,
@@ -1062,7 +1093,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -1096,7 +1127,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 1
       },
       {
         "angle": 1.5707963267948966,
@@ -1115,7 +1147,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 1
       },
       {
         "angle": 0,
@@ -1134,7 +1167,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 1
       },
       {
         "angle": 3.141592653589793,
@@ -1153,7 +1187,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -1177,7 +1212,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -1213,7 +1248,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0,
@@ -1231,7 +1267,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 3.141592653589793,
@@ -1249,7 +1286,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 3.141592653589793,
@@ -1267,7 +1305,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       }
     ],
     "levelRequirement": 30,
@@ -1291,7 +1330,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -1324,7 +1363,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0.7853981633974483,
@@ -1342,7 +1382,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": -0.39269908169872414,
@@ -1360,7 +1401,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0.39269908169872414,
@@ -1378,7 +1420,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0,
@@ -1396,7 +1439,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -1420,7 +1464,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -1456,7 +1500,8 @@ module.exports = [
           "deaccelRate": 0.3,
           "durability": 1
         },
-        "reload": 2
+        "reload": 2,
+        "width": 1
       }
     ],
     "levelRequirement": 30,
@@ -1480,7 +1525,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -1513,7 +1558,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       }
     ],
     "levelRequirement": 0,
@@ -1537,7 +1583,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -1571,7 +1617,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 0
+        "maxDrones": 0,
+        "width": 1
       },
       {
         "angle": 1.5707963267948966,
@@ -1590,7 +1637,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 0
+        "maxDrones": 0,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -1614,7 +1662,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -1647,7 +1695,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0,
@@ -1665,7 +1714,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 2.0943951023931953,
@@ -1683,7 +1733,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 2.0943951023931953,
@@ -1701,7 +1752,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": -2.0943951023931953,
@@ -1719,7 +1771,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": -2.0943951023931953,
@@ -1737,7 +1790,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -1761,7 +1815,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -1797,7 +1851,8 @@ module.exports = [
           "deaccelRate": 0.3,
           "durability": 1
         },
-        "reload": 2.5
+        "reload": 2.5,
+        "width": 1
       },
       {
         "angle": 0,
@@ -1815,7 +1870,8 @@ module.exports = [
           "deaccelRate": 0.3,
           "durability": 1
         },
-        "reload": 2.5
+        "reload": 2.5,
+        "width": 1.35
       }
     ],
     "levelRequirement": 30,
@@ -1839,7 +1895,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -1876,7 +1932,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 0.6
       },
       {
         "angle": 0,
@@ -1894,7 +1951,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 0.6
       },
       {
         "angle": 0,
@@ -1912,7 +1970,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 0.6
       },
       {
         "angle": 0,
@@ -1930,7 +1989,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 0.6
       }
     ],
     "levelRequirement": 30,
@@ -1954,7 +2014,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -1987,7 +2047,8 @@ module.exports = [
           "deaccelRate": 0.3,
           "durability": 1
         },
-        "reload": 2
+        "reload": 2,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -2011,7 +2072,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -2044,7 +2105,8 @@ module.exports = [
           "deaccelRate": 0.3,
           "durability": 1
         },
-        "reload": 2
+        "reload": 2,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -2070,7 +2132,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -2103,7 +2165,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 3.9269908169872414,
@@ -2121,7 +2184,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 0.5
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 2.356194490192345,
@@ -2139,7 +2203,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 0.5
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 3.6651914291880923,
@@ -2157,7 +2222,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 0.5
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 2.6179938779914944,
@@ -2175,7 +2241,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 0.5
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -2199,7 +2266,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -2232,7 +2299,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 1.5707963267948966,
@@ -2250,7 +2318,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 1
       },
       {
         "angle": -1.5707963267948966,
@@ -2268,7 +2337,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 1
       },
       {
         "angle": 3.6651914291880923,
@@ -2286,7 +2356,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 0.5
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 2.6179938779914944,
@@ -2304,7 +2375,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 0.5
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -2328,7 +2400,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -2361,7 +2433,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 4
+        "reload": 4,
+        "width": 1.7
       },
       {
         "angle": 3.141592653589793,
@@ -2380,7 +2453,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -2404,7 +2478,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -2438,7 +2512,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 3,
-        "maxDrones": 8
+        "maxDrones": 8,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -2462,7 +2537,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -2496,7 +2571,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 0.25
       },
       {
         "angle": 0.5890486225480862,
@@ -2515,7 +2591,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 0.25
       },
       {
         "angle": 0.9817477042468103,
@@ -2534,7 +2611,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 0.25
       },
       {
         "angle": 1.3744467859455345,
@@ -2553,7 +2631,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 0.25
       },
       {
         "angle": 1.7671458676442586,
@@ -2572,7 +2651,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 0.25
       },
       {
         "angle": 2.159844949342983,
@@ -2591,7 +2671,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 0.25
       },
       {
         "angle": 2.552544031041707,
@@ -2610,7 +2691,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 0.25
       },
       {
         "angle": 2.9452431127404313,
@@ -2629,7 +2711,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 0.25
       },
       {
         "angle": 3.3379421944391554,
@@ -2648,7 +2731,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 0.25
       },
       {
         "angle": 3.7306412761378795,
@@ -2667,7 +2751,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 0.25
       },
       {
         "angle": 4.12333992150429,
@@ -2686,7 +2771,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 0.25
       },
       {
         "angle": 4.516039439535327,
@@ -2705,7 +2791,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 0.25
       },
       {
         "angle": 4.908738521234052,
@@ -2724,7 +2811,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 0.25
       },
       {
         "angle": 5.301437166600463,
@@ -2743,7 +2831,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 0.25
       },
       {
         "angle": 5.6941366846315,
@@ -2762,7 +2851,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 0.25
       },
       {
         "angle": 6.086835766330224,
@@ -2781,7 +2871,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 2
+        "maxDrones": 2,
+        "width": 0.25
       }
     ],
     "levelRequirement": 0,
@@ -2805,7 +2896,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -2838,7 +2929,8 @@ module.exports = [
           "deaccelRate": 0.3,
           "durability": 1
         },
-        "reload": 3
+        "reload": 3,
+        "width": 1
       },
       {
         "angle": 0,
@@ -2856,7 +2948,8 @@ module.exports = [
           "deaccelRate": 0.3,
           "durability": 1
         },
-        "reload": 3
+        "reload": 3,
+        "width": 1.35
       },
       {
         "angle": 0,
@@ -2874,7 +2967,8 @@ module.exports = [
           "deaccelRate": 0.3,
           "durability": 1
         },
-        "reload": 3
+        "reload": 3,
+        "width": 1.7
       }
     ],
     "levelRequirement": 45,
@@ -2898,7 +2992,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -2931,7 +3025,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0,
@@ -2949,7 +3044,8 @@ module.exports = [
           "deaccelRate": 3,
           "durability": 1
         },
-        "reload": 0.5
+        "reload": 0.5,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -2973,7 +3069,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -3013,7 +3109,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 8
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 1
       }
     ],
     "levelRequirement": 30,
@@ -3037,7 +3134,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -3070,7 +3167,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 0.5
       },
       {
         "angle": 0,
@@ -3088,7 +3186,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 0.5
       },
       {
         "angle": 3.141592653589793,
@@ -3106,7 +3205,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 8
         },
-        "reload": 3
+        "reload": 3,
+        "width": 1.3
       }
     ],
     "levelRequirement": 45,
@@ -3130,7 +3230,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -3163,7 +3263,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 8
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 1
       },
       {
         "angle": 2.0943951023931953,
@@ -3182,7 +3283,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 1
+        "maxDrones": 1,
+        "width": 1
       },
       {
         "angle": 4.1887902047863905,
@@ -3201,7 +3303,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 6,
-        "maxDrones": 1
+        "maxDrones": 1,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -3225,7 +3328,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -3258,7 +3361,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 8
         },
-        "reload": 3.3
+        "reload": 3.3,
+        "width": 1.3
       }
     ],
     "levelRequirement": 45,
@@ -3282,7 +3386,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -3315,7 +3419,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 3.2
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 1
       },
       {
         "angle": 2.0943951023931953,
@@ -3333,7 +3438,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 3.2
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 1
       },
       {
         "angle": 4.1887902047863905,
@@ -3351,7 +3457,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 3.2
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -3375,7 +3482,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -3419,7 +3526,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       10,
       0,
       0,
@@ -3460,7 +3567,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       10,
       0,
       0,
@@ -3493,7 +3600,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 0.6
       },
       {
         "angle": 0,
@@ -3511,7 +3619,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 0.6
       },
       {
         "angle": 0,
@@ -3529,7 +3638,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 0.6
       },
       {
         "angle": 0,
@@ -3547,7 +3657,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 1
+        "reload": 1,
+        "width": 0.6
       }
     ],
     "levelRequirement": 45,
@@ -3573,7 +3684,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -3613,7 +3724,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -3656,7 +3767,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -3689,7 +3800,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 2
+        "reload": 2,
+        "width": 0.7
       },
       {
         "angle": -1.3089969389957472,
@@ -3707,7 +3819,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 2
+        "reload": 2,
+        "width": 0.7
       },
       {
         "angle": 1.0471975511965976,
@@ -3725,7 +3838,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 2
+        "reload": 2,
+        "width": 0.7
       },
       {
         "angle": -1.0471975511965976,
@@ -3743,7 +3857,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 2
+        "reload": 2,
+        "width": 0.7
       },
       {
         "angle": 0.7853981633974483,
@@ -3761,7 +3876,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 2
+        "reload": 2,
+        "width": 0.7
       },
       {
         "angle": -0.7853981633974483,
@@ -3779,7 +3895,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 2
+        "reload": 2,
+        "width": 0.7
       },
       {
         "angle": 0.5235987755982988,
@@ -3797,7 +3914,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 2
+        "reload": 2,
+        "width": 0.7
       },
       {
         "angle": -0.5235987755982988,
@@ -3815,7 +3933,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 2
+        "reload": 2,
+        "width": 0.7
       },
       {
         "angle": 0.2617993877991494,
@@ -3833,7 +3952,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 2
+        "reload": 2,
+        "width": 0.7
       },
       {
         "angle": -0.2617993877991494,
@@ -3851,7 +3971,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 2
+        "reload": 2,
+        "width": 0.7
       },
       {
         "angle": 0,
@@ -3869,7 +3990,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 2
+        "reload": 2,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -3893,7 +4015,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -3926,7 +4048,8 @@ module.exports = [
           "deaccelRate": 0.3,
           "durability": 0.8
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0,
@@ -3944,7 +4067,8 @@ module.exports = [
           "deaccelRate": 0.3,
           "durability": 0.8
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0,
@@ -3962,7 +4086,8 @@ module.exports = [
           "deaccelRate": 0.3,
           "durability": 0.8
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0,
@@ -3980,7 +4105,8 @@ module.exports = [
           "deaccelRate": 0.3,
           "durability": 0.8
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       },
       {
         "angle": 0,
@@ -3998,7 +4124,8 @@ module.exports = [
           "deaccelRate": 0.3,
           "durability": 0.8
         },
-        "reload": 1
+        "reload": 1,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -4022,7 +4149,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -4055,7 +4182,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 8
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -4081,7 +4209,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -4114,7 +4242,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 3
+        "reload": 3,
+        "width": 0.833325
       }
     ],
     "levelRequirement": 0,
@@ -4141,7 +4270,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       0,
       0,
       0,
@@ -4174,7 +4303,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 0.3
+        "reload": 0.3,
+        "width": 0.416675
       },
       {
         "angle": 0,
@@ -4192,7 +4322,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 0.3
+        "reload": 0.3,
+        "width": 0.416675
       },
       {
         "angle": 0,
@@ -4210,7 +4341,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 0.3
+        "reload": 0.3,
+        "width": 0.416675
       }
     ],
     "levelRequirement": 0,
@@ -4237,7 +4369,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       0,
       0,
       0,
@@ -4270,7 +4402,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 3.2
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 0.5
       },
       {
         "angle": 0.7853981633974483,
@@ -4288,7 +4421,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 3.2
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 0.5
       },
       {
         "angle": 1.5707963267948966,
@@ -4306,7 +4440,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 3.2
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 0.5
       },
       {
         "angle": 2.356194490192345,
@@ -4324,7 +4459,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 3.2
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 0.5
       },
       {
         "angle": 3.141592653589793,
@@ -4342,7 +4478,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 3.2
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 0.5
       },
       {
         "angle": 3.9269908169872414,
@@ -4360,7 +4497,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 3.2
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 0.5
       },
       {
         "angle": 4.71238898038469,
@@ -4378,7 +4516,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 3.2
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 0.5
       },
       {
         "angle": 5.497787143782138,
@@ -4396,7 +4535,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 3.2
         },
-        "reload": 1.5
+        "reload": 1.5,
+        "width": 0.5
       }
     ],
     "levelRequirement": 0,
@@ -4422,7 +4562,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       0,
       0,
       0,
@@ -4456,7 +4596,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "maxDrones": -1
+        "maxDrones": -1,
+        "width": 0.7
       },
       {
         "angle": 4.71238898038469,
@@ -4475,7 +4616,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "maxDrones": -1
+        "maxDrones": -1,
+        "width": 0.7
       },
       {
         "angle": 1.5707963267948966,
@@ -4494,7 +4636,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "maxDrones": -1
+        "maxDrones": -1,
+        "width": 0.7
       },
       {
         "angle": 4.71238898038469,
@@ -4513,7 +4656,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "maxDrones": -1
+        "maxDrones": -1,
+        "width": 0.7
       }
     ],
     "levelRequirement": 45,
@@ -4537,7 +4681,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -4570,7 +4714,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 4
+        "reload": 4,
+        "width": 2.3
       }
     ],
     "levelRequirement": 45,
@@ -4594,7 +4739,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -4635,7 +4780,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       10,
       10,
       10,
@@ -4675,7 +4820,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       10,
       0,
       0,
@@ -4709,7 +4854,8 @@ module.exports = [
           "durability": 1
         },
         "reload": 3,
-        "maxDrones": 6
+        "maxDrones": 6,
+        "width": 1
       }
     ],
     "levelRequirement": 45,
@@ -4733,7 +4879,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -4767,7 +4913,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1.3
         },
-        "reload": 4
+        "reload": 4,
+        "width": 1.7
       }
     ],
     "levelRequirement": 45,
@@ -4793,7 +4940,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -4826,7 +4973,8 @@ module.exports = [
           "deaccelRate": 1,
           "durability": 1
         },
-        "reload": 4
+        "reload": 4,
+        "width": 1.25
       }
     ],
     "levelRequirement": 45,
@@ -4852,7 +5000,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statLimits": [
+    "statMaxes": [
       7,
       7,
       7,
@@ -4863,4 +5011,4 @@ module.exports = [
       7
     ]
   }
-];
+]
