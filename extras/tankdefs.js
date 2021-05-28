@@ -28,7 +28,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 0,
@@ -90,7 +90,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -109,7 +109,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 15,
@@ -167,7 +167,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -186,7 +186,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -205,7 +205,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -267,7 +267,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0.7853981633974483,
@@ -286,7 +286,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -305,7 +305,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 30,
@@ -366,7 +366,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": -1.5707963267948966,
@@ -385,7 +385,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 1.5707963267948966,
@@ -404,7 +404,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -423,7 +423,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 30,
@@ -481,7 +481,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0.7853981633974483,
@@ -500,7 +500,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": -2.356194490192345,
@@ -519,7 +519,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 2.356194490192345,
@@ -538,7 +538,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 3.141592653589793,
@@ -557,7 +557,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": -1.5707963267948966,
@@ -576,7 +576,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 1.5707963267948966,
@@ -595,7 +595,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -614,7 +614,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -677,7 +677,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1.5,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 15,
@@ -739,7 +739,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 0.5,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 15,
@@ -802,7 +802,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 3.141592653589793,
@@ -821,7 +821,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 15,
@@ -882,7 +882,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 3.6651914291880923,
@@ -901,7 +901,7 @@ module.exports = [
           "durability": 0.5
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 2.6179938779914944,
@@ -920,7 +920,7 @@ module.exports = [
           "durability": 0.5
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 30,
@@ -983,7 +983,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 4,
-        "width": 1.7
+        "width": 24.705875
       }
     ],
     "levelRequirement": 30,
@@ -1049,7 +1049,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 4,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 1.5707963267948966,
@@ -1069,7 +1069,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 4,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 30,
@@ -1128,7 +1128,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 1.5707963267948966,
@@ -1148,7 +1148,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -1168,7 +1168,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 3.141592653589793,
@@ -1188,7 +1188,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -1249,7 +1249,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -1268,7 +1268,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 3.141592653589793,
@@ -1287,7 +1287,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 3.141592653589793,
@@ -1306,7 +1306,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 30,
@@ -1364,7 +1364,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0.7853981633974483,
@@ -1383,7 +1383,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": -0.39269908169872414,
@@ -1402,7 +1402,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0.39269908169872414,
@@ -1421,7 +1421,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -1440,7 +1440,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -1501,7 +1501,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 30,
@@ -1559,7 +1559,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 0,
@@ -1618,7 +1618,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 0,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 1.5707963267948966,
@@ -1638,7 +1638,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 0,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -1696,7 +1696,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -1715,7 +1715,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 2.0943951023931953,
@@ -1734,7 +1734,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 2.0943951023931953,
@@ -1753,7 +1753,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": -2.0943951023931953,
@@ -1772,7 +1772,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": -2.0943951023931953,
@@ -1791,7 +1791,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -1852,7 +1852,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2.5,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -1871,7 +1871,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2.5,
-        "width": 1.35
+        "width": 31.1111
       }
     ],
     "levelRequirement": 30,
@@ -1933,7 +1933,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 0.6
+        "width": 70
       },
       {
         "angle": 0,
@@ -1952,7 +1952,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 0.6
+        "width": 70
       },
       {
         "angle": 0,
@@ -1971,7 +1971,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 0.6
+        "width": 70
       },
       {
         "angle": 0,
@@ -1990,7 +1990,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 0.6
+        "width": 70
       }
     ],
     "levelRequirement": 30,
@@ -2048,7 +2048,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -2106,7 +2106,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -2166,7 +2166,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 3.9269908169872414,
@@ -2185,7 +2185,7 @@ module.exports = [
           "durability": 0.5
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 2.356194490192345,
@@ -2204,7 +2204,7 @@ module.exports = [
           "durability": 0.5
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 3.6651914291880923,
@@ -2223,7 +2223,7 @@ module.exports = [
           "durability": 0.5
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 2.6179938779914944,
@@ -2242,7 +2242,7 @@ module.exports = [
           "durability": 0.5
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -2300,7 +2300,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 1.5707963267948966,
@@ -2319,7 +2319,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1.5,
-        "width": 1
+        "width": 42
       },
       {
         "angle": -1.5707963267948966,
@@ -2338,7 +2338,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1.5,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 3.6651914291880923,
@@ -2357,7 +2357,7 @@ module.exports = [
           "durability": 0.5
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 2.6179938779914944,
@@ -2376,7 +2376,7 @@ module.exports = [
           "durability": 0.5
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -2434,7 +2434,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 4,
-        "width": 1.7
+        "width": 24.705875
       },
       {
         "angle": 3.141592653589793,
@@ -2454,7 +2454,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -2513,7 +2513,7 @@ module.exports = [
         },
         "reload": 3,
         "maxDrones": 8,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -2572,7 +2572,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 0.25
+        "width": 168
       },
       {
         "angle": 0.5890486225480862,
@@ -2592,7 +2592,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 0.25
+        "width": 168
       },
       {
         "angle": 0.9817477042468103,
@@ -2612,7 +2612,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 0.25
+        "width": 168
       },
       {
         "angle": 1.3744467859455345,
@@ -2632,7 +2632,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 0.25
+        "width": 168
       },
       {
         "angle": 1.7671458676442586,
@@ -2652,7 +2652,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 0.25
+        "width": 168
       },
       {
         "angle": 2.159844949342983,
@@ -2672,7 +2672,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 0.25
+        "width": 168
       },
       {
         "angle": 2.552544031041707,
@@ -2692,7 +2692,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 0.25
+        "width": 168
       },
       {
         "angle": 2.9452431127404313,
@@ -2712,7 +2712,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 0.25
+        "width": 168
       },
       {
         "angle": 3.3379421944391554,
@@ -2732,7 +2732,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 0.25
+        "width": 168
       },
       {
         "angle": 3.7306412761378795,
@@ -2752,7 +2752,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 0.25
+        "width": 168
       },
       {
         "angle": 4.12333992150429,
@@ -2772,7 +2772,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 0.25
+        "width": 168
       },
       {
         "angle": 4.516039439535327,
@@ -2792,7 +2792,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 0.25
+        "width": 168
       },
       {
         "angle": 4.908738521234052,
@@ -2812,7 +2812,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 0.25
+        "width": 168
       },
       {
         "angle": 5.301437166600463,
@@ -2832,7 +2832,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 0.25
+        "width": 168
       },
       {
         "angle": 5.6941366846315,
@@ -2852,7 +2852,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 0.25
+        "width": 168
       },
       {
         "angle": 6.086835766330224,
@@ -2872,7 +2872,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 0.25
+        "width": 168
       }
     ],
     "levelRequirement": 0,
@@ -2930,7 +2930,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 3,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -2949,7 +2949,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 3,
-        "width": 1.35
+        "width": 31.1111
       },
       {
         "angle": 0,
@@ -2968,7 +2968,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 3,
-        "width": 1.7
+        "width": 24.705875
       }
     ],
     "levelRequirement": 45,
@@ -3026,7 +3026,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -3045,7 +3045,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 0.5,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -3110,7 +3110,7 @@ module.exports = [
           "durability": 8
         },
         "reload": 1.5,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 30,
@@ -3168,7 +3168,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 0.5
+        "width": 84
       },
       {
         "angle": 0,
@@ -3187,7 +3187,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 0.5
+        "width": 84
       },
       {
         "angle": 3.141592653589793,
@@ -3206,7 +3206,7 @@ module.exports = [
           "durability": 8
         },
         "reload": 3,
-        "width": 1.3
+        "width": 32.3077
       }
     ],
     "levelRequirement": 45,
@@ -3264,7 +3264,7 @@ module.exports = [
           "durability": 8
         },
         "reload": 1.5,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 2.0943951023931953,
@@ -3284,7 +3284,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 4.1887902047863905,
@@ -3304,7 +3304,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 1,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -3362,7 +3362,7 @@ module.exports = [
           "durability": 8
         },
         "reload": 3.3,
-        "width": 1.3
+        "width": 32.3077
       }
     ],
     "levelRequirement": 45,
@@ -3420,7 +3420,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 2.0943951023931953,
@@ -3439,7 +3439,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 4.1887902047863905,
@@ -3458,7 +3458,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -3601,7 +3601,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 0.6
+        "width": 70
       },
       {
         "angle": 0,
@@ -3620,7 +3620,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 0.6
+        "width": 70
       },
       {
         "angle": 0,
@@ -3639,7 +3639,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 0.6
+        "width": 70
       },
       {
         "angle": 0,
@@ -3658,7 +3658,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 0.6
+        "width": 70
       }
     ],
     "levelRequirement": 45,
@@ -3801,7 +3801,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 0.7
+        "width": 60
       },
       {
         "angle": -1.3089969389957472,
@@ -3820,7 +3820,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 0.7
+        "width": 60
       },
       {
         "angle": 1.0471975511965976,
@@ -3839,7 +3839,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 0.7
+        "width": 60
       },
       {
         "angle": -1.0471975511965976,
@@ -3858,7 +3858,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 0.7
+        "width": 60
       },
       {
         "angle": 0.7853981633974483,
@@ -3877,7 +3877,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 0.7
+        "width": 60
       },
       {
         "angle": -0.7853981633974483,
@@ -3896,7 +3896,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 0.7
+        "width": 60
       },
       {
         "angle": 0.5235987755982988,
@@ -3915,7 +3915,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 0.7
+        "width": 60
       },
       {
         "angle": -0.5235987755982988,
@@ -3934,7 +3934,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 0.7
+        "width": 60
       },
       {
         "angle": 0.2617993877991494,
@@ -3953,7 +3953,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 0.7
+        "width": 60
       },
       {
         "angle": -0.2617993877991494,
@@ -3972,7 +3972,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 0.7
+        "width": 60
       },
       {
         "angle": 0,
@@ -3991,7 +3991,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -4049,7 +4049,7 @@ module.exports = [
           "durability": 0.8
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -4068,7 +4068,7 @@ module.exports = [
           "durability": 0.8
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -4087,7 +4087,7 @@ module.exports = [
           "durability": 0.8
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -4106,7 +4106,7 @@ module.exports = [
           "durability": 0.8
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       },
       {
         "angle": 0,
@@ -4125,7 +4125,7 @@ module.exports = [
           "durability": 0.8
         },
         "reload": 1,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -4183,7 +4183,7 @@ module.exports = [
           "durability": 8
         },
         "reload": 1.5,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -4243,7 +4243,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 3,
-        "width": 0.833325
+        "width": 50.4
       }
     ],
     "levelRequirement": 0,
@@ -4304,7 +4304,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 0.3,
-        "width": 0.416675
+        "width": 100.8
       },
       {
         "angle": 0,
@@ -4323,7 +4323,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 0.3,
-        "width": 0.416675
+        "width": 100.8
       },
       {
         "angle": 0,
@@ -4342,7 +4342,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 0.3,
-        "width": 0.416675
+        "width": 100.8
       }
     ],
     "levelRequirement": 0,
@@ -4403,7 +4403,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 0.5
+        "width": 84
       },
       {
         "angle": 0.7853981633974483,
@@ -4422,7 +4422,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 0.5
+        "width": 84
       },
       {
         "angle": 1.5707963267948966,
@@ -4441,7 +4441,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 0.5
+        "width": 84
       },
       {
         "angle": 2.356194490192345,
@@ -4460,7 +4460,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 0.5
+        "width": 84
       },
       {
         "angle": 3.141592653589793,
@@ -4479,7 +4479,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 0.5
+        "width": 84
       },
       {
         "angle": 3.9269908169872414,
@@ -4498,7 +4498,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 0.5
+        "width": 84
       },
       {
         "angle": 4.71238898038469,
@@ -4517,7 +4517,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 0.5
+        "width": 84
       },
       {
         "angle": 5.497787143782138,
@@ -4536,7 +4536,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 0.5
+        "width": 84
       }
     ],
     "levelRequirement": 0,
@@ -4597,7 +4597,7 @@ module.exports = [
         },
         "reload": 1,
         "maxDrones": -1,
-        "width": 0.7
+        "width": 60
       },
       {
         "angle": 4.71238898038469,
@@ -4617,7 +4617,7 @@ module.exports = [
         },
         "reload": 1,
         "maxDrones": -1,
-        "width": 0.7
+        "width": 60
       },
       {
         "angle": 1.5707963267948966,
@@ -4637,7 +4637,7 @@ module.exports = [
         },
         "reload": 1,
         "maxDrones": -1,
-        "width": 0.7
+        "width": 60
       },
       {
         "angle": 4.71238898038469,
@@ -4657,7 +4657,7 @@ module.exports = [
         },
         "reload": 1,
         "maxDrones": -1,
-        "width": 0.7
+        "width": 60
       }
     ],
     "levelRequirement": 45,
@@ -4715,7 +4715,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 4,
-        "width": 2.3
+        "width": 18.260875
       }
     ],
     "levelRequirement": 45,
@@ -4855,7 +4855,7 @@ module.exports = [
         },
         "reload": 3,
         "maxDrones": 6,
-        "width": 1
+        "width": 42
       }
     ],
     "levelRequirement": 45,
@@ -4914,7 +4914,7 @@ module.exports = [
           "durability": 1.3
         },
         "reload": 4,
-        "width": 1.7
+        "width": 24.705875
       }
     ],
     "levelRequirement": 45,
@@ -4974,7 +4974,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 4,
-        "width": 1.25
+        "width": 33.6
       }
     ],
     "levelRequirement": 45,
@@ -5011,4 +5011,4 @@ module.exports = [
       7
     ]
   }
-]
+];
