@@ -75,8 +75,9 @@ struct TankDefinition
   int32_t addons[2]; // @60 - @64
   
   // Yeah, this is weird
-  // To get the border width present in the packets (7.5), you apply 112.5 / load_i32(barrelDefPtr + 0x68)
-  // - Someone should find out if this correlates with canvas or protocol, or both
+  // To get the border width present in the packets (480), you DO 32 * Load_i32(barrelDefPtr + 0x68)
+  // - Someone should find out if this correlates with canvas or protocol, or both.
+  // - Fairly sure more with canvas than protocol
   int32_t border_width; // @68
   
   // Defaults to 50, with dominator tanks it is 6000
