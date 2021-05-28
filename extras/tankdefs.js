@@ -1,37 +1,3 @@
-/*
-[]: { array of tank information:
-  id: tank's id
-  name: tank's name
-  borderWidth: width of the tank's borders
-  bodyShape: circle or square
-  levelRequirement: levels required to upgrade to this tank
-  upgrades[]: tanks in form of tank ids
-  upgradeMsg: notification sent when you upgrade to this tank, null if none sent
-  fieldFactor: factors into calculating fov, lower = more fov. http://spade-squad.com/physics.html#Ff
-  stats[]: { list of stats
-    name: name of the stat
-    max: maximum level of the stat
-  }
-  barrels[]: { list of barrels
-    angle: angle in degrees, facing direction
-    offset: offset from facing direction - for tanks like twin etc
-    size: height / length of the barrel at level 0
-    width: width of the barrel at level 0
-    isTrapezoid: determines where or not the barrel is a trapezoid
-    trapezoidDir: if is trapezoid, this is the direction its facing. example: machine gun=0, stalker=180
-    recoil: recoil from a given shot from this barrel
-    delay: delay of the barrel, allows for barrels to shoot at different times
-    reload: reload of the barrel (15 * for ticks iirc?)
-    bullet: { information on the bullet being shot out
-      type: bullet, drone, or trap
-      damageFactor: damage per tick related, and the reverse of knockback
-      baseHealth: maxHealth of the bullet
-      deaccelRate: rate at which it begins to deaccelerate
-      durability: life span, relating to how long it takes until the bullet decays and vanishes
-    }
-  }
-}
-*/
 module.exports = [
   {
     "id": 0,
