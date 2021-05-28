@@ -982,7 +982,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 4,
-        "width": 24.705875,
+        "width": 71.40002125000633,
         "trapezoidalDir": 0
       }
     ],
@@ -1870,7 +1870,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2.5,
-        "width": 31.1111,
+        "width": 56.700020250007235,
         "trapezoidalDir": 0
       }
     ],
@@ -1932,7 +1932,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 70,
+        "width": 25.2,
         "trapezoidalDir": 0
       },
       {
@@ -1951,7 +1951,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 70,
+        "width": 25.2,
         "trapezoidalDir": 0
       },
       {
@@ -1970,7 +1970,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 70,
+        "width": 25.2,
         "trapezoidalDir": 0
       },
       {
@@ -1989,7 +1989,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 70,
+        "width": 25.2,
         "trapezoidalDir": 0
       }
     ],
@@ -2433,7 +2433,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 4,
-        "width": 24.705875,
+        "width": 71.40002125000633,
         "trapezoidalDir": 0
       },
       {
@@ -2571,7 +2571,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168,
+        "width": 10.5,
         "trapezoidalDir": 0
       },
       {
@@ -2591,7 +2591,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168,
+        "width": 10.5,
         "trapezoidalDir": 0
       },
       {
@@ -2611,7 +2611,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168,
+        "width": 10.5,
         "trapezoidalDir": 0
       },
       {
@@ -2631,7 +2631,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168,
+        "width": 10.5,
         "trapezoidalDir": 0
       },
       {
@@ -2651,7 +2651,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168,
+        "width": 10.5,
         "trapezoidalDir": 0
       },
       {
@@ -2671,7 +2671,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168,
+        "width": 10.5,
         "trapezoidalDir": 0
       },
       {
@@ -2691,7 +2691,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168,
+        "width": 10.5,
         "trapezoidalDir": 0
       },
       {
@@ -2711,7 +2711,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168,
+        "width": 10.5,
         "trapezoidalDir": 0
       },
       {
@@ -2731,7 +2731,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168,
+        "width": 10.5,
         "trapezoidalDir": 0
       },
       {
@@ -2751,7 +2751,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168,
+        "width": 10.5,
         "trapezoidalDir": 0
       },
       {
@@ -2771,7 +2771,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168,
+        "width": 10.5,
         "trapezoidalDir": 0
       },
       {
@@ -2791,7 +2791,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168,
+        "width": 10.5,
         "trapezoidalDir": 0
       },
       {
@@ -2811,7 +2811,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168,
+        "width": 10.5,
         "trapezoidalDir": 0
       },
       {
@@ -2831,7 +2831,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168,
+        "width": 10.5,
         "trapezoidalDir": 0
       },
       {
@@ -2851,7 +2851,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168,
+        "width": 10.5,
         "trapezoidalDir": 0
       },
       {
@@ -2871,7 +2871,7 @@ module.exports = [
         },
         "reload": 6,
         "maxDrones": 2,
-        "width": 168,
+        "width": 10.5,
         "trapezoidalDir": 0
       }
     ],
@@ -2948,7 +2948,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 3,
-        "width": 31.1111,
+        "width": 56.700020250007235,
         "trapezoidalDir": 0
       },
       {
@@ -2967,7 +2967,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 3,
-        "width": 24.705875,
+        "width": 71.40002125000633,
         "trapezoidalDir": 0
       }
     ],
@@ -3167,7 +3167,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 84,
+        "width": 21,
         "trapezoidalDir": 0
       },
       {
@@ -3186,7 +3186,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 84,
+        "width": 21,
         "trapezoidalDir": 0
       },
       {
@@ -3205,7 +3205,7 @@ module.exports = [
           "durability": 8
         },
         "reload": 3,
-        "width": 32.3077,
+        "width": 54.5999870000031,
         "trapezoidalDir": 0
       }
     ],
@@ -3361,7 +3361,7 @@ module.exports = [
           "durability": 8
         },
         "reload": 3.3,
-        "width": 32.3077,
+        "width": 54.5999870000031,
         "trapezoidalDir": 0
       }
     ],
@@ -3600,7 +3600,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 70,
+        "width": 25.2,
         "trapezoidalDir": 0
       },
       {
@@ -3619,7 +3619,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 70,
+        "width": 25.2,
         "trapezoidalDir": 0
       },
       {
@@ -3638,7 +3638,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 70,
+        "width": 25.2,
         "trapezoidalDir": 0
       },
       {
@@ -3657,7 +3657,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 1,
-        "width": 70,
+        "width": 25.2,
         "trapezoidalDir": 0
       }
     ],
@@ -3800,7 +3800,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60,
+        "width": 29.4,
         "trapezoidalDir": 0
       },
       {
@@ -3819,7 +3819,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60,
+        "width": 29.4,
         "trapezoidalDir": 0
       },
       {
@@ -3838,7 +3838,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60,
+        "width": 29.4,
         "trapezoidalDir": 0
       },
       {
@@ -3857,7 +3857,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60,
+        "width": 29.4,
         "trapezoidalDir": 0
       },
       {
@@ -3876,7 +3876,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60,
+        "width": 29.4,
         "trapezoidalDir": 0
       },
       {
@@ -3895,7 +3895,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60,
+        "width": 29.4,
         "trapezoidalDir": 0
       },
       {
@@ -3914,7 +3914,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60,
+        "width": 29.4,
         "trapezoidalDir": 0
       },
       {
@@ -3933,7 +3933,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60,
+        "width": 29.4,
         "trapezoidalDir": 0
       },
       {
@@ -3952,7 +3952,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60,
+        "width": 29.4,
         "trapezoidalDir": 0
       },
       {
@@ -3971,7 +3971,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 2,
-        "width": 60,
+        "width": 29.4,
         "trapezoidalDir": 0
       },
       {
@@ -4242,7 +4242,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 3,
-        "width": 50.4,
+        "width": 35,
         "trapezoidalDir": 0
       }
     ],
@@ -4303,7 +4303,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 0.3,
-        "width": 100.8,
+        "width": 17.5,
         "trapezoidalDir": 0
       },
       {
@@ -4322,7 +4322,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 0.3,
-        "width": 100.8,
+        "width": 17.5,
         "trapezoidalDir": 0
       },
       {
@@ -4341,7 +4341,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 0.3,
-        "width": 100.8,
+        "width": 17.5,
         "trapezoidalDir": 0
       }
     ],
@@ -4402,7 +4402,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 84,
+        "width": 21,
         "trapezoidalDir": 0
       },
       {
@@ -4421,7 +4421,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 84,
+        "width": 21,
         "trapezoidalDir": 0
       },
       {
@@ -4440,7 +4440,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 84,
+        "width": 21,
         "trapezoidalDir": 0
       },
       {
@@ -4459,7 +4459,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 84,
+        "width": 21,
         "trapezoidalDir": 0
       },
       {
@@ -4478,7 +4478,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 84,
+        "width": 21,
         "trapezoidalDir": 0
       },
       {
@@ -4497,7 +4497,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 84,
+        "width": 21,
         "trapezoidalDir": 0
       },
       {
@@ -4516,7 +4516,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 84,
+        "width": 21,
         "trapezoidalDir": 0
       },
       {
@@ -4535,7 +4535,7 @@ module.exports = [
           "durability": 3.2
         },
         "reload": 1.5,
-        "width": 84,
+        "width": 21,
         "trapezoidalDir": 0
       }
     ],
@@ -4596,7 +4596,7 @@ module.exports = [
         },
         "reload": 1,
         "maxDrones": -1,
-        "width": 60,
+        "width": 29.4,
         "trapezoidalDir": 3.141592653589793
       },
       {
@@ -4616,7 +4616,7 @@ module.exports = [
         },
         "reload": 1,
         "maxDrones": -1,
-        "width": 60,
+        "width": 29.4,
         "trapezoidalDir": 3.141592653589793
       },
       {
@@ -4636,7 +4636,7 @@ module.exports = [
         },
         "reload": 1,
         "maxDrones": -1,
-        "width": 60,
+        "width": 29.4,
         "trapezoidalDir": 3.141592653589793
       },
       {
@@ -4656,7 +4656,7 @@ module.exports = [
         },
         "reload": 1,
         "maxDrones": -1,
-        "width": 60,
+        "width": 29.4,
         "trapezoidalDir": 3.141592653589793
       }
     ],
@@ -4714,7 +4714,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 4,
-        "width": 18.260875,
+        "width": 96.59997125000855,
         "trapezoidalDir": 0
       }
     ],
@@ -4913,7 +4913,7 @@ module.exports = [
           "durability": 1.3
         },
         "reload": 4,
-        "width": 24.705875,
+        "width": 71.40002125000633,
         "trapezoidalDir": 0
       }
     ],
@@ -4973,7 +4973,7 @@ module.exports = [
           "durability": 1
         },
         "reload": 4,
-        "width": 33.6,
+        "width": 52.5,
         "trapezoidalDir": 3.141592653589793
       }
     ],
