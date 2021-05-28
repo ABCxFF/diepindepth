@@ -20,9 +20,9 @@ struct TankDefinition
   struct TankDefinition* next_tank; // @00
 
   // Tank ID (see extras/tanks.js) - all of these ints have the same value
-  int32_t entity_id; // @04
-  int32_t _entity_id2; // @08
-  int32_t _entity_id3; // @0C
+  int32_t tank_id; // @04
+  int32_t _tank_id2; // @08
+  int32_t _tank_id3; // @0C
   
   // see cstr.js
   struct cstr name; // @10
