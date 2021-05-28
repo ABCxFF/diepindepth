@@ -44,16 +44,23 @@ struct TankDefinition
   // For all tanks it is set to one, except for mothership which is 0.01
   float movement_speed; // @48
   
-  // When this value is set (not 0), it means the tank is square shape
+  // Bools are one byte
+  // For tanks that have a square body
   bool is_square; // @4C
+  // Only present on Necromancer... maybe Square Drones?
+  bool _unknown0; // @4B
+  // For tanks like manager
+  bool can_go_invisible; // @4E
+  // Not present in any tanks
+  bool _unused_flag; // @4F
 
-  float _unknown0; // @50 - Always set to 0.23, with exception to landmine and manager, which is set to 0
-  float _unknown1; // @54 - Always 0.8, except for landmine which is 1.6
-  float _unknown2; // @58 - Always 0.03, (landmine is interestingly expressed differently in float form though)
+  float _unknown1; // @50 - Always set to 0.23, with exception to landmine and manager, which is set to 0
+  float _unknown2; // @54 - Always 0.8, except for landmine which is 1.6
+  float _unknown3; // @58 - Always 0.03, (landmine is interestingly expressed differently in float form though)
 
   // The following booleans are one byte in size
   // Unused boolean, always set to true
-  bool _unknown3; // @5C
+  bool _unknown4; // @5C
   // The following is only set for mothership, the assumption is that it has a team/arrow field group.
   bool has_arrow; // @5D
   // The following is only set for predator, the assumption is that it allows for fov extending
@@ -75,7 +82,7 @@ struct TankDefinition
   // Defaults to 50, with dominator tanks it is 6000
   int32_t max_health; // @6C
 
-  int32_t _unknown4; // @70 - not in my notes
+  int32_t _unknown5; // @70 - not in my notes
   
   struct cstr stat_names[8]; // @74 - @D4 
   int32_t stat_maxes[8]; // @D4 - @F4
