@@ -51,7 +51,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -130,7 +130,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -223,7 +223,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -320,7 +320,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -434,7 +434,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -617,7 +617,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -679,7 +679,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -740,7 +740,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -820,7 +820,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -916,7 +916,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -978,7 +978,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -1062,7 +1062,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -1177,7 +1177,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -1291,7 +1291,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -1420,7 +1420,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -1480,7 +1480,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -1537,7 +1537,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -1614,7 +1614,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -1761,7 +1761,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -1839,7 +1839,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -1954,7 +1954,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -2011,7 +2011,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -2070,7 +2070,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -2199,7 +2199,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -2328,7 +2328,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -2404,7 +2404,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -2462,7 +2462,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -2805,7 +2805,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -2898,7 +2898,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -2973,7 +2973,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -3037,7 +3037,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -3130,7 +3130,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -3225,7 +3225,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -3282,7 +3282,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -3375,7 +3375,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -3419,7 +3419,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       10,
       0,
       0,
@@ -3460,7 +3460,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       10,
       0,
       0,
@@ -3573,7 +3573,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -3613,7 +3613,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -3656,7 +3656,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -3893,7 +3893,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -4022,7 +4022,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -4081,7 +4081,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -4141,7 +4141,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       0,
       0,
       0,
@@ -4237,7 +4237,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       0,
       0,
       0,
@@ -4422,7 +4422,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       0,
       0,
       0,
@@ -4537,7 +4537,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -4594,7 +4594,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -4635,7 +4635,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       10,
       10,
       10,
@@ -4675,7 +4675,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       10,
       0,
       0,
@@ -4733,7 +4733,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -4793,7 +4793,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
@@ -4852,7 +4852,7 @@ module.exports = [
       "Max Health",
       "Health Regen"
     ],
-    "statMaxes": [
+    "statLimits": [
       7,
       7,
       7,
