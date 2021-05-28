@@ -80,6 +80,8 @@ struct BarrelDefinition
   float trapezoidal_dir; // @3C
   
   // Base Reload
+  // - The amount of ticks per each shot can be calculated by ceil((15 - reload stat points) * base reload);
+  // - Defaults to 1
   float base_reload; // @40
   
   // Bullet Deacceleration Rate
