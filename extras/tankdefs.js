@@ -23,7 +23,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -85,7 +85,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 0.9,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -104,7 +104,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 0.9,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -162,7 +162,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 0.7,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -181,7 +181,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 0.7,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -200,7 +200,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 0.7,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -262,7 +262,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -281,7 +281,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -300,7 +300,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -361,7 +361,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -380,7 +380,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -399,7 +399,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -418,7 +418,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -476,7 +476,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -495,7 +495,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -514,7 +514,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -533,7 +533,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -552,7 +552,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -571,7 +571,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -590,7 +590,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -609,7 +609,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -672,7 +672,7 @@ module.exports = [
           "speed": 1.5,
           "damage": 1.5,
           "baseHealth": 1,
-          "deaccelRate": 0.3,
+          "friction": 0.3,
           "durability": 1
         },
         "reload": 1.5,
@@ -734,7 +734,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 3,
+          "friction": 3,
           "durability": 1
         },
         "reload": 0.5,
@@ -797,7 +797,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -816,7 +816,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -877,7 +877,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -896,7 +896,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 0.5
         },
         "reload": 1,
@@ -915,7 +915,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 0.5
         },
         "reload": 1,
@@ -978,7 +978,7 @@ module.exports = [
           "speed": 0.7,
           "damage": 0.7,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 4,
@@ -1043,7 +1043,7 @@ module.exports = [
           "speed": 0.8,
           "damage": 0.8,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -1063,7 +1063,7 @@ module.exports = [
           "speed": 0.8,
           "damage": 0.8,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -1122,7 +1122,7 @@ module.exports = [
           "speed": 0.8,
           "damage": 0.8,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -1142,7 +1142,7 @@ module.exports = [
           "speed": 0.8,
           "damage": 0.8,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -1162,7 +1162,7 @@ module.exports = [
           "speed": 0.8,
           "damage": 0.8,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -1182,7 +1182,7 @@ module.exports = [
           "speed": 0.8,
           "damage": 0.8,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -1244,7 +1244,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1263,7 +1263,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1282,7 +1282,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1301,7 +1301,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1359,7 +1359,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1378,7 +1378,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1397,7 +1397,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1416,7 +1416,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1435,7 +1435,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1496,7 +1496,7 @@ module.exports = [
           "speed": 1.5,
           "damage": 1.5,
           "baseHealth": 1,
-          "deaccelRate": 0.3,
+          "friction": 0.3,
           "durability": 1
         },
         "reload": 2,
@@ -1554,7 +1554,7 @@ module.exports = [
           "speed": 2,
           "damage": 2,
           "baseHealth": 300,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1612,7 +1612,7 @@ module.exports = [
           "speed": 0.72,
           "damage": 0.72,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -1632,7 +1632,7 @@ module.exports = [
           "speed": 0.72,
           "damage": 0.72,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -1691,7 +1691,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1710,7 +1710,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1729,7 +1729,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1748,7 +1748,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1767,7 +1767,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1786,7 +1786,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1847,7 +1847,7 @@ module.exports = [
           "speed": 1.4,
           "damage": 1.4,
           "baseHealth": 1,
-          "deaccelRate": 0.3,
+          "friction": 0.3,
           "durability": 1
         },
         "reload": 2.5,
@@ -1866,7 +1866,7 @@ module.exports = [
           "speed": 1.4,
           "damage": 1.4,
           "baseHealth": 1,
-          "deaccelRate": 0.3,
+          "friction": 0.3,
           "durability": 1
         },
         "reload": 2.5,
@@ -1928,7 +1928,7 @@ module.exports = [
           "speed": 1.1,
           "damage": 1.1,
           "baseHealth": 0.45,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1947,7 +1947,7 @@ module.exports = [
           "speed": 1.1,
           "damage": 1.1,
           "baseHealth": 0.45,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1966,7 +1966,7 @@ module.exports = [
           "speed": 1.1,
           "damage": 1.1,
           "baseHealth": 0.45,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -1985,7 +1985,7 @@ module.exports = [
           "speed": 1.1,
           "damage": 1.1,
           "baseHealth": 0.45,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -2043,7 +2043,7 @@ module.exports = [
           "speed": 1.5,
           "damage": 1.5,
           "baseHealth": 1,
-          "deaccelRate": 0.3,
+          "friction": 0.3,
           "durability": 1
         },
         "reload": 2,
@@ -2101,7 +2101,7 @@ module.exports = [
           "speed": 1.5,
           "damage": 1.5,
           "baseHealth": 1,
-          "deaccelRate": 0.3,
+          "friction": 0.3,
           "durability": 1
         },
         "reload": 2,
@@ -2161,7 +2161,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -2180,7 +2180,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 0.5
         },
         "reload": 1,
@@ -2199,7 +2199,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 0.5
         },
         "reload": 1,
@@ -2218,7 +2218,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 0.5
         },
         "reload": 1,
@@ -2237,7 +2237,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 0.5
         },
         "reload": 1,
@@ -2295,7 +2295,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -2314,7 +2314,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1.5,
@@ -2333,7 +2333,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1.5,
@@ -2352,7 +2352,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 0.5
         },
         "reload": 1,
@@ -2371,7 +2371,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 0.5
         },
         "reload": 1,
@@ -2429,7 +2429,7 @@ module.exports = [
           "speed": 0.7,
           "damage": 0.7,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 4,
@@ -2448,7 +2448,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1.4,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2507,7 +2507,7 @@ module.exports = [
           "speed": 0.8,
           "damage": 0.8,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 3,
@@ -2566,7 +2566,7 @@ module.exports = [
           "speed": 0.48,
           "damage": 0.48,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2586,7 +2586,7 @@ module.exports = [
           "speed": 0.48,
           "damage": 0.48,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2606,7 +2606,7 @@ module.exports = [
           "speed": 0.48,
           "damage": 0.48,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2626,7 +2626,7 @@ module.exports = [
           "speed": 0.48,
           "damage": 0.48,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2646,7 +2646,7 @@ module.exports = [
           "speed": 0.48,
           "damage": 0.48,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2666,7 +2666,7 @@ module.exports = [
           "speed": 0.48,
           "damage": 0.48,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2686,7 +2686,7 @@ module.exports = [
           "speed": 0.48,
           "damage": 0.48,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2706,7 +2706,7 @@ module.exports = [
           "speed": 0.48,
           "damage": 0.48,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2726,7 +2726,7 @@ module.exports = [
           "speed": 0.48,
           "damage": 0.48,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2746,7 +2746,7 @@ module.exports = [
           "speed": 0.48,
           "damage": 0.48,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2766,7 +2766,7 @@ module.exports = [
           "speed": 0.48,
           "damage": 0.48,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2786,7 +2786,7 @@ module.exports = [
           "speed": 0.48,
           "damage": 0.48,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2806,7 +2806,7 @@ module.exports = [
           "speed": 0.48,
           "damage": 0.48,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2826,7 +2826,7 @@ module.exports = [
           "speed": 0.48,
           "damage": 0.48,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2846,7 +2846,7 @@ module.exports = [
           "speed": 0.48,
           "damage": 0.48,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2866,7 +2866,7 @@ module.exports = [
           "speed": 0.48,
           "damage": 0.48,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -2926,7 +2926,7 @@ module.exports = [
           "speed": 1.4,
           "damage": 1.4,
           "baseHealth": 1,
-          "deaccelRate": 0.3,
+          "friction": 0.3,
           "durability": 1
         },
         "reload": 3,
@@ -2945,7 +2945,7 @@ module.exports = [
           "speed": 1.4,
           "damage": 1.4,
           "baseHealth": 1,
-          "deaccelRate": 0.3,
+          "friction": 0.3,
           "durability": 1
         },
         "reload": 3,
@@ -2964,7 +2964,7 @@ module.exports = [
           "speed": 1.4,
           "damage": 1.4,
           "baseHealth": 1,
-          "deaccelRate": 0.3,
+          "friction": 0.3,
           "durability": 1
         },
         "reload": 3,
@@ -3022,7 +3022,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -3041,7 +3041,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 3,
+          "friction": 3,
           "durability": 1
         },
         "reload": 0.5,
@@ -3106,7 +3106,7 @@ module.exports = [
           "speed": 2,
           "damage": 2,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 8
         },
         "reload": 1.5,
@@ -3164,7 +3164,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -3183,7 +3183,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -3202,7 +3202,7 @@ module.exports = [
           "speed": 2,
           "damage": 2,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 8
         },
         "reload": 3,
@@ -3260,7 +3260,7 @@ module.exports = [
           "speed": 2,
           "damage": 2,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 8
         },
         "reload": 1.5,
@@ -3279,7 +3279,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1.4,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -3299,7 +3299,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1.4,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 6,
@@ -3358,7 +3358,7 @@ module.exports = [
           "speed": 2,
           "damage": 2,
           "baseHealth": 3.2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 8
         },
         "reload": 3.3,
@@ -3416,7 +3416,7 @@ module.exports = [
           "speed": 2,
           "damage": 2,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 3.2
         },
         "reload": 1.5,
@@ -3435,7 +3435,7 @@ module.exports = [
           "speed": 2,
           "damage": 2,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 3.2
         },
         "reload": 1.5,
@@ -3454,7 +3454,7 @@ module.exports = [
           "speed": 2,
           "damage": 2,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 3.2
         },
         "reload": 1.5,
@@ -3597,7 +3597,7 @@ module.exports = [
           "speed": 1.1,
           "damage": 1.1,
           "baseHealth": 0.45,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -3616,7 +3616,7 @@ module.exports = [
           "speed": 1.1,
           "damage": 1.1,
           "baseHealth": 0.45,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -3635,7 +3635,7 @@ module.exports = [
           "speed": 1.1,
           "damage": 1.1,
           "baseHealth": 0.45,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -3654,7 +3654,7 @@ module.exports = [
           "speed": 1.1,
           "damage": 1.1,
           "baseHealth": 0.45,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -3797,7 +3797,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 2,
@@ -3816,7 +3816,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 2,
@@ -3835,7 +3835,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 2,
@@ -3854,7 +3854,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 2,
@@ -3873,7 +3873,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 2,
@@ -3892,7 +3892,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 2,
@@ -3911,7 +3911,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 2,
@@ -3930,7 +3930,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 2,
@@ -3949,7 +3949,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 2,
@@ -3968,7 +3968,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 2,
@@ -3987,7 +3987,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 2,
@@ -4045,7 +4045,7 @@ module.exports = [
           "speed": 1.1,
           "damage": 1.1,
           "baseHealth": 1,
-          "deaccelRate": 0.3,
+          "friction": 0.3,
           "durability": 0.8
         },
         "reload": 1,
@@ -4064,7 +4064,7 @@ module.exports = [
           "speed": 1.1,
           "damage": 1.1,
           "baseHealth": 1,
-          "deaccelRate": 0.3,
+          "friction": 0.3,
           "durability": 0.8
         },
         "reload": 1,
@@ -4083,7 +4083,7 @@ module.exports = [
           "speed": 1.1,
           "damage": 1.1,
           "baseHealth": 1,
-          "deaccelRate": 0.3,
+          "friction": 0.3,
           "durability": 0.8
         },
         "reload": 1,
@@ -4102,7 +4102,7 @@ module.exports = [
           "speed": 1.1,
           "damage": 1.1,
           "baseHealth": 1,
-          "deaccelRate": 0.3,
+          "friction": 0.3,
           "durability": 0.8
         },
         "reload": 1,
@@ -4121,7 +4121,7 @@ module.exports = [
           "speed": 1.1,
           "damage": 1.1,
           "baseHealth": 1,
-          "deaccelRate": 0.3,
+          "friction": 0.3,
           "durability": 0.8
         },
         "reload": 1,
@@ -4179,7 +4179,7 @@ module.exports = [
           "speed": 2,
           "damage": 2,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 8
         },
         "reload": 1.5,
@@ -4239,7 +4239,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 100,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 3,
@@ -4300,7 +4300,7 @@ module.exports = [
           "speed": 1.2,
           "damage": 1.2,
           "baseHealth": 5,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 0.3,
@@ -4319,7 +4319,7 @@ module.exports = [
           "speed": 1.2,
           "damage": 1.2,
           "baseHealth": 5,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 0.3,
@@ -4338,7 +4338,7 @@ module.exports = [
           "speed": 1.2,
           "damage": 1.2,
           "baseHealth": 5,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 0.3,
@@ -4399,7 +4399,7 @@ module.exports = [
           "speed": 4,
           "damage": 4,
           "baseHealth": 20,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 3.2
         },
         "reload": 1.5,
@@ -4418,7 +4418,7 @@ module.exports = [
           "speed": 4,
           "damage": 4,
           "baseHealth": 20,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 3.2
         },
         "reload": 1.5,
@@ -4437,7 +4437,7 @@ module.exports = [
           "speed": 4,
           "damage": 4,
           "baseHealth": 20,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 3.2
         },
         "reload": 1.5,
@@ -4456,7 +4456,7 @@ module.exports = [
           "speed": 4,
           "damage": 4,
           "baseHealth": 20,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 3.2
         },
         "reload": 1.5,
@@ -4475,7 +4475,7 @@ module.exports = [
           "speed": 4,
           "damage": 4,
           "baseHealth": 20,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 3.2
         },
         "reload": 1.5,
@@ -4494,7 +4494,7 @@ module.exports = [
           "speed": 4,
           "damage": 4,
           "baseHealth": 20,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 3.2
         },
         "reload": 1.5,
@@ -4513,7 +4513,7 @@ module.exports = [
           "speed": 4,
           "damage": 4,
           "baseHealth": 20,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 3.2
         },
         "reload": 1.5,
@@ -4532,7 +4532,7 @@ module.exports = [
           "speed": 4,
           "damage": 4,
           "baseHealth": 20,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 3.2
         },
         "reload": 1.5,
@@ -4592,7 +4592,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -4612,7 +4612,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -4632,7 +4632,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -4652,7 +4652,7 @@ module.exports = [
           "speed": 1,
           "damage": 1,
           "baseHealth": 1,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 1,
@@ -4711,7 +4711,7 @@ module.exports = [
           "speed": 0.7,
           "damage": 0.7,
           "baseHealth": 2,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 4,
@@ -4850,7 +4850,7 @@ module.exports = [
           "speed": 0.56,
           "damage": 0.56,
           "baseHealth": 4,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 3,
@@ -4910,7 +4910,7 @@ module.exports = [
           "speed": 0.5,
           "damage": 0.5,
           "baseHealth": 3,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1.3
         },
         "reload": 4,
@@ -4970,7 +4970,7 @@ module.exports = [
           "speed": 0.3,
           "damage": 0.3,
           "baseHealth": 5,
-          "deaccelRate": 1,
+          "friction": 1,
           "durability": 1
         },
         "reload": 4,
