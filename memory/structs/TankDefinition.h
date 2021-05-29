@@ -61,8 +61,8 @@ struct TankDefinition
   // The following booleans are one byte in size
   // Unused boolean, always set to true
   bool _unknown4; // @5C
-  // The following is only set for mothership, the assumption is that it has a team/arrow field group.
-  bool has_arrow; // @5D
+  // The following is only set for mothership, the assumption is that it lets the game know the entity has 16 sides
+  bool is_hexadecagon; // @5D
   // The following is only set for predator, the assumption is that it allows for fov extending
   bool has_fov_ability; // @5E
   // The following is set for tanks that can no longer be selected in sandbox. They are considered dev mode tanks
