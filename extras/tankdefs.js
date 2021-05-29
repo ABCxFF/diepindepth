@@ -2880,6 +2880,7 @@ module.exports = [
     "movementSpeed": 0.01,
     "flags": {
       "isSquare": false,
+      "isHexadecagon": true,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": true
