@@ -4285,7 +4285,7 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": true
     },
-    "preAddons": "dombase",
+    "preAddons": ["dombase"],
     "postAddons": ["pronounced"],
     "maxHealth": 6000,
     "statNames": [
@@ -4382,7 +4382,7 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": true
     },
-    "preAddons": "dombase",
+    "preAddons": ["dombase"],
     "postAddons": ["pronounced"],
     "maxHealth": 6000,
     "statNames": [
@@ -4574,7 +4574,7 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": true
     },
-    "preAddons": "dombase",
+    "preAddons": ["dombase"],
     "postAddons": [],
     "maxHealth": 6000,
     "statNames": [
