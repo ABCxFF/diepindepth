@@ -69,10 +69,11 @@ struct TankDefinition
   bool requires_devmode; // @5F
 
   // Determines stuff like auto turret, spike / smasher, and other weird stuff like if its an auto three
-  // - Values here change every update - not fully understood yet
-  // - Found a value for this once that made the entire gui grayscale
+  // - Values here change every update - they are indexes in the Function Table, for addon generation
   // - Auto 5 + Auto 3 is possible and beautiful (:
-  int32_t addons[2]; // @60 - @64
+  // - Pre addon is built before the barrel, post is build after
+  int32_t pre_addon; // @60
+  int32_t post_addon; // @60
   
   // Yeah, this is weird. The larger this property is, the smaller the border width is
   // - Someone should find out if this correlates with canvas or protocol, or both.
