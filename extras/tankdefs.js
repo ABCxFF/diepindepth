@@ -33,14 +33,15 @@ module.exports = [
     ],
     "levelRequirement": 0,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -114,14 +115,15 @@ module.exports = [
     ],
     "levelRequirement": 15,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -210,14 +212,15 @@ module.exports = [
     ],
     "levelRequirement": 45,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -310,14 +313,15 @@ module.exports = [
     ],
     "levelRequirement": 30,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -428,14 +432,15 @@ module.exports = [
     ],
     "levelRequirement": 30,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -619,14 +624,15 @@ module.exports = [
     ],
     "levelRequirement": 45,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -681,15 +687,16 @@ module.exports = [
       }
     ],
     "levelRequirement": 15,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -744,14 +751,15 @@ module.exports = [
     ],
     "levelRequirement": 15,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -826,14 +834,15 @@ module.exports = [
     ],
     "levelRequirement": 15,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -925,14 +934,15 @@ module.exports = [
     ],
     "levelRequirement": 30,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -988,14 +998,15 @@ module.exports = [
     ],
     "levelRequirement": 30,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1073,15 +1084,16 @@ module.exports = [
       }
     ],
     "levelRequirement": 30,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1192,15 +1204,16 @@ module.exports = [
       }
     ],
     "levelRequirement": 45,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1311,14 +1324,15 @@ module.exports = [
     ],
     "levelRequirement": 30,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1445,14 +1459,15 @@ module.exports = [
     ],
     "levelRequirement": 45,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1506,14 +1521,15 @@ module.exports = [
     ],
     "levelRequirement": 30,
     "fieldFactor": 0.800000011920929,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1564,14 +1580,15 @@ module.exports = [
     ],
     "levelRequirement": 0,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": true
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1642,15 +1659,16 @@ module.exports = [
       }
     ],
     "levelRequirement": 45,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": true,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1796,14 +1814,15 @@ module.exports = [
     ],
     "levelRequirement": 45,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1876,14 +1895,15 @@ module.exports = [
     ],
     "levelRequirement": 30,
     "fieldFactor": 0.8500000238418579,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1995,14 +2015,15 @@ module.exports = [
     ],
     "levelRequirement": 30,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -2053,14 +2074,15 @@ module.exports = [
     ],
     "levelRequirement": 45,
     "fieldFactor": 0.800000011920929,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": true,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -2111,16 +2133,15 @@ module.exports = [
     ],
     "levelRequirement": 45,
     "fieldFactor": 0.699999988079071,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [
-      "pronounced"
-    ],
+    "pre_addons": null,
+    "post_addons": ["pronounced"],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -2247,14 +2268,15 @@ module.exports = [
     ],
     "levelRequirement": 45,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -2381,14 +2403,15 @@ module.exports = [
     ],
     "levelRequirement": 45,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -2459,14 +2482,15 @@ module.exports = [
     ],
     "levelRequirement": 45,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -2517,15 +2541,16 @@ module.exports = [
       }
     ],
     "levelRequirement": 45,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": true,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -2877,15 +2902,16 @@ module.exports = [
     ],
     "levelRequirement": 0,
     "fieldFactor": 1,
-    "movementSpeed": 0.01,
+    "speed": 0.01,
     "flags": {
       "isSquare": false,
-      "isHexadecagon": true,
+      "mothership": true,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": true
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -2974,14 +3000,15 @@ module.exports = [
     ],
     "levelRequirement": 45,
     "fieldFactor": 0.8500000238418579,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": true,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3051,14 +3078,15 @@ module.exports = [
     ],
     "levelRequirement": 45,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3115,15 +3143,16 @@ module.exports = [
       }
     ],
     "levelRequirement": 30,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3206,20 +3235,21 @@ module.exports = [
           "durability": 8
         },
         "reload": 3,
-        "width": 54.5999870000031,
+        "width": 54.6,
         "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3309,15 +3339,16 @@ module.exports = [
       }
     ],
     "levelRequirement": 45,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3362,20 +3393,21 @@ module.exports = [
           "durability": 8
         },
         "reload": 3.3,
-        "width": 54.5999870000031,
+        "width": 54.6,
         "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3463,15 +3495,16 @@ module.exports = [
       }
     ],
     "levelRequirement": 45,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3505,17 +3538,16 @@ module.exports = [
     ],
     "barrels": [],
     "levelRequirement": 30,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [
-      "smasher"
-    ],
+    "pre_addons": null,
+    "post_addons": ["smasher"],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3546,17 +3578,16 @@ module.exports = [
     "upgrades": [],
     "barrels": [],
     "levelRequirement": 45,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": true,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [
-      "landmine"
-    ],
+    "pre_addons": null,
+    "post_addons": ["landmine"],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3664,16 +3695,15 @@ module.exports = [
     ],
     "levelRequirement": 45,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [
-      "auto_turret"
-    ],
+    "pre_addons": null,
+    "post_addons": ["autoturret"],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3704,16 +3734,15 @@ module.exports = [
     "barrels": [],
     "levelRequirement": 45,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [
-      "auto5"
-    ],
+    "pre_addons": null,
+    "post_addons": ["auto5"],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3747,16 +3776,15 @@ module.exports = [
     "barrels": [],
     "levelRequirement": 30,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [
-      "auto3"
-    ],
+    "pre_addons": null,
+    "post_addons": ["auto3"],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3997,14 +4025,15 @@ module.exports = [
     ],
     "levelRequirement": 45,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -4131,14 +4160,15 @@ module.exports = [
     ],
     "levelRequirement": 45,
     "fieldFactor": 0.8500000238418579,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -4188,17 +4218,16 @@ module.exports = [
       }
     ],
     "levelRequirement": 45,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [
-      "auto_turret"
-    ],
+    "pre_addons": null,
+    "post_addons": ["autoturret"],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -4249,17 +4278,15 @@ module.exports = [
     ],
     "levelRequirement": 0,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": true
     },
-    "addons": [
-      "dominator",
-      "pronounced"
-    ],
+    "pre_addons": "dombase",
+    "post_addons": ["pronounced"],
     "maxHealth": 6000,
     "statNames": [
       "Movement Speed",
@@ -4348,17 +4375,15 @@ module.exports = [
     ],
     "levelRequirement": 0,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": true
     },
-    "addons": [
-      "dominator",
-      "pronounced"
-    ],
+    "pre_addons": "dombase",
+    "post_addons": ["pronounced"],
     "maxHealth": 6000,
     "statNames": [
       "Movement Speed",
@@ -4542,16 +4567,15 @@ module.exports = [
     ],
     "levelRequirement": 0,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": true
     },
-    "addons": [
-      "dominator"
-    ],
+    "pre_addons": "dombase",
+    "post_addons": null,
     "maxHealth": 6000,
     "statNames": [
       "Movement Speed",
@@ -4662,15 +4686,16 @@ module.exports = [
       }
     ],
     "levelRequirement": 45,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -4715,20 +4740,21 @@ module.exports = [
           "durability": 1
         },
         "reload": 4,
-        "width": 96.59997125000855,
+        "width": 96.6,
         "trapezoidalDir": 0
       }
     ],
     "levelRequirement": 45,
     "fieldFactor": 1,
-    "movementSpeed": 1,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -4758,18 +4784,16 @@ module.exports = [
     "upgrades": [],
     "barrels": [],
     "levelRequirement": 45,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [
-      "auto",
-      "smasher"
-    ],
+    "pre_addons": null,
+    "post_addons": ["smasher", "autoturret"],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -4799,17 +4823,16 @@ module.exports = [
     "upgrades": [],
     "barrels": [],
     "levelRequirement": 45,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [
-      "spike"
-    ],
+    "pre_addons": null,
+    "post_addons": ["spike"],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -4860,15 +4883,16 @@ module.exports = [
       }
     ],
     "levelRequirement": 45,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": true,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [],
+    "pre_addons": null,
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -4919,17 +4943,16 @@ module.exports = [
       }
     ],
     "levelRequirement": 45,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [
-      "launcher"
-    ],
+    "pre_addons": ["launcher"],
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -4979,17 +5002,16 @@ module.exports = [
       }
     ],
     "levelRequirement": 45,
-    "fieldFactor": 0.8999999761581421,
-    "movementSpeed": 1,
+    "fieldFactor": 0.9,
+    "speed": 1,
     "flags": {
       "isSquare": false,
       "canGoInvisible": false,
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "addons": [
-      "launcher"
-    ],
+    "pre_addons": ["launcher"],
+    "post_addons": null,
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -5012,4 +5034,4 @@ module.exports = [
       7
     ]
   }
-];
+]
