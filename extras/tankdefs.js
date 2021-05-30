@@ -40,8 +40,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -122,8 +122,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -219,8 +219,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -320,8 +320,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -439,8 +439,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -631,8 +631,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -695,8 +695,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -758,8 +758,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -841,8 +841,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -941,8 +941,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1005,8 +1005,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1092,8 +1092,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1212,8 +1212,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1331,8 +1331,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1466,8 +1466,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1528,8 +1528,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1587,8 +1587,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": true
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1667,8 +1667,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1821,8 +1821,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -1902,8 +1902,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -2022,8 +2022,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -2081,8 +2081,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -2140,7 +2140,7 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
+    "preAddons": [],
     "postAddons": ["pronounced"],
     "maxHealth": 50,
     "statNames": [
@@ -2275,8 +2275,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -2410,8 +2410,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -2489,8 +2489,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -2549,8 +2549,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -2910,8 +2910,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": true
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3007,8 +3007,8 @@ module.exports = [
       "hasFovAbility": true,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3085,8 +3085,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3151,8 +3151,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3248,8 +3248,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3347,8 +3347,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3406,8 +3406,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3503,8 +3503,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -3546,7 +3546,7 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
+    "preAddons": [],
     "postAddons": ["smasher"],
     "maxHealth": 50,
     "statNames": [
@@ -3586,7 +3586,7 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
+    "preAddons": [],
     "postAddons": ["landmine"],
     "maxHealth": 50,
     "statNames": [
@@ -3702,7 +3702,7 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
+    "preAddons": [],
     "postAddons": ["autoturret"],
     "maxHealth": 50,
     "statNames": [
@@ -3741,7 +3741,7 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
+    "preAddons": [],
     "postAddons": ["auto5"],
     "maxHealth": 50,
     "statNames": [
@@ -3783,7 +3783,7 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
+    "preAddons": [],
     "postAddons": ["auto3"],
     "maxHealth": 50,
     "statNames": [
@@ -4032,8 +4032,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -4167,8 +4167,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -4226,7 +4226,7 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
+    "preAddons": [],
     "postAddons": ["autoturret"],
     "maxHealth": 50,
     "statNames": [
@@ -4575,7 +4575,7 @@ module.exports = [
       "requiresDevmode": true
     },
     "preAddons": "dombase",
-    "postAddons": null,
+    "postAddons": [],
     "maxHealth": 6000,
     "statNames": [
       "Movement Speed",
@@ -4694,8 +4694,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -4753,8 +4753,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -4792,7 +4792,7 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
+    "preAddons": [],
     "postAddons": ["smasher", "autoturret"],
     "maxHealth": 50,
     "statNames": [
@@ -4831,7 +4831,7 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
+    "preAddons": [],
     "postAddons": ["spike"],
     "maxHealth": 50,
     "statNames": [
@@ -4891,8 +4891,8 @@ module.exports = [
       "hasFovAbility": false,
       "requiresDevmode": false
     },
-    "preAddons": null,
-    "postAddons": null,
+    "preAddons": [],
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -4952,7 +4952,7 @@ module.exports = [
       "requiresDevmode": false
     },
     "preAddons": ["launcher"],
-    "postAddons": null,
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
@@ -5011,7 +5011,7 @@ module.exports = [
       "requiresDevmode": false
     },
     "preAddons": ["launcher"],
-    "postAddons": null,
+    "postAddons": [],
     "maxHealth": 50,
     "statNames": [
       "Movement Speed",
