@@ -349,7 +349,7 @@ module.exports = [
     "name": "Quad Tank",
     "upgradeMsg": "",
     "upgrades": [
-      27,
+      5,
       40
     ],
     "barrels": [
