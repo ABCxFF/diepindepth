@@ -2,8 +2,8 @@
 // @name         Diep.io Packet WASM Hook
 // @author       ABC
 // @version      1.0.0
-// @namespace    121be456894c5359234c1962ddbd4b6f87139699
-// @description  121be456894c5359234c1962ddbd4b6f87139699
+// @namespace    c87dcb022819ff5e00c0b2cae5e56ac1a5cf6582
+// @description  c87dcb022819ff5e00c0b2cae5e56ac1a5cf6582
 // @match        *://diep.io/
 // @run-at       document-start
 // @require      https://raw.githubusercontent.com/Qwokka/wail.min.js/5e32d36bd7a5e0830d1ff4b64d3587aea13f77da/wail.min.js
@@ -14,7 +14,7 @@
 
 /*
   Usage is explained in the console on run
-  For build 121be456894c5359234c1962ddbd4b6f87139699
+  For build c87dcb022819ff5e00c0b2cae5e56ac1a5cf6582
   The way this script works will be explained in /memory or /wasm someday, but ignore that for now
 */
 
@@ -23,12 +23,12 @@ const nsfsk = false;
 class PacketHook extends EventTarget {
  static get CONST() {
     return {
-      BUILD: "121be456894c5359234c1962ddbd4b6f87139699",
+      BUILD: "c87dcb022819ff5e00c0b2cae5e56ac1a5cf6582",
       SEND_PACKET_INDEX: 107,
-      RECV_PACKET_INDEX: 469,
+      RECV_PACKET_INDEX: 470,
       MALLOC: 'R',
       FREE: 't',
-      SOCKET_PTR: 107460,
+      SOCKET_PTR: 105132,
     }
   }
   
@@ -171,7 +171,7 @@ class PacketHook extends EventTarget {
   }
 }
 
-if (!nsfsk) throw 'Packet Hook';
+
 
 const TYPE = ['clientbound', 'serverbound']
 
