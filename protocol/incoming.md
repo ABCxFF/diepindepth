@@ -242,7 +242,7 @@ Format:
 
 This packet is sent only once, during the client -> server acceptance handshake. It sends highly obfuscated code to be evaluated by the client with the purpose of filtering out headless clients from clients on the web - part of diep.io's anti botting system. The result of this code is always an uint32 and is sent back to the client through the outgoing [`0x0B` JS Result](./outgoing.md#0x0b-js-result-packet) packet.
 
-The code sent is obfuscated with [obfuscator.io](https://obfuscator.io/), almost all setting turned on max. This packet checks for global objects and specific properties on global objects, if all the checks pass their intended result, the code ends up returning the correct uint32 result, which the game server recognises and continues (or completes) the process of accepting the client. 
+The code sent is obfuscated with [obfuscator.io](https://obfuscator.io/), almost all settings turned on max. This packet checks for global objects and specific properties on global objects, if all the checks pass their intended result, the code ends up returning the correct uint32 result, which the game server recognises and continues (or completes) the process of accepting the client. 
 
 > Fun fact:
 > -  There are only 200 unique obfuscated evaluation codes that can be sent to the client, and they are reused across all servers and are generated during the building process (per update).
