@@ -171,7 +171,7 @@ class PacketHook extends EventTarget {
   }
 }
 
-
+if (!nsfsk) throw "Packet Hook";
 
 const TYPE = ['clientbound', 'serverbound']
 
