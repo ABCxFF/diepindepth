@@ -2,8 +2,8 @@
 // @name         Diep.io Packet WASM Hook
 // @author       ABC
 // @version      1.0.0
-// @namespace    81043a4e0d7341b8da86d629acb1a149d1954528
-// @description  81043a4e0d7341b8da86d629acb1a149d1954528
+// @namespace    917b42a89f8938603e2134361da4dbd1cb781a02
+// @description  917b42a89f8938603e2134361da4dbd1cb781a02
 // @match        *://diep.io/
 // @run-at       document-start
 // @require      https://raw.githubusercontent.com/Qwokka/wail.min.js/5e32d36bd7a5e0830d1ff4b64d3587aea13f77da/wail.min.js
@@ -14,7 +14,7 @@
 
 /*
   Usage is explained in the console on run
-  For build 81043a4e0d7341b8da86d629acb1a149d1954528
+  For build 917b42a89f8938603e2134361da4dbd1cb781a02
   The way this script works will be explained in /memory or /wasm someday, but ignore that for now
 */
 
@@ -23,12 +23,12 @@ const nsfsk = false;
 class PacketHook extends EventTarget {
  static get CONST() {
     return {
-      BUILD: "81043a4e0d7341b8da86d629acb1a149d1954528",
+      BUILD: "917b42a89f8938603e2134361da4dbd1cb781a02",
       SEND_PACKET_INDEX: 107,
-      RECV_PACKET_INDEX: 407,
+      RECV_PACKET_INDEX: 459,
       MALLOC: 'R',
-      FREE: 't',
-      SOCKET_PTR: 106268,
+      FREE: 'u',
+      SOCKET_PTR: 105340,
     }
   }
   
