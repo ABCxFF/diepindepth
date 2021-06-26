@@ -25,6 +25,7 @@ A varuint encoded `netcolor` id. Sent from Zeach (besides comments) himself, the
     18 Net Colors
     Once >= 18, the game rejects drawing the color
 */
+
 enum class ID {
   Border,
   Cannon,
