@@ -1,3 +1,6 @@
+> https://github.com/supahero1/diep.io/tree/master/working-with-diep  
+> check out this cool thing by a friend of mine (shädam is cool) - it discusses packet encoding
+
 # Packet Encoding and Decoding
 
 Also known as shuffling/unshuffling, this encryption system is what annoys 80% of all the people who deal with diep protocol. No one has fully reverse engineered every part of the encryption system, but Shädam got close, and was able to reverse engineer (for the most part) packet opcode/header encodings, and content encodings. Some of his old code is visible on repos in his account.
