@@ -56,7 +56,9 @@ Field groups are also used for the organization of entities, but that will be ex
 
 ## Parsing
 
-> Discuss basics of how entity's data is sent to the client / parsed by the client.
+Only one packet is used to update entities in game. The [0x00 Update Packet](https://github.com/ABCxFF/diepindepth/blob/main/protocol/update.md#0x00-update-packet). Most of what will be said here will be explained more in depth on that page. 
+
+Entities can only be created, deleted, or updated in the game. In the 0x00 packet format, there are two arrays (`vu32(len), ...elems`). An array of [`entid`](https://github.com/ABCxFF/diepindepth/blob/main/protocol/data.md#entid---vu-hash-vu-id)s to be deleted from the clients's entity storage, and an array of `upcreates`, which are either updates or creations. Creations contain full data about an entity, whereas updates only update specific fields at a time. More info, as stated earlier, is on the [0x00 Update Packet](https://github.com/ABCxFF/diepindepth/blob/main/protocol/update.md#0x00-update-packet) page.
 
 ---
 
