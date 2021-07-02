@@ -12,8 +12,6 @@
 // @require      https://gist.githubusercontent.com/ABCxFF/b089643396fbb933996966b5ab632821/raw/fb58491af8d2839945aa616caf9ad5a1b97dcd61/wail.js
 // ==/UserScript==
 
-// I will only be releasing the beta version.
-
 /**
 Copyright 2021 ABC - github.com/ABCxFF
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,16 +26,15 @@ limitations under the License.
 */
 
 const CONFIG = {
-  GLOBAL_KEY: "DMA", // window[GLOBAL_KEY], localStorage[GLOBAL_KEY + "Store"]
+  GLOBAL_KEY: "DMA",
 }
 
 !((exports) => {
-  // EventEmitter
   !((listeners) => {
     exports.on = (event, cb) => {
       if (!listeners[event]) listeners[event] = [];
 
-      return listeners[event].push(cb) - 1; // index
+      return listeners[event].push(cb) - 1;
     }
 
     exports.off = (event, index) => {
@@ -65,7 +62,7 @@ const CONFIG = {
       for (const cb of listeners[event]) cb(...data);
     }
   })({});
-  // LocalStore
+
   const storage = (() => {
     const key = CONFIG.GLOBAL_KEY + "Store";
     
@@ -79,7 +76,7 @@ const CONFIG = {
     
     return storage;
   })();
-  // Hook into Module
+
   Object.defineProperty(Object.prototype, "postRun", {
     get() { },
     set(postRun) {
@@ -93,7 +90,6 @@ const CONFIG = {
       
       exports.BUILD = stack.slice(bIndex, stack.indexOf(".", bIndex));
       
-      // Wipe old settings, display them to the user if they care
       if (exports.BUILD !== storage.fetch().build) {
         prompt(CONFIG.GLOBAL_KEY + ": New build, wiping settings\n\nbuild_" + exports.BUILD, JSON.stringify(storage.fetch()));
         
@@ -106,7 +102,7 @@ const CONFIG = {
     configurable: true,
   });
   
-  // Hook into WebAssembly instantiation
+
   !(_inst => WebAssembly.instantiate = (wasm, imports) => {
     if (imports && imports.a) {
       const loader = {buffer: new Uint8Array(wasm), imports};
@@ -175,15 +171,13 @@ const CONFIG = {
     
     return exports.removeLogPoint(loggers.findIndex(e => e.name === logName && e.index === index));
   }
-  
-  // makes the exports accessible
+
   exports.once("compile", (wasmExports, results) => {
     exports.wasm = {}
     exports.wasm.results = results;
     for (const name in wasmExports) if (name.slice(0, 5) === "diep.") exports.wasm[name.slice(5)] = wasmExports[name];
   });
   
-  // deal with it
   exports.once("precompile", (loader) => {
     const parserWail = new WailParser(loader.buffer);
     parserWail.parse();
@@ -283,11 +277,9 @@ const CONFIG = {
       _malloc: malloc, _free: free
     } = exports.Module;
     
-    // Add in HEAPU64 and HEAP64 (bigints)
     const HEAPU64 = exports.Module.HEAPU64 = new BigUint64Array(HEAPU8.buffer);
     const HEAP64 = exports.Module.HEAP64 = new BigInt64Array(HEAPU8.buffer);
     
-    // Might as well make it accessable too
     exports.HEAPU8 = HEAPU8;
     exports.HEAP8 = HEAP8;
     exports.HEAPU16 = HEAPU16;
