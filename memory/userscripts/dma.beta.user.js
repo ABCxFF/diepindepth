@@ -106,7 +106,7 @@ const CONFIG = {
   !(_inst => WebAssembly.instantiate = (wasm, imports) => {
     if (imports && imports.a) {
       const loader = {buffer: new Uint8Array(wasm), imports};
-
+      imports.a[CONFIG.GLOBAL_KEY.toLowerCase() + ".patch"] = () => {};
       exports.emit("precompile", loader);
       
       WebAssembly.instantiate = _inst;
@@ -251,8 +251,6 @@ const CONFIG = {
       });
     }
     
-
-    loader.imports.a[CONFIG.GLOBAL_KEY.toLowerCase() + ".patch"] = () => {};
     // ode to cx
     wail.addImportEntry({
       moduleStr: "actually know wasm",
