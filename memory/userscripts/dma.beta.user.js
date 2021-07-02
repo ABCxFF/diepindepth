@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Beta Diep Memory Analyzer
+// @name         Diep Memory Analyzer
 // @version      Beta 1.0.0
-// @description  Script dedicated to reverse engineering memory structs and analyzing the memory
+// @description  Script dedicated to reverse engineering memory structs and analyzing the memory - beta version only
 // @namespace    github.com/ABCxFF
 // @author       ABC
 // 
