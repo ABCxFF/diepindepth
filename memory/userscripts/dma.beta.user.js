@@ -319,7 +319,6 @@ const CONFIG = {
         case 'i32': return HEAP32[ptr >> 2]
         case 'u64': return HEAPU64[ptr >> 3]
         case 'f32': return HEAPF32[ptr >> 2]
-        case ':f32': return HEAPF32[(ptr) >> 2]
         case 'f64': return HEAPF64[ptr >> 3]
         case 'i64': return HEAP64[ptr >> 3];
         case 'u64': return HEAPU64[ptr >> 3];
