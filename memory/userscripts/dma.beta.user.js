@@ -465,7 +465,7 @@ const CONFIG = {
       exports.scan.i16 = (vals, max=500) => scan(HEAP16, arrayify(vals).map(v => (v << 16) >> 16), max).map(i => i << 1);
       exports.scan.u16 = (vals, max=500) => scan(HEAPU16, arrayify(vals).map(v => (v << 16) >>> 16), max).map(i => i << 1);
       
-      exports.scan.i32 = (vals, max=500) => scan(HEAP32, arrayify(vals).map(v => v & 0), max).map(i => i << 2);
+      exports.scan.i32 = (vals, max=500) => scan(HEAP32, arrayify(vals).map(v => v | 0), max).map(i => i << 2);
       exports.scan.u32 = (vals, max=500) => scan(HEAPU32, arrayify(vals).map(v => v >>> 0), max).map(i => i << 2);
       
       exports.scan.f32 = (vals, max=500) => scan(HEAPF32, arrayify(vals).map(Math.fround), max).map(i => i << 2);
