@@ -112,7 +112,10 @@ inline void Encode(BinData &out) const {
 }
 ```
 
-**Quick Misconception,** in diep's console, sometimes you'll see messages relating to _"possible desyncs"_ and alongside them you'll see two numbers inside of these `<triangular bracket things>`, these are NOT `<hash, id>`. Unlike the order they are read, entids are logged as `<id, hash>` - the full reason for this, and the meaning behind hashes is still unknown.
+The id: A universal identifier which is unique while the entity is alive, but once the entity is destroyed - the id may be used by another entity in the future. **IDs are unique, but can be recycled**
+The hash: Seems to be the total amount of times a specific id has been used/recycled.
+
+**Quick Misconception,** in diep's console, sometimes you'll see messages relating to _"possible desyncs"_ and alongside them you'll see two numbers inside of these `<triangular bracket things>`, these are NOT `<hash, id>`. Unlike the order they are read, entids are logged as `<id, hash>` in the diep console.
 
 ---
 
