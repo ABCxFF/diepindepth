@@ -175,8 +175,8 @@ if (!nsfsk) throw "Packet Hook";
 
 const TYPE = ['incoming', 'outgoing']
 
-window.Hook = new PacketHook(function(type, ptr, len) {
-  Hook.dispatchEvent(new MessageEvent(TYPE[type], {data: Hook.HEAPU8.slice(ptr, ptr+len)}))
+window.pHook = new PacketHook(function(type, ptr, len) {
+  pHook.dispatchEvent(new MessageEvent(TYPE[type], {data: pHook.HEAPU8.slice(ptr, ptr+len)}))
   
   return 0;
 });
