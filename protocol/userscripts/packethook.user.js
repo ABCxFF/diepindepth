@@ -173,7 +173,7 @@ class PacketHook extends EventTarget {
 
 if (!nsfsk) throw "Packet Hook";
 
-const TYPE = ['clientbound', 'serverbound']
+const TYPE = ['incoming', 'outgoing']
 
 window.pHook = new PacketHook(function(type, ptr, len) {
   pHook.dispatchEvent(new MessageEvent(TYPE[type], {data: Hook.HEAPU8.slice(ptr, ptr+len)}))
