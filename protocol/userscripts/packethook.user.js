@@ -2,8 +2,8 @@
 // @name         Diep.io Packet WASM Hook
 // @author       ABC
 // @version      1.0.0
-// @namespace    2c6859c7cfee4401fe047256f1e2aa832d7c524a
-// @description  2c6859c7cfee4401fe047256f1e2aa832d7c524a
+// @namespace    7d8655edcf09098d26ec676963ac899405b72f5d
+// @description  7d8655edcf09098d26ec676963ac899405b72f5d
 // @match        *://diep.io/
 // @run-at       document-start
 // @require      https://raw.githubusercontent.com/Qwokka/wail.min.js/5e32d36bd7a5e0830d1ff4b64d3587aea13f77da/wail.min.js
@@ -14,7 +14,7 @@
 
 /*
   Usage is explained in the console on run
-  For build 2c6859c7cfee4401fe047256f1e2aa832d7c524a
+  For build 7d8655edcf09098d26ec676963ac899405b72f5d
   The way this script works will be explained in /memory or /wasm someday, but ignore that for now
 */
 
@@ -23,12 +23,12 @@ const nsfsk = false;
 class PacketHook extends EventTarget {
  static get CONST() {
     return {
-      BUILD: "2c6859c7cfee4401fe047256f1e2aa832d7c524a",
-      SEND_PACKET_INDEX: 106,
-      RECV_PACKET_INDEX: 403,
+      BUILD: "7d8655edcf09098d26ec676963ac899405b72f5d",
+      SEND_PACKET_INDEX: 105,
+      RECV_PACKET_INDEX: 406,
       MALLOC: 'R',
-      FREE: 'I',
-      SOCKET_PTR: 103860,
+      FREE: 'K',
+      SOCKET_PTR: 102552,
     }
   }
   
@@ -175,8 +175,8 @@ if (!nsfsk) throw "Packet Hook";
 
 const TYPE = ['incoming', 'outgoing']
 
-window.pHook = new PacketHook(function(type, ptr, len) {
-  pHook.dispatchEvent(new MessageEvent(TYPE[type], {data: pHook.HEAPU8.slice(ptr, ptr+len)}))
+window.Hook = new PacketHook(function(type, ptr, len) {
+  Hook.dispatchEvent(new MessageEvent(TYPE[type], {data: Hook.HEAPU8.slice(ptr, ptr+len)}))
   
   return 0;
 });
