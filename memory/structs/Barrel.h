@@ -1,7 +1,7 @@
 /*
-    Barrel Definitions have all data relating to
-    barrels (and their bullets) `Barrel Definitions`
-    structs are 100 bytes of size
+    The barrel struct has all data relating to
+    barrels (and their bullets). The struct is
+    100 bytes in size
     
     In Emscripten, Pointers are 32 bit.
 */
