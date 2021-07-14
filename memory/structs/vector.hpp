@@ -6,10 +6,11 @@
 */
 
 // Explains itself? Kind of a standard way of storing data, but this is its format in emscripten compiled binaries
+template<typename T>
 struct vector {
-    uint32_t startPtr;
+    T* startPtr;
 
-    uint32_t endPtr;
+    T* endPtr;
 
     uint32_t endPtrCapacity;
-}
+};
