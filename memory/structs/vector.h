@@ -6,11 +6,11 @@
 */
 
 // Explains itself? Kind of a standard way of storing data, but this is its format in emscripten compiled binaries
-template<typename T>
+
 struct vector {
-    T* startPtr;
+    void* start;
 
-    T* endPtr;
+    void* used_end; // Denotes how much of the total space is used (used_end - start)
 
-    uint32_t endPtrCapacity;
+    void* size_end; // Denotes the absolute space that the vector has allocated (size_end - start)
 };
