@@ -34,7 +34,7 @@ struct AbstractFieldGroup
     // Field Data
     // - In order of the shuffled fields order
     // - Varying data types and values
-    int32_t field_data[n];
+    any field_data[n];
 
     // and some more stuff over yonder 👀
 };
