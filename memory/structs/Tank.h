@@ -1,22 +1,22 @@
 
 /*
-    Tank Definitions have all data relating to
-    tanks. `TankDefinition` structs are (probably)
+    Tank struct have all data relating to
+    tanks. The struct is (probably)
     244 bytes of size.
     
     In Emscripten, Pointers are 32 bit.
 */
 
-// Tank Definitions are stored in a linked list, meaning each element
+// Tanks are stored in a linked list, meaning each element
 // points to the next, they aren't all next to eachother in memory.
 //
-// The tank definitions are surprisingly not in order of id, but they 
-// are in the same order every update - not fully sure what the order
-// they are in means yet.
+// Tanks in memory are surprisingly not in order of id, but they 
+// are in the same order every update - not fully sure what their
+// order means yet.
 
 struct Tank
 {
-  // Points to the next tank definition, or its value is 0
+  // Points to the next tank definition, or its value is 0 (nil)
   struct Tank* next_tank; // @00
 
   // Tank ID (see extras/tanks.js) - all of these ints have the same value
@@ -29,11 +29,11 @@ struct Tank
   struct cstr upgrade_msg; // @1C
   
   // see vector.c
-  // Vector of tank ids
-  struct vector<int32_t> upgrades; // @28 - @30
+  // Vector of tank ids (int32)
+  struct vector upgrades; // @28 - @30
   
-  // Vector of barrel definitions - so, all to eachother (sizeof BarrelDefinition's == 100)
-  struct vector<struct Barrel> barrels; // @34 - @3C
+  // Vector of Barrels - so, all to eachother (sizeof Barrel's == 100)
+  struct vector barrels; // @34 - @3C
   
   // The level you need to be at to upgrade to this tank
   int32_t level_requirement; // @40
