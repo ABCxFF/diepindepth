@@ -33,8 +33,8 @@ struct AbstractFieldGroup
 
     // Field Data
     // - In order of the shuffled fields order
-    // - Varying data types and values
-    any field_data[n];
+    // - *n* size of the field data, it varies across fields
+    uint8_t field_data[n];
 
     // and some more stuff over yonder 👀
 };
