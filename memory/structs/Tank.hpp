@@ -17,7 +17,7 @@
 struct Tank
 {
   // Points to the next tank definition, or its value is 0
-  struct TankDefinition* next_tank; // @00
+  struct Tank* next_tank; // @00
 
   // Tank ID (see extras/tanks.js) - all of these ints have the same value
   int32_t tank_id; // @04
