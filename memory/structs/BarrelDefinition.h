@@ -43,7 +43,7 @@ struct BarrelDefinition
   
   // Bullet Type
   // - You can think of it lke ['bullet', 'drone', 'trap'][bullet_type i32 thing]
-  int32_t bullet.type; // @1C
+  int32_t bullet_type; // @1C
   
   // Kinda weird
   // - Seems to default to 1
@@ -52,7 +52,7 @@ struct BarrelDefinition
 
   // Bullet Speed
   // - Part of bullet speed formulas
-  float bullet.speed; // @24
+  float bullet_speed; // @24
   
   // Max Drones
   // - Only useful for drone tanks
@@ -61,12 +61,12 @@ struct BarrelDefinition
   
   // Bullet Damage
   // - "I think"
-  float bullet.damage; // @2C
+  float bullet_damage; // @2C
   
   // Bullet Base Health
   // - Similar to max health
   // - Max Health for level 0
-  float bullet.base_health; // @30
+  float bullet_base_health; // @30
   
   // Unknown, but for every tank this value is 1
   int32_t _unknown1; // @34
@@ -87,12 +87,12 @@ struct BarrelDefinition
   // Bullet Deacceleration Rate
   // - The higher, the longer the bullet stays at its avg (max I think) speed
   // - Sniper has higher than basic, for example
-  float bullet.deaccel_rate; // @44
+  float bullet_deaccel_rate; // @44
   
   // Bullet Durability
   // - Relating to the overall life time of a bullet
   // - Example: Higher for trappers than for basic
-  float bullet.durability; // @48
+  float bullet_durability; // @48
 
   // No idea area
   // 76 - 100
