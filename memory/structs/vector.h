@@ -7,9 +7,9 @@
 
 // Explains itself? Kind of a standard way of storing data, but this is its format in emscripten compiled binaries
 struct vector {
-    uint32_t startPtr;
+    void* start; 
 
-    uint32_t endPtr;
+    void* end; // Denotes how much of the total space is used (end - start)
 
-    uint32_t endPtrCapacity;
-}
+    void* end_capacity; // Denotes the absolute space that the vector has allocated (end_capacity - start)
+};
