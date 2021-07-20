@@ -96,7 +96,7 @@ class PacketHook extends EventTarget {
           OP_END,
           ...bytes]);
 
-        return writer.write()
+        return writer.write();
       }
 
       return false;
