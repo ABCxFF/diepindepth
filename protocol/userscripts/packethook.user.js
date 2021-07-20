@@ -82,7 +82,7 @@ class PacketHook extends EventTarget {
           OP_END,
           ...bytes]);
 
-        return writer.write()
+        return writer.write();
       } else if (index === recvPacket.i32()) {
         const writer = new BufferReader(new Uint8Array(1));
 
