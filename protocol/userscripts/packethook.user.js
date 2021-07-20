@@ -154,7 +154,7 @@ class PacketHook extends EventTarget {
     
     HEAPU8.set(buf, ptr);
     
-    this.wasm.exports.sendPacket(HEAP32[PacketHook.CONST.SOCKET_PTR >> 2], ptr, buf.byteLength)
+    this.wasm.exports.sendPacket(HEAP32[PacketHook.CONST.SOCKET_PTR >> 2], ptr, buf.byteLength);
     free(ptr);
   }
   
