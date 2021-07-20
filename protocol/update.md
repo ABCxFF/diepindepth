@@ -1,6 +1,6 @@
 # 0x00 Update Packet
 ---
-The one and infamous 0x00 update packet contains almost all information you see in the game. If you have not yet read [`/entities.md`](/entities.md), I highly advise you read it because it directly relates to how update packets work.
+The one and only infamous 0x00 update packet contains almost all information you see in the game. If you have not yet read [`/entities.md`](/entities.md), I highly advise you read it, because it directly relates to how update packets work.
 
 The update packet contains server uptick, entity deletions (entities on screen that should be deleted), and entity upcreates (creations of new entities or updates of older entities). The rough format of the 0x00 packet is as follows:
 > `0x00 vu(game tick) vu(deleteCount) ...entity id deletes vu(upcreateCount) ...upcreates`
