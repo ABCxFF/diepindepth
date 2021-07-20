@@ -166,7 +166,7 @@ class PacketHook extends EventTarget {
     
     HEAPU8.set(buf, ptr);
     
-    this.wasm.exports.recvPacket(ptr, buf.byteLength)
+    this.wasm.exports.recvPacket(ptr, buf.byteLength);
     free(ptr);
   }
 }
