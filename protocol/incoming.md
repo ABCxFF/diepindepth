@@ -62,7 +62,7 @@ When an incoming packet is big enough, the server sends you a compressed version
 At the start of the packet there is a u32 specifying the final length of the decompressed packet, so you know the size of the buffer to allocate and can check at the end if there was an error while decompressing (though this should never happen)
 
 Format:
-> `02 u32(decompressed output length) (LZ4 blocks)`
+> `02 u32(decompressed output length) (LZ4 block)`
 
 The decompressed result will include the packet header, you should feed this into your parsing function recursively. The decompressed result is not [encoded](./encoding.md). Currently only [Update](./incoming.md#0x00-update-packet) and [Eval](./incoming.md#0x0d-int-js-challenge-packet) packets can get large enough to be compressed.
 
