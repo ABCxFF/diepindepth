@@ -2,8 +2,8 @@
 // @name         Diep.io Packet WASM Hook
 // @author       ABC
 // @version      1.0.0
-// @namespace    5327085435ba93c4eb8fb515dfb381101ccba3b7
-// @description  5327085435ba93c4eb8fb515dfb381101ccba3b7
+// @namespace    cbc868ba5218a612ffc34164f50611a763ed64e3
+// @description  cbc868ba5218a612ffc34164f50611a763ed64e3
 // @match        *://diep.io/
 // @run-at       document-start
 // @require      https://raw.githubusercontent.com/Qwokka/wail.min.js/5e32d36bd7a5e0830d1ff4b64d3587aea13f77da/wail.min.js
@@ -14,7 +14,7 @@
 
 /*
   Usage is explained in the console on run
-  For build 5327085435ba93c4eb8fb515dfb381101ccba3b7
+  For build cbc868ba5218a612ffc34164f50611a763ed64e3
   The way this script works will be explained in /memory or /wasm someday, but ignore that for now
 */
 
@@ -23,12 +23,12 @@ const nsfsk = false;
 class PacketHook extends EventTarget {
  static get CONST() {
     return {
-      BUILD: "5327085435ba93c4eb8fb515dfb381101ccba3b7",
-      SEND_PACKET_INDEX: 105,
-      RECV_PACKET_INDEX: 433,
-      MALLOC: 'R',
-      FREE: 'u',
-      SOCKET_PTR: 104372,
+      BUILD: "cbc868ba5218a612ffc34164f50611a763ed64e3",
+      SEND_PACKET_INDEX: 106,
+      RECV_PACKET_INDEX: 404,
+      MALLOC: "R",
+      FREE: "t",
+      SOCKET_PTR: 104620
     }
   }
   
@@ -82,7 +82,7 @@ class PacketHook extends EventTarget {
           OP_END,
           ...bytes]);
 
-        return writer.write();
+        return writer.write()
       } else if (index === recvPacket.i32()) {
         const writer = new BufferReader(new Uint8Array(1));
 
@@ -96,7 +96,7 @@ class PacketHook extends EventTarget {
           OP_END,
           ...bytes]);
 
-        return writer.write();
+        return writer.write()
       }
 
       return false;
@@ -154,7 +154,7 @@ class PacketHook extends EventTarget {
     
     HEAPU8.set(buf, ptr);
     
-    this.wasm.exports.sendPacket(HEAP32[PacketHook.CONST.SOCKET_PTR >> 2], ptr, buf.byteLength);
+    this.wasm.exports.sendPacket(HEAP32[PacketHook.CONST.SOCKET_PTR >> 2], ptr, buf.byteLength)
     free(ptr);
   }
   
@@ -166,7 +166,7 @@ class PacketHook extends EventTarget {
     
     HEAPU8.set(buf, ptr);
     
-    this.wasm.exports.recvPacket(ptr, buf.byteLength);
+    this.wasm.exports.recvPacket(ptr, buf.byteLength)
     free(ptr);
   }
 }
