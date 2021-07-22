@@ -28,7 +28,7 @@ class PacketHook extends EventTarget {
       RECV_PACKET_INDEX: 403,
       MALLOC: "R",
       FREE: "t",
-      SOCKET_PTR: 0
+      SOCKET_PTR: 105228
     }
   }
   
