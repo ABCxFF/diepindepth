@@ -5,11 +5,10 @@ The end goal is to calculate scalingFactor, but before that, we need to understa
 ## FOV
 Stands for field of view. The closer the number to 0, the more zoomed out we are. This value isn't calculated, but rather, sent by the server.
 
-Unlike scalingFactor, this value does not change if our window dimensions change. The formula for the FOV value from the server is 
-```js
-const FOV = (level, fieldFactor) => (.55*fieldFactor)/Math.pow(1.01, (level-1)/2);
-```
-Where the `fieldFactor`s are accessable [here](/extras/tankdefs.js).
+Unlike scalingFactor, this value does not change if our window dimensions change. The formula for the FOV value from the server is
+
+![heuy here's a formula](https://i.imgur.com/7WTK85p.png)
+Where the fieldFactors are accessable [here](/extras/tankdefs.js).
 
 ## windowScaling
 
