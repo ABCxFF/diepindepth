@@ -121,7 +121,7 @@ The hash: This seems to be the total amount of times a specific id has been used
 
 ### **Data Organization**
 
-Inside of specifically 0x00 packets, there is a form of table which has come to be known as a "jump table. Jump tables work differently than the standard arrays, by retrieving indexes from jumps, then parsing values based on that index. The best way to explain the format is with an example, here is an example of a field group identification table, without any values.
+Inside of 0x00 packets, there is data stored in a table-like form of data, which has come to be known as a "jump table". Jump tables work differently than standard arrays. They are parsed by retrieving indexes from jumps, then parsing values based on that index. The best way to explain the format is with an example, here is an example of a field group identification jump table, in this case, indexes without any values.
 
 ```
 
