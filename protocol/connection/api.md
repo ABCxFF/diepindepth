@@ -1,14 +1,14 @@
 # [`M28 API`](https://api.n.m28.io/)
 
-The M28 api has only 3 api paths that relate to diep: `/server`, `endpoint/diepio-${gamemode}`, and `endpoint/latency`. All but `/server` are necessary to the client when connecting to a gamemode server.
+The M28 api has only 3 api paths that relate to Diep: `/server`, `endpoint/diepio-${gamemode}`, and `endpoint/latency`. All but `/server` is necessary to the client when connecting to a gamemode server.
 
-First, its worth mentioning that to connect to a server by id, append `.s.m28n.net` to its id. Example would be id=`abcd`, ws server=`wss://abcd.s.m28n.net`.
+First, it's worth mentioning that to connect to a server by id, append `.s.m28n.net` to its id. An example would be id=`abcd`, ws server=`wss://abcd.s.m28n.net`.
 
 ---
 
 ## [`/server`](https://api.n.m28.io/server/diepindepth) Endpoint
 
-This endpoint responds with info about a server via its ID. Unlike the other endpoints, this endpoint is part of the M28 api system, and is not part of some sort of game or game server.
+This endpoint responds with info about a server via its ID. Unlike the other endpoints, this endpoint is part of the M28 api system and is not part of some sort of game or game server.
 
 URL -> `https://api.n.m28.io/server/{server-id}`
 
@@ -32,7 +32,7 @@ Content-Length: 87
 
 ## DiepIO Game Server Endpoints
 
-This endpoint lists servers hosted on the m28 server api for diep.io. It is used to find a server by gamemode, one server per region is listed, so there may be more in the region than shown..
+This endpoint lists servers hosted on the m28 server api for diep.io. It is used to find a server by gamemode, one server per region is listed, so there may be more in the region than shown.
 
 URL `https://api.n.m28.io/endpoint/diepio-{gamemode}/findEach`
 
@@ -76,7 +76,7 @@ Content-Length: 523
 }
 ```
 
-> There is also a gamemodeless request that gives all servers, regardless of gamemode, `https://api.n.m28.io/endpoint/diepio/findEach` - this is no longer being used in production.
+> There is also a gamemode-less request that gives all servers, regardless of gamemode, `https://api.n.m28.io/endpoint/diepio/findEach` - this is no longer being used in production.
 
 ---
 
@@ -84,7 +84,7 @@ Content-Length: 523
 
 Similar to the others, this endpoint returns servers based on region, but they are not diep.io servers - they are latency servers. Upon connecting to these servers (via ws) and sending any data that is prefixed with a null byte, the server will echo back the same buffer.
 
-Diep.io uses these servers to find out the best region to connect to, by sending a 0x00 byte, and then calculating the time between sending the byte and receiving the echo. Whichever has the least time between sending and receiving will be the region you will eventually connect to when selecting gamemode servers.
+Diep.io uses these servers to find out the best region to connect to, by sending a 0x00 byte and then calculating the time between sending the byte and receiving the echo. Whichever has the least time between sending and receiving will be the region you will eventually connect to when selecting gamemode servers.
 
 URL -> `https://api.n.m28.io/endpoint/latency/findEach`
 
