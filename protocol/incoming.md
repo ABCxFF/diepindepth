@@ -25,13 +25,13 @@ For information on data types and encodings, see [`data.md`](./data.md)
 
 ## **`0x00` Update Packet**
 
-Contains created/updated/deleted entities and current ingame time. Too much to explain here, it'd be easier just putting it in [`update.md`](./update.md).
+Contains created/updated/deleted entities and current ingame time. There is too much to explain here, it'd be easier just putting it in [`update.md`](./update.md).
 
 ---
 
 ## **`0x01` Outdated Client Packet**
 
-Sent when the client's build (which is sent in the [`0x00` Init Packet](./outgoing.md#0x00-init-packet)) is not the same as the server's. The server sends the latest build, and when the client receives it, the page reloads. This packet is by naturally unencoded, meaning its data is sent raw unencoded. This is since if you have an invalid build you won't be able to decode packets.
+Sent when the client's build (which is sent in the [`0x00` Init Packet](./outgoing.md#0x00-init-packet)) is not the same as the server's. The server sends the latest build, and when the client receives it, the page reloads. This packet is by nature unencoded, meaning its data is sent raw, unencoded. This is since if you have an invalid build you won't be able to decode packets properly.
 
 
 Format: 
@@ -64,13 +64,13 @@ At the start of the packet there is a u32 specifying the final length of the dec
 Format:
 > `02 u32(decompressed output length) (LZ4 block)`
 
-The decompressed result will include the packet header, you should feed this into your parsing function recursively. The decompressed result is not [encoded](./encoding.md). Currently only [Update](./incoming.md#0x00-update-packet) and [Eval](./incoming.md#0x0d-int-js-challenge-packet) packets can get large enough to be compressed.
+The decompressed result will include the packet header, you should feed this into your parsing function recursively. The decompressed result is not [encoded](./encoding.md). Currently only [Update](./incoming.md#0x00-update-packet) and [JS Challenge](./incoming.md#0x0d-int-js-challenge-packet) packets can get large enough to be compressed.
 
 ---
 
 ## **`0x03` Notification Packet**
 
-This packet sends data which trigger the notifications you see in game, for example messages like "The Guardian has spawned". 
+This packet sends data that trigger the notifications you see in-game, for example, messages like "The Guardian has spawned" and "You've killed Example". 
 
 The Red Green Blue values are encoded as a u32. For example, rgb(33, 130, 67) would be the same as u32(0x218243) where each byte is a color. The fourth byte is not used, there is no alpha channel. The time the notification appears in milliseconds is encoded as a float, and the final value part of this packet is the notification identifier.  
 
@@ -88,7 +88,7 @@ Format:
 
 ---
 
-It's worth nothing that not all notifications are sent throught this packet. The autofire, autospin, gamepad_enabled and adblock notifications are fully clientside while the rest are received from the server.
+It's worth noting that not all notifications are sent through this packet. The autofire, autospin, gamepad_enabled, and adblock notifications are fully clientside while the rest are received from the server.
 
 ## **`0x04` Server Info Packet**
 
@@ -107,7 +107,7 @@ incoming <- 04 stringNT("sandbox") stringNT("vultr-amsterdam")
 
 ## **`0x05` Heartbeat Packet**
 
-Part of the game's latency system. Once receieved, the client immediately echoes the single byte [`0x05` packet](./outgoing.md#0x05-heartbeat-packet) back. 🏓
+Part of the game's latency system. Once received, the client immediately echoes the single-byte [`0x05` packet](./outgoing.md#0x05-heartbeat-packet) back. 🏓
 
 Format:
 > `05`
@@ -154,7 +154,7 @@ The final link is `diep.io/#2627C6D600D2DC30453C`
 
 ## **`0x07` Accept Packet**
 
-This packet is sent once the game server has accepted the client (correct build, valid or no party). As of Feb 25, the server only accepts the client once the client solves a [JS](./incoming.md#0x0d-int-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenge.
+This packet is sent once the game server has accepted the client (correct build, valid or no party). As of Feb 25, the server only accepts the client once the client solves a [JS Challange](./incoming.md#0x0d-int-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenge.
 
 Format:
 > `07`
@@ -178,7 +178,7 @@ incoming <- 08 vu(6) stringNT("9898db9ff6d3c1b3_1") stringNT("300ddd6f1fb3d69d_1
 
 ## **`0x09` Invalid Party Packet**
 
-This single byte packet is sent if the party code you specified in the [Init Packet](./outgoing.md#0x00-init-packet) is invalid. You will get this instead of the [`0x07`](./incoming.md#0x07-accept-packet) packet, only after solving a [JS](./incoming.md#0x0d-int-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenge.
+This single byte packet is sent if the party code you specified in the [Init Packet](./outgoing.md#0x00-init-packet) is invalid. You will get this instead of the [`0x07`](./incoming.md#0x07-accept-packet) packet, only after solving a [JS Challange](./incoming.md#0x0d-int-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenge.
 
 Format:
 > `09`
@@ -196,7 +196,7 @@ window.alert('Invalid party ID');
 
 ## **`0x0A` Player Count Packet**
 
-This packet is sent occasionally, sending the total client count encoded in a varuint. This updates the text on the bottom right of the screen "*n* players". This packet is not sent globally across all server at the same time, but the exact ticks before a player count update is unknown.
+This packet is sent occasionally, sending the total client count encoded in a varuint. This updates the text on the bottom right of the screen "*n* players". This packet is not sent globally across all servers at the same time, and the exact ticks before a player count update are unknown.
 
 Format:
 > `0A vu(client count)`
@@ -231,7 +231,7 @@ m28.pow.solve("5X6qqhhfkp4v5zf2", 20).then(solveStr => {
 
 ## **`0x0C` Unnamed Packet**
 
-This packet has never been observed, and while the packet's format has been reversed, its never used and does not affect the client. On an older version this was the same as the [`0x0D` Int JS Challenge](./incoming.md#0x0d-int-js-challenge-packet) packet, except it expected a string as a response. So we can't be sure if this packet is still the same as it was and is just not fully present due to emscripten simplifications, or if it changed completely.
+This packet has never been observed, and while the packet's format has been reversed, it's never used and does not affect the client. On an older version this was the same as the [`0x0D` Int JS Challenge](./incoming.md#0x0d-int-js-challenge-packet) packet, except it expected a string as a response. So we can't be sure if this packet is still the same as it was and is just not fully present due to [Emscripten](https://github.com/emscripten-core/emscripten) simplifications, or if it changed completely.
 
 Format:
 > `0C vu(unknown)`
@@ -242,7 +242,7 @@ Format:
 
 This packet is sent only once, during the client -> server acceptance handshake. It sends highly obfuscated code to be evaluated by the client with the purpose of filtering out headless clients from clients on the web - part of diep.io's anti botting system. The result of this code is always an uint32 and is sent back to the client through the outgoing [`0x0B` JS Result](./outgoing.md#0x0b-js-result-packet) packet.
 
-The code sent is obfuscated with [obfuscator.io](https://obfuscator.io/), almost all settings turned on max. This packet checks for global objects and specific properties on global objects, if all the checks pass their intended result, the code ends up returning the correct uint32 result, which the game server recognises and continues (or completes) the process of accepting the client. 
+The code sent is obfuscated with [obfuscator.io](https://obfuscator.io/), almost all settings turned on max. This packet checks for global objects and specific properties on global objects, if all the checks pass their intended result, the code ends up returning the correct uint32 result, which the game server recognizes and continues (or completes) the process of accepting the client. 
 
 > Fun fact:
 > -  There are only 200 unique obfuscated evaluation codes that can be sent to the client, and they are reused across all servers and are generated during the building process (per update).
