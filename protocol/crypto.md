@@ -3,7 +3,7 @@
 
 # Packet Encoding and Decoding
 
-Also known as shuffling/unshuffling, this encryption system is what annoys 80% of all the people who deal with diep protocol. No one has fully reverse engineered every part of the encryption system, but Shädam got close, and was able to reverse engineer (for the most part) packet opcode/header encodings, and content encodings. Some of his old code is visible on repos in his account.
+Also known as shuffling/unshuffling, this encryption system is what annoys 80% of all the people who deal with Diep protocol. No one has fully reverse-engineered every part of the encryption system, but Shädam got close and was able to reverse-engineer (for the most part) packet opcode/header encodings, and content encodings. Some of his old code is visible in a repository on his account.
 
 > Add some broad statements here
 
@@ -21,7 +21,7 @@ There are 3 parts to packet encryption:
 
 ## Packet Content Encryption
 
-> the *n* length xor tables, how they're genereated
+> the *n* length xor tables, how they're generated
 
 ## Packet Header Encryption
 
