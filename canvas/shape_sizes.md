@@ -1,6 +1,6 @@
 # Shape Sizes
 
-The shapes are not drawn by side length. They are drawn by radius (from the center to any of the verticies).
+The shapes are not drawn by side length. They are drawn by radius (from the center to any of the vertices).
 
 The following is the collected data:
 

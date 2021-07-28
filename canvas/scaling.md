@@ -37,18 +37,18 @@ const a = 1080 / 1080;
 const b = 2000 / 1920;
 return 1.0416 < 1 ? 1 : 1.0416; // this will yield 1.0416
 ```
-This will cause `windowScaling()` to depend on the width for scaling, so that changing the width will have noticeable effect in the scaling.
+This will cause `windowScaling()` to depend on the width for scaling so that changing the width will have a noticeable effect on the scaling.
 
 If our window was longer than 16:9, the scaling will depend on the height.
 
 ## scalingFactor
 
-The units for this is (canvas pixels / diep units). This value is fundamental for converting between diep units and canvas pixels.
+The units for this are (canvas pixels / Diep units). This value is fundamental for converting between Diep units and canvas pixels.
 
 This value is calculated using `scalingFactor = fov * windowScaling()`
 
 Examples of how to convert from one another:
-- 10 diep units * scalingFactor gives us canvas pixels
-- 10 canvas pixels / scalingFactor gives us diep units
+- 10 Diep units * scalingFactor gives us canvas pixels
+- 10 canvas pixels / scalingFactor gives us Diep units
 
-Some remarks: this value only appears when diep draws the grid. It draws the grid by first drawing a portion of the grid onto a separate canvas (with scaling of 1 canvas pixel = 1 diep unit), then using createPattern to draw the entire grid. Before drawing the grid onto the main canvas however, it setTransforms the main canvas so that the horizontal and vertical scaling is equal to the scalingFactor.
+Some remarks: this value only appears when Diep draws the grid. It draws the grid by first drawing a portion of the grid onto a separate canvas (with scaling of 1 canvas pixel = 1 Diep unit), then using createPattern to draw the entire grid. Before drawing the grid onto the main canvas, however, it setTransforms the main canvas so that the horizontal and vertical scaling is equal to the scalingFactor.
