@@ -6,7 +6,7 @@ The update packet contains server uptick, entity deletions (entities on screen t
 > `0x00 vu(game tick) vu(deleteCount) ...entity id deletes vu(upcreateCount) ...upcreates`
 
 Two types of things can happen in an upcreate, there can be creations and / or updates (hence the word upcreate). Creations and updates have different formats and are identified in their own way. Both of the data in creations and updates are organized in a field order, which is the per-build order of all fields.
-> Being 68 fields, there are always 68 indexes. These field indexes are used for the protocol, and for the offsets in the memory. All fields and located here
+> Being 68 fields, there are always 68 indexes. These field indexes are used in the protocol and to determine the field offsets in the memory. All fields and located here
 Read a bit more about field orders [here](/entities.md#fields)
 ---
 ### 1. How to identify between Creation and Update
