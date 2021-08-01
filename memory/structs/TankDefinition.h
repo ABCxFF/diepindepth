@@ -73,7 +73,7 @@ struct TankDefinition
   // - Auto 5 + Auto 3 is possible and beautiful (:
   // - Pre addon is built before the barrel, post is build after
   int32_t pre_addon; // @60
-  int32_t post_addon; // @60
+  int32_t post_addon; // @64
   
   // Yeah, this is weird. The larger this property is, the smaller the border width is
   // - Someone should find out if this correlates with canvas or protocol, or both.
