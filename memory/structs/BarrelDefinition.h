@@ -98,6 +98,9 @@ struct BarrelDefinition
   // 76 - 100
   // - 76 (first) is all ones
   // - 92 (2nd to last) is all 0s
-  // - 96 (last) was (idk if it still is) 159 for all trappers
-  int32_t _no_ideas[7];
+  int32_t _no_ideas[6];
+  
+  // Post Addon, determines addons to the barrel after render - for example: Traps (the only example)
+  // - Values here change every update - they are indexes in the Function Table, for addon generation
+  int32_t post_addon; // @60
 };
