@@ -125,7 +125,7 @@ Note: all the darkened colors are essentially the same color but with all three 
 
 ### Gameplay colors
 
-Note: the gameplay colors are combined with transparency, so it may seem counterintuitive that items like the gray notification is actually completely black, but that's just black with transparency.
+Note: the gameplay colors are combined with transparency, so it may seem counterintuitive that items like the gray notification are actually completely black, but that's just black with transparency.
 
 - Grid
   - fill: #cdcdcd
