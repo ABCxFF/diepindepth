@@ -28,7 +28,7 @@ The first packet, and the only unencoded one. This packet is sent to initiate th
 Format:
 > `00 string(build hash) string(dev password) string(party code) vu(debug val)`
 
-The dev confirmed that this format is correct, but did not give any information on the varuint at the end of the packet, only that it was only active during "debug builds". If the build sent by the client is the not the same as the one the server is expecting, the server responds with a [`0x01` Outdated Client](./incoming.md#0x01-outdated-client-packet) packet.
+The dev confirmed that this format is correct, but did not give any information on the varuint at the end of the packet, only that it was only active during "debug builds". If the build hash sent by the client is not the same as the one the server is expecting, the server responds with a [`0x01` Outdated Client](./incoming.md#0x01-outdated-client-packet) packet.
 
 ---
 
@@ -38,21 +38,20 @@ The most frequently sent packet coming from the client, sends movement flags, mo
 
 ```
 bit  ; name             ; desc
-x001 ; fire             ; Set when left mouse / spacebar is down or autofire is on
-x002 ; up key           ; Set when up key is down
-x004 ; left key         ; Set when left key is down
-x008 ; down key         ; Set when down key is down
-x010 ; right key        ; Set when right key is down
+x001 ; fire             ; Set when left mouse / spacebar is pressed down or autofire is on
+x002 ; up key           ; Set when the up key is pressed down
+x004 ; left key         ; Set when the left key is pressed down
+x008 ; down key         ; Set when the down key is pressed down
+x010 ; right key        ; Set when the right key is pressed down
 x020 ; god mode toggle  ; Set when god mode is toggled
-x040 ; suicide key      ; Set when suicide key is down
-x080 ; right mouse      ; Set when shift / right click is down
-x100 ; instant upgrade  ; Set when upgrade key is down
-x200 ; use gamepad      ; Set when gamepad is being used instead of keyboard
-x400 ; switch class     ; Set when switch class key is toggled
-x800 ; adblock          ; Set when an adblocker is detected, synced with localStorage.hadAdblocker
+x040 ; suicide key      ; Set when the suicide key is pressed down
+x080 ; right mouse      ; Set when shift / right click is pressed down
+x100 ; instant upgrade  ; Set when upgrade key is pressed down
+x200 ; use gamepad      ; Set when a gamepad is being used instead of a keyboard
+x400 ; switch class     ; Set when switch class key is pressed down
 ```
 
-For information on how these are encoded, see [`data.md`](./data.md#bitflags---vu) where the example is actually a sample input packet. If the gamepad flag is set, then two additional varfloats are appended to the packet, representing the gamepad's x axis movement and the gamepad's y axis movement.
+For information on how these are encoded, see [`data.md`](./data.md#bitflags---vu) where the example is actually a sample input packet. If the gamepad flag is set, then two additional varfloats are appended to the packet, representing the gamepad's x-axis movement and the gamepad's y-axis movement.
 
 Format:
 > `01 flags(input flags) vf(world mouse x) vf(world mouse y) gamepad?[vf(gamepad x axis) vf(gamepad y axis)]`
@@ -61,7 +60,7 @@ Format:
 
 ## **`0x02` Spawn Packet**
 
-This packet creates a spawn attempt, we call it an attempt / request because the server waits for you to solve a [Proof of Work challenge](./incoming.md#0x0b-pow-challenge-packet) first before spawning you in. If you are waiting to be spawned in (due to PoW or game starting countdown / players needed), sending another one will change the name you will spawn in with.
+This packet creates a spawning attempt, we call it an attempt / request because the server waits for you to solve a [Proof of Work challenge](./incoming.md#0x0b-pow-challenge-packet) first before spawning you in. If you are waiting to be spawned in (due to PoW or game starting countdown / players needed), sending another one will change the name you will spawn in with.
 
 Format:
 > `02 stringNT(name)`
@@ -117,7 +116,7 @@ magicNum(latest build) % STAT_COUNT; // STAT_COUNT is 8
 
 ## **`0x04` Tank Upgrade Packet**
 
-This packet is sent to upgrade to a tank. Althought it takes the tank id as a parameter in the packet, if the tank selected is not in your upgrade path, or you don't have enough levels to reach it, nothing will happen. The [tank id](/extras/tanks.js) is xored by a remainder of the magicNum, very similar to the `0x03` outgoing packet. This was, like the stat upgrading packet, in an attempt to prevent scripting or automatic upgrading of tanks.
+This packet is sent to upgrade to a tank. Although it takes the tank id as a parameter in the packet, if the tank selected is not in your upgrade path, or you don't have enough levels to reach it, nothing will happen. The [tank id](/extras/tanks.js) is xored by a remainder of the magicNum, very similar to the `0x03` outgoing packet. This was, like the stat upgrading packet, an attempt to prevent scripting or automatic upgrading of tanks.
 
 Format:
 > `04 vi(tank id ^ tank xor)`
@@ -132,7 +131,7 @@ magicNum(latest build) % TANK_COUNT; // TANK_COUNT is 54
 
 ## **`0x05` Heartbeat Packet**
 
-Part of the game's latency system. Once sent, the server immediately echoes the single byte [`0x05`](./incoming.md#0x05-heartbeat-packet) packet back. 🏓
+Part of the game's latency system. Once sent, the server immediately echoes the single-byte [`0x05`](./incoming.md#0x05-heartbeat-packet) packet back. 🏓
 
 Format:
 > `05`
@@ -152,8 +151,8 @@ incoming -> 05
 
 This packet has never been observed and has only been seen in server code images sent by M28. The following code is the only information we have on it:
 ```c++
-    }else if(cmd == 0x06){ // Aknowledged ES packet
-#ifndef USE_TPC_ES
+    }else if(cmd == 0x06){ // Acknowledged ES packet
+#ifndef USE_TCP_ES
         if(m_pGame != nullptr){
             m_pGame->Simulation()->Entities()->Acknowledged(ID(), view.NextUint32());
         }
@@ -161,7 +160,7 @@ This packet has never been observed and has only been seen in server code images
     ... code after unknown
 ```
 
-He also talks about it being related to the Mobile version of the game, and is involved in a tpc connection used on mobile.
+He also talks about it being related to the Mobile version of the game and is involved in a TPC connection used on mobile.
 
 
 Format:
@@ -178,7 +177,7 @@ Format:
 
 ## **`0x08` To Respawn Packet**
 
-This peculiar single byte packet is sent whenever you move past the death screen into the respawn screen. The use of this is so that if the arena is closed the server can redirect you to a new arena or disconnect you to cause the client to connect to another server. An example of this would be after an arena is closing in dom, when you move to the respawn screen you will be redirected to the next game.
+This peculiar single-byte packet is sent whenever you move past the death screen into the respawn screen. The use of this is so that if the arena is closed the server can redirect you to a new arena or disconnect you to cause the client to connect to another server. An example of this would be after an arena is closing in domination, when you move to the respawn screen you will be redirected to the next game.
 
 Format:
 > `08`
@@ -205,7 +204,7 @@ Format:
 
 ## **`0x0B` JS Result Packet**
 
-This packet is the evaluated result of the [`0x0D` Int JS Challenge](./incoming.md#0x0d-int-js-challenge-packet) packet. It sends the evaluation id and the result. In older builds, this packet could also be a response to `0x0C` JS String Challenge, which is now no longer fully existing; so this packet is able to encode any type result, meaning that it could send a string or integer.
+This packet is the evaluated result of the [`0x0D` Int JS Challenge](./incoming.md#0x0d-int-js-challenge-packet) packet. It sends the evaluation id and the result. In older builds, this packet could also be a response to `0x0C` JS String Challenge, which is now no longer fully existing; so this packet is able to encode any type of result, meaning that it could send a string or integer.
 
 Format:
 > `0B vu(id) any/vu(result)`

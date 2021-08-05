@@ -25,6 +25,7 @@ A varuint encoded `netcolor` id. Sent from Zeach (besides comments) himself, the
     18 Net Colors
     Once >= 18, the game rejects drawing the color
 */
+
 enum class ID {
   Border,
   Cannon,
@@ -53,13 +54,13 @@ enum class ID {
 
 ### **`tank`** - `vi`
 
-A varint encoded tank id, defaults to -1. Tanks are listed [here](/extras/tanks.js), and their in depth definitions [here](/extras/tankdefs.json)
+A varint encoded tank id, defaults to -1. Tanks are listed [here](/extras/tanks.js), and their in-depth definitions [here](/extras/tankdefs.json)
 
 ---
 
 ### **`bitflags`** - `vu`
 
-A varuint encoded series of bit flags with varying value. Example would be the outgoing input packet:
+A varuint encoded series of bit flags with varying values. An example would be the outgoing input packet:
 
 ```
 00000001 ; u8 ; header
@@ -68,7 +69,7 @@ A varuint encoded series of bit flags with varying value. Example would be the o
 10001010 10100111 10000001 00001111 ; vf ; mouse y
 ```
 
-The flags are read as a varuint, which for this example results in 2073. This can be expressed in binary as `100000011001`, and each bit gets parsed as a boolean flag starting from the lowest bit to the highest bit like the following:
+The flags are read as a varuint, which for this example results in 2073. This can be expressed in binary as `00000011001`, and each bit gets parsed as a boolean flag starting from the lowest bit to the highest bit like the following:
 
 ```
 1 ; left mouse       ; (on)
@@ -82,14 +83,13 @@ The flags are read as a varuint, which for this example results in 2073. This ca
 0 ; instant upgrade  ; (off)
 0 ; use gamepad      ; (off)
 0 ; switch class     ; (off)
-1 ; constant of true ; (on)
 ```
 
 ---
 
 ### **`entid`** - `<vu: hash, vu: id>`
 
-A way of storing hash and id used in the <id, hash> system. Sent from Zeach (besides comments), the server's entid encoder:
+A way of storing hash and id is used in the <id, hash> system. Sent from Zeach (besides comments), the server's entid encoder:
 
 ```c++
 /*
@@ -112,13 +112,16 @@ inline void Encode(BinData &out) const {
 }
 ```
 
-**Quick Misconception,** in diep's console, sometimes you'll see messages relating to _"possible desyncs"_ and alongside them you'll see two numbers inside of these `<triangular bracket things>`, these are NOT `<hash, id>`. Unlike the order they are read, entids are logged as `<id, hash>` - the full reason for this, and the meaning behind hashes is still unknown.
+The id: A universal identifier that is unique while the entity is alive, but once the entity is destroyed - the id may be used by another entity in the future. **IDs are unique, but can be recycled**
+The hash: This seems to be the total amount of times a specific id has been used/recycled.
+
+**Quick Misconception,** in Diep's console, sometimes you'll see messages relating to _"possible desyncs"_ and alongside them, you'll see two numbers inside of these `<triangular bracket things>`, these are NOT `<hash, id>`. Unlike the order they are read, entids are logged as `<id, hash>` in the Diep console.
 
 ---
 
 ### **Data Organization**
 
-Inside of a specifically 0x00 packets, there is a form of table which has come to be known as a `jumpTable`. Jump tables work differently than the standard arrays, by retrieving indexes from jumps, then parsing values based on index. The best way to explain the format is with an example, here is an example of a field group identification table, without any values.
+Inside of 0x00 packets, there is data stored in a table-like form of data, which has come to be known as a "jump table". Jump tables work differently than standard arrays. They are parsed by retrieving indexes from jumps, then parsing values based on that index. The best way to explain the format is with an example, here is an example of a field group identification jump table, in this case, indexes without any values.
 
 ```
 
@@ -165,7 +168,7 @@ no value being read
 
 The resulting indexes from this jump table were [0, 3, 4, 5, 8, 10, 11, 13]. More about what these values mean in [`incoming.md`](/packets/incoming.md)
 
-And for more understanding, here's two jump table readers written in Javascript and C++
+And for more understanding, here are two jump table readers written in Javascript and C++
 
 ```c++
 template<typename function>
@@ -180,7 +183,7 @@ auto jumpTable(function read) {
 
         if(currentJump == 0) break; // If there is no jump, exit
 
-        index += currentJump; // jump to the next index
+        index += currentJump; // Jump to the next index
         table.push_back(read(index)); // Read according to index
     }
     return table;
@@ -200,7 +203,7 @@ jumpTable(read) {
 
         if (!currentJump) break; // If there is no jump, exit
 
-        index += currentJump; // jump to the next index
+        index += currentJump; // Jump to the next index
         table[table.length++] = read.call(this, index); // Read according to index
     }
 
@@ -208,4 +211,4 @@ jumpTable(read) {
 }
 ```
 
-Understanding of this data structure takes practice, at first it may be difficult to understand, but over time it will be easily understandable and identifiable.
+Understanding this data structure takes practice, at first it may be difficult to understand, but over time it will be easily understandable and identifiable.
