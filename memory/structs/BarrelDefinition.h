@@ -36,7 +36,7 @@ struct BarrelDefinition
   float recoil; // @14
   
   // Width
-  // - 42 / width to get whats sent to the client at lvl 0
+  // - 42 * width to get whats sent to the client at lvl 0
   // - Shorter of the two sides on a barrel
   // - Determines bullet size
   float width; // @18
