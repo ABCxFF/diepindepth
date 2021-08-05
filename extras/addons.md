@@ -100,8 +100,7 @@ The Auto Smasher Addon has both a Guard Addon, and an Auto Turret.
 | Size Ratio       | `1.15`  | The hexagon's size in game is the ratio multiplied to the tank's current size |
 | Radians Per Tick | `0.1`   | The hexagon's rotation per tick, in radians                                   |
 
-**Object 2:** (Auto Turret)
-[Needs to be looked into further]
+**Object 2:** See the [Auto Turret Addon](#auto-turret-addon)
 
 ## Auto Turret Addon
 
