@@ -1,8 +1,8 @@
-module.exports = [
+[
   {
     "id": 0,
     "name": "Tank",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 0,
     "upgrades": [
       1,
@@ -21,7 +21,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -82,7 +82,7 @@ module.exports = [
   {
     "id": 1,
     "name": "Twin",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 15,
     "upgrades": [
       3,
@@ -99,7 +99,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -179,7 +179,7 @@ module.exports = [
   {
     "id": 2,
     "name": "Triplet",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -192,7 +192,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -291,7 +291,7 @@ module.exports = [
   {
     "id": 3,
     "name": "Triple Shot",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 30,
     "upgrades": [
       2,
@@ -308,7 +308,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -407,7 +407,7 @@ module.exports = [
   {
     "id": 4,
     "name": "Quad Tank",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 30,
     "upgrades": [
       5,
@@ -423,7 +423,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -541,7 +541,7 @@ module.exports = [
   {
     "id": 5,
     "name": "Octo Tank",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -554,7 +554,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -748,7 +748,7 @@ module.exports = [
   {
     "id": 6,
     "name": "Sniper",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 15,
     "upgrades": [
       15,
@@ -766,7 +766,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -827,7 +827,7 @@ module.exports = [
   {
     "id": 7,
     "name": "Machine Gun",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 15,
     "upgrades": [
       10,
@@ -844,7 +844,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -906,7 +906,7 @@ module.exports = [
   {
     "id": 8,
     "name": "Flank Guard",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 15,
     "upgrades": [
       9,
@@ -924,7 +924,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -1004,7 +1004,7 @@ module.exports = [
   {
     "id": 9,
     "name": "Tri-Angle",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 30,
     "upgrades": [
       23,
@@ -1020,7 +1020,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -1119,7 +1119,7 @@ module.exports = [
   {
     "id": 10,
     "name": "Destroyer",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 30,
     "upgrades": [
       25,
@@ -1137,7 +1137,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -1218,7 +1218,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -1302,7 +1302,7 @@ module.exports = [
   {
     "id": 12,
     "name": "Overlord",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -1315,7 +1315,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -1441,7 +1441,7 @@ module.exports = [
   {
     "id": 13,
     "name": "Twin Flank",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 30,
     "upgrades": [
       18,
@@ -1457,7 +1457,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -1575,7 +1575,7 @@ module.exports = [
   {
     "id": 14,
     "name": "Penta Shot",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -1588,7 +1588,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -1725,7 +1725,7 @@ module.exports = [
   {
     "id": 15,
     "name": "Assassin",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 30,
     "upgrades": [
       22,
@@ -1741,7 +1741,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -1802,7 +1802,7 @@ module.exports = [
   {
     "id": 16,
     "name": "Arena Closer",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 0,
     "upgrades": [],
     "flags": {
@@ -1815,7 +1815,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -1876,7 +1876,7 @@ module.exports = [
   {
     "id": 17,
     "name": "Necromancer",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -1973,7 +1973,7 @@ module.exports = [
   {
     "id": 18,
     "name": "Triple Twin",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -1986,7 +1986,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -2142,7 +2142,7 @@ module.exports = [
   {
     "id": 19,
     "name": "Hunter",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 30,
     "upgrades": [
       28,
@@ -2158,7 +2158,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -2238,7 +2238,7 @@ module.exports = [
   {
     "id": 20,
     "name": "Gunner",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 30,
     "upgrades": [
       39,
@@ -2255,7 +2255,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -2373,7 +2373,7 @@ module.exports = [
   {
     "id": 21,
     "name": "Stalker",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -2386,7 +2386,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -2448,7 +2448,7 @@ module.exports = [
   {
     "id": 22,
     "name": "Ranger",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -2461,7 +2461,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": "pronounced",
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -2522,7 +2522,7 @@ module.exports = [
   {
     "id": 23,
     "name": "Booster",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -2535,7 +2535,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -2672,7 +2672,7 @@ module.exports = [
   {
     "id": 24,
     "name": "Fighter",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -2685,7 +2685,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -2822,7 +2822,7 @@ module.exports = [
   {
     "id": 25,
     "name": "Hybrid",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -2835,7 +2835,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -2917,7 +2917,7 @@ module.exports = [
   {
     "id": 26,
     "name": "Manager",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -2930,7 +2930,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -2993,7 +2993,7 @@ module.exports = [
   {
     "id": 27,
     "name": "Mothership",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 0,
     "upgrades": [],
     "flags": {
@@ -3397,7 +3397,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -3496,7 +3496,7 @@ module.exports = [
   {
     "id": 29,
     "name": "Sprayer",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -3509,7 +3509,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -3590,7 +3590,7 @@ module.exports = [
   {
     "id": 31,
     "name": "Trapper",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 30,
     "upgrades": [
       35,
@@ -3609,7 +3609,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -3670,7 +3670,7 @@ module.exports = [
   {
     "id": 32,
     "name": "Gunner Trapper",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -3683,7 +3683,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -3782,7 +3782,7 @@ module.exports = [
   {
     "id": 33,
     "name": "Overtrapper",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -3795,7 +3795,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -3898,7 +3898,7 @@ module.exports = [
   {
     "id": 34,
     "name": "Mega Trapper",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -3911,7 +3911,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -3972,7 +3972,7 @@ module.exports = [
   {
     "id": 35,
     "name": "Tri-Trapper",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -3985,7 +3985,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -4084,7 +4084,7 @@ module.exports = [
   {
     "id": 36,
     "name": "Smasher",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 30,
     "upgrades": [
       38,
@@ -4101,7 +4101,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": "smasher",
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [],
     "stats": [
@@ -4142,7 +4142,7 @@ module.exports = [
   {
     "id": 38,
     "name": "Landmine",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -4155,7 +4155,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": "landmine",
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [],
     "stats": [
@@ -4196,7 +4196,7 @@ module.exports = [
   {
     "id": 39,
     "name": "Auto Gunner",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -4209,7 +4209,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": "autoturret",
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -4327,7 +4327,7 @@ module.exports = [
   {
     "id": 40,
     "name": "Auto 5",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -4340,7 +4340,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": "auto5",
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [],
     "stats": [
@@ -4381,7 +4381,7 @@ module.exports = [
   {
     "id": 41,
     "name": "Auto 3",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 30,
     "upgrades": [
       40,
@@ -4397,7 +4397,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": "auto3",
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [],
     "stats": [
@@ -4438,7 +4438,7 @@ module.exports = [
   {
     "id": 42,
     "name": "Spread Shot",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -4451,7 +4451,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -4702,7 +4702,7 @@ module.exports = [
   {
     "id": 43,
     "name": "Streamliner",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -4715,7 +4715,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -4852,7 +4852,7 @@ module.exports = [
   {
     "id": 44,
     "name": "Auto Trapper",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -4865,7 +4865,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": "autoturret",
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -4926,7 +4926,7 @@ module.exports = [
   {
     "id": 45,
     "name": "Dominator",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 0,
     "upgrades": [],
     "flags": {
@@ -4939,7 +4939,7 @@ module.exports = [
     "maxHealth": 6000,
     "preAddon": "dombase",
     "postAddon": "destroyerdompronounced",
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -5000,7 +5000,7 @@ module.exports = [
   {
     "id": 46,
     "name": "Dominator",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 0,
     "upgrades": [],
     "flags": {
@@ -5013,7 +5013,7 @@ module.exports = [
     "maxHealth": 6000,
     "preAddon": "dombase",
     "postAddon": "gunnerdompronounced",
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -5112,7 +5112,7 @@ module.exports = [
   {
     "id": 47,
     "name": "Dominator",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 0,
     "upgrades": [],
     "flags": {
@@ -5125,7 +5125,7 @@ module.exports = [
     "maxHealth": 6000,
     "preAddon": "dombase",
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -5319,7 +5319,7 @@ module.exports = [
   {
     "id": 48,
     "name": "Battleship",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -5332,7 +5332,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -5458,7 +5458,7 @@ module.exports = [
   {
     "id": 49,
     "name": "Annihilator",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -5471,7 +5471,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -5532,7 +5532,7 @@ module.exports = [
   {
     "id": 50,
     "name": "Auto Smasher",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -5545,7 +5545,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": "autosmasher",
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [],
     "stats": [
@@ -5586,7 +5586,7 @@ module.exports = [
   {
     "id": 51,
     "name": "Spike",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -5599,7 +5599,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": "spike",
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [],
     "stats": [
@@ -5640,7 +5640,7 @@ module.exports = [
   {
     "id": 52,
     "name": "Factory",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -5716,7 +5716,7 @@ module.exports = [
   {
     "id": 53,
     "name": "",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 0,
     "upgrades": [],
     "flags": {
@@ -5729,7 +5729,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": null,
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [],
     "stats": [
@@ -5770,7 +5770,7 @@ module.exports = [
   {
     "id": 54,
     "name": "Skimmer",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -5783,7 +5783,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": "launcher",
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
@@ -5844,7 +5844,7 @@ module.exports = [
   {
     "id": 55,
     "name": "Rocketeer",
-    "upgradeMessage": null,
+    "upgradeMessage": "",
     "levelRequirement": 45,
     "upgrades": [],
     "flags": {
@@ -5857,7 +5857,7 @@ module.exports = [
     "maxHealth": 50,
     "preAddon": "launcher",
     "postAddon": null,
-    "sides": 16,
+    "sides": 1,
     "borderWidth": 15,
     "barrels": [
       {
