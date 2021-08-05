@@ -59,7 +59,7 @@ struct BarrelDefinition
   // - Max amount of drones you can spawn
   int32_t max_drones; // @28
   
-  // Bullet Damage
+  // Bullet Damage (?)
   // - "I think"
   float bullet_damage; // @2C
   
@@ -84,12 +84,12 @@ struct BarrelDefinition
   // - Defaults to 1
   float base_reload; // @40
   
-  // Bullet Deacceleration Rate
-  // - The higher, the longer the bullet stays at its avg (max I think) speed
-  // - Sniper has higher than basic, for example
-  float bullet_deaccel_rate; // @44
+  // Bullet Friction (?)
+  // - It seems, the lower, the less friction is applied to a bullet
+  // - Sniper has lower than basic, for example
+  float bullet_friction; // @44
   
-  // Bullet Durability
+  // Bullet Durability (?)
   // - Relating to the overall life time of a bullet
   // - Example: Higher for trappers than for basic
   float bullet_durability; // @48
