@@ -17,7 +17,7 @@ Raw values and other information about addons in tank definitions.
 
 ## Dominator Base Addon
 
-What I like to call a Guard Addon, the Dominator Base Addon has one object attached to the player, that rotates separately from it.
+What I like to call a Guard Addon, the Dominator Base Addon has one object attached to the player, that rotates separately from it - which is decided by the `motion.absoluteRotation` flag.
 
 | Key              | Value   | Desc                                                                          |
 | ---------------- | ------- | ----------------------------------------------------------------------------- |
