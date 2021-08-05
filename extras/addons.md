@@ -2,6 +2,13 @@
 
 Raw values and other information about addons in tank definitions.
 
+> Random Note:
+> - a square shaped tank's base size (half width) is `32.5√2`  
+
+--- 
+
+## Addons
+
 - [`dombase`](#dominator-base-addon)
 - [`smasher`](#smasher-addon)
 - [`landmine`](#landmine-addon)
