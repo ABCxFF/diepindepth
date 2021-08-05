@@ -100,7 +100,7 @@ struct BarrelDefinition
   // - 92 (2nd to last) is all 0s
   int32_t _no_ideas[6];
   
-  // Post Addon, determines addons to the barrel after render - for example: Traps (the only example)
+  // Addon, determines addons to the barrel after render - for example: Traps (the only example)
   // - Values here change every update - they are indexes in the Function Table, for addon generation
-  int32_t post_addon; // @60
+  int32_t addon; // @60
 };
