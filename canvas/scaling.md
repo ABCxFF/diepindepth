@@ -51,4 +51,6 @@ Examples of how to convert from one another:
 - 10 Diep units * scalingFactor gives us canvas pixels
 - 10 canvas pixels / scalingFactor gives us Diep units
 
-Some remarks: this value only appears when Diep draws the grid. It draws the grid by first drawing a portion of the grid onto a separate canvas (with scaling of 1 canvas pixel = 1 Diep unit), then using createPattern to draw the entire grid. Before drawing the grid onto the main canvas, however, it setTransforms the main canvas so that the horizontal and vertical scaling is equal to the scalingFactor.
+Some remarks:
+- This value only appears when Diep draws the grid. It draws the grid by first drawing a portion of the grid onto a separate canvas (with scaling of 1 canvas pixel = 1 Diep unit), then using createPattern to draw the entire grid. Before drawing the grid onto the main canvas, however, it setTransforms the main canvas so that the horizontal and vertical scaling is equal to the scalingFactor. 
+- The client's grid's opacity is equal to `scalingFactor * grid_base_alpha`, where `grid_base_alpha` defaults to `0.1`
