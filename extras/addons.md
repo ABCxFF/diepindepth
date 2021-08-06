@@ -2,8 +2,9 @@
 
 Raw values and other information about addons in tank definitions.
 
-> Random Note:
+> Random Notes:
 > - a square shaped tank's base size (half width) is `32.5√2`  
+> - a hexadecagon shaped tank's base size (half width) is `25√2`  
 
 --- 
 
