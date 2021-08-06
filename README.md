@@ -22,6 +22,8 @@ There are 5 sections that divide up the information collected.
    Including storage of entities, tanks, the gui, and the structure and way things are stored
 5. Extras ([`extras/`](./extras/))  
    Including any extra information, fun facts, misc algorithms, and any physics not provided in [Spade Squad](http://spade-squad.com)
+6. Media ([`media/`](./media/))  
+   Including screenshots and other forms of media relating to our research in diep
 
 Before going too in depth into entity related memory and protocol, it is highly recommended you read [`entities.md`](./entities.md) to understand how entities work.
 
@@ -35,4 +37,3 @@ This repository was made possible with the help of the Diep In Depth team. Thank
 
 
 If *you* have additional information you can / want to share, please, pull requests are welcome!
-
