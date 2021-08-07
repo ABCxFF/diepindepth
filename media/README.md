@@ -16,7 +16,7 @@ Unknown Grayscale Theme - has yet to be reproduced (probably a bug)
 Bots in public "SinX Sandbox"  
 ![](https://user-images.githubusercontent.com/79597906/128451908-dfa05682-dee8-47de-a2a4-9e95b68db2cb.png)  
 
-Entity Parsing in Memory  
+Entity Modifying in Memory  
 ![](https://user-images.githubusercontent.com/79597906/128451880-b2649e00-8734-4078-bf12-d90f8a2413c6.png)  
 
 Living the Spike Life  
@@ -39,8 +39,8 @@ Entity Compilation Order vs Position
 ![](https://user-images.githubusercontent.com/79597906/128452399-92d0209e-f1b6-42d0-9649-455bdadb104b.png)  
 Thank you to CX for providing the shape database  
 
-Flag Modification via Incoming Packets
-![](https://user-images.githubusercontent.com/79597906/128452904-1f5e476c-9fb4-48f5-99ff-037dce4fb2db.png)
+Flag Modification via Incoming Packets  
+![](https://user-images.githubusercontent.com/79597906/128452904-1f5e476c-9fb4-48f5-99ff-037dce4fb2db.png)  
 
 
 
