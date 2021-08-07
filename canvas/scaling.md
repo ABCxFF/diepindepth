@@ -48,8 +48,8 @@ The units for this are (canvas pixels / Diep units). This value is fundamental f
 This value is calculated using `scalingFactor = fov * windowScaling()`
 
 Examples of how to convert from one another:
-- 10 Diep units * scalingFactor gives us canvas pixels
-- 10 canvas pixels / scalingFactor gives us Diep units
+- `1 Diep unit * scalingFactor * 10` gives us canvas pixels
+- `1 canvas pixel / scalingFactor / 10` gives us Diep units
 
 Some remarks:
 - This value only appears when Diep draws the grid. It draws the grid by first drawing a portion of the grid onto a separate canvas (with scaling of 1 canvas pixel = 1 Diep unit), then using createPattern to draw the entire grid. Before drawing the grid onto the main canvas, however, it setTransforms the main canvas so that the horizontal and vertical scaling is equal to the scalingFactor. 
