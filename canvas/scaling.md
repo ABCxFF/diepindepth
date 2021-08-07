@@ -8,7 +8,7 @@ Stands for field of view. The closer the number to 0, the more zoomed out we are
 Unlike scalingFactor, this value does not change if our window dimensions change. The formula for the FOV value from the server is
 
 ![heuy here's a formula](https://i.imgur.com/7WTK85p.png)
-Where the fieldFactors are accessable [here](/extras/tankdefs.js).
+Where the fieldFactors are accessable [here](/extras/tankdefs.json).
 
 ## windowScaling
 

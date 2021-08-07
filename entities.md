@@ -24,13 +24,13 @@ inline void Encode(BinData &out) const {
 
 ## Fields
 
-Fields, as stated earlier, are basically the equivalent of how properties are to objects, but for entities. Fields are used to describe all things in the game. For example, the Arena entity has leaderX and leaderY fields, while also having fields that are related to other things like sides. Fields can also have multi-length values, like scoreboardNames, which is an array of scoreboard names (encoded as a xor jump table); also another property on the arena entity. For each build, all the fields are randomly shuffled (this is done in the builder) so that there is a randomly(?) selected index for each field; Being 68 fields, there are always 68 indexes. These field indexes are used in the protocol and to determine the field offsets in the memory. All fields and located [here](about:blank)
+Fields, as stated earlier, are basically the equivalent of how properties are to objects, but for entities. Fields are used to describe all things in the game. For example, the Arena entity has leaderX and leaderY fields, while also having fields that are related to other things like sides. Fields can also have multi-length values, like scoreboardNames, which is an array of scoreboard names (encoded as a xor jump table); also another property on the arena entity. For each build, all the fields are randomly shuffled (this is done in the builder) so that there is a randomly(?) selected index for each field; Being 68 fields, there are always 68 indexes. These field indexes are used in the protocol and to determine the field offsets in the memory. All fields and located [~~here~~ To be done.](about:blank)
 
 ---
 
 ## Field Groups + Purpose
 
-These fields are all organized into groups, known as field groups. For each field, there is a constant (throughout builds) id per field group. So for example, the field `maxHealth` is in the Health field group, and its field-group specific id is 2 across all updates. You can see the field groups and field ids per field [here](about:blank). Here is the list of field group names by id (empty = deleted / not in code)
+These fields are all organized into groups, known as field groups. For each field, there is a constant (throughout builds) id per field group. So for example, the field `maxHealth` is in the Health field group, and its field-group specific id is 2 across all updates. You can see the field groups and field ids per field [~~here~~ To be done.](about:blank). Here is the list of field group names by id (empty = deleted / not in code)
 ```
 0 : RELATIONSHIPS
 1 : 
@@ -56,9 +56,9 @@ Field groups are also used for the organization of entities, but that will be ex
 
 ## Parsing
 
-Only one packet is used to update entities in-game. The [0x00 Update Packet](https://github.com/ABCxFF/diepindepth/blob/main/protocol/update.md#0x00-update-packet). Most of what will be said here will be explained more in-depth on that page. 
+Only one packet is used to update entities in-game. The [0x00 Update Packet](/protocol/update.md#0x00-update-packet). Most of what will be said here will be explained more in-depth on that page. 
 
-Entities can only be created, deleted, or updated in the game. In the 0x00 packet format, there are two arrays (`vu32(len), ...elems`). An array of [`entid`](https://github.com/ABCxFF/diepindepth/blob/main/protocol/data.md#entid---vu-hash-vu-id)s to be deleted from the clients' entity storage, and an array of `upcreates`, which are either updates or creations. Creations contain full data about an entity, whereas updates only update specific fields at a time. More info, as stated earlier, is on the [0x00 Update Packet](https://github.com/ABCxFF/diepindepth/blob/main/protocol/update.md#0x00-update-packet) page.
+Entities can only be created, deleted, or updated in the game. In the 0x00 packet format, there are two arrays (`vu32(len), ...elems`). An array of [`entid`](/protocol/data.md#entid---vu-hash-vu-id)s to be deleted from the clients' entity storage, and an array of `upcreates`, which are either updates or creations. Creations contain full data about an entity, whereas updates only update specific fields at a time. More info, as stated earlier, is on the [0x00 Update Packet](/protocol/update.md#0x00-update-packet) page.
 
 ---
 

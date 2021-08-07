@@ -2,22 +2,22 @@
 
 Also known as serverbound, these packets, after being encoded, are sent from the client to the server. These packets aren't at all complex, only with the exception of the outgoing `0x01` packet which is the most complex of the outgoing packets (but not too complex).
 
-For information on data types and encodings, see [`data.md`](./data.md)
+For information on data types and encodings, see [`data.md`](/protocol/data.md)
 
-| Header                                              | Name            | Description                                                        |
-| --------------------------------------------------- | --------------- | ------------------------------------------------------------------ |
-| [`0x00`](./outgoing.md#0x00-init-packet)            | Init            | Initiates the connection between the client and server. First sent |
-| [`0x01`](./outgoing.md#0x01-input-packet)           | Input           | Sends client inputs including movement and mouse                   |
-| [`0x02`](./outgoing.md#0x02-spawn-packet)           | Spawn Packet    | Sent when the client wants to spawn, contains chosen name          |
-| [`0x03`](./outgoing.md#0x03-stat-upgrade-packet)    | Stat Upgrade    | Upgrades the player's stats                                        |
-| [`0x04`](./outgoing.md#0x04-tank-upgrade-packet)    | Tank Upgrade    | Upgrades the player's tank                                         |
-| [`0x05`](./outgoing.md#0x05-heartbeat-packet)       | Heartbeat       | Ping pong packet                                                   |
-| [`0x06`](./outgoing.md#0x06-tcp-init-packet)        | TCP Init        | Lets the server "acknowledge" tcp connections. Unknown             |
-| [`0x07`](./outgoing.md#0x07-extension-found-packet) | Extension Found | Sent when the client detects any modifications made to the game    |
-| [`0x08`](./outgoing.md#0x08-to-respawn-packet)      | To Respawn      | Sent when the client leaves the death screen, and moves to respawn |
-| [`0x09`](./outgoing.md#0x09-take-tank-packet)       | Take Tank       | Sent when the client wants to control another tank (Dom for ex)    |
-| [`0x0A`](./outgoing.md#0x0a-pow-answer-packet)      | PoW Answer      | Sends the solved answer for the proof of work challenge             |
-| [`0x0B`](./outgoing.md#0x0b-js-result-packet)       | JS Result       | Sends the result of the js challenge sent by the server            |
+| Header                                 | Name            | Description                                                        |
+| -------------------------------------- | --------------- | ------------------------------------------------------------------ |
+| [`0x00`](#0x00-init-packet)            | Init            | Initiates the connection between the client and server. First sent |
+| [`0x01`](#0x01-input-packet)           | Input           | Sends client inputs including movement and mouse                   |
+| [`0x02`](#0x02-spawn-packet)           | Spawn Packet    | Sent when the client wants to spawn, contains chosen name          |
+| [`0x03`](#0x03-stat-upgrade-packet)    | Stat Upgrade    | Upgrades the player's stats                                        |
+| [`0x04`](#0x04-tank-upgrade-packet)    | Tank Upgrade    | Upgrades the player's tank                                         |
+| [`0x05`](#0x05-heartbeat-packet)       | Heartbeat       | Ping pong packet                                                   |
+| [`0x06`](#0x06-tcp-init-packet)        | TCP Init        | Lets the server "acknowledge" tcp connections. Unknown             |
+| [`0x07`](#0x07-extension-found-packet) | Extension Found | Sent when the client detects any modifications made to the game    |
+| [`0x08`](#0x08-to-respawn-packet)      | To Respawn      | Sent when the client leaves the death screen, and moves to respawn |
+| [`0x09`](#0x09-take-tank-packet)       | Take Tank       | Sent when the client wants to control another tank (Dom for ex)    |
+| [`0x0A`](#0x0a-pow-answer-packet)      | PoW Answer      | Sends the solved answer for the proof of work challenge            |
+| [`0x0B`](#0x0b-js-result-packet)       | JS Result       | Sends the result of the js challenge sent by the server            |
 
 ---
 
@@ -28,7 +28,7 @@ The first packet, and the only unencoded one. This packet is sent to initiate th
 Format:
 > `00 string(build hash) string(dev password) string(party code) vu(debug val)`
 
-The dev confirmed that this format is correct, but did not give any information on the varuint at the end of the packet, only that it was only active during "debug builds". If the build hash sent by the client is not the same as the one the server is expecting, the server responds with a [`0x01` Outdated Client](./incoming.md#0x01-outdated-client-packet) packet.
+The dev confirmed that this format is correct, but did not give any information on the varuint at the end of the packet, only that it was only active during "debug builds". If the build hash sent by the client is not the same as the one the server is expecting, the server responds with a [`0x01` Outdated Client](/protocol/incoming.md#0x01-outdated-client-packet) packet.
 
 ---
 
@@ -51,7 +51,7 @@ x200 ; use gamepad      ; Set when a gamepad is being used instead of a keyboard
 x400 ; switch class     ; Set when switch class key is pressed down
 ```
 
-For information on how these are encoded, see [`data.md`](./data.md#bitflags---vu) where the example is actually a sample input packet. If the gamepad flag is set, then two additional varfloats are appended to the packet, representing the gamepad's x-axis movement and the gamepad's y-axis movement.
+For information on how these are encoded, see [`data.md`](/protocol/data.md#bitflags---vu) where the example is actually a sample input packet. If the gamepad flag is set, then two additional varfloats are appended to the packet, representing the gamepad's x-axis movement and the gamepad's y-axis movement.
 
 Format:
 > `01 flags(input flags) vf(world mouse x) vf(world mouse y) gamepad?[vf(gamepad x axis) vf(gamepad y axis)]`
@@ -60,7 +60,7 @@ Format:
 
 ## **`0x02` Spawn Packet**
 
-This packet creates a spawning attempt, we call it an attempt / request because the server waits for you to solve a [Proof of Work challenge](./incoming.md#0x0b-pow-challenge-packet) first before spawning you in. If you are waiting to be spawned in (due to PoW or game starting countdown / players needed), sending another one will change the name you will spawn in with.
+This packet creates a spawning attempt, we call it an attempt / request because the server waits for you to solve a [Proof of Work challenge](/protocol/incoming.md#0x0b-pow-challenge-packet) first before spawning you in. If you are waiting to be spawned in (due to PoW or game starting countdown / players needed), sending another one will change the name you will spawn in with.
 
 Format:
 > `02 stringNT(name)`
@@ -131,7 +131,7 @@ magicNum(latest build) % TANK_COUNT; // TANK_COUNT is 54
 
 ## **`0x05` Heartbeat Packet**
 
-Part of the game's latency system. Once sent, the server immediately echoes the single-byte [`0x05`](./incoming.md#0x05-heartbeat-packet) packet back. 🏓
+Part of the game's latency system. Once sent, the server immediately echoes the single-byte [`0x05`](/protocol/incoming.md#0x05-heartbeat-packet) packet back. 🏓
 
 Format:
 > `05`
@@ -186,7 +186,7 @@ Format:
 
 ## **`0x09` Take Tank Packet**
 
-This packet is for requesting to control a tank, like a dominator. It can be sent in any gamemode, but if there is no available tank to take then a [notification](./incoming.md#0x03-notification-packet) with the text *"Someone has already taken that tank"* is sent.
+This packet is for requesting to control a tank, like a dominator. It can be sent in any gamemode, but if there is no available tank to take then a [notification](/protocol/incoming.md#0x03-notification-packet) with the text *"Someone has already taken that tank"* is sent.
 
 Format:
 > `09`
@@ -195,7 +195,7 @@ Format:
 
 ## **`0x0A` PoW Answer Packet**
 
-This packet is the response to the [`0x0B` PoW Challenge](./incoming.md#0x0b-pow-challenge-packet) packet - after solving the Proof of Work challenge, the answer is sent.
+This packet is the response to the [`0x0B` PoW Challenge](/protocol/incoming.md#0x0b-pow-challenge-packet) packet - after solving the Proof of Work challenge, the answer is sent.
 
 Format:
 > `0A stringNT(answer)`
@@ -204,7 +204,7 @@ Format:
 
 ## **`0x0B` JS Result Packet**
 
-This packet is the evaluated result of the [`0x0D` Int JS Challenge](./incoming.md#0x0d-int-js-challenge-packet) packet. It sends the evaluation id and the result. In older builds, this packet could also be a response to `0x0C` JS String Challenge, which is now no longer fully existing; so this packet is able to encode any type of result, meaning that it could send a string or integer.
+This packet is the evaluated result of the [`0x0D` Int JS Challenge](/protocol/incoming.md#0x0d-int-js-challenge-packet) packet. It sends the evaluation id and the result. In older builds, this packet could also be a response to `0x0C` JS String Challenge, which is now no longer fully existing; so this packet is able to encode any type of result, meaning that it could send a string or integer.
 
 Format:
 > `0B vu(id) any/vu(result)`

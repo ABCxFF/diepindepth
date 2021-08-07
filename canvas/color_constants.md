@@ -55,7 +55,7 @@ If any of the sections reference a color, refer to it here.
 
 ## Team Colors
 
-(refer to the colors in the Colors section)
+(Refer to the colors in the [Colors](#colors) section)
 
 ## Others
 
@@ -71,7 +71,7 @@ If any of the sections reference a color, refer to it here.
 
 The dark colors are when the button is pressed. The light colors are when the cursor is hovering over the button.
 
-Note: all the darkened colors are essentially the same color but with all three color channels subtracted by 51.
+Note: All the darkened colors are essentially the same color but with all three color channels subtracted by 51.
 
 - FFA
   - fill: #8efffb

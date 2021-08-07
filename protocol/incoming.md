@@ -1,37 +1,37 @@
 # **Incoming Packets**
 
-Also known as clientbound, these packets, after being encoded, are sent from the server to the client. Most of these packets aren't too complex once you understand the basics of a reader, with the exception of the incoming [`0x00`](./incoming.md#0x00-update-packet) packet.
+Also known as clientbound, these packets, after being encoded, are sent from the server to the client. Most of these packets aren't too complex once you understand the basics of a reader, with the exception of the incoming [`0x00`](#0x00-update-packet) packet.
 
-For information on data types and encodings, see [`data.md`](./data.md)
+For information on data types and encodings, see [`data.md`](/protocol/data.md)
 
-| Header                                              | Name              | Description                                                  |
-| --------------------------------------------------- | ----------------- | ------------------------------------------------------------ |
-| [`0x00`](./incoming.md#0x00-update-packet)          | Update            | Creates, updates, and deletes objects and entities           |
-| [`0x01`](./incoming.md#0x01-outdated-client-packet) | Outdated Client   | Response to invalid build in the init packet                 |
-| [`0x02`](./incoming.md#0x02-compressed-packet)      | Compressed Packet | LZ4 compressed packet of any header                          |
-| [`0x03`](./incoming.md#0x03-notification-packet)    | Notification      | Sends notifications in game                                  |
-| [`0x04`](./incoming.md#0x04-server-info-packet)     | Server Info       | Send information about the server, host & region             |
-| [`0x05`](./incoming.md#0x05-heartbeat-packet)       | Heartbeat         | Ping pong packet                                             |
-| [`0x06`](./incoming.md#0x06-party-code-packet)      | Party Code        | Sends the party code if available                            |
-| [`0x07`](./incoming.md#0x07-accept-packet)          | Accept            | Sent after initial handshake, on client acceptance           |
-| [`0x08`](./incoming.md#0x08-achievement-packet)     | Achievement       | Updates clientside achievements from the server              |
-| [`0x09`](./incoming.md#0x09-invalid-party-packet)   | Invalid Party     | Sent when the party in the init packet is invalid            |
-| [`0x0A`](./incoming.md#0x0a-player-count-packet)    | Player Count      | Global count of clients connected                            |
-| [`0x0B`](./incoming.md#0x0b-pow-challenge-packet)   | PoW Challenge     | Sends a required proof of work challenge                     |
-| [`0x0C`](./incoming.md#0x0c-unnamed-packet)         | Unnamed           | Unnamed, Unused packet                                       |
-| [`0x0D`](./incoming.md#0x0d-int-js-challenge-packet)| Int JS Challenge  | Sends (obfuscated) js code to be evaluated. Result is an int |
+| Header                                  | Name              | Description                                                  |
+| --------------------------------------- | ----------------- | ------------------------------------------------------------ |
+| [`0x00`](#0x00-update-packet)           | Update            | Creates, updates, and deletes objects and entities           |
+| [`0x01`](#0x01-outdated-client-packet)  | Outdated Client   | Response to invalid build in the init packet                 |
+| [`0x02`](#0x02-compressed-packet)       | Compressed Packet | LZ4 compressed packet of any header                          |
+| [`0x03`](#0x03-notification-packet)     | Notification      | Sends notifications in game                                  |
+| [`0x04`](#0x04-server-info-packet)      | Server Info       | Send information about the server, host & region             |
+| [`0x05`](#0x05-heartbeat-packet)        | Heartbeat         | Ping pong packet                                             |
+| [`0x06`](#0x06-party-code-packet)       | Party Code        | Sends the party code if available                            |
+| [`0x07`](#0x07-accept-packet)           | Accept            | Sent after initial handshake, on client acceptance           |
+| [`0x08`](#0x08-achievement-packet)      | Achievement       | Updates clientside achievements from the server              |
+| [`0x09`](#0x09-invalid-party-packet)    | Invalid Party     | Sent when the party in the init packet is invalid            |
+| [`0x0A`](#0x0a-player-count-packet)     | Player Count      | Global count of clients connected                            |
+| [`0x0B`](#0x0b-pow-challenge-packet)    | PoW Challenge     | Sends a required proof of work challenge                     |
+| [`0x0C`](#0x0c-unnamed-packet)          | Unnamed           | Unnamed, Unused packet                                       |
+| [`0x0D`](#0x0d-int-js-challenge-packet) | Int JS Challenge  | Sends (obfuscated) js code to be evaluated. Result is an int |
 
 ---
 
 ## **`0x00` Update Packet**
 
-Contains created/updated/deleted entities and current ingame time. There is too much to explain here, it'd be easier just putting it in [`update.md`](./update.md).
+Contains created/updated/deleted entities and current ingame time. There is too much to explain here, it'd be easier just putting it in [`update.md`](/protocol/update.md).
 
 ---
 
 ## **`0x01` Outdated Client Packet**
 
-Sent when the client's build (which is sent in the [`0x00` Init Packet](./outgoing.md#0x00-init-packet)) is not the same as the server's. The server sends the latest build, and when the client receives it, the page reloads. This packet is by nature unencoded, meaning its data is sent raw, unencoded. This is since if you have an invalid build you won't be able to decode packets properly.
+Sent when the client's build (which is sent in the [`0x00` Init Packet](/protocol/outgoing.md#0x00-init-packet)) is not the same as the server's. The server sends the latest build, and when the client receives it, the page reloads. This packet is by nature unencoded, meaning its data is sent raw, unencoded. This is since if you have an invalid build you won't be able to decode packets properly.
 
 
 Format: 
@@ -64,7 +64,7 @@ At the start of the packet there is a u32 specifying the final length of the dec
 Format:
 > `02 u32(decompressed output length) (LZ4 block)`
 
-The decompressed result will include the packet header, you should feed this into your parsing function recursively. The decompressed result is not [encoded](./encoding.md). Currently only [Update](./incoming.md#0x00-update-packet) and [JS Challenge](./incoming.md#0x0d-int-js-challenge-packet) packets can get large enough to be compressed.
+The decompressed result will include the packet header, you should feed this into your parsing function recursively. The decompressed result is not [encoded](/protocol/crypto.md). Currently only [Update](#0x00-update-packet) and [JS Challenge](#0x0d-int-js-challenge-packet) packets can get large enough to be compressed.
 
 ---
 
@@ -81,7 +81,7 @@ If a notification with the same identifier as the new one already exists (unless
 - `godmode_toggle`
 - `gamepad_enabled`
 - `adblock`
-- [`cant_claim_info`](./outgoing.md#0x09-take-tank-packet)
+- [`cant_claim_info`](/protocol/outgoing.md#0x09-take-tank-packet)
 
 Format:
 > `03 stringNT(message) u32(RGB) float(duration) stringNT(identifier)`
@@ -107,7 +107,7 @@ incoming <- 04 stringNT("sandbox") stringNT("vultr-amsterdam")
 
 ## **`0x05` Heartbeat Packet**
 
-Part of the game's latency system. Once received, the client immediately echoes the single-byte [`0x05` packet](./outgoing.md#0x05-heartbeat-packet) back. 🏓
+Part of the game's latency system. Once received, the client immediately echoes the single-byte [`0x05` packet](/protocol/outgoing.md#0x05-heartbeat-packet) back. 🏓
 
 Format:
 > `05`
@@ -154,7 +154,7 @@ The final link is `diep.io/#2627C6D600D2DC30453C`
 
 ## **`0x07` Accept Packet**
 
-This packet is sent once the game server has accepted the client (correct build, valid or no party). As of Feb 25, the server only accepts the client once the client solves a [JS Challange](./incoming.md#0x0d-int-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenge.
+This packet is sent once the game server has accepted the client (correct build, valid or no party). As of Feb 25, the server only accepts the client once the client solves a [JS Challange](#0x0d-int-js-challenge-packet) and [PoW](#0x0b-pow-challenge-packet) challenge.
 
 Format:
 > `07`
@@ -178,7 +178,7 @@ incoming <- 08 vu(6) stringNT("9898db9ff6d3c1b3_1") stringNT("300ddd6f1fb3d69d_1
 
 ## **`0x09` Invalid Party Packet**
 
-This single byte packet is sent if the party code you specified in the [Init Packet](./outgoing.md#0x00-init-packet) is invalid. You will get this instead of the [`0x07`](./incoming.md#0x07-accept-packet) packet, only after solving a [JS Challange](./incoming.md#0x0d-int-js-challenge-packet) and [PoW](./incoming.md#0x0b-pow-challenge-packet) challenge.
+This single byte packet is sent if the party code you specified in the [Init Packet](/protocol/outgoing.md#0x00-init-packet) is invalid. You will get this instead of the [`0x07`](#0x07-accept-packet) packet, only after solving a [JS Challange](#0x0d-int-js-challenge-packet) and [PoW](#0x0b-pow-challenge-packet) challenge.
 
 Format:
 > `09`
@@ -211,7 +211,7 @@ incoming <- 0A vu(3364)
 
 ## **`0x0B` PoW Challenge Packet**
 
-The packet that initiates the Proof of Work convos that are active throughout the connection. Response is an outgoing [`0x0A` PoW Answer Packet](./outgoing.md#0x0a-pow-answer-packet). More info on how PoW works [here](/protocol/pow.md)
+The packet that initiates the Proof of Work convos that are active throughout the connection. Response is an outgoing [`0x0A` PoW Answer Packet](/protocol/outgoing.md#0x0a-pow-answer-packet). More info on how PoW works [here](/protocol/pow.md)
 
 Format:
 > `0B vu(difficulty) stringNT(prefix)` 
@@ -231,7 +231,7 @@ m28.pow.solve("5X6qqhhfkp4v5zf2", 20).then(solveStr => {
 
 ## **`0x0C` Unnamed Packet**
 
-This packet has never been observed, and while the packet's format has been reversed, it's never used and does not affect the client. On an older version this was the same as the [`0x0D` Int JS Challenge](./incoming.md#0x0d-int-js-challenge-packet) packet, except it expected a string as a response. So we can't be sure if this packet is still the same as it was and is just not fully present due to [Emscripten](https://github.com/emscripten-core/emscripten) simplifications, or if it changed completely.
+This packet has never been observed, and while the packet's format has been reversed, it's never used and does not affect the client. On an older version this was the same as the [`0x0D` Int JS Challenge](#0x0d-int-js-challenge-packet) packet, except it expected a string as a response. So we can't be sure if this packet is still the same as it was and is just not fully present due to [Emscripten](https://github.com/emscripten-core/emscripten) simplifications, or if it changed completely.
 
 Format:
 > `0C vu(unknown)`
@@ -240,7 +240,7 @@ Format:
 
 ## **`0x0D` Int JS Challenge Packet**
 
-This packet is sent only once, during the client -> server acceptance handshake. It sends highly obfuscated code to be evaluated by the client with the purpose of filtering out headless clients from clients on the web - part of diep.io's anti botting system. The result of this code is always an uint32 and is sent back to the client through the outgoing [`0x0B` JS Result](./outgoing.md#0x0b-js-result-packet) packet.
+This packet is sent only once, during the client -> server acceptance handshake. It sends highly obfuscated code to be evaluated by the client with the purpose of filtering out headless clients from clients on the web - part of diep.io's anti botting system. The result of this code is always an uint32 and is sent back to the client through the outgoing [`0x0B` JS Result](/protocol/outgoing.md#0x0b-js-result-packet) packet.
 
 The code sent is obfuscated with [obfuscator.io](https://obfuscator.io/), almost all settings turned on max. This packet checks for global objects and specific properties on global objects, if all the checks pass their intended result, the code ends up returning the correct uint32 result, which the game server recognizes and continues (or completes) the process of accepting the client. 
 

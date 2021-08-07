@@ -166,7 +166,7 @@ no value being read
 01    ; u8 ; Jump Table End
 ```
 
-The resulting indexes from this jump table were [0, 3, 4, 5, 8, 10, 11, 13]. More about what these values mean in [`incoming.md`](/packets/incoming.md)
+The resulting indexes from this jump table were [0, 3, 4, 5, 8, 10, 11, 13]. More about what these values mean in [`incoming.md`](/protocol/incoming.md)
 
 And for more understanding, here are two jump table readers written in Javascript and C++
 
