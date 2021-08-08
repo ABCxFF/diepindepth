@@ -10,7 +10,7 @@ What started off as an attempt to parse game leaderboards out of packets is now 
 
 ### **Sections**
 
-There are 5 sections that divide up the information collected.
+There are 6 sections that divide up the information collected.
 
 1. Game Protocol ([`protocol/`](./protocol/))  
    Including incoming and outgoing packets, encoding/decoding, m28 server list api and websocket connections
