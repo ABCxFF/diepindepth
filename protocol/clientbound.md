@@ -1,6 +1,6 @@
 # **Clientbound Packets**
 
-Also known as incoming, these packets, after being encoded, are sent from the server to the client. Most of these packets aren't too complex once you understand the basics of a reader, with the exception of the incoming [`0x00`](#0x00-update-packet) packet.
+Also known as incoming, these packets, after being encoded, are sent from the server to the client. Most of these packets aren't too complex once you understand the basics of a reader, with the exception of the clientbound [`0x00`](#0x00-update-packet) packet.
 
 For information on data types and encodings, see [`data.md`](/protocol/data.md)
 
@@ -31,7 +31,7 @@ Contains created/updated/deleted entities and current ingame time. There is too 
 
 ## **`0x01` Outdated Client Packet**
 
-Sent when the client's build (which is sent in the [`0x00` Init Packet](/protocol/outgoing.md#0x00-init-packet)) is not the same as the server's. The server sends the latest build, and when the client receives it, the page reloads. This packet is by nature unencoded, meaning its data is sent raw, unencoded. This is since if you have an invalid build you won't be able to decode packets properly.
+Sent when the client's build (which is sent in the [`0x00` Init Packet](/protocol/serverbound.md#0x00-init-packet)) is not the same as the server's. The server sends the latest build, and when the client receives it, the page reloads. This packet is by nature unencoded, meaning its data is sent raw, unencoded. This is since if you have an invalid build you won't be able to decode packets properly.
 
 
 Format: 
@@ -40,7 +40,7 @@ Format:
 Sample Packet and Response:
 
 ```js
-incoming <- 01 stringNT("c94fc18cf6171f8d502f5c979488e143f1e5f74f")
+clientbound <- 01 stringNT("c94fc18cf6171f8d502f5c979488e143f1e5f74f")
 
 response: // Reversed from source, see /wasm/ for more information on reversal
 function reload(version /* new build, read as a string from the packet */) {
@@ -57,7 +57,7 @@ reload()
 
 ## **`0x02` Compressed Packet**
 
-When an incoming packet is big enough, the server sends you a compressed version of the packet instead. The compression algorithm used is LZ4, it is explained on [Ticki's blog](https://ticki.github.io/blog/how-lz4-works/)
+When a clientbound packet is big enough, the server sends you a compressed version of the packet instead. The compression algorithm used is LZ4, it is explained on [Ticki's blog](https://ticki.github.io/blog/how-lz4-works/)
 
 At the start of the packet there is a u32 specifying the final length of the decompressed packet, so you know the size of the buffer to allocate and can check at the end if there was an error while decompressing (though this should never happen)
 
@@ -81,7 +81,7 @@ If a notification with the same identifier as the new one already exists (unless
 - `godmode_toggle`
 - `gamepad_enabled`
 - `adblock`
-- [`cant_claim_info`](/protocol/outgoing.md#0x09-take-tank-packet)
+- [`cant_claim_info`](/protocol/serverbound.md#0x09-take-tank-packet)
 
 Format:
 > `03 stringNT(message) u32(RGB) float(duration) stringNT(identifier)`
@@ -100,14 +100,14 @@ Format:
 Sample Packet (Decoded):
 
 ```
-incoming <- 04 stringNT("sandbox") stringNT("vultr-amsterdam")
+clientbound <- 04 stringNT("sandbox") stringNT("vultr-amsterdam")
 ```
 
 ---
 
 ## **`0x05` Heartbeat Packet**
 
-Part of the game's latency system. Once received, the client immediately echoes the single-byte [`0x05` packet](/protocol/outgoing.md#0x05-heartbeat-packet) back. 🏓
+Part of the game's latency system. Once received, the client immediately echoes the single-byte [`0x05` packet](/protocol/serverbound.md#0x05-heartbeat-packet) back. 🏓
 
 Format:
 > `05`
@@ -115,10 +115,10 @@ Format:
 Sample Packet and Response (Decoded):
 
 ```
-incoming <- 05
+clientbound <- 05
 
 response:
-outgoing -> 05
+serverbound -> 05
 ```
 
 ---
@@ -133,7 +133,7 @@ Format:
 Sample Packet and Response (Decoded):
 
 ```
-incoming <- 06 2D CD 03 54 C3
+clientbound <- 06 2D CD 03 54 C3
 
 response: show the Copy party link button
 ```
@@ -171,14 +171,14 @@ Format:
 Sample Packet (Decoded):
 
 ```
-incoming <- 08 vu(6) stringNT("9898db9ff6d3c1b3_1") stringNT("300ddd6f1fb3d69d_1") stringNT("8221180ec6d53232_1") stringNT("33e4cb47afd5602f_1") stringNT("6d671cfa6dceb09_1") stringNT("256245339c3742d2_1")
+clientbound <- 08 vu(6) stringNT("9898db9ff6d3c1b3_1") stringNT("300ddd6f1fb3d69d_1") stringNT("8221180ec6d53232_1") stringNT("33e4cb47afd5602f_1") stringNT("6d671cfa6dceb09_1") stringNT("256245339c3742d2_1")
 ```
 
 ---
 
 ## **`0x09` Invalid Party Packet**
 
-This single byte packet is sent if the party code you specified in the [Init Packet](/protocol/outgoing.md#0x00-init-packet) is invalid. You will get this instead of the [`0x07`](#0x07-accept-packet) packet, only after solving a [JS Challange](#0x0d-int-js-challenge-packet) and [PoW](#0x0b-pow-challenge-packet) challenge.
+This single byte packet is sent if the party code you specified in the [Init Packet](/protocol/serverbound.md#0x00-init-packet) is invalid. You will get this instead of the [`0x07`](#0x07-accept-packet) packet, only after solving a [JS Challange](#0x0d-int-js-challenge-packet) and [PoW](#0x0b-pow-challenge-packet) challenge.
 
 Format:
 > `09`
@@ -186,7 +186,7 @@ Format:
 Sample Packet and Response (Decoded):
 
 ```js
-incoming <- 09
+clientbound <- 09
 
 response:
 window.alert('Invalid party ID');
@@ -204,14 +204,14 @@ Format:
 Sample Packet (Decoded):
 
 ```
-incoming <- 0A vu(3364)
+clientbound <- 0A vu(3364)
 ```
 
 ---
 
 ## **`0x0B` PoW Challenge Packet**
 
-The packet that initiates the Proof of Work convos that are active throughout the connection. Response is an outgoing [`0x0A` PoW Answer Packet](/protocol/outgoing.md#0x0a-pow-answer-packet). More info on how PoW works [here](/protocol/pow.md)
+The packet that initiates the Proof of Work convos that are active throughout the connection. Response is an serverbound [`0x0A` PoW Answer Packet](/protocol/serverbound.md#0x0a-pow-answer-packet). More info on how PoW works [here](/protocol/pow.md)
 
 Format:
 > `0B vu(difficulty) stringNT(prefix)` 
@@ -219,11 +219,11 @@ Format:
 Something worth noting is that the prefix is always 16 chars long. Here's a sample:
 
 ```js
-incoming <- 0B vu(20) stringNT("5X6qqhhfkp4v5zf2")
+clientbound <- 0B vu(20) stringNT("5X6qqhhfkp4v5zf2")
 
 response:
 m28.pow.solve("5X6qqhhfkp4v5zf2", 20).then(solveStr => {
-  outgoing -> 0A stringNT(solveStr);
+  serverbound -> 0A stringNT(solveStr);
 });
 ```
 
@@ -240,7 +240,7 @@ Format:
 
 ## **`0x0D` Int JS Challenge Packet**
 
-This packet is sent only once, during the client -> server acceptance handshake. It sends highly obfuscated code to be evaluated by the client with the purpose of filtering out headless clients from clients on the web - part of diep.io's anti botting system. The result of this code is always an uint32 and is sent back to the client through the outgoing [`0x0B` JS Result](/protocol/outgoing.md#0x0b-js-result-packet) packet.
+This packet is sent only once, during the client -> server acceptance handshake. It sends highly obfuscated code to be evaluated by the client with the purpose of filtering out headless clients from clients on the web - part of diep.io's anti botting system. The result of this code is always an uint32 and is sent back to the client through the serverbound [`0x0B` JS Result](/protocol/serverbound.md#0x0b-js-result-packet) packet.
 
 The code sent is obfuscated with [obfuscator.io](https://obfuscator.io/), almost all settings turned on max. This packet checks for global objects and specific properties on global objects, if all the checks pass their intended result, the code ends up returning the correct uint32 result, which the game server recognizes and continues (or completes) the process of accepting the client. 
 
@@ -252,7 +252,7 @@ Format:
 
 Sample Packet and Response (Decoded):
 ```js
-incoming <- 0D vu(0) stringNT(too long code)
+clientbound <- 0D vu(0) stringNT(very long code)
 
 response:
 try {
@@ -265,7 +265,7 @@ try {
   _game_js_challenge_response(id, 0)
 }
 
-outgoing -> 0B vu(0) u32(result)
+serverbound -> 0B vu(0) u32(result)
 ```
 
 Here's [wonderful explanation by Shädam](https://github.com/supahero1/diep.io/tree/master/eval_packet) of deobfuscation which has information on code flow and deobfuscation of the eval packet's code.
