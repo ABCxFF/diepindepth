@@ -1,4 +1,4 @@
-This is still being worked on semi-actively, progress updates are posted in the [roadmap](https://github.com/ABCxFF/diepindepth#roadmap)
+This is still being worked on semi-actively, progress updates are posted in the [roadmap](https://github.com/ABCxFF/diepindepth/projects/2)
 
 ---
 
@@ -26,10 +26,6 @@ There are 6 sections that divide up the information collected.
    Including screenshots and other forms of media relating to our research in diep
 
 Before going too in depth into entity related memory and protocol, it is highly recommended you read [`entities.md`](./entities.md) to understand how entities work.
-
-## **Roadmap**
-
-https://github.com/ABCxFF/diepindepth/projects/2
 
 ## **Contributors**
 
