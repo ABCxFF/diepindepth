@@ -1,6 +1,6 @@
-# **Incoming Packets**
+# **Clientbound Packets**
 
-Also known as clientbound, these packets, after being encoded, are sent from the server to the client. Most of these packets aren't too complex once you understand the basics of a reader, with the exception of the incoming [`0x00`](#0x00-update-packet) packet.
+Also known as incoming, these packets, after being encoded, are sent from the server to the client. Most of these packets aren't too complex once you understand the basics of a reader, with the exception of the incoming [`0x00`](#0x00-update-packet) packet.
 
 For information on data types and encodings, see [`data.md`](/protocol/data.md)
 
