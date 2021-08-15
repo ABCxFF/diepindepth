@@ -70,9 +70,7 @@ class PacketHook extends EventTarget {
     wail.addCodeElementParser(null, function ({ index, bytes }) {
 
       if (index === sendPacket.i32()) {
-        const writer = new BufferReader(new Uint8Array(1)); // idk why a buf param is needed here
-
-        writer.writeAtAnchor([
+        return new Uint8Array([
           OP_I32_CONST, 1,
           OP_GET_LOCAL, 1,
           OP_GET_LOCAL, 2,
@@ -81,12 +79,8 @@ class PacketHook extends EventTarget {
               OP_RETURN,
           OP_END,
           ...bytes]);
-
-        return writer.write()
       } else if (index === recvPacket.i32()) {
-        const writer = new BufferReader(new Uint8Array(1));
-
-        writer.writeAtAnchor([
+        return new Uint8Array([
           OP_I32_CONST, 0,
           OP_GET_LOCAL, 0,
           OP_GET_LOCAL, 1,
@@ -95,8 +89,6 @@ class PacketHook extends EventTarget {
               OP_RETURN,
           OP_END,
           ...bytes]);
-
-        return writer.write()
       }
 
       return false;
