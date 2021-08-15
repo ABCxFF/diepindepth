@@ -95,10 +95,10 @@ class PacketHook extends EventTarget {
     });
 
 
-    wail.parse()
+    wail.parse();
 
 
-    return wail.write()
+    return wail.write();
   }
   
   _inject(mainHook) {
