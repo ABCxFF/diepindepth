@@ -6,25 +6,35 @@ Also known as shuffling/unshuffling, this encryption system is what annoys 80% o
 
 > Add some broad statements here
 
-There are 3 parts to packet encryption:
-1. Magic Number and Jump Table `(name change pending)`
-2. Packet Content Encryption
-3. Packet Header Encryption
+There are 4 parts to packet encryption:
+1. Jump Table Generation
+2. Packet Header Encryption
+3. Packet Content Encryption
 4. Encryption Cycle Reset `(name change pending)`
 
-> Or add some broad statements here
+## Jump Table Generation
 
-## Magic Number and Jump Table
+The jump table is an array of indexes, from 0 to 127 (inclusive), shuffled using the [Fisher Yates shuffle algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle), using a pseudo random number generator present within the game, who's seed changes every build. The following is an example of its generation in javascript:
+```js
+const prng = new PRNG(SEED, A, B, C);
+const table = new Uint8Array(128).map((_, i) => i);
 
-> Discuss where the jump tables are in the memory, where the magic number is in the memory
+for (let i = 127; i >= 0; i--) {
+  const index = ((prng.next() >>> 0) % i) + 1;
+    
+  const temp = table[index];
+  table[index] = table[i];
+  table[i] = temp;
+}
+```
+
+## Packet Header Encryption
+
+Headers of packets are encoded using a table of jumps stored in memory. First, a pseudo random number generator within the game determines how many jumps to jump from, to get the encoded header.
 
 ## Packet Content Encryption
 
 > the *n* length xor tables, how they're generated
-
-## Packet Header Encryption
-
-> the jump tables
 
 ## Encryption Cycle Reset
 
