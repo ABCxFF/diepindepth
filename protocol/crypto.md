@@ -1,4 +1,4 @@
-> For other information: [check out shädam's cool article](https://github.com/supahero1/diep.io/tree/master/working-with-diep) (shädam is cool) - it discusses packet encoding
+> If you are interested in packet encoding/decoding, you may find Shädam's [artical](https://github.com/supahero1/diep.io/tree/master/working-with-diep) useful.
 
 # Packet Encoding and Decoding
 
