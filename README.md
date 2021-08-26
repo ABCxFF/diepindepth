@@ -1,4 +1,4 @@
-This is still being worked on semi-actively, progress updates are posted in the [roadmap](https://github.com/ABCxFF/diepindepth#roadmap)
+This is still being worked on semi-actively, progress updates are posted in the [roadmap](https://github.com/ABCxFF/diepindepth/projects/2)
 
 ---
 
@@ -10,7 +10,7 @@ What started off as an attempt to parse game leaderboards out of packets is now 
 
 ### **Sections**
 
-There are 5 sections that divide up the information collected.
+There are 6 sections that divide up the information collected.
 
 1. Game Protocol ([`protocol/`](./protocol/))  
    Including incoming and outgoing packets, encoding/decoding, m28 server list api and websocket connections
@@ -22,12 +22,10 @@ There are 5 sections that divide up the information collected.
    Including storage of entities, tanks, the gui, and the structure and way things are stored
 5. Extras ([`extras/`](./extras/))  
    Including any extra information, fun facts, misc algorithms, and any physics not provided in [Spade Squad](http://spade-squad.com)
+6. Media ([`media/`](./media/))  
+   Including screenshots and other forms of media relating to our research in diep
 
 Before going too in depth into entity related memory and protocol, it is highly recommended you read [`entities.md`](./entities.md) to understand how entities work.
-
-## **Roadmap**
-
-https://github.com/ABCxFF/diepindepth/projects/2
 
 ## **Contributors**
 
@@ -35,4 +33,3 @@ This repository was made possible with the help of the Diep In Depth team. Thank
 
 
 If *you* have additional information you can / want to share, please, pull requests are welcome!
-

@@ -60,7 +60,7 @@ A varint encoded tank id, defaults to -1. Tanks are listed [here](/extras/tanks.
 
 ### **`bitflags`** - `vu`
 
-A varuint encoded series of bit flags with varying values. An example would be the outgoing input packet:
+A varuint encoded series of bit flags with varying values. An example would be the serverbound input packet:
 
 ```
 00000001 ; u8 ; header
@@ -166,7 +166,7 @@ no value being read
 01    ; u8 ; Jump Table End
 ```
 
-The resulting indexes from this jump table were [0, 3, 4, 5, 8, 10, 11, 13]. More about what these values mean in [`incoming.md`](/packets/incoming.md)
+The resulting indexes from this jump table were [0, 3, 4, 5, 8, 10, 11, 13]. More about what these values mean in [`clientbound.md`](/protocol/clientbound.md)
 
 And for more understanding, here are two jump table readers written in Javascript and C++
 

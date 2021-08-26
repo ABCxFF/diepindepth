@@ -11,7 +11,8 @@
   - [UI](#ui)
     - [Game mode buttons](#game-mode-buttons)
     - [Other buttons](#other-buttons)
-    - [Cancerous florr ad](#cancerous-florr-ad)
+    - [florr.io advert](#florrio-advert)
+    - [digdig.io advert](#digdigio-advert)
     - [Gameplay colors](#gameplay-colors)
     - [Upgrade menu](#upgrade-menu)
   - [Random color facts](#random-color-facts)
@@ -47,14 +48,14 @@ If any of the sections reference a color, refer to it here.
   - fill: #768dfc
   - stroke: #5869bd
 - Alpha Pentagon: same as pentagon
-- Small Crasher
+- Crasher
   - fill: #f177dd
   - stroke: #b459a5
-- Crasher: same as small crasher
+- Small Crasher: same as small crasher
 
 ## Team Colors
 
-(refer to the colors in the Colors section)
+(Refer to the colors in the [Colors](#colors) section)
 
 ## Others
 
@@ -70,7 +71,7 @@ If any of the sections reference a color, refer to it here.
 
 The dark colors are when the button is pressed. The light colors are when the cursor is hovering over the button.
 
-Note: all the darkened colors are essentially the same color but with all three color channels subtracted by 51.
+Note: All the darkened colors are essentially the same color but with all three color channels subtracted by 51.
 
 - FFA
   - fill: #8efffb
@@ -114,14 +115,28 @@ Note: all the darkened colors are essentially the same color but with all three 
   - fill dark: #8a8a8a
   - fill light: #bdbdbd
 
-### Cancerous florr ad
+### florr.io advert
 
-- center flower
+- Flower body
   - fill: #ffe763
   - stroke: #cfbb50
-- surrounding white petals
+- Petals
   - fill: #ffffff
   - stroke: #cfcfcf
+
+### digdig.io advert
+
+- Digger body
+  - fill: #999999
+  - stroke: #7c7c7c
+- Digger eyes
+  - fill: #222222
+- Digger mouth
+  - stroke: #222222
+- Digger pupil
+  - fill: #eeeeee
+- Spinner
+  - fill: #111111
 
 ### Gameplay colors
 
