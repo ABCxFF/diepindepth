@@ -6,7 +6,7 @@ For information on data types and encodings, see [`data.md`](/protocol/data.md)
 
 | Header                                 | Name            | Description                                                        |
 | -------------------------------------- | --------------- | ------------------------------------------------------------------ |
-| [`0x00`](#0x00-init-packet)            | Init            | Initiates the connection between the client and server. First sent |
+| [`0x00`](#0x00-init-packet)            | Init            | Initiates the connection between the client and server             |
 | [`0x01`](#0x01-input-packet)           | Input           | Sends client inputs including movement and mouse                   |
 | [`0x02`](#0x02-spawn-packet)           | Spawn Packet    | Sent when the client wants to spawn, contains chosen name          |
 | [`0x03`](#0x03-stat-upgrade-packet)    | Stat Upgrade    | Upgrades the player's stats                                        |
@@ -23,7 +23,7 @@ For information on data types and encodings, see [`data.md`](/protocol/data.md)
 
 ## **`0x00` Init Packet**
 
-The first packet, and the only unencoded one. This packet is sent to initiate the connection, and it gives information like build, admin password, party link, and some other "debug values."
+The first packet, and the only unencoded one. This packet is sent to initiate the connection and it contains information such as the build, admin password, party link, and some other "debug values."
 
 Format:
 > `00 string(build hash) string(dev password) string(party code) vu(debug val)`
@@ -34,7 +34,7 @@ The dev confirmed that this format is correct, but did not give any information 
 
 ## **`0x01` Input Packet**
 
-The most frequently sent packet coming from the client, sends movement flags, mouse pos, and other input data. 
+The most frequently sent packet coming from the client, it includes movement flags, mouse pos, and other input data. 
 
 ```
 bit  ; name             ; desc
@@ -60,7 +60,7 @@ Format:
 
 ## **`0x02` Spawn Packet**
 
-This packet creates a spawning attempt, we call it an attempt / request because the server waits for you to solve a [Proof of Work challenge](/protocol/clientbound.md#0x0b-pow-challenge-packet) first before spawning you in. If you are waiting to be spawned in (due to PoW or game starting countdown / players needed), sending another one will change the name you will spawn in with.
+This packet creates a spawning attempt; we call it an attempt / request because the server waits for you to solve a [Proof of Work challenge](/protocol/clientbound.md#0x0b-pow-challenge-packet) first before spawning you in. If you are waiting to be spawned in (due to PoW or game starting countdown / players needed), sending another one will change the name you will spawn in with.
 
 Format:
 > `02 stringNT(name)`
@@ -96,17 +96,18 @@ This packet requests to upgrade one of the tank's stats. If you don't have an ad
 ```js
 Current Stats: 1/1/1/1/1/1/1
 
-serverbound -> 03 vi(2 ^ stat xor) vi(-1)
+serverbound -> 03 vi(2 ^ stat 
+) vi(-1)
 Current Stats: 1/1/1/1/2/1/1
 
-serverbound -> 03 vi(4 ^ stat xor) vi(0)
+serverbound -> 03 vi(4 ^ stat XOR) vi(0)
 Current Stats: 1/1/1/1/2/1/1 // nothing happens since 4th stat is already >= 0
 ```
 
 Format:
-> `03 vi(stat index ^ stat xor) vi(max)`
+> `03 vi(stat index ^ stat XOR) vi(max)`
 
-Where stat xor is (using the function up above):
+Where stat XOR is (using the function up above):
 
 ```js
 magicNum(latest build) % STAT_COUNT; // STAT_COUNT is 8
@@ -116,12 +117,12 @@ magicNum(latest build) % STAT_COUNT; // STAT_COUNT is 8
 
 ## **`0x04` Tank Upgrade Packet**
 
-This packet is sent to upgrade to a tank. Although it takes the tank id as a parameter in the packet, if the tank selected is not in your upgrade path, or you don't have enough levels to reach it, nothing will happen. The [tank id](/extras/tanks.js) is xored by a remainder of the magicNum, very similar to the `0x03` serverbound packet. This was, like the stat upgrading packet, an attempt to prevent scripting or automatic upgrading of tanks.
+This packet is sent to upgrade to a tank. Although it takes the tank id as a parameter in the packet, if the tank selected is not in your upgrade path, or you don't have enough levels to reach it, nothing will happen. The [tank id](/extras/tanks.js) is XOR'ed by a remainder of the magicNum, very similar to the `0x03` serverbound packet. This is similar to the stat upgrading packet: an attempt to prevent scripting or automatic upgrading of tanks.
 
 Format:
-> `04 vi(tank id ^ tank xor)`
+> `04 vi(tank id ^ tank XOR)
 
-Where tank xor is (using the function up above):
+Where tank XOR is (using the function up above):
 
 ```js
 magicNum(latest build) % TANK_COUNT; // TANK_COUNT is 54
@@ -186,7 +187,7 @@ Format:
 
 ## **`0x09` Take Tank Packet**
 
-This packet is for requesting to control a tank, like a dominator. It can be sent in any gamemode, but if there is no available tank to take then a [notification](/protocol/clientbound.md#0x03-notification-packet) with the text *"Someone has already taken that tank"* is sent.
+This packet is for requesting to control a tank, like a dominator. It can be sent in any gamemode, but if there is no available tank to take, then a [notification](/protocol/clientbound.md#0x03-notification-packet) with the text *"Someone has already taken that tank"* is sent.
 
 Format:
 > `09`
