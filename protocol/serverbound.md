@@ -96,8 +96,7 @@ This packet requests to upgrade one of the tank's stats. If you don't have an ad
 ```js
 Current Stats: 1/1/1/1/1/1/1
 
-serverbound -> 03 vi(2 ^ stat 
-) vi(-1)
+serverbound -> 03 vi(2 ^ stat XOR) vi(-1)
 Current Stats: 1/1/1/1/2/1/1
 
 serverbound -> 03 vi(4 ^ stat XOR) vi(0)
