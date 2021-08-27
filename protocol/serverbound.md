@@ -91,20 +91,23 @@ magicNum(latest build)
 
 ## **`0x03` Stat Upgrade Packet**
 
-This packet requests to upgrade one of the tank's stats. If you don't have an adequate amount of levels for the next stat, nothing happens. The second varint in the packet identifies the max upgrade level of that stat, so that if the stat is already at or past that varint encoded maximum, nothing will upgrade. Here's a quick example
+This packet requests to upgrade one of the tank's stats. If you don't have an adequate amount of levels for the next stat, nothing happens. The second varint in the packet identifies the maximum upgrade level of that stat. Only if the level of the stat is less than the maximum or if the maximum is negative will an upgrade be performed. Note that the stat index is 0-indexed and numbered in reverse order of the stats as we know it (i.e. `packet stat index = 8 - normal stat index`). For example, movement speed has index 0, and bullet damage has index 2. Here's a quick example:
 
 ```js
-Current Stats: 1/1/1/1/1/1/1
+Current Stats: 4/3/2/1/4/3/2/1
 
 serverbound -> 03 vi(2 ^ stat xor) vi(-1)
-Current Stats: 1/1/1/1/2/1/1
+Current Stats: 4/3/2/1/4/4/2/1 // will always upgrade since stat max is negative
 
-serverbound -> 03 vi(4 ^ stat xor) vi(0)
-Current Stats: 1/1/1/1/2/1/1 // nothing happens since 4th stat is already >= 0
+serverbound -> 03 vi(5 ^ stat xor) vi(2)
+Current Stats: 4/3/2/1/4/4/2/1 // nothing happens since 5th stat is >= 2
+
+serverbound -> 03 vi(5 ^ stat xor) vi(3)
+Current Stats: 4/3/3/1/4/4/2/1 // upgrades since 5th stat is less than 3
 ```
 
 Format:
-> `03 vi(stat index ^ stat xor) vi(max)`
+> `03 vi(stat index ^ stat xor) vi(stat max)`
 
 Where stat xor is (using the function up above):
 
