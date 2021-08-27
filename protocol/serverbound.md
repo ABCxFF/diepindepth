@@ -12,7 +12,7 @@ For information on data types and encodings, see [`data.md`](/protocol/data.md)
 | [`0x03`](#0x03-stat-upgrade-packet)    | Stat Upgrade    | Upgrades the player's stats                                        |
 | [`0x04`](#0x04-tank-upgrade-packet)    | Tank Upgrade    | Upgrades the player's tank                                         |
 | [`0x05`](#0x05-heartbeat-packet)       | Heartbeat       | Ping pong packet                                                   |
-| [`0x06`](#0x06-tcp-init-packet)        | TCP Init        | Lets the server "acknowledge" tcp connections. Unknown             |
+| [`0x06`](#0x06-tcp-init-packet)        | TCP Init        | Lets the server "acknowledge" tcp connections (Unknown)            |
 | [`0x07`](#0x07-extension-found-packet) | Extension Found | Sent when the client detects any modifications made to the game    |
 | [`0x08`](#0x08-to-respawn-packet)      | To Respawn      | Sent when the client leaves the death screen, and moves to respawn |
 | [`0x09`](#0x09-take-tank-packet)       | Take Tank       | Sent when the client wants to control another tank (Dom for ex)    |
