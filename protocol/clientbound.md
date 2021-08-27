@@ -56,7 +56,7 @@ reload()
 
 ## **`0x02` Compressed Packet**
 
-When a clientbound packet is big enough, the server sends you a compressed version of the packet instead. The compression algorithm used is called LZ4 and is explained on [Ticki's blog](https://ticki.github.io/blog/how-lz4-works/).
+When a clientbound packet is big enough, the server sends you a compressed version of the packet instead. The compression algorithm used is LZ4, and it is explained on [Ticki's blog](https://ticki.github.io/blog/how-lz4-works/).
 
 At the start of the packet there is a u32 specifying the final length of the decompressed packet, so you know the size of the buffer to allocate and can check at the end if there was an error while decompressing (though this should never happen)
 
