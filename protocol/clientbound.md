@@ -1,6 +1,6 @@
 # **Clientbound Packets**
 
-Also known as incoming, these packets, after being encoded, are sent from the server to the client. Most of these packets aren't too complex once you understand the basics of a reader, with the exception of the clientbound [`0x00`](#0x00-update-packet) packet.
+Also known as incoming packets, after being encoded, they are sent from the server to the client. Most of these packets aren't too complex once you understand the basics of a reader, with the exception of the clientbound [`0x00`](#0x00-update-packet) packet.
 
 For information on data types and encodings, see [`data.md`](/protocol/data.md)
 
@@ -33,7 +33,6 @@ Contains created/updated/deleted entities and current ingame time. There is too 
 
 Sent when the client's build (which is sent in the [`0x00` Init Packet](/protocol/serverbound.md#0x00-init-packet)) is not the same as the server's. The server sends the latest build, and when the client receives it, the page reloads. This packet is by nature unencoded, meaning its data is sent raw, unencoded. This is since if you have an invalid build you won't be able to decode packets properly.
 
-
 Format: 
 > `01 stringNT(new build)`
 
@@ -57,7 +56,7 @@ reload()
 
 ## **`0x02` Compressed Packet**
 
-When a clientbound packet is big enough, the server sends you a compressed version of the packet instead. The compression algorithm used is LZ4, it is explained on [Ticki's blog](https://ticki.github.io/blog/how-lz4-works/)
+When a clientbound packet is big enough, the server sends you a compressed version of the packet instead. The compression algorithm used is LZ4, and it is explained on [Ticki's blog](https://ticki.github.io/blog/how-lz4-works/).
 
 At the start of the packet there is a u32 specifying the final length of the decompressed packet, so you know the size of the buffer to allocate and can check at the end if there was an error while decompressing (though this should never happen)
 
