@@ -198,7 +198,7 @@ Format:
 
 ## **`0x0A` PoW Answer Packet**
 
-This packet is the response to the [`0x0B` PoW Challenge](/protocol/clientbound.md#0x0b-pow-challenge-packet) packet - after solving the Proof of Work challenge, the answer is sent.
+This packet is the response to the [`0x0B` PoW Challenge](/protocol/clientbound.md#0x0b-pow-challenge-packet) packet - after solving the Proof of Work challenge, the answer is sent. If the resulting answer is wrong and does not solve the given PoW prefix, the server will terminate the connection and ban/blacklist the client's ip from further communication.
 
 Format:
 > `0A stringNT(answer)`
@@ -207,7 +207,7 @@ Format:
 
 ## **`0x0B` JS Result Packet**
 
-This packet is the evaluated result of the [`0x0D` Int JS Challenge](/protocol/clientbound.md#0x0d-int-js-challenge-packet) packet. It sends the evaluation id and the result. In older builds, this packet could also be a response to `0x0C` JS String Challenge, which is now no longer fully existing; so this packet is able to encode any type of result, meaning that it could send a string or integer.
+This packet is the evaluated result of the [`0x0D` Int JS Challenge](/protocol/clientbound.md#0x0d-int-js-challenge-packet) packet. It sends the evaluation id and the result. The server will immediately close an existing connection incase the result is invalid (wrong result or the result does not match the given evaluation id). This does NOT ban the client's ip address from further reconnection to the same server. In older builds, this packet could also be a response to `0x0C` JS String Challenge, which is now no longer fully existing; so this packet is able to encode any type of result, meaning that it could send a string or integer.
 
 Format:
 > `0B vu(id) any/vu(result)`
