@@ -207,7 +207,7 @@ Format:
 
 ## **`0x0B` JS Result Packet**
 
-This packet is the evaluated result of the [`0x0D` Int JS Challenge](/protocol/clientbound.md#0x0d-int-js-challenge-packet) packet. It sends the evaluation id and the result. The server will immediately close an existing connection incase the result is invalid (wrong result or the result does not match the given evaluation id). This does NOT ban the client's ip address from further reconnection to the same server. In older builds, this packet could also be a response to `0x0C` JS String Challenge, which is now no longer fully existing; so this packet is able to encode any type of result, meaning that it could send a string or integer.
+This packet is the evaluated result of the [`0x0D` Int JS Challenge](/protocol/clientbound.md#0x0d-int-js-challenge-packet) packet. It sends the evaluation id and the result. The server will immediately close an existing connection in the case that the result is invalid (when the result does not match the expected response). This does NOT ban the client's ip address from further reconnection to the same server. In older builds, this packet could also be a response to `0x0C` JS String Challenge, which is now no longer fully existing; so this packet is able to encode any type of result, meaning that it could send a string or integer.
 
 Format:
 > `0B vu(id) any/vu(result)`
