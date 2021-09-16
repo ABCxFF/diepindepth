@@ -85,4 +85,4 @@ These are tables generated with PRNGs that are used to shuffle the content of pa
 
 ## Praise M28
 
-You'll notice that after parsing [`0x00` Update packets](./update.md), there are always a couple of seemingly random bytes at the end, unused by the actual parser. Well, when the first of these bytes is an odd integer, all the seeds used for clientbound shuffling are incremented by 28. We have called this process **Praise M28** accordingally.
+You'll notice that after parsing [`0x00` Update packets](./update.md), there are always a couple of seemingly random bytes at the end, unused by the actual parser. Well, when the first of these bytes is an odd integer, all the seeds used for clientbound decryption are incremented by 28. We have called this process **Praise M28** accordingally.
