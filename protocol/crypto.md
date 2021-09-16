@@ -1,41 +1,78 @@
-> For other information: [check out shädam's cool article](https://github.com/supahero1/diep.io/tree/master/working-with-diep) (shädam is cool) - it discusses packet encoding
-
 # Packet Encoding and Decoding
 
-Also known as shuffling/unshuffling, this encryption system is what annoys 80% of all the people who deal with Diep protocol. No one has fully reverse-engineered every part of the encryption system, but Shädam got close and was able to reverse-engineer (for the most part) packet opcode/header encodings, and content encodings. Some of his old code is visible in a repository on his account.
+Also known as shuffling/unshuffling, this encryption system is what used to annoy many of the people brave enough to attempt headless botting. We have fully reverse-engineered every part of the encryption system and will discuss it below.
 
-> Add some broad statements here
+There are 4 things you need to know to understand the system:
+1. Pseudo Random Number Generators
+2. Jump Tables (relating to Diep's cryptography)
+3. Xor Tables
+4. Praise M28
 
-There are 4 parts to packet encryption:
-1. Jump Table Generation
-2. Packet Header Encryption
-3. Packet Content Encryption
-4. Encryption Cycle Reset `(name change pending)`
+## Pseudo Random Number Generators
 
-## Jump Table Generation
+Pseudo random number generators are algorithms which generate sequences of numbers which seem random. For a more informative definition of a PRNG, check [Wikipedia](https://en.wikipedia.org/wiki/Pseudorandom_number_generator). Internal PRNGs within the game's wasm/memory are used to generate each packet's necessary values to encrypt or decrypt data. During each build, the seed and algorithm in each of the PRNGs used are modified slightly, that way they always seem random each build, but are actually quite predictable if you know what defines them.
 
-The jump table is an array of indexes, from 0 to 127 (inclusive), shuffled using the [Fisher Yates shuffle algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle), using a pseudo random number generator present within the game, who's seed changes every build. The following is an example of its generation in javascript:
+### The Three Types
+1. **Linear Congruential Generator**\
+   Shortened to LCG, this type of PRNG is probably the most well known as it is also used in Java's native [Random](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) API. A basic implementation is shown since I don't want to explain everything about it here. Do your own research ([here's a wikipedia link](https://en.wikipedia.org/wiki/Linear_congruential_generator))
 ```js
-const prng = new PRNG(SEED, A, B, C);
-const table = new Uint8Array(128).map((_, i) => i);
+class LCG extends PRNG {
+    constructor(seed, multiplier, increment, modulus) {
+        this.seed = seed;
+        // these defining factors are all big ints, so that calculation is precise (the seed is an integer though)
+        this._multiplier = multiplier;
+        this._increment = increment;
+        this._modulus = modulus;
+    }
+    next() {
+        const nextSeed = (BigInt(this.seed >>> 0) * this._multiplier + this._increment) % this._modulus;
 
-for (let i = 127; i >= 0; i--) {
-  const index = ((prng.next() >>> 0) % i) + 1;
-    
-  const temp = table[index];
-  table[index] = table[i];
-  table[i] = temp;
+        this.seed = Number(nextSeed & 0xFFFFFFFFn) | 0; // safely convert to a signed integer
+
+        return this.seed;
+    }
 }
 ```
+\
+2. **Xor Shift**\
+   This type of PRNG XORs the seed by SHIFTed versions of itself every new generation. A basic implementation is shown, and [here's a wikipedia link](https://en.wikipedia.org/wiki/Xorshift). Do your own research
+```js
+class XorShift extends PRNG {
+    constructor(seed, a, b, c) {
+        this.seed = seed;
 
-## Packet Header Encryption
+        this._a = a;
+        this._b = b;
+        this._c = c;
+	}
+    next() {
+        this.seed ^= this.seed << this._a;
+        this.seed ^= this.seed >>> this._b;
+        this.seed ^= this.seed << this._c;
 
-Headers of packets are encoded using a table of jumps stored in memory. First, a pseudo random number generator within the game determines how many jumps to jump from, to get the encoded header.
+        return this.seed;
+    }
+}
+```
+\
+3. **Triple LCG**\
+   This type of PRNG isn't standard (or wasn't found), but it is called the Triple LCG as it is 3 LCG's combined into one pseudo random number generator. As always, do your own research, but a code sample shown below
+```js
+class TripleLCG extends PRNG {
+    constructor(a, b, c) {
+        this.lcgA = new LCG(a.seed, a.multiplier, a.increment, 0x100000000n);
+        this.lcgB = new LCG(b.seed, b.multiplier, b.increment, 0x100000000n);
+        this.lcgC = new LCG(c.seed, c.multiplier, c.increment, 0x100000000n);
+	  }
 
-## Packet Content Encryption
+    next() {
+        const a = this.lcgA.next();
+        const b = this.lcgB.next();
+        const c = this.lcgC.next();
 
-> the *n* length xor tables, how they're generated
+        return (a + b + c) | 0;
+    }
+}
+```  
 
-## Encryption Cycle Reset
-
-> Not sure
+TODO
