@@ -63,7 +63,7 @@ class TripleLCG extends PRNG {
         this.lcgA = new LCG(a.seed, a.multiplier, a.increment, 0x100000000n);
         this.lcgB = new LCG(b.seed, b.multiplier, b.increment, 0x100000000n);
         this.lcgC = new LCG(c.seed, c.multiplier, c.increment, 0x100000000n);
-	  }
+    }
 
     next() {
         const a = this.lcgA.next();
