@@ -4,8 +4,8 @@ Also known as shuffling/unshuffling, this encryption system is what used to anno
 
 There are 4 things you need to know to understand the system:
 1. Pseudo Random Number Generators
-2. Jump Tables (relating to Diep's cryptography)
-3. Xor Tables
+2. Header Jump Tables
+3. Content Xor Tables
 4. Praise M28
 
 ## Pseudo Random Number Generators
@@ -75,4 +75,14 @@ class TripleLCG extends PRNG {
 }
 ```  
 
-TODO
+## Header Jump Tables
+
+These are tables generated with PRNGs that are used to shuffle the headers of packets. The generation of a jump table is fairly simple, although something in the algorithm we reversed and will describe is off - unsure yet what exactly, but I will not investigate.
+
+## Content Xor Tables
+
+These are tables generated with PRNGs that are used to shuffle the content of packets. The generation of a jump table is simple and fully understood, and its application onto the packet content is even simpler.
+
+## Praise M28
+
+You'll notice that after parsing [`0x00` Update packets](./update.md), there are always a couple of seemingly random bytes at the end, unused by the actual parser. Well, when the first of these bytes is an odd integer, all the seeds used for clientbound shuffling are incremented by 28. We have called this process **Praise M28** accordingally.
