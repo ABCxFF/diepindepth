@@ -77,7 +77,28 @@ class TripleLCG extends PRNG {
 
 ## Header Jump Tables
 
-These are tables generated with PRNGs that are used to shuffle the headers of packets. The generation of a jump table is fairly simple, although something in the algorithm we reversed and will describe is off - unsure yet what exactly, but I will not investigate.
+These are arrays of 128 bytes generated with PRNGs that are used to shuffle the headers of packets. In this section we will discuss how to generate these tables and how to use apply them onto incoming / outgoing headers.
+
+The generation of a jump table is fairly simple, although something in the algorithm we reversed and will describe is off - unsure yet what exactly, but I will not investigate. First the client will generate an uint8 array of length 128, where each value is its index. Then the client will shuffle the array using [Fisher Yates shuffle algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) and a PRNG. This PRNG is called the `jumpTableShuffler`, and its PRNG type as well as algorithm changes every new build. The result of this shuffling is the encryption jump table, and the decryption jump table is just an inverse of `ƒ(i) = table[i]`. A code sample is shown.
+```js
+function generateJumpTable() {
+    const jumpTableShuffler = new PRNG(...);
+    const table = new Uint8Array(128).map((_, i) => i);
+    
+    for (let i = 127; i >= 0; i--) {
+        const index = ((jumpTableShuffler.next() >>> 0) % i) + 1;
+        
+        const temp = table[index];
+        table[index] = table[i];
+        table[i] = temp;
+    }
+    
+    return {
+        encryptionTable: table,
+        decryptionTable: table.map((n, i, l) => l.indexOf(n))
+    }
+}
+```
 
 ## Content Xor Tables
 
