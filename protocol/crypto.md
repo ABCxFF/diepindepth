@@ -99,6 +99,21 @@ function generateJumpTable() {
     }
 }
 ```
+\
+To apply a jump table on a packet header (to encrypt a packet header), you must jump from index to index a certain number of times, then return the final jump. Another internal PRNG, which we've name `jumpCount`, is made (one for encryption and decryption) to determine the number of times it jumps. A full example of such jumping is shown.
+```js
+// This example is only encryption, pretty obvious how to change to decryption though.
+const { encryptionTable } = generateJumpTable();
+const jumpCountPRNG = new PRNG(...);
+function encryptHeader(header) {
+    const count = (jumpCountPRNG.next() >>> 0) % 16;
+    let position = header;
+
+    for (let i = 0; i <= count; i++) position = encryptionTable[position];
+
+    return position;
+}
+```
 
 ## Content Xor Tables
 
