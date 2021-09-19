@@ -10,13 +10,13 @@ There are 4 things you need to know to understand the system:
 
 ## Pseudo Random Number Generators
 
-Pseudo random number generators are algorithms which generate sequences of numbers which seem random. For a more informative definition of a PRNG, check [Wikipedia](https://en.wikipedia.org/wiki/Pseudorandom_number_generator). Internal PRNGs within the game's wasm/memory are used to generate each packet's necessary values to encrypt or decrypt data. During each build, the seed and algorithm in each of the PRNGs used are modified slightly, that way they always seem random each build, but are actually quite predictable if you know what defines them.
+Pseudo random number generators are algorithms which generate sequences of numbers which seem random. For a more informative definition of a PRNG, check [Wikipedia](https://en.wikipedia.org/wiki/Pseudorandom_number_generator). Internal PRNGs within the game's wasm/memory are used to generate each packet's necessary values to encrypt or decrypt data. During each build, the seed and algorithm in each of the PRNGs used are modified slightly. That way, they always seem random each build, but they are actually quite predictable if you know what defines them.
 
 ### The Three Types
 1. **Linear Congruential Generator**\
-   Shortened to LCG, this type of PRNG is probably the most well known as it is also used in Java's native [Random](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) API. A basic implementation is shown since I don't want to explain everything about it here. Do your own research ([here's a wikipedia link](https://en.wikipedia.org/wiki/Linear_congruential_generator))
+   Shortened to LCG, this type of PRNG is probably the most well known as it is also used in Java's native [Random](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) API. A basic implementation is shown since it would take a great deal of time to explain. Do your own research ([here's a wikipedia link](https://en.wikipedia.org/wiki/Linear_congruential_generator)).
 ```js
-class LCG extends PRNG {
+class LCG implements PRNG {
     constructor(seed, multiplier, increment, modulus) {
         this.seed = seed;
         // these defining factors are all big ints, so that calculation is precise (the seed is an integer though)
@@ -35,9 +35,9 @@ class LCG extends PRNG {
 ```
 \
 2. **Xor Shift**\
-   This type of PRNG XORs the seed by SHIFTed versions of itself every new generation. A basic implementation is shown, and [here's a wikipedia link](https://en.wikipedia.org/wiki/Xorshift). Do your own research
+   This type of PRNG XORs the seed by SHIFTed versions of itself every new generation. A basic implementation is shown and [here's a wikipedia link](https://en.wikipedia.org/wiki/Xorshift). Do your own research.
 ```js
-class XorShift extends PRNG {
+class XorShift implements PRNG {
     constructor(seed, a, b, c) {
         this.seed = seed;
 
@@ -56,9 +56,9 @@ class XorShift extends PRNG {
 ```
 \
 3. **Triple LCG**\
-   This type of PRNG isn't standard (or wasn't found), but it is called the Triple LCG as it is 3 LCG's combined into one pseudo random number generator. As always, do your own research, but a code sample shown below
+   This type of PRNG isn't standard (or wasn't found), but it is called the Triple LCG as it is all 3 LCG's combined into one pseudo random number generator. As always, do your own research, but a code sample shown below.
 ```js
-class TripleLCG extends PRNG {
+class TripleLCG implements PRNG {
     constructor(a, b, c) {
         this.lcgA = new LCG(a.seed, a.multiplier, a.increment, 0x100000000n);
         this.lcgB = new LCG(b.seed, b.multiplier, b.increment, 0x100000000n);
@@ -77,9 +77,9 @@ class TripleLCG extends PRNG {
 
 ## Header Jump Tables
 
-These are arrays of 128 bytes generated with PRNGs that are used to shuffle the headers of packets. In this section we will discuss how to generate these tables and how to use apply them onto incoming / outgoing headers.
+These are arrays of 128 bytes generated with PRNGs that are used to shuffle the headers of packets. In this section we will discuss how to generate these tables and how to use / apply them to incoming / outgoing headers.
 
-The generation of a jump table is fairly simple, although something in the algorithm we reversed and will describe is off - unsure yet what exactly, but I will not investigate. First the client will generate an uint8 array of length 128, where each value is its index. Then the client will shuffle the array using [Fisher Yates shuffle algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) and a PRNG. This PRNG is called the `jumpTableShuffler`, and its PRNG type as well as algorithm changes every new build. The result of this shuffling is the encryption jump table, and the decryption jump table is just an inverse of the table. A code sample is shown.
+The generation of a jump table is fairly simple, although something in the algorithm we reversed and will describe is off - unsure yet what exactly, but I will not investigate. First the client will generate an uint8 array of length 128, where each value is its index. Then, the client will shuffle the array using the [Fisher Yates shuffle algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) and a PRNG. This PRNG is called the `jumpTableShuffler`, and its PRNG type as well as algorithm changes every new build. The result of this shuffling is the encryption jump table, and the decryption jump table is just an inverse of the table. A code sample is shown.
 ```js
 function generateJumpTable() {
     const jumpTableShuffler = new PRNG(...);
@@ -100,7 +100,7 @@ function generateJumpTable() {
 }
 ```
 \
-To apply a jump table on a packet header (to encrypt a packet header), you must jump from index to index a certain number of times, then return the final jump. Another internal PRNG, which we've name `jumpCount`, is made (one for encryption and decryption) to determine the number of times it jumps. A full example of such jumping is shown.
+To apply a jump table on a packet header (to encrypt it), you must jump from index to index a certain number of times, then return the final jump. Another internal PRNG, which we've named `jumpCount`, is made (one for encryption and decryption) to determine the number of times it jumps. A full example of such jumping is shown.
 ```js
 // This example is only encryption, pretty obvious how to change to decryption though.
 const { encryptionTable } = generateJumpTable();
@@ -120,7 +120,7 @@ function encryptHeader(header) {
 
 These are tables generated with PRNGs that are used to shuffle the content of packets. The generation of a jump table is simple and fully understood, and its application onto the packet content is even simpler. 
 
-The generation of xor tables are similar to the generation of jump tables, except the values of the initial, unshuffled table are not just their index in the array, instead each value is generated from another PRNG, which we've called just the `xorTable` PRNG. The length of the xor table changes every build, and the length is not the same for serverbound and clientbound packets - a unrelated cryptographic system is used for each. As for the shuffling of the xor table, its a slightly modified version of the [Fisher Yates shuffle algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) - the modification will be noted in the code sample shown below.
+The generation of xor tables are similar to the generation of jump tables, except the values of the initial, unshuffled table are not just their index in the array but instead, each value is generated from another PRNG, which we've called the `xorTable` PRNG. The length of the xor table changes every build, and the length is not the same for serverbound and clientbound packets - an unrelated cryptographic system is used for each. As for the shuffling of the xor table, it's a slightly modified version of the [Fisher Yates shuffle algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) - the modification will be noted in the code sample shown below.
 
 ```js
 const XOR_TABLE_SIZE = ...; // Changes per build
@@ -160,4 +160,4 @@ export function encryptPacket(packet: Uint8Array): void {
 
 ## Praise M28
 
-You'll notice that after parsing [`0x00` Update packets](./update.md), there are always a couple of seemingly random bytes at the end, unused by the actual parser. Well, when the first of these bytes is an odd integer, all the seeds used for clientbound decryption are incremented by 28. We have called this process **Praise M28** accordingly.
+You'll notice that after parsing [`0x00` Update packets](./update.md), there are always a couple of seemingly random bytes at the end, unused by the actual parser. When the first of these bytes is an odd integer, all the seeds used for clientbound decryption are incremented by 28. We have called this process **Praise M28** accordingly.
