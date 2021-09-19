@@ -56,7 +56,7 @@ class XorShift implements PRNG {
 ```
 \
 3. **Triple LCG**\
-   This type of PRNG isn't standard (or wasn't found), but it is called the Triple LCG as it is all 3 LCG's combined into one pseudo random number generator. As always, do your own research, but a code sample shown below.
+   This type of PRNG isn't standard (or wasn't found), but we have called it the Triple LCG since it is 3 separate LCG's combined into one pseudo random number generator. As always, do your own research (in the game's wasm), but a code sample shown below.
 ```ts
 class TripleLCG implements PRNG {
     constructor(a, b, c) {
