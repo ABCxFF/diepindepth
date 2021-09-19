@@ -15,7 +15,7 @@ Pseudo random number generators are algorithms which generate sequences of numbe
 ### The Three Types
 1. **Linear Congruential Generator**\
    Shortened to LCG, this type of PRNG is probably the most well known as it is also used in Java's native [Random](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) API. A basic implementation is shown since it would take a great deal of time to explain. Do your own research ([here's a wikipedia link](https://en.wikipedia.org/wiki/Linear_congruential_generator)).
-```js
+```ts
 class LCG implements PRNG {
     constructor(seed, multiplier, increment, modulus) {
         this.seed = seed;
@@ -36,7 +36,7 @@ class LCG implements PRNG {
 \
 2. **Xor Shift**\
    This type of PRNG XORs the seed by SHIFTed versions of itself every new generation. A basic implementation is shown and [here's a wikipedia link](https://en.wikipedia.org/wiki/Xorshift). Do your own research.
-```js
+```ts
 class XorShift implements PRNG {
     constructor(seed, a, b, c) {
         this.seed = seed;
@@ -57,7 +57,7 @@ class XorShift implements PRNG {
 \
 3. **Triple LCG**\
    This type of PRNG isn't standard (or wasn't found), but it is called the Triple LCG as it is all 3 LCG's combined into one pseudo random number generator. As always, do your own research, but a code sample shown below.
-```js
+```ts
 class TripleLCG implements PRNG {
     constructor(a, b, c) {
         this.lcgA = new LCG(a.seed, a.multiplier, a.increment, 0x100000000n);
