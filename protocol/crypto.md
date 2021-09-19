@@ -41,6 +41,7 @@ class XorShift implements PRNG {
     constructor(seed, a, b, c) {
         this.seed = seed;
 
+        // the actual shifts
         this._a = a;
         this._b = b;
         this._c = c;
