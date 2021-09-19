@@ -105,6 +105,7 @@ To apply a jump table on a packet header (to encrypt a packet header), you must 
 // This example is only encryption, pretty obvious how to change to decryption though.
 const { encryptionTable } = generateJumpTable();
 const jumpCountPRNG = new PRNG(...);
+
 function encryptHeader(header) {
     const count = (jumpCountPRNG.next() >>> 0) % 16;
     let position = header;
@@ -117,7 +118,45 @@ function encryptHeader(header) {
 
 ## Content Xor Tables
 
-These are tables generated with PRNGs that are used to shuffle the content of packets. The generation of a jump table is simple and fully understood, and its application onto the packet content is even simpler.
+These are tables generated with PRNGs that are used to shuffle the content of packets. The generation of a jump table is simple and fully understood, and its application onto the packet content is even simpler. 
+
+The generation of xor tables are similar to the generation of jump tables, except the values of the initial, unshuffled table are not just their index in the array, instead each value is generated from another PRNG, which we've called just the `xorTable` PRNG. The length of the xor table changes every build, and the length is not the same for serverbound and clientbound packets - a unrelated cryptographic system is used for each. As for the shuffling of the xor table, its a slightly modified version of the [Fisher Yates shuffle algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) - the modification will be noted in the code sample shown below.
+
+```js
+const XOR_TABLE_SIZE = ...; // Changes per build
+const xorTablePRNG = new PRNG(...);
+const xorTableShuffler = new PRNG(...);
+
+function generateXorTable() {
+    const table = new Uint8Array(XOR_TABLE_SIZE).map((_, i) => xorTablePRNG.next());
+    
+    for (let i = 127; i >= 0; i--) {
+        // Instead of `(prandom val % i) + 1`, it is `prandom val % (i + 1)` (the modification)
+        const index = (jumpTableShuffler.next() >>> 0) % (i + 1);
+        
+        const temp = table[index];
+        table[index] = table[i];
+        table[i] = temp;
+    }
+    
+    // Due to how the table is applied, the same table can be used for both decryption and encryption.
+    // Read the next passage for more information.
+    return table;
+}
+```
+\
+All you need to do to apply an xor table to a packet is XOR each byte in the xor table with the corresponding byte in the packet, excluding the header. See below.
+
+```ts
+// This is an abstract function, we will ignore the fact that
+// certain packets are not encoded (Incoming 0x01, Outgoing 0x00).
+export function encryptPacket(packet: Uint8Array): void {
+    packet[0] = encryptHeader(packet[0]);
+
+    const xorTable = generateXorTable();
+    for (let i = 1; i < packet.length; i++) packet[i] ^= xorTable[i % XOR_TABLE_SIZE];
+}
+```
 
 ## Praise M28
 
