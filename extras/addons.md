@@ -116,11 +116,11 @@ The Auto Smasher Addon has both a Guard Addon, and an Auto Turret.
 
 Auto Turret is a mounted turret controlled by AI. Its shape was only somewhat able to be reduced from the memory.
 
-| Key                | Value  | Desc                                                                    |
-| ------------------ | ------ | ----------------------------------------------------------------------- |
-| Turret Size Ratio  | `1.1`  | The length (longer side) of the barrel is `1.1x` the radius of the tank |
-| Turret Width Ratio | `0.56` | The width of the turret is `0.56x` the radius of the tank               |
-| Turret Base Ratio  | `0.5`  | The radius of the base is half the radius of the tank                   |
+| Key                | Value  | Desc                                                                           |
+| ------------------ | ------ | ------------------------------------------------------------------------------ |
+| Turret Width Ratio | `1.1`  | The length (longer side) of the turret barrel is `1.1x` the radius of the tank |
+| Turret Size Ratio  | `0.56` | The size of the turret barrel is `0.56x` the radius of the tank                |
+| Turret Base Ratio  | `0.5`  | The radius of the base is half the radius of the tank                          |
 
 ## Auto 5 Addon
 
@@ -133,3 +133,10 @@ Auto Turret is a mounted turret controlled by AI. Its shape was only somewhat ab
 ## Gunner Dominator Pronounced Addon
 
 ## Launcher Addon
+
+Launcher is a smaller trapezoid shape below the front of a tank - see the below picture. It is added before the barrel. <img width="256" alt="lancher" src="https://user-images.githubusercontent.com/79597906/134366650-58c537cc-816a-4e4b-bf9d-0c97310b0a16.png"> (Barrel has been made opaque for viewing purposes).
+
+| Key                  | Value   | Desc                                                                      |
+| -------------------- | ------- | ------------------------------------------------------------------------- |
+| Launcher Width Ratio | `1.3`   | The length (longer side) of the launcher is `1.1x` the radius of the tank |
+| Launcher Size Ratio  | `0.672` | The width of the launcher is `0.56x` the radius of the tank               |
