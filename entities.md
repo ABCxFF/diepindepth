@@ -18,7 +18,7 @@ inline void Encode(BinData &out) const {
 }
 ```
 
-> Disclaimer: The names and labels (except the entity <id, hash> system) we came up for entity related stuff are not from the game, so if you understand these concepts easier with another name, by all means, use a name that helps you understand this stuff
+> Disclaimer: The names and labels (except the entity <id, hash> system) we came up for entity related stuff are not from the game, so if you understand these concepts easier with another name, by all means, use a name that helps you understand this stuff.
 
 ---
 
