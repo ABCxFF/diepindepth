@@ -4938,7 +4938,7 @@
     "speed": 1,
     "maxHealth": 6000,
     "preAddon": "dombase",
-    "postAddon": "destroyerdompronounced",
+    "postAddon": "dompronounced",
     "sides": 1,
     "borderWidth": 15,
     "barrels": [
@@ -5012,7 +5012,7 @@
     "speed": 1,
     "maxHealth": 6000,
     "preAddon": "dombase",
-    "postAddon": "gunnerdompronounced",
+    "postAddon": "dompronounced",
     "sides": 1,
     "borderWidth": 15,
     "barrels": [
