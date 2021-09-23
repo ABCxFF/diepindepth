@@ -1,4 +1,4 @@
-> DISCLAIMER: This information is slightly incorrect as of September 23 (build hash 251c8db2f32f21f41739e5b4de17893e73fb2929)
+> **DISCLAIMER**: This information is slightly incorrect as of September 23 (build hash 251c8db2f32f21f41739e5b4de17893e73fb2929).\
 > As of now there is one new PRNG which is not mentioned in this document. Further investigation will not be attempted
 
 # Packet Encoding and Decoding
