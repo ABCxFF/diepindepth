@@ -124,7 +124,11 @@ Auto Turret is a mounted turret controlled by AI. Its shape was only somewhat ab
 
 ## Auto 5 Addon
 
+The Auto 5 addon creates `5` auto turrets equidistant from the center of the tank's body. Distance is approximately `0.8` - not yet confirmed.
+
 ## Auto 3 Addon
+
+The Auto 3 addon creates `3` auto turrets equidistant from the center of the tank's body. Distance is approximately `0.8` - not yet confirmed.
 
 ## Pronounced Addon
 
