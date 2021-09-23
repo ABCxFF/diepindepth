@@ -21,8 +21,7 @@ Raw values and other information about addons in tank definitions.
   - [Auto 5 Addon](#auto-5-addon)
   - [Auto 3 Addon](#auto-3-addon)
   - [Pronounced Addon](#pronounced-addon)
-  - [Destroyer Dominator Pronounced Addon](#destroyer-dominator-pronounced-addon)
-  - [Gunner Dominator Pronounced Addon](#gunner-dominator-pronounced-addon)
+  - [Pronounced Dominator Addon](#pronounced-dominator-addon)
   - [Launcher Addon](#launcher-addon)
 
 ## Dominator Base Addon
@@ -132,9 +131,7 @@ The Auto 3 addon creates `3` auto turrets equidistant from the center of the tan
 
 ## Pronounced Addon
 
-## Destroyer Dominator Pronounced Addon
-
-## Gunner Dominator Pronounced Addon
+## Pronounced Dominator Addon
 
 ## Launcher Addon
 
