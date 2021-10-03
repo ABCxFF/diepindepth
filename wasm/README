@@ -1,0 +1,4 @@
+WASM
+==========
+
+Diep's wasm is C++ compiled to wasm and javascript with LLVM and Binaryen (emscripten).
