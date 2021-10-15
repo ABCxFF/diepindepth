@@ -13,4 +13,4 @@ This folder will serve as a source of information relating to LLVM's way of orga
 > ![memtoscale](https://user-images.githubusercontent.com/79597906/137538880-907983cc-54c0-463c-ad05-a45b5e4fdb55.png)
 > To scale view
 
-### Structures
+## Structures
