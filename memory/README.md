@@ -8,7 +8,7 @@ LLVM's memory is layed out similarly to how a real computer lays out its program
 
 > TODO: Make links point to header3s (with horizontal rules) down below
 
-1. The Heap (`#heap`)\
+1. **The Heap** (`#heap`)\
   Stores all dynamically allocated data. Anytime the program calls `malloc()` (or another native dynamic allocation function), the allocation is stored somewhere in this range.
 2. **The Stack** (`#stack`)\
   Function's variables are stored in scopes pushed onto the stack. Globals are also at the bottom of the stack.
