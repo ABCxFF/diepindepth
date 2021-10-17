@@ -75,7 +75,7 @@ class PacketHook extends EventTarget {
           OP_GET_LOCAL, 1,
           OP_GET_LOCAL, 2,
           OP_CALL, ...VarUint32ToArray(mainHook.i32()),
-              OP_IF, VALUE_TYPE_BLOCK,
+          OP_IF, VALUE_TYPE_BLOCK,
               OP_RETURN,
           OP_END,
           ...bytes
@@ -86,7 +86,7 @@ class PacketHook extends EventTarget {
           OP_GET_LOCAL, 0,
           OP_GET_LOCAL, 1,
           OP_CALL, ...VarUint32ToArray(mainHook.i32()),
-              OP_IF, VALUE_TYPE_BLOCK,
+          OP_IF, VALUE_TYPE_BLOCK,
               OP_RETURN,
           OP_END,
           ...bytes
