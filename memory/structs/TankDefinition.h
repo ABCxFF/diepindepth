@@ -42,7 +42,9 @@ struct TankDefinition
   float field_factor; // @44
 
   // For all tanks it is set to one, except for mothership which is 0.01
-  float movement_speed; // @48
+  // - Used in serverside knockback calculation
+  // - Name pending
+  float knockback_factor; // @48
   
   // Bools are one byte
   // For tanks that have a square body
