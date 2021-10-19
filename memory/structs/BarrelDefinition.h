@@ -45,10 +45,10 @@ struct BarrelDefinition
   // - You can think of it lke ['bullet', 'drone', 'trap'][bullet_type i32 thing]
   int32_t bullet_type; // @1C
   
-  // Kinda weird
-  // - Seems to default to 1
-  // - Is low and lower for stronger(?) bullets
-  int32_t _unknown0; // @20
+  // Knockback Factor
+  // - Name pending
+  // - Used to determine knockback applied to the bullet after collision
+  int32_t knockback_factor; // @20
 
   // Bullet Speed
   // - Part of bullet speed formulas
@@ -68,7 +68,7 @@ struct BarrelDefinition
   // - Max Health for level 0
   float bullet_base_health; // @30
   
-  // Unknown, but for every tank this value is 1
+  // Unknown, but for every barrel this value is 1
   int32_t _unknown1; // @34
   
   // No idea
