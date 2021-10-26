@@ -56,15 +56,17 @@ struct TankDefinition
   // Not present in any tanks
   bool _unused_flag; // @4F
 
-  float _unknown1; // @50 - Always set to 0.23, with exception to landmine and manager, which is set to 0
+  // The minimum amount of movement required to trigger the uncloaking (increase opacity by visibility_rate)
+  //  - Always set to 0.23, with exception to landmine and manager, which is set to 0
+  float min_movement; // @50
   // The opacity increase per tick while moving (for tanks that go invisible)
   // - 0.16 for Landmine
   // - 0.08 for Manager and Stalker
-  float visibilityRate; // @54 - Always 0.8, except for landmine which is 1.6
+  float visibility_rate; // @54 - Always 0.8, except for landmine which is 1.6
   // The opacity decrease per tick
   // - 0.003 for Landmine
   // - 0.03 for Stalker and Manager
-  float invisibilityRate; // @58
+  float invisibility_rate; // @58
 
   // The following booleans are one byte in size
   // Unused boolean, always set to true
