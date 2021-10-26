@@ -57,12 +57,18 @@ struct TankDefinition
   bool _unused_flag; // @4F
 
   float _unknown1; // @50 - Always set to 0.23, with exception to landmine and manager, which is set to 0
-  float _unknown2; // @54 - Always 0.8, except for landmine which is 1.6
-  float _unknown3; // @58 - Always 0.03, (landmine is interestingly expressed differently in float form though)
+  // The opacity increase per tick while moving (for tanks that go invisible)
+  // - 1.6 for Landmine
+  // - 0.8 for Manager and Stalker
+  float visibilityRate; // @54 - Always 0.8, except for landmine which is 1.6
+  // The opacity decrease per tick
+  // - 0.003 for Landmine
+  // - 0.03 for Stalker and Manager
+  float invisibilityRate; // @58
 
   // The following booleans are one byte in size
   // Unused boolean, always set to true
-  bool _unknown4; // @5C
+  bool _unknown2; // @5C
   // The following is only set for mothership, the assumption is that it lets the game know the entity has 16 sides
   bool is_hexadecagon; // @5D
   // The following is only set for predator, the assumption is that it allows for fov extending
