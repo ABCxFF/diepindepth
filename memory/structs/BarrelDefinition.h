@@ -48,7 +48,7 @@ struct BarrelDefinition
   // Knockback Factor
   // - Name pending
   // - Used to determine knockback applied to the bullet after collision
-  int32_t knockback_factor; // @20
+  float knockback_factor; // @20
 
   // Bullet Speed
   // - Part of bullet speed formulas
