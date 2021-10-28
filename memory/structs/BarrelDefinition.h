@@ -71,8 +71,9 @@ struct BarrelDefinition
   // Unknown, but for every barrel this value is 1
   int32_t _unknown1; // @34
   
-  // No idea
-  int32_t _unknown2; // @38
+  // Size (in relation to the barrel) of the bullet (or other) shot out.
+  // Smaller for predator for example
+  float bullet_size_ratio; // @38
  
   // Trapezoidal Face Dir
   // - Also known as `shootingAngle`
