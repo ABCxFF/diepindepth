@@ -50,10 +50,9 @@ struct BarrelDefinition
   // - Used to determine knockback applied to the bullet after collision
   float knockback_factor; // @20
 
-  // Damage Factor
-  // - Name pending
-  // - Used to determine knockback applied to the other entity after collision
-  float damage_factor; // @24
+  // Bullet Speed
+  // - Part of bullet speed formulas
+  float bullet_speed; // @24
   
   // Max Drones
   // - Only useful for drone tanks
