@@ -5550,7 +5550,7 @@
         "speed": 1,
         "maxHealth": 6000,
         "preAddon": "dombase",
-        "postAddon": "domepronounced",
+        "postAddon": "dompronounced",
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
