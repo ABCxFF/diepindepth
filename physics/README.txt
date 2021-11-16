@@ -59,7 +59,7 @@ each tick. The following formula defines the movement of an entit
 y which was previously moving at the speed of 10du/t after n tick
 s, where n ≥ 0.
 
-ƒ(n) = 10 * 0.9^n
+ƒ(n) = 10 * 0.9^n (du/t)
 
 Friction is constant and is applied before the first physics calc
 ulation in a tick.
@@ -79,14 +79,14 @@ Base Acceleration = A_0
 Movement Speed Stat = m_s
 Level = l
 
-A_0 = 2.55 * (1.07^m_s) / 1.015^(l-1)
+A_0 = 2.55 * (1.07^m_s) / 1.015^(l-1) (du/t)
 
 §3.3 Max Speed Calculation
 
 After opening the desmos graph above, you will see that the equat
 ion for entity speed with A acceleration after n ticks is:
 
-ƒ(n) = 10 * A * (1 - 0.9^n)
+ƒ(n) = 10 * A * (1 - 0.9^n) (du/t)
 
 It is very easy, after looking at this formula, to see that as pa
 rameter n approaches infinity, the result of the function will ge
@@ -107,19 +107,93 @@ initial speed of a bullet is 30du/t + the bullet's base accelerat
 ion max speed (§3.3). See below for the formula for a bullet's ba
 se acceleration:
 
-Bullet Acceleration = A
+Bullet Acceleration = b_A
 Bullet Speed Stat = b_s
-Bullet Definition Speed (see extras/tankdefs.js) = B_S
+Bullet Definition Speed (see /extras/tankdefs.js) = B_S
 
-A = (2 + b_s * 0.3) * B_S
+b_A = (2 + b_s * 0.3) * B_S (du/t)
 
-and so bullet initial speed is equal to A * 10 + 30.
+and so bullet initial speed is equal to A * 10 + 30 (du/t).
 
 The bullet acceleration and initial speed is present in all proje
-ctiles, with Traps being an exception (see §3.5.2).
+ctiles, with Traps being an exception (see §3.5.2). In Drones, th
+e bullet acceleration and initial speed are used to determine spe
+ed the drone travels at each direction.
 
 §3.5.2 Trap Speed
 
 Traps are just bullets, but they have no base acceleration. Becau
 se of that, they stop shortly after they are shot.
 
+§3.6 Recoil
+
+Recoil is the acceleration applied to a tank after it shoots a bu
+llet. Recoil's direction is the opposite of the barrel's angle, a
+nd the actual acceleration applied at that angle is equal to this
+equation:
+
+Bullet Definition Recoil (see /extras/tankdefs.js) = B_R
+Bullet Recoil (Acceleration) = b_R
+
+b_R = 2 * B_R (t/s)
+
+————————————————————————— §4 Knockback ——————————————————————————
+
+§4.1 General Knockback
+
+There are two properties that determine the knockback an entity r
+eceives after a collision. We have named them `pushFactor` and `a
+bsorbtionFactor`. The knockback applied to an entity is simple.
+
+Entity1's absorbtionFactor = e1_aF
+Entity2's pushFactor = e2_pF
+Entity1's Knockback Receival (Acceleration) = e1_A
+
+e1_A = e_aF * e2_pF (t/s)
+
+Where e1_A is the knockback in form of acceleration applied to En
+tity1 after colliding with Entity2. See §4.3 for a list of entiti
+es along with their respective pushFactor and absorbtionFactor.
+
+§4.2 Maze Wall Knockback
+
+Haven't fully looked into yet.
+
+§4.3 Entity pushFactor and absorbtionFactor values
+
+§4.3.1 Constants
+
+— Entity "Type" ———————————: pushFactor ———: absorbtionFactor ———
+ default                   : 8.0           : 1.0                  
+ Mothership (tank too)     : 8.0           : 0.01                 
+ Bosses                    : 8.0           : 0.01                 
+ Arena Closers             : 8.0           : 0.0                  
+ Maze Walls                : 2.0           : 0.0                  
+ Crasher (small)           : 12.0          : 2.0                  
+ Crasher (large)           : 12.0          : 0.1                  
+ Pentagon                  : 11.0          : 0.5                  
+ Alpha Pentagon            : 11.0          : 0.05                 
+ Drone (factory+necro too) : 4.0           :                      
+———————————————————————————:———————————————:—————————————————————
+
+§4.3.2 Bullet Factors
+
+Bullet Damage Stat = b_DS
+Bullet Damage (see /extras/tankdefs.js) = B_D
+Bullet Absorbtion Factor (see /extras/tankdefs.js) = B_aF
+
+pushFactor = (7 / 3 + b_DS) * B_D
+absorbtionFactor = B_aF
+
+Absorbtion factor is almost always 1 except for a couple of speci
+al cases. 
+
+——————————————————————————— §5 Damage ———————————————————————————
+
+———————————————————————————— §6 Misc ————————————————————————————
+
+$6.1 Barrel Reload
+
+§6.2 Bullet Life Length
+
+§6.3 Death Animation
