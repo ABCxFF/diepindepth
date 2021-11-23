@@ -12,17 +12,17 @@ struct AbstractEntity {
     // - points to itself
     struct AbstractEntity* self; // @00
 
-    // Total Entity Count
-    // - Number of all entities (not just in a specific field group)
-    int32_t* entity_count; // @04
+    // Linked List
+    // - Pointers to the double linked list which contains all entities.
+    struct DoubleLinkedList<struct AbstractEntity>* entity_list; // @04
 
     // Prev Ent Pointer @08
-    // - Points to the prev entity received, or something like that
+    // - Points to the previous entity in the double linked list.
     struct AbstractEntity* prev_elem; // @08
 
 
     // Next Ent Pointer @0C
-    // - Points to the next entity received, or something like that
+    // - Points to the next entity in the double linked list.
     struct AbstractEntity* next_elem; // @0C
 
     //** Maybe Empty? Section **//
@@ -45,8 +45,8 @@ struct AbstractEntity {
     // - points to this entity
     struct AbstractEntity* self_ptr3; // @30
 
-    // Unknown value
-    uint16_t unknown1; // @34
+    // Connection ID, not fully understood but it lets the wasm know which socket this entity was defined by.
+    uint16_t connection_id; // @34
     // Entity id, part of the <id, hash> representation system
     uint16_t id; // @36
     // Entity hash, part of the <id, hash> representation system
@@ -55,7 +55,7 @@ struct AbstractEntity {
 
 
 
-    // Pretty sure this is per client, not server. The emscripten_get_now of when it was created
+    // The emscripten_get_now (performance.now()) of when the entity was received
     double entity_creation_time; // @40
 
     // 16 Field Groups, all pointing to a FieldGroup struct
@@ -74,6 +74,5 @@ struct AbstractEntity {
     // 12: not present
     // 13: SCORE
     // 14: TEAM
-    // 15: not present
-    struct AbstractFieldGroup* field_groups[16]; // @48
+    struct AbstractFieldGroup* field_groups[15]; // @48
 };
