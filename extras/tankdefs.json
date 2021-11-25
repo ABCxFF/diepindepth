@@ -16,15 +16,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -45,9 +45,9 @@
                     "health": 1,
                     "damage": 1,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -101,15 +101,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -130,9 +130,9 @@
                     "health": 0.9,
                     "damage": 0.65,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -152,9 +152,9 @@
                     "health": 0.9,
                     "damage": 0.65,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -204,15 +204,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -233,9 +233,9 @@
                     "health": 0.7,
                     "damage": 0.6,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -255,9 +255,9 @@
                     "health": 0.7,
                     "damage": 0.6,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -277,9 +277,9 @@
                     "health": 0.7,
                     "damage": 0.6,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -333,15 +333,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -362,9 +362,9 @@
                     "health": 1,
                     "damage": 0.7,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -384,9 +384,9 @@
                     "health": 1,
                     "damage": 0.7,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -406,9 +406,9 @@
                     "health": 1,
                     "damage": 0.7,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -461,15 +461,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -490,9 +490,9 @@
                     "health": 1,
                     "damage": 0.75,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -512,9 +512,9 @@
                     "health": 1,
                     "damage": 0.75,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -534,9 +534,9 @@
                     "health": 1,
                     "damage": 0.75,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -556,9 +556,9 @@
                     "health": 1,
                     "damage": 0.75,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -608,15 +608,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -637,9 +637,9 @@
                     "health": 1,
                     "damage": 0.65,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -659,9 +659,9 @@
                     "health": 1,
                     "damage": 0.65,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -681,9 +681,9 @@
                     "health": 1,
                     "damage": 0.65,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -703,9 +703,9 @@
                     "health": 1,
                     "damage": 0.65,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -725,9 +725,9 @@
                     "health": 1,
                     "damage": 0.65,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -747,9 +747,9 @@
                     "health": 1,
                     "damage": 0.65,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -769,9 +769,9 @@
                     "health": 1,
                     "damage": 0.65,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -791,9 +791,9 @@
                     "health": 1,
                     "damage": 0.65,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -848,15 +848,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -877,9 +877,9 @@
                     "health": 1,
                     "damage": 1,
                     "speed": 1.5,
-                    "frictionFactor": 0.3,
+                    "friction": 0.3,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -933,15 +933,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -962,9 +962,9 @@
                     "health": 1,
                     "damage": 0.7,
                     "speed": 1,
-                    "frictionFactor": 3,
+                    "friction": 3,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -1019,15 +1019,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -1048,9 +1048,9 @@
                     "health": 1,
                     "damage": 1,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -1070,9 +1070,9 @@
                     "health": 1,
                     "damage": 1,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -1125,15 +1125,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -1154,9 +1154,9 @@
                     "health": 1,
                     "damage": 1,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -1176,9 +1176,9 @@
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 0.5,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -1198,9 +1198,9 @@
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 0.5,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -1255,15 +1255,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -1284,9 +1284,9 @@
                     "health": 2,
                     "damage": 3,
                     "speed": 0.7,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 0.1
+                    "absorbtionFactor": 0.1
                 }
             }
         ],
@@ -1343,15 +1343,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -1367,15 +1367,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 4,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.8,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -1390,15 +1391,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 4,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.8,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -1448,15 +1450,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -1472,15 +1474,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.8,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -1495,15 +1498,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.8,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -1518,15 +1522,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.8,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -1541,15 +1546,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.8,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -1602,15 +1608,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -1631,9 +1637,9 @@
                     "health": 1,
                     "damage": 0.5,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -1653,9 +1659,9 @@
                     "health": 1,
                     "damage": 0.5,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -1675,9 +1681,9 @@
                     "health": 1,
                     "damage": 0.5,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -1697,9 +1703,9 @@
                     "health": 1,
                     "damage": 0.5,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -1749,15 +1755,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -1766,7 +1772,7 @@
                 "offset": 0,
                 "size": 80,
                 "width": 42,
-                "delay": 0,
+                "delay": 0.66,
                 "reload": 1,
                 "recoil": 0.7,
                 "isTrapezoid": false,
@@ -1778,9 +1784,9 @@
                     "health": 1,
                     "damage": 0.55,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -1788,7 +1794,7 @@
                 "offset": 0,
                 "size": 80,
                 "width": 42,
-                "delay": 0,
+                "delay": 0.66,
                 "reload": 1,
                 "recoil": 0.7,
                 "isTrapezoid": false,
@@ -1800,9 +1806,9 @@
                     "health": 1,
                     "damage": 0.55,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -1810,7 +1816,7 @@
                 "offset": 0,
                 "size": 95,
                 "width": 42,
-                "delay": 0,
+                "delay": 0.33,
                 "reload": 1,
                 "recoil": 0.7,
                 "isTrapezoid": false,
@@ -1822,9 +1828,9 @@
                     "health": 1,
                     "damage": 0.55,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -1832,7 +1838,7 @@
                 "offset": 0,
                 "size": 95,
                 "width": 42,
-                "delay": 0,
+                "delay": 0.33,
                 "reload": 1,
                 "recoil": 0.7,
                 "isTrapezoid": false,
@@ -1844,9 +1850,9 @@
                     "health": 1,
                     "damage": 0.55,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -1866,9 +1872,9 @@
                     "health": 1,
                     "damage": 0.55,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -1921,15 +1927,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.8,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -1950,9 +1956,9 @@
                     "health": 1,
                     "damage": 1,
                     "speed": 1.5,
-                    "frictionFactor": 0.3,
+                    "friction": 0.3,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -2000,17 +2006,17 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
-            "devOnly": true
+            "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -2031,9 +2037,9 @@
                     "health": 300,
                     "damage": 7,
                     "speed": 2,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -2083,15 +2089,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 4,
         "borderWidth": 15,
         "barrels": [
@@ -2107,15 +2113,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 0,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.42,
                     "speed": 0.72,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -2130,15 +2137,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 0,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.42,
                     "speed": 0.72,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -2188,15 +2196,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -2217,9 +2225,9 @@
                     "health": 1,
                     "damage": 0.5,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -2239,9 +2247,9 @@
                     "health": 1,
                     "damage": 0.5,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -2261,9 +2269,9 @@
                     "health": 1,
                     "damage": 0.5,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -2283,9 +2291,9 @@
                     "health": 1,
                     "damage": 0.5,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -2305,9 +2313,9 @@
                     "health": 1,
                     "damage": 0.5,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -2327,9 +2335,9 @@
                     "health": 1,
                     "damage": 0.5,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -2382,15 +2390,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.85,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -2411,9 +2419,9 @@
                     "health": 1,
                     "damage": 0.75,
                     "speed": 1.4,
-                    "frictionFactor": 0.3,
+                    "friction": 0.3,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -2433,9 +2441,9 @@
                     "health": 1,
                     "damage": 0.75,
                     "speed": 1.4,
-                    "frictionFactor": 0.3,
+                    "friction": 0.3,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -2489,15 +2497,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -2518,9 +2526,9 @@
                     "health": 0.45,
                     "damage": 0.5,
                     "speed": 1.1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -2540,9 +2548,9 @@
                     "health": 0.45,
                     "damage": 0.5,
                     "speed": 1.1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -2562,9 +2570,9 @@
                     "health": 0.45,
                     "damage": 0.5,
                     "speed": 1.1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -2584,9 +2592,9 @@
                     "health": 0.45,
                     "damage": 0.5,
                     "speed": 1.1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -2636,15 +2644,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.8,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -2665,9 +2673,9 @@
                     "health": 1,
                     "damage": 1,
                     "speed": 1.5,
-                    "frictionFactor": 0.3,
+                    "friction": 0.3,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -2717,14 +2725,14 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.7,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
+        "preAddon": null,
         "postAddon": "pronounced",
         "sides": 1,
         "borderWidth": 15,
@@ -2746,9 +2754,9 @@
                     "health": 1,
                     "damage": 1,
                     "speed": 1.5,
-                    "frictionFactor": 0.3,
+                    "friction": 0.3,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -2798,15 +2806,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -2827,9 +2835,9 @@
                     "health": 1,
                     "damage": 1,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -2849,9 +2857,9 @@
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 0.5,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -2871,9 +2879,9 @@
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 0.5,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -2893,9 +2901,9 @@
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 0.5,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -2915,9 +2923,9 @@
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 0.5,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -2967,15 +2975,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -2996,9 +3004,9 @@
                     "health": 1,
                     "damage": 1,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3018,9 +3026,9 @@
                     "health": 1,
                     "damage": 0.8,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3040,9 +3048,9 @@
                     "health": 1,
                     "damage": 0.8,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3062,9 +3070,9 @@
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 0.5,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3084,9 +3092,9 @@
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 0.5,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -3136,15 +3144,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -3165,9 +3173,9 @@
                     "health": 2,
                     "damage": 3,
                     "speed": 0.7,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 0.1
+                    "absorbtionFactor": 0.1
                 }
             },
             {
@@ -3182,15 +3190,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": false,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 1.4,
                     "damage": 0.7,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -3240,15 +3249,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -3264,15 +3273,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 8,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.8,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -3320,17 +3330,17 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
-            "devOnly": true
+            "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 0.01,
+        "absorbtionFactor": 0.01,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 16,
         "borderWidth": 140,
         "barrels": [
@@ -3346,15 +3356,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3369,15 +3380,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": false,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3392,15 +3404,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3415,15 +3428,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": false,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3438,15 +3452,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3461,15 +3476,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": false,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3484,15 +3500,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3507,15 +3524,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": false,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3530,15 +3548,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3553,15 +3572,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": false,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3576,15 +3596,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3599,15 +3620,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": false,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3622,15 +3644,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3645,15 +3668,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": false,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3668,15 +3692,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3691,15 +3716,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 2,
+                "canControlDrones": false,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -3749,15 +3775,15 @@
             "zoomAbility": true,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.85,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -3778,9 +3804,9 @@
                     "health": 1,
                     "damage": 0.75,
                     "speed": 1.4,
-                    "frictionFactor": 0.3,
+                    "friction": 0.3,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3800,9 +3826,9 @@
                     "health": 1,
                     "damage": 0.75,
                     "speed": 1.4,
-                    "frictionFactor": 0.3,
+                    "friction": 0.3,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3822,9 +3848,9 @@
                     "health": 1,
                     "damage": 0.75,
                     "speed": 1.4,
-                    "frictionFactor": 0.3,
+                    "friction": 0.3,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -3874,15 +3900,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -3903,9 +3929,9 @@
                     "health": 1,
                     "damage": 0.1,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -3925,9 +3951,9 @@
                     "health": 1,
                     "damage": 0.7,
                     "speed": 1,
-                    "frictionFactor": 3,
+                    "friction": 3,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -3984,15 +4010,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -4013,9 +4039,9 @@
                     "health": 2,
                     "damage": 1,
                     "speed": 2,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 8,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -4065,15 +4091,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -4094,9 +4120,9 @@
                     "health": 1,
                     "damage": 0.5,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -4116,9 +4142,9 @@
                     "health": 1,
                     "damage": 0.5,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -4138,9 +4164,9 @@
                     "health": 2,
                     "damage": 1,
                     "speed": 2,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 8,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -4190,15 +4216,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -4219,9 +4245,9 @@
                     "health": 2,
                     "damage": 1,
                     "speed": 2,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 8,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -4236,15 +4262,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 1,
+                "canControlDrones": false,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 1.4,
                     "damage": 0.7,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -4259,15 +4286,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 1,
+                "canControlDrones": false,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 1,
                     "health": 1.4,
                     "damage": 0.7,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -4317,15 +4345,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -4346,9 +4374,9 @@
                     "health": 3.2,
                     "damage": 1.6,
                     "speed": 2,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 8,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -4398,15 +4426,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -4427,9 +4455,9 @@
                     "health": 2,
                     "damage": 1,
                     "speed": 2,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 3.2,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -4449,9 +4477,9 @@
                     "health": 2,
                     "damage": 1,
                     "speed": 2,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 3.2,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -4471,9 +4499,9 @@
                     "health": 2,
                     "damage": 1,
                     "speed": 2,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 3.2,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -4527,14 +4555,14 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
+        "preAddon": null,
         "postAddon": "smasher",
         "sides": 1,
         "borderWidth": 15,
@@ -4586,14 +4614,14 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0,
-        "visibilityRate": 0.16,
+        "visibilityRateShooting": 0,
+        "visibilityRateMoving": 0.16,
         "invisibilityRate": 0.003,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
+        "preAddon": null,
         "postAddon": "landmine",
         "sides": 1,
         "borderWidth": 15,
@@ -4644,14 +4672,14 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
+        "preAddon": null,
         "postAddon": "autoturret",
         "sides": 1,
         "borderWidth": 15,
@@ -4673,9 +4701,9 @@
                     "health": 0.45,
                     "damage": 0.5,
                     "speed": 1.1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -4695,9 +4723,9 @@
                     "health": 0.45,
                     "damage": 0.5,
                     "speed": 1.1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -4717,9 +4745,9 @@
                     "health": 0.45,
                     "damage": 0.5,
                     "speed": 1.1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -4739,9 +4767,9 @@
                     "health": 0.45,
                     "damage": 0.5,
                     "speed": 1.1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -4789,16 +4817,16 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
-            "devOnly": false
+            "devOnly": true
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
+        "preAddon": null,
         "postAddon": "auto5",
         "sides": 1,
         "borderWidth": 15,
@@ -4850,16 +4878,16 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
-            "devOnly": false
+            "devOnly": true
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
+        "preAddon": null,
         "postAddon": "auto3",
         "sides": 1,
         "borderWidth": 15,
@@ -4910,15 +4938,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -4927,7 +4955,7 @@
                 "offset": 0,
                 "size": 65,
                 "width": 29.4,
-                "delay": 0,
+                "delay": 0.833325,
                 "reload": 2,
                 "recoil": 0.1,
                 "isTrapezoid": false,
@@ -4939,9 +4967,9 @@
                     "health": 1,
                     "damage": 0.6,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -4949,7 +4977,7 @@
                 "offset": 0,
                 "size": 65,
                 "width": 29.4,
-                "delay": 0,
+                "delay": 0.833325,
                 "reload": 2,
                 "recoil": 0.1,
                 "isTrapezoid": false,
@@ -4961,9 +4989,9 @@
                     "health": 1,
                     "damage": 0.6,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -4971,7 +4999,7 @@
                 "offset": 0,
                 "size": 71,
                 "width": 29.4,
-                "delay": 0,
+                "delay": 0.666675,
                 "reload": 2,
                 "recoil": 0.1,
                 "isTrapezoid": false,
@@ -4983,9 +5011,9 @@
                     "health": 1,
                     "damage": 0.6,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -4993,7 +5021,7 @@
                 "offset": 0,
                 "size": 71,
                 "width": 29.4,
-                "delay": 0,
+                "delay": 0.666675,
                 "reload": 2,
                 "recoil": 0.1,
                 "isTrapezoid": false,
@@ -5005,9 +5033,9 @@
                     "health": 1,
                     "damage": 0.6,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5015,7 +5043,7 @@
                 "offset": 0,
                 "size": 77,
                 "width": 29.4,
-                "delay": 0,
+                "delay": 0.5,
                 "reload": 2,
                 "recoil": 0.1,
                 "isTrapezoid": false,
@@ -5027,9 +5055,9 @@
                     "health": 1,
                     "damage": 0.6,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5037,7 +5065,7 @@
                 "offset": 0,
                 "size": 77,
                 "width": 29.4,
-                "delay": 0,
+                "delay": 0.5,
                 "reload": 2,
                 "recoil": 0.1,
                 "isTrapezoid": false,
@@ -5049,9 +5077,9 @@
                     "health": 1,
                     "damage": 0.6,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5059,7 +5087,7 @@
                 "offset": 0,
                 "size": 83,
                 "width": 29.4,
-                "delay": 0,
+                "delay": 0.333325,
                 "reload": 2,
                 "recoil": 0.1,
                 "isTrapezoid": false,
@@ -5071,9 +5099,9 @@
                     "health": 1,
                     "damage": 0.6,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5081,7 +5109,7 @@
                 "offset": 0,
                 "size": 83,
                 "width": 29.4,
-                "delay": 0,
+                "delay": 0.333325,
                 "reload": 2,
                 "recoil": 0.1,
                 "isTrapezoid": false,
@@ -5093,9 +5121,9 @@
                     "health": 1,
                     "damage": 0.6,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5103,7 +5131,7 @@
                 "offset": 0,
                 "size": 89,
                 "width": 29.4,
-                "delay": 0,
+                "delay": 0.166675,
                 "reload": 2,
                 "recoil": 0.1,
                 "isTrapezoid": false,
@@ -5115,9 +5143,9 @@
                     "health": 1,
                     "damage": 0.6,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5125,7 +5153,7 @@
                 "offset": 0,
                 "size": 89,
                 "width": 29.4,
-                "delay": 0,
+                "delay": 0.166675,
                 "reload": 2,
                 "recoil": 0.1,
                 "isTrapezoid": false,
@@ -5137,9 +5165,9 @@
                     "health": 1,
                     "damage": 0.6,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5159,9 +5187,9 @@
                     "health": 1,
                     "damage": 1,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -5211,15 +5239,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.85,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -5240,9 +5268,9 @@
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1.1,
-                    "frictionFactor": 0.3,
+                    "friction": 0.3,
                     "lifeLength": 0.8,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5262,9 +5290,9 @@
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1.1,
-                    "frictionFactor": 0.3,
+                    "friction": 0.3,
                     "lifeLength": 0.8,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5284,9 +5312,9 @@
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1.1,
-                    "frictionFactor": 0.3,
+                    "friction": 0.3,
                     "lifeLength": 0.8,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5306,9 +5334,9 @@
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1.1,
-                    "frictionFactor": 0.3,
+                    "friction": 0.3,
                     "lifeLength": 0.8,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5328,9 +5356,9 @@
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1.1,
-                    "frictionFactor": 0.3,
+                    "friction": 0.3,
                     "lifeLength": 0.8,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -5380,14 +5408,14 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
+        "preAddon": null,
         "postAddon": "autoturret",
         "sides": 1,
         "borderWidth": 15,
@@ -5409,9 +5437,9 @@
                     "health": 2,
                     "damage": 1,
                     "speed": 2,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 8,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -5459,13 +5487,13 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
-            "devOnly": true
+            "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 6000,
         "preAddon": "dombase",
@@ -5490,9 +5518,9 @@
                     "health": 100,
                     "damage": 10,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 0.1
+                    "absorbtionFactor": 0.1
                 }
             }
         ],
@@ -5540,13 +5568,13 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
-            "devOnly": true
+            "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 6000,
         "preAddon": "dombase",
@@ -5571,9 +5599,9 @@
                     "health": 5,
                     "damage": 1,
                     "speed": 1.2,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5593,9 +5621,9 @@
                     "health": 5,
                     "damage": 1,
                     "speed": 1.2,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5615,9 +5643,9 @@
                     "health": 5,
                     "damage": 1,
                     "speed": 1.2,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -5665,17 +5693,17 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
-            "devOnly": true
+            "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 6000,
         "preAddon": "dombase",
-        "postAddon": 0,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -5696,9 +5724,9 @@
                     "health": 20,
                     "damage": 3,
                     "speed": 4,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 3.2,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5718,9 +5746,9 @@
                     "health": 20,
                     "damage": 3,
                     "speed": 4,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 3.2,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5740,9 +5768,9 @@
                     "health": 20,
                     "damage": 3,
                     "speed": 4,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 3.2,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5762,9 +5790,9 @@
                     "health": 20,
                     "damage": 3,
                     "speed": 4,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 3.2,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5784,9 +5812,9 @@
                     "health": 20,
                     "damage": 3,
                     "speed": 4,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 3.2,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5806,9 +5834,9 @@
                     "health": 20,
                     "damage": 3,
                     "speed": 4,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 3.2,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5828,9 +5856,9 @@
                     "health": 20,
                     "damage": 3,
                     "speed": 4,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 3.2,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5850,9 +5878,9 @@
                     "health": 20,
                     "damage": 3,
                     "speed": 4,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 3.2,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -5902,15 +5930,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -5926,15 +5954,16 @@
                 "trapezoidDirection": 3.141592653589793,
                 "addon": null,
                 "droneCount": 4294967295,
+                "canControlDrones": false,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 0.7,
                     "health": 1,
                     "damage": 0.15,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5949,15 +5978,16 @@
                 "trapezoidDirection": 3.141592653589793,
                 "addon": null,
                 "droneCount": 4294967295,
+                "canControlDrones": false,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 0.7,
                     "health": 1,
                     "damage": 0.15,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5972,15 +6002,16 @@
                 "trapezoidDirection": 3.141592653589793,
                 "addon": null,
                 "droneCount": 4294967295,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 0.7,
                     "health": 1,
                     "damage": 0.15,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             },
             {
@@ -5995,15 +6026,16 @@
                 "trapezoidDirection": 3.141592653589793,
                 "addon": null,
                 "droneCount": 4294967295,
+                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
                     "sizeRatio": 0.7,
                     "health": 1,
                     "damage": 0.15,
                     "speed": 1,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -6053,15 +6085,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -6082,9 +6114,9 @@
                     "health": 2,
                     "damage": 3,
                     "speed": 0.7,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 0.05
+                    "absorbtionFactor": 0.05
                 }
             }
         ],
@@ -6134,14 +6166,14 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
+        "preAddon": null,
         "postAddon": "autosmasher",
         "sides": 1,
         "borderWidth": 15,
@@ -6192,14 +6224,14 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
+        "preAddon": null,
         "postAddon": "spike",
         "sides": 1,
         "borderWidth": 15,
@@ -6250,15 +6282,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 4,
         "borderWidth": 15,
         "barrels": [
@@ -6274,15 +6306,16 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "droneCount": 6,
+                "canControlDrones": true,
                 "bullet": {
-                    "type": "drone",
+                    "type": "minion",
                     "sizeRatio": 1,
                     "health": 4,
                     "damage": 0.7,
                     "speed": 0.56,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 1
+                    "absorbtionFactor": 1
                 }
             }
         ],
@@ -6332,15 +6365,15 @@
             "zoomAbility": false,
             "devOnly": true
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 1,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
-        "preAddon": 0,
-        "postAddon": 0,
+        "preAddon": null,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [],
@@ -6390,15 +6423,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
         "preAddon": "launcher",
-        "postAddon": 0,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -6414,14 +6447,14 @@
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
-                    "type": "bullet",
+                    "type": "skimmer",
                     "sizeRatio": 1,
                     "health": 3,
                     "damage": 1,
                     "speed": 0.5,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1.3,
-                    "knockbackFactor": 0.1
+                    "absorbtionFactor": 0.1
                 }
             }
         ],
@@ -6471,15 +6504,15 @@
             "zoomAbility": false,
             "devOnly": false
         },
-        "invisMovementMin": 0.23,
-        "visibilityRate": 0.08,
+        "visibilityRateShooting": 0.23,
+        "visibilityRateMoving": 0.08,
         "invisibilityRate": 0.03,
         "fieldFactor": 0.9,
-        "knockbackFactor": 1,
+        "absorbtionFactor": 1,
         "speed": 1,
         "maxHealth": 50,
         "preAddon": "launcher",
-        "postAddon": 0,
+        "postAddon": null,
         "sides": 1,
         "borderWidth": 15,
         "barrels": [
@@ -6495,14 +6528,14 @@
                 "trapezoidDirection": 3.141592653589793,
                 "addon": null,
                 "bullet": {
-                    "type": "bullet",
+                    "type": "rocket",
                     "sizeRatio": 1,
                     "health": 5,
                     "damage": 1,
                     "speed": 0.3,
-                    "frictionFactor": 1,
+                    "friction": 1,
                     "lifeLength": 1,
-                    "knockbackFactor": 0.1
+                    "absorbtionFactor": 0.1
                 }
             }
         ],
