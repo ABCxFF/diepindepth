@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Diep.io Packet WASM Hook
 // @author       ABC
-// @version      1.0.1
+// @version      1.0.2
 // @namespace    793b6d22e674ac9f3a244925174771e1bb7381bb
 // @description  793b6d22e674ac9f3a244925174771e1bb7381bb
 // @match        *://diep.io/
@@ -17,12 +17,10 @@
   The way this script works will be explained in /memory or /wasm someday, but ignore that for now
 */
 
-const nsfsk = false;
-
 class PacketHook extends EventTarget {
   static get CONST() {
     return {
-      BUILD: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      BUILD: "793b6d22e674ac9f3a244925174771e1bb7381bb",
       SEND_PACKET_INDEX: 106,
       RECV_PACKET_INDEX: 406,
       MALLOC: "R",
@@ -41,6 +39,8 @@ class PacketHook extends EventTarget {
   }
   _modify(bin, imports) {
     console.log('Modifying WASM');
+
+    if (localStorage['actually know javascript'] !== 'yes') return bin;
     
     const wail = new WailParser(new Uint8Array(bin));
 
@@ -169,13 +169,11 @@ class PacketHook extends EventTarget {
   }
 }
 
-if (!nsfsk) throw "Packet Hook";
-
 const TYPE = ['clientbound', 'serverbound'];
 
 const Hook = window.Hook = new PacketHook(function(type, ptr, len) {
   Hook.dispatchEvent(new MessageEvent(TYPE[type], {
-    data: Hook.HEAPU8.slice(ptr, ptr + len)
+    data: Hook.HEAPU8.slice(ptr, ptr + len).buffer
   }));
 
   return 0;
