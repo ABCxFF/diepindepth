@@ -186,8 +186,8 @@ Bullet Absorbtion Factor (see /extras/tankdefs.js) = B_aF
 pushFactor = (7 / 3 + b_DS) * B_D
 absorbtionFactor = B_aF
 
-Absorbtion factor is almost always 1 except for a couple of speci
-al cases. 
+Absorbtion  factor is  almost  always  1 except for  a couple  of
+special cases. 
 
 ——————————————————————————— §5 Damage ———————————————————————————
 
