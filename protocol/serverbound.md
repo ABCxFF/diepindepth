@@ -26,7 +26,7 @@ For information on data types and encodings, see [`data.md`](/protocol/data.md)
 The first packet, and the only unencoded one. This packet is sent to initiate the connection and it contains information such as the build, admin password, party link, and some other "debug values."
 
 Format:
-> `00 string(build hash) string(dev password) string(party code) vu(debug val)`
+> `00 string(build hash) string(dev password) string(party code) string(player token) vu(debug val)`
 
 The dev confirmed that this format is correct, but did not give any information on the varuint at the end of the packet, only that it was only active during "debug builds". If the build hash sent by the client is not the same as the one the server is expecting, the server responds with a [`0x01` Outdated Client](/protocol/clientbound.md#0x01-outdated-client-packet) packet.
 
