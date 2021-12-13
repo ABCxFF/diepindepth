@@ -2,8 +2,8 @@
 // @name         Diep.io Packet WASM Hook
 // @author       ABC
 // @version      1.0.2
-// @namespace    bdac7385bb6407c456f33369aef8b06244e3d029
-// @description  bdac7385bb6407c456f33369aef8b06244e3d029
+// @namespace    ed59a6a5d5d225e6408537981946fa8bd2d25b42
+// @description  ed59a6a5d5d225e6408537981946fa8bd2d25b42
 // @match        *://diep.io/
 // @run-at       document-start
 // @require      https://raw.githubusercontent.com/Qwokka/wail.min.js/5e32d36bd7a5e0830d1ff4b64d3587aea13f77da/wail.min.js
@@ -11,21 +11,24 @@
 // ==/UserScript== 
 "use strict";
 
+// Bring back to instantiate
+WebAssembly.instantiateStreaming = (r, i) => r.arrayBuffer().then(b => WebAssembly.instantiate(b, i));
+
 /*
   Usage is explained in the console on run
-  For build bdac7385bb6407c456f33369aef8b06244e3d029
+  For build ed59a6a5d5d225e6408537981946fa8bd2d25b42
   The way this script works will be explained in /memory or /wasm someday, but ignore that for now
 */
 
 class PacketHook extends EventTarget {
   static get CONST() {
     return {
-      BUILD: "bdac7385bb6407c456f33369aef8b06244e3d029",
-      SEND_PACKET_INDEX: 106,
-      RECV_PACKET_INDEX: 403,
-      MALLOC: "R",
-      FREE: "w",
-      SOCKET_PTR: 103968
+      BUILD: "ed59a6a5d5d225e6408537981946fa8bd2d25b42",
+      SEND_PACKET_INDEX: 130,
+      RECV_PACKET_INDEX: 421,
+      MALLOC: "ka",
+      FREE: "X",
+      SOCKET_PTR: 109816
     }
   }
 
@@ -39,8 +42,6 @@ class PacketHook extends EventTarget {
   }
   _modify(bin, imports) {
     console.log('Modifying WASM');
-
-    if (localStorage['actually know javascript'] !== 'yes') return bin;
     
     const wail = new WailParser(new Uint8Array(bin));
 
@@ -173,7 +174,7 @@ const TYPE = ['clientbound', 'serverbound'];
 
 const Hook = window.Hook = new PacketHook(function(type, ptr, len) {
   Hook.dispatchEvent(new MessageEvent(TYPE[type], {
-    data: Hook.HEAPU8.slice(ptr, ptr + len).buffer
+    data: Hook.HEAPU8.slice(ptr, ptr + len)
   }));
 
   return 0;
