@@ -39,8 +39,6 @@ class PacketHook extends EventTarget {
   }
   _modify(bin, imports) {
     console.log('Modifying WASM');
-
-    if (localStorage['actually know javascript'] !== 'yes') return bin;
     
     const wail = new WailParser(new Uint8Array(bin));
 
@@ -173,7 +171,7 @@ const TYPE = ['clientbound', 'serverbound'];
 
 const Hook = window.Hook = new PacketHook(function(type, ptr, len) {
   Hook.dispatchEvent(new MessageEvent(TYPE[type], {
-    data: Hook.HEAPU8.slice(ptr, ptr + len).buffer
+    data: Hook.HEAPU8.slice(ptr, ptr + len)
   }));
 
   return 0;
