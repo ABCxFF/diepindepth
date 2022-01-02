@@ -40,6 +40,16 @@ There are 2 rules the HTTP headers must satisfy:
 
 ## Initiation and Packet Encoding / Decoding
 
-The first packet send is always the [0x00 Init packet](../outgoing.md#0x00-init-packet), and this does not have to be encoded. The following packet will either be a [0x01 Invalid Build](../incoming.md#0x01-outdated-client-packet), or an encoded [JS Int Eval packet](../incoming.md#0x0d-int-js-challenge-packet) (or sometimes a [PoW Challenge](./incoming.md#0x0b-pow-challenge-packet)). Sending encoded and decoding incoming packets will be explained fully in [api.md](./crypto.md). 
+The first packet send is always the [0x00 Init packet](../serverbound.md#0x00-init-packet), and this does not have to be encoded. The following packet will either be a [0x01 Invalid Build](../clientbound.md#0x01-outdated-client-packet), or an encoded [0x0D JS Int Eval packet](../clientbound.md#0x0d-int-js-challenge-packet), followed by a [0x0B PoW Challenge](../clientbound.md#0x0b-pow-challenge-packet). The basic idea of encoding and decoding packets ("Shuffling") is explained in [Packet Encoding and Decoding](../crypto.md).
 
-> Some more info
+## Ip Limit and Overcoming it
+
+Diep.io has a system in place that limits the amount of possible connections per ip. As of now, this limit is 2 connections per ip per server. Since the ips appear to be stored locally on the server, one can still connect to other servers (Even if servers may have multiple arenas open at the same time, the "block" would still be persistent. On the other hand, one might connect to a server in another region which would work completely normal). There are currently two known solutions to this "problem". 
+
+### Proxies
+
+Any proxies that support secure websocket connections can be used as some sort of middleman between server an ones own ip. More information on this is available [here](https://www.varonis.com/blog/what-is-a-proxy-server/) and [here](https://www.npmjs.com/package/https-proxy-agent).
+
+### Ipv6 Subranging
+
+As of now, a /64 block of IPv6 ips can only be used for 2 connections (like regular IPv4 addresses). Therefore one will need a range of at least /48. The process of setting this up will not be explained any further here.
