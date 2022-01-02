@@ -40,7 +40,7 @@ There are 2 rules the HTTP headers must satisfy:
 
 ## Initiation and Packet Encoding / Decoding
 
-The first packet send is always the [0x00 Init packet](../serverbound.md#0x00-init-packet), and this does not have to be encoded. The following packet will either be a [0x01 Invalid Build](../clientbound.md#0x01-outdated-client-packet), or an encoded [0x0D JS Int Eval packet](../clientbound.md#0x0d-int-js-challenge-packet) which follows a [0x0B PoW Challenge](../clientbound.md#0x0b-pow-challenge-packet). The basic idea of encoding and decoding packets ("Shuffling") is explained in [Packet Encoding and Decoding](../crypto.md).
+The first packet send is always the [0x00 Init packet](../serverbound.md#0x00-init-packet), and this does not have to be encoded. The following packet will either be a [0x01 Invalid Build](../clientbound.md#0x01-outdated-client-packet), or an encoded [0x0D JS Int Eval packet](../clientbound.md#0x0d-int-js-challenge-packet), followed by a [0x0B PoW Challenge](../clientbound.md#0x0b-pow-challenge-packet). The basic idea of encoding and decoding packets ("Shuffling") is explained in [Packet Encoding and Decoding](../crypto.md).
 
 ## Ip Limit and Overcoming it
 
