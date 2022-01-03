@@ -136,7 +136,7 @@ function generateXorTable() {
     
     for (let i = 127; i >= 0; i--) {
         // Instead of `(prandom val % i) + 1`, it is `prandom val % (i + 1)` (the modification)
-        const index = (jumpTableShuffler.next() >>> 0) % (i + 1);
+        const index = (xorTableShuffler.next() >>> 0) % (i + 1);
         
         const temp = table[index];
         table[index] = table[i];
