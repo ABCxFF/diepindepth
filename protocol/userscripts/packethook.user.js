@@ -2,30 +2,34 @@
 // @name         Diep.io Packet WASM Hook
 // @author       ABC
 // @version      1.0.2
-// @namespace    54925dee2d9b83409b771168e970631f9fa88fbf
-// @description  54925dee2d9b83409b771168e970631f9fa88fbf
+// @namespace    2dacce112d88c0c67b51f22f533feb2b8ca64b3a
+// @description  2dacce112d88c0c67b51f22f533feb2b8ca64b3a
 // @match        *://diep.io/
 // @run-at       document-start
 // @require      https://raw.githubusercontent.com/Qwokka/wail.min.js/5e32d36bd7a5e0830d1ff4b64d3587aea13f77da/wail.min.js
 // @grant        none
 // ==/UserScript== 
+
 "use strict";
+
+// Bring back to instantiate
+WebAssembly.instantiateStreaming = (r, i) => r.arrayBuffer().then(b => WebAssembly.instantiate(b, i));
 
 /*
   Usage is explained in the console on run
-  For build 54925dee2d9b83409b771168e970631f9fa88fbf
+  For build 2dacce112d88c0c67b51f22f533feb2b8ca64b3a
   The way this script works will be explained in /memory or /wasm someday, but ignore that for now
 */
 
 class PacketHook extends EventTarget {
   static get CONST() {
     return {
-      BUILD: "54925dee2d9b83409b771168e970631f9fa88fbf",
-      SEND_PACKET_INDEX: 105,
-      RECV_PACKET_INDEX: 406,
-      MALLOC: "R",
-      FREE: "t",
-      SOCKET_PTR: 103128
+      BUILD: "2dacce112d88c0c67b51f22f533feb2b8ca64b3a",
+      SEND_PACKET_INDEX: 130,
+      RECV_PACKET_INDEX: 417,
+      MALLOC: "ka",
+      FREE: "Q",
+      SOCKET_PTR: 108660
     }
   }
 
