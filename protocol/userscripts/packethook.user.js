@@ -167,6 +167,8 @@ class PacketHook extends EventTarget {
   }
 }
 
+WebAssembly.instantiateStreaming = (r, i) => r.arrayBuffer().then(b => WebAssembly.instantiate(b, i));
+
 const TYPE = ['clientbound', 'serverbound'];
 
 const Hook = window.Hook = new PacketHook(function(type, ptr, len) {
