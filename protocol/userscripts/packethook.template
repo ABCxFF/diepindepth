@@ -12,9 +12,9 @@
 "use strict";
 
 /*
-  Usage is explained in the console on run
-  For build %BUILD of the Addicting Games release branch
-  The way this script works will be explained in /memory or /wasm someday, but ignore that for now
+  Usage is explained in the console during execution.
+  
+  Generated for build %BUILD of the Addicting Games release branch
 */
 
 class PacketHook extends EventTarget {
