@@ -5,9 +5,9 @@
 | Name         | Description                                                                              | Size | Alias    |
 | ------------ | ---------------------------------------------------------------------------------------- | ---- | -------- |
 | `uint8`      | An unsigned 8 bit integer                                                                | 1    | `u8`     |
-| `varuint32`  | An unsigned variable-length integer using [LEB128](https://en.wikipedia.org/wiki/LEB128) | 1-4  | `vu`     |
-| `varint32`   | A signed variable-length integer                                                         | 1-4  | `vi`     |
-| `varfloat32` | A float32 casted to a varint                                                             | 1-4  | `vf`     |
+| `varuint32`  | An unsigned variable-length integer using [LEB128](https://en.wikipedia.org/wiki/LEB128) | 1-5  | `vu`     |
+| `varint32`   | A signed variable-length integer                                                         | 1-5  | `vi`     |
+| `varfloat32` | A float32 casted to a varint                                                             | 1-5  | `vf`     |
 | `float32`    | A little-endian floating point number                                                    | 4    | `f32`    |
 | `uint32`     | A little-endian 32 bit integer                                                           | 4    | `u32`    |
 | `stringNT`   | A null terminated string                                                                 | 1+   | `string` |
