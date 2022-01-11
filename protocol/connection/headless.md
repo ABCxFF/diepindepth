@@ -52,4 +52,4 @@ Any proxies that support secure websocket connections can be used as some sort o
 
 ### Ipv6 Subranging
 
-As of now, a /64 block of IPv6 ips can only be used for 2 connections (like regular IPv4 addresses). Therefore one will need a range of at least /48. The process of setting this up will not be explained any further here.
+As of now, a /64 block of IPv6 ips can only be used for 2 connections (like regular IPv4 addresses). Therefore one will need a range of at least /63. The process of setting this up will not be explained any further here.
