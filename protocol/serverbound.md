@@ -56,7 +56,7 @@ x1000 ; adblock          ; Remnant of when the game detected adblockers
 For information on how these are encoded, see [`data.md`](/protocol/data.md#bitflags---vu) where the example is actually a sample input packet. If the `no keyboard` flag is set, then two additional varfloats are appended to the packet, representing the x-axis movement and the y-axis movement.
 
 Format:
-> `01 flags(input flags) vf(world mouse x) vf(world mouse y) no keyboard?[vf(gamepad x axis) vf(gamepad y axis)]`
+> `01 flags(input flags) vf(world mouse x) vf(world mouse y) no keyboard?[vf(x axis) vf(y axis)]`
 
 ---
 
