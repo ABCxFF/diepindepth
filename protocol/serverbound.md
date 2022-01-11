@@ -47,7 +47,7 @@ x0020 ; god mode toggle  ; Set when god mode is toggled
 x0040 ; suicide key      ; Set when the suicide key is pressed down
 x0080 ; right mouse      ; Set when shift / right click is pressed down
 x0100 ; instant upgrade  ; Set when upgrade key is pressed down
-x0200 ; no keyboard      ; Set when user isn't using keyboard movement flags, and instead, magnitude + direction
+x0200 ; no keyboard      ; Set when user isn't using keyboard movement flags, and instead two magnitudes (x-axis and y-axis)
 x0400 ; use gamepad      ; Set when a gamepad is being used instead of a keyboard
 x0800 ; switch class     ; Set when switch class key is pressed down
 x1000 ; adblock          ; Remnant of when the game detected adblockers
