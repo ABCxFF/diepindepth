@@ -38,23 +38,25 @@ The most frequently sent packet coming from the client, it includes movement fla
 
 ```
 bit  ; name             ; desc
-x001 ; fire             ; Set when left mouse / spacebar is pressed down or autofire is on
-x002 ; up key           ; Set when the up key is pressed down
-x004 ; left key         ; Set when the left key is pressed down
-x008 ; down key         ; Set when the down key is pressed down
-x010 ; right key        ; Set when the right key is pressed down
-x020 ; god mode toggle  ; Set when god mode is toggled
-x040 ; suicide key      ; Set when the suicide key is pressed down
-x080 ; right mouse      ; Set when shift / right click is pressed down
-x100 ; instant upgrade  ; Set when upgrade key is pressed down
-x200 ; use gamepad      ; Set when a gamepad is being used instead of a keyboard
-x400 ; switch class     ; Set when switch class key is pressed down
+x0001 ; fire             ; Set when left mouse / spacebar is pressed down or autofire is on
+x0002 ; up key           ; Set when the up key is pressed down
+x0004 ; left key         ; Set when the left key is pressed down
+x0008 ; down key         ; Set when the down key is pressed down
+x0010 ; right key        ; Set when the right key is pressed down
+x0020 ; god mode toggle  ; Set when god mode is toggled
+x0040 ; suicide key      ; Set when the suicide key is pressed down
+x0080 ; right mouse      ; Set when shift / right click is pressed down
+x0100 ; no keyboard      ; Set when user isn't using keyboard movement flags, and instead, magnitude + direction
+x0200 ; radial movement  ; Set when magnitude and direction is used to determine movement
+x0400 ; use gamepad      ; Set when a gamepad is being used instead of a keyboard
+x0800 ; switch class     ; Set when switch class key is pressed down
+x1000 ; adblock          ; Remnant of when the game detected adblockers
 ```
 
-For information on how these are encoded, see [`data.md`](/protocol/data.md#bitflags---vu) where the example is actually a sample input packet. If the gamepad flag is set, then two additional varfloats are appended to the packet, representing the gamepad's x-axis movement and the gamepad's y-axis movement.
+For information on how these are encoded, see [`data.md`](/protocol/data.md#bitflags---vu) where the example is actually a sample input packet. If the `no keyboard` flag is set, then two additional varfloats are appended to the packet, representing the x-axis movement and the y-axis movement.
 
 Format:
-> `01 flags(input flags) vf(world mouse x) vf(world mouse y) gamepad?[vf(gamepad x axis) vf(gamepad y axis)]`
+> `01 flags(input flags) vf(world mouse x) vf(world mouse y) no keys?[vf(gamepad x axis) vf(gamepad y axis)]`
 
 ---
 
