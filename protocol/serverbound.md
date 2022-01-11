@@ -37,7 +37,7 @@ The dev confirmed that this format is correct, but did not give any information 
 The most frequently sent packet coming from the client, it includes movement flags, mouse pos, and other input data. 
 
 ```
-bit  ; name             ; desc
+bit   ; name             ; desc
 x0001 ; fire             ; Set when left mouse / spacebar is pressed down or autofire is on
 x0002 ; up key           ; Set when the up key is pressed down
 x0004 ; left key         ; Set when the left key is pressed down
