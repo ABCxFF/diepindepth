@@ -81,8 +81,10 @@ The flags are read as a varuint, which for this example results in 2073. This ca
 0 ; suicide key      ; (off)
 0 ; right mouse      ; (off)
 0 ; instant upgrade  ; (off)
+0 ; radial movement  ; (off)
 0 ; use gamepad      ; (off)
 0 ; switch class     ; (off)
+0 ; adblock          ; (off)
 ```
 
 ---
