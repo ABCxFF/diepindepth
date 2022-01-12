@@ -47,16 +47,16 @@ x0020 ; god mode toggle  ; Set when god mode is toggled
 x0040 ; suicide key      ; Set when the suicide key is pressed down
 x0080 ; right mouse      ; Set when shift / right click is pressed down
 x0100 ; instant upgrade  ; Set when upgrade key is pressed down
-x0200 ; no keyboard      ; Set when user isn't using keyboard movement flags, and instead two magnitudes (x-axis and y-axis)
+x0200 ; use joysticks    ; Set when user isn't using keyboard movement flags, and instead two magnitudes (x-axis and y-axis)
 x0400 ; use gamepad      ; Set when a gamepad is being used instead of a keyboard
 x0800 ; switch class     ; Set when switch class key is pressed down
 x1000 ; adblock          ; Remnant of when the game detected adblockers
 ```
 
-For information on how these are encoded, see [`data.md`](/protocol/data.md#bitflags---vu) where the example is actually a sample input packet. If the `no keyboard` flag is set, then two additional varfloats are appended to the packet, representing the x-axis movement and the y-axis movement.
+For information on how these are encoded, see [`data.md`](/protocol/data.md#bitflags---vu) where the example is actually a sample input packet. If the `joysticks` flag is set, then two additional varfloats are appended to the packet, representing the x-axis movement and the y-axis movement.
 
 Format:
-> `01 flags(input flags) vf(world mouse x) vf(world mouse y) no keyboard?[vf(x axis) vf(y axis)]`
+> `01 flags(input flags) vf(world mouse x) vf(world mouse y) joysticks?[vf(x axis) vf(y axis)]`
 
 ---
 
