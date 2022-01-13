@@ -69,7 +69,7 @@ A varuint encoded series of bit flags with varying values. An example would be t
 10001010 10100111 10000001 00001111 ; vf ; mouse y
 ```
 
-The flags are read as a varuint, which for this example results in 2073. This can be expressed in binary as `00000011001`, and each bit gets parsed as a boolean flag starting from the lowest bit to the highest bit like the following:
+The flags are read as a varuint, which for this example results in 2073. This can be expressed in binary as `0000000011001`, and each bit gets parsed as a boolean flag starting from the lowest bit to the highest bit like the following:
 
 ```
 1 ; left mouse       ; (on)
@@ -81,8 +81,10 @@ The flags are read as a varuint, which for this example results in 2073. This ca
 0 ; suicide key      ; (off)
 0 ; right mouse      ; (off)
 0 ; instant upgrade  ; (off)
+0 ; use joysticks    ; (off)
 0 ; use gamepad      ; (off)
 0 ; switch class     ; (off)
+0 ; adblock          ; (off)
 ```
 
 ---
