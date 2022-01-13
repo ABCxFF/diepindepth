@@ -53,7 +53,7 @@ x0800 ; switch class     ; Set when switch class key is pressed down
 x1000 ; adblock          ; Remnant of when the game detected adblockers
 ```
 
-For information on how these are encoded, see [`data.md`](/protocol/data.md#bitflags---vu) where the example is actually a sample input packet. If the `joysticks` flag is set, then two additional varfloats are appended to the packet, representing the x-axis movement and the y-axis movement.
+For information on how these are encoded, see [`data.md`](/protocol/data.md#bitflags---vu) where the example is actually a sample input packet. If the `use joysticks` flag is set, then two additional varfloats are appended to the packet, representing the x-axis movement and the y-axis movement. The `use gamepad` has no actual affect on the game and likely just serves for analytical purposes.
 
 Format:
 > `01 flags(input flags) vf(world mouse x) vf(world mouse y) joysticks?[vf(x axis) vf(y axis)]`
