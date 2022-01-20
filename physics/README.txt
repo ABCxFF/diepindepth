@@ -191,6 +191,98 @@ special cases.
 
 ——————————————————————————— §5 Damage ———————————————————————————
 
+Damage works very similarly to knockback, except it differs a bit
+when entities kill  eachother. Like  knockback, each entity has a
+predefined amount  of damage  that  they  can deal per tick. But,
+the if the amount of damage being done in a tick is more than the
+health of the enemy, then  both the  damage per tick of the enemy
+and main entity have to be  decreased. This  was first documented
+by Aznatf and the Spade Squad.
+
+> If the HP of an object is lower then the DPL (DPL'') of the
+> opponent the corresping DPL of it is proportional to the ratio
+> of its health and the opponent's DPL (DPL'').
+> - Spade Squad <http://spade-squad.com/physics.html#CM>
+
+$5.1 Example
+
+Let entity 1 deal 6 damage per tick, and let it have 10 health.
+Let entity 2 deal 4 damage per tick, and let it have 3 health.
+
+After one  collision, it is  obvious  that entity 2 will die, and
+entity 1 will survive... but with how much health?
+
+Well, since  entity 2 has only 3  health, entity 1's  damager per
+tick cannot be fully applied,so entity 1 deals 3 damage per tick.
+Now, we measure what percent  of the maximum damager per tick was
+applied.
+
+3 / 6 = 1 / 2
+
+So entity 1 dealed half of its  damage per tick to kill entity 2,
+therefore entity 2, according  to the law stated above, must deal
+half of its damage per tick  to entity 1, before dying. 4 * 1 / 2
+damage per tick is dealt onto entity 1 finally.
+
+§5.1.1 Summary of Example
+
+Entity 1 = { health = 10, damage per tick = 6 }
+Entity 2 = { health = 3, damage per tick = 4 }
+
+Entity 1 deals half of its maximum damage per tick, since 3 is 6
+divided by 2.
+
+Entity 2 deals half of its maximum damage  per tick, since entity
+1 did.
+
+After collision:
+
+Entity 1 = { health = 8, damage per tick = 6 }
+Entity 2 = { health = 0, damage per tick = 4 }
+
+§5.2 Entity damagePerTick values.
+
+§5.2.1 Constants
+
+— Entity "Type" ———————————: damagePerTick ——————————————————————
+ default                   : 8.0
+ Pentagon                  : 12.0
+ Alpha Pentagon            : 20.0
+ Crasher (small)           : 4.0
+ Team Base                 : 5.0
+———————————————————————————:—————————————————————————————————————
+
+§5.2.2 Bullet Damage per Tick
+
+Bullet Damage Stat = b_DS
+Bullet Damage (see /extras/tankdefs.js) = B_D
+
+damagePerTick = (7 + B_D * 3) * b_DS;
+
+§5.2.3 Tank Damage per Tick
+
+Body Damage Stat = b_DS
+
+damagePerTick = b_DS * 6 + 20
+
+§5.2.3.1 Spike
+
+Praise spike, this tank has 50% more damage per tick. Calculated
+as
+
+damagePerTick = b_DS * 9 + 30
+
+§5.3 Bullet Damage Reduction
+
+All bullets  (traps  and  drones  included)  have  a  75%  damage
+reduction. This means that after colliding with a entity with *N*
+damage per tick,a bullet can only recieve maximum *N* / 4 damage.
+
+§5.4 Tank on Tank Collisions [Outlier]
+
+When two tanks collide with  eachother, both of the entities deal
+50% more damage per tick.
+
 ———————————————————————————— §6 Misc ————————————————————————————
 
 $6.1 Barrel Reload
