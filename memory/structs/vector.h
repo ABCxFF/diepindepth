@@ -1,5 +1,5 @@
 /*
-    Vectors store elements of data. They  provide constant access time to each element via their index. 
+    Vectors store elements of data efficiently. They provide constant access time to each element via their index. 
     Vectors are 12 bytes of size
     
     In Emscripten, Pointers are 32 bit.
