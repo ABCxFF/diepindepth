@@ -38,7 +38,7 @@ These fields are all organized into groups, known as field groups. For each fiel
 3 : PHYSICS
 4 : HEALTH
 5 :
-6 : UNKNOWN
+6 : UNUSED
 7 : ARENA
 8 : NAME
 9 : GUI
@@ -64,6 +64,10 @@ Entities can only be created, deleted, or updated in the game. In the 0x00 packe
 
 ## Memory
 
-> Discuss the basics of how entities look / interact in the memory.
+Due to how entities are parsed, all entities are stored in a double linked list, as shown [in this struct definition](/memory/structs/AbstractEntity.h). The values at offset `0x08` and `0x0C` point to the previous and next entity in the list accordingally. Surprisingly though, this linked list is only accessed (as far as we have seen) by the `0x00` packet parsers in the wasm. So how does the game access entity data without accessing the linked list? The answer lies in field groups
+
+All field groups, as explained above, have certain fields attached to them, and since only the data stored in fields need to be used to render, Zeach made the choice to store a list of all the field groups for each of the 12 groups. These [field groups](/memory/structs/AbstractFieldGroup.h) are stored in [vectors](/memory/structs/vector.h) consecutively in the memory. Right below the double linked list, there are 15 vectors which contain the field groups the game needs to access. 
+
+Example: Every frame the game goes through the `PHYSICS` field group and renders all the data  onto the screen, fetching its entity's POSITION and STYLE group for more information, if it exists. More info on how the game's insides work will be posted in `/wasm` or `/memory` soon™.
 
 
