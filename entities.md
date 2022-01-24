@@ -47,7 +47,6 @@ These fields are all organized into groups, known as field groups. For each fiel
 12:
 13: SCORE
 14: TEAM
-15:
 ```
 
 Field groups are also used for the organization of entities, but that will be explained more in the memory section.
