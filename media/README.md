@@ -42,5 +42,5 @@ Thank you to CX for providing the shape database
 Flag Modification via Incoming Packets  
 ![](https://user-images.githubusercontent.com/79597906/128452904-1f5e476c-9fb4-48f5-99ff-037dce4fb2db.png)  
 
-
-
+Visualization of Diep's Memory  
+![memory](https://user-images.githubusercontent.com/79597906/151162261-c0fa6cb8-4237-47b0-bc79-eec1370e3f62.png)
