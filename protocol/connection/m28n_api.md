@@ -1,6 +1,9 @@
-# [`M28 API`](https://api.n.m28.io/)
+# __WARNING: `m28n` API IS NO LONGER BEING USED FOR DIEP.IO AS OF JANUARY 2ND, 2022 - PLEASE SEE [`./rivet_api`](../rivet_api.md) FOR INFO ON THE NEW SYSTEM__
 
-The M28 api has only 3 api paths that relate to Diep: `/server`, `endpoint/diepio-${gamemode}`, and `endpoint/latency`. All but `/server` is necessary to the client when connecting to a gamemode server.
+
+# [`M28N API`](https://api.n.m28.io/)
+
+The M28N api has only 3 api paths that relate to Diep: `/server`, `endpoint/diepio-${gamemode}`, and `endpoint/latency`. All but `/server` is necessary to the client when connecting to a gamemode server.
 
 First, it's worth mentioning that to connect to a server by id, append `.s.m28n.net` to its id. An example would be id=`abcd`, ws server=`wss://abcd.s.m28n.net`.
 
