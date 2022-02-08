@@ -4,7 +4,7 @@ Also known as shuffling/unshuffling, this encryption system is what used to anno
 
 There are 4 things you need to know to understand the system:
 1. Pseudo Random Number Generators
-2. Header Substitution boxes
+2. Header Substitution Boxes
 3. Content Xor Tables
 4. Praise M28
 
