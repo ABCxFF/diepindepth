@@ -6,7 +6,7 @@
 */
 
 struct AbstractEntity {
-    //** Entity Management Section **//
+    //** Entity Node Metadata **//
 
     // Self Ent Pointer @00
     // - points to itself
@@ -25,13 +25,13 @@ struct AbstractEntity {
     // - Points to the next entity in the double linked list.
     struct AbstractEntity* next_elem; // @0C
 
-    //** Maybe Empty? Section **//
+    //** Empty Node Metadata 1 **//
     // Self Ent Pointer @10
     // - points to this entity
     struct AbstractEntity* self_ptr1; // @10
     uint8_t _gap_0[12];
 
-    //** Maybe Empty? Section **//
+    //** Empty Node Metadata 1 **//
     // Self Ent Pointer @20
     // - points to this entity
     struct AbstractEntity* self_ptr2; // @20
@@ -39,7 +39,7 @@ struct AbstractEntity {
 
 
 
-    //** Entity Identification Section **//
+    //** Entity Identification Section `EHandle` **//
 
     // Self Ent Pointer @30
     // - points to this entity
@@ -51,9 +51,10 @@ struct AbstractEntity {
     uint16_t id; // @36
     // Entity hash, part of the <id, hash> representation system
     uint32_t hash; // @38
+
+    //** Other Properties **//
+    
     uint8_t _gap_2[4];
-
-
 
     // The emscripten_get_now (performance.now()) of when the entity was received
     double entity_creation_time; // @40
@@ -65,7 +66,7 @@ struct AbstractEntity {
     // 3 : PHYSICS
     // 4 : HEALTH
     // 5 : not present
-    // 6 : UNUSED
+    // 6 : EXAMPLE
     // 7 : ARENA
     // 8 : NAME
     // 9 : GUI
