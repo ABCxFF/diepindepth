@@ -85,21 +85,24 @@ struct BarrelDefinition
   // - Defaults to 1
   float base_reload; // @40
   
-  // Bullet Friction (?)
-  // - It seems, the lower, the less friction is applied to a bullet
-  // - Sniper has lower than basic, for example
-  float bullet_friction; // @44
+  // Spread Multiplier
+  // - The finding of this field was automatically generated, so we haven't looked into this much
+  float spread_multiplier; // @44
   
-  // Bullet Durability (?)
+  // Bullet Durability (Life Length)
   // - Relating to the overall life time of a bullet
   // - Example: Higher for trappers than for basic
   float bullet_durability; // @48
 
-  // No idea area
-  // 76 - 100
-  // - 76 (first) is all ones
-  // - 92 (2nd to last) is all 0s
-  int32_t _no_ideas[6];
+  // Unknown
+  // 76 - 88 (excluding 88) are all ones. set by the CannonClass constructor
+  int32_t _no_ideas[3];
+
+  // Force Fire
+  // - The finding of this field was automatically generated, so we haven't looked into this much
+  bool force_fire; // @58
+
+  int32_t _no_idea_2;
   
   // Addon, determines addons to the barrel after render - for example: Traps (the only example)
   // - Values here change every update - they are indexes in the Function Table, for addon generation
