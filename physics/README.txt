@@ -137,6 +137,10 @@ Bullet Recoil (Acceleration) = b_R
 
 b_R = 2 * B_R (t/s)
 
+§3.6 Rectangular Knockback
+
+(soon)
+
 ————————————————————————— §4 Knockback ——————————————————————————
 
 §4.1 General Knockback
