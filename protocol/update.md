@@ -16,20 +16,23 @@ The following are examples of some basic upcreates:
 **Creation**
 > ```less
 > 01 08 # entity id
->    01 # signify creation and read field groups
+>    01 # signifies creations
 >    05 01 # field group table
 >    93 02 93 45 28 # data
 > ```
 **Update**
 > ```less
 > 01 03 # entity id
->    00 01 # signifies update
+>    00 # signifies updates
+>    01 # field group table
 >    05 93 02 00 45 # field data
 >    01 # close field
 > ```
 So in updates, after the entity id are bytes `00 01`, and in creations, it's just `01` which initiates the [jump table](/protocol/data.md#data-organization).
 
 ### 2. Parsing Creation
+
+> This is not up to date, will be fixed soon
 
 As stated in [`entities.md`](/entities.md), entities are defined by their entity id, entity hash, field groups, and field data, all of which are present in creations. The entity id and hash are encoded in the [entid format](/protocol/data.md#entid---vu-hash-vu-id), the field groups are encoded in a [jump table](/protocol/data.md#data-organization), then fields are retrieved from the field groups, ordered by the shuffled field order, then the data type that corresponds with each field in order is read from the packet. Here's a rough sketch of what it would look like:
 
@@ -58,3 +61,4 @@ Abstract Format of a Creation:
 > `entid(entity id, hash) 0x01 jumpTable(fieldGroup indexes only) ...field data`
 
 ### 3. Parsing Update
+
