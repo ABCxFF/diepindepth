@@ -1,0 +1,33 @@
+--> GameRendering.Render() {
+  RenderGrid() -> {}
+  RenderBorders() -> {}
+  RenderDebugCollision() -> QuadTreeSystem.DebugNodes()
+  RenderLeaderArrow() -> RenderArrow()
+  RenderMothershipsArrows() -> {}
+  RenderEntities() -> RenderEntity()
+  RenderNames() -> {}
+  RenderHealthBars() -> {}
+  RenderUI() -> {
+    IsInGame?() {
+      RenderServerStats() -> {}
+      RenderScoreboard() -> {}
+      RenderMinimap() -> {}
+      RenderStatus() -> DrawBar()
+      RenderAttributeUpgrades() -> {}
+      RenderClassTree() -> ClassTree.Render()
+      # RenderNetpropUsage() -> {}
+      RenderAchievements() -> PollAchievements()
+    } else {
+      RenderChangelog() -> {}
+      RenderConnecting() -> {}
+      RenderGameMode() -> {}
+      RenderPartyButton() -> {}
+      RenderStats() -> {}
+      RenderSpawnMenu() -> {}
+      RenderWaitingForPlayers() -> {}
+      RenderCountdown() -> {}
+      RenderFPS() -> {}
+      RenderConsole() -> {}
+    }
+  }
+}
