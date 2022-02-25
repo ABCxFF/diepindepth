@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Diep.io Packet WASM Hook
 // @author       ABC
-// @version      1.0.2
+// @version      1.0.3
 // @namespace    %BUILD
 // @description  %BUILD
 // @match        *://diep.io/
@@ -173,7 +173,7 @@ const TYPE = ['clientbound', 'serverbound'];
 
 const Hook = window.Hook = new PacketHook(function(type, ptr, len) {
   Hook.dispatchEvent(new MessageEvent(TYPE[type], {
-    data: Hook.HEAPU8.slice(ptr, ptr + len)
+    data: Hook.HEAPU8.subarray(ptr, ptr + len)
   }));
 
   return 0;
