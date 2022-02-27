@@ -20,8 +20,7 @@ ID : NAME      : SIZE
 
     In Emscripten, Pointers are 32 bit.
 */
-struct AbstractFieldGroup
-{
+struct AbstractFieldGroup {
     // Self Ent Pointer @00
     // - points to its owner
     struct AbstractEntity* self;
