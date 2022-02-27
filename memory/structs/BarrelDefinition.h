@@ -6,8 +6,7 @@
     In Emscripten, Pointers are 32 bit.
 */
 
-struct BarrelDefinition
-{
+struct BarrelDefinition {
   // In radians, direction the barrel is facing
   float angle; // @00
   
