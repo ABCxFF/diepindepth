@@ -14,8 +14,7 @@
 // are in the same order every update - not fully sure what the order
 // they are in means yet.
 
-struct TankDefinition
-{
+struct TankDefinition {
   // Points to the next tank definition, or its value is 0
   struct TankDefinition* next_tank; // @00
 
