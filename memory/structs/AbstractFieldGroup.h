@@ -16,7 +16,7 @@ ID : NAME      : SIZE
 11: STYLE     : 112
 13: SCORE     : 36
 14: TEAM      : 36
-(credits to Peruna)
+(credits to an anonymous provider)
 
     In Emscripten, Pointers are 32 bit.
 */
