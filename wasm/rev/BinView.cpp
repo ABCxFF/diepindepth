@@ -1,10 +1,10 @@
-#include <BinView.h>
+#include "BinView.h" 
 
 // Constructs a BinView out of a BinData
 BinView::BinView(BinData const& binData) {
-    this->data = binData.GetData();
-    this->dataLength = binData.GetDataLength();
-    this->pos = 0;
+    data = binData.GetData();
+    dataLength = binData.GetDataLength();
+    pos = 0;
 }
 
 // Constructs a BinView out of a data pointer and length
@@ -18,32 +18,32 @@ BinView::BinView(char const* data, size_t dataLength) {
 int BinView::NextUint8() {
     char out;
 
-    if (this->pos + 1 > this->dataLength) out = 0;
-    else out = this->data[this->pos++];
+    if (pos + 1 > dataLength) out = 0;
+    else out = data[pos++];
   
     return out & 0xFF;
 }
 
 // Reads the next 32 bit integer from the data
 int BinView::NextUint32() {
-    if (this->pos + 4 > this->dataLength) return 0;
+    if (pos + 4 > dataLength) return 0;
     
-    return (this->data[this->pos++] & 0xFF) |
-           ((this->data[this->pos++] & 0xFF) << 8) |;
-           ((this->data[this->pos++] & 0xFF) << 16) |;
-           ((this->data[this->pos++] & 0xFF) << 24);
+    return (data[pos++] & 0xFF) |
+           ((data[pos++] & 0xFF) << 8) |
+           ((data[pos++] & 0xFF) << 16) |
+           ((data[pos++] & 0xFF) << 24);
 }
 
 // Reads the next 32 bit floating point number from the data and promotes it to a double
 double BinView::NextFloat() {
     char out[4];
 
-    if (this->pos + 4 > this->dataLength) return 0.0;
+    if (pos + 4 > dataLength) return 0.0;
     
-    out[0] = this->data[this->pos++];
-    out[1] = this->data[this->pos++];
-    out[2] = this->data[this->pos++];
-    out[3] = this->data[this->pos++];
+    out[0] = data[pos++];
+    out[1] = data[pos++];
+    out[2] = data[pos++];
+    out[3] = data[pos++];
   
     return (double) *(float*) &out;
 }
@@ -51,10 +51,10 @@ double BinView::NextFloat() {
 // Reads the next null terminated string from the data into an empty string buffer
 void BinView::NextUTF8String(std::string* stringOutput) {
     char byte;
-    while (this->pos < this->dataLength) {
-        byte = this->NextUint8();
+    while (pos < dataLength) {
+        byte = NextUint8();
 
-        if (!(byte & 0xFF)) break;
+        if (byte & 0xFF == 0) break;
 
         stringOutput->push_back((byte << 24) >> 24);
     }
@@ -62,23 +62,41 @@ void BinView::NextUTF8String(std::string* stringOutput) {
 
 // Reads the next variable length 32 bit integer from the data
 int BinView::NextVarUint32() {
+    int byte, i, out;
 
+    out = 0;
+    i = 0;
+    while (true) {
+        byte = NextUint8() & 0xFF;
+        out |= byte << i;
+        i += 7;
+        if (byte & 0x80 == 0) break;
+        if (i >= 32) break;
+        if (BytesLeft() <= 0) break;
+    }
+    
+    return out;
 }
+
 // Reads the next signed variable length 32 bit integer from the data
 int BinView::NextVarInt32() {
-
+    int unsignedValue;
+    unsignedValue = NextVarUint32();
+    return (unsignedValue >>> 0) ^ (0 - (unsignedValue & 1));
 }
+
 // Returns the number of bytes left in the data
 int BinView::BytesLeft() const {
-
+    return dataLength - pos;
 }
+
 // Returns a pointer to the bytes left in the data
 char const* BinView::BytesLeftPtr() const {
-
+    return &data[pos];
 }
 // Slices the rest of the bytes in the data into a BinData
-void BinView::SliceRest(BinData* binData) const {
-
+void BinView::SliceRest(void* binData) const {
+    //
 }
 // Increases the `this.pos` by `count`
 void BinView::Seek(int count) {
