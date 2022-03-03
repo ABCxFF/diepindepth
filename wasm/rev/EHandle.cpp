@@ -20,7 +20,7 @@ EHandle::EHandle(Entity const* entity) {
 }
   
 // Returns the entity's id
-int EHandle::ID() {
+unsigned short EHandle::ID() {
     return id;
 }
 
