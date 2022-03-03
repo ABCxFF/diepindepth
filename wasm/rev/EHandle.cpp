@@ -37,6 +37,16 @@ void EHandle::Decode(Simulation* simulation, BinView& view) {
     assert(id < 16384);
 }
 
+// Encodes the EHandle into its byte format - appending onto a BinData
+void EHandle::Encode(BinData &out) const {
+    if (hash == 0) {
+        out.PushVarUint32(0);
+    } else {
+        out.PushVarUint32(hash);
+        out.PushVarUint32(id);
+    }
+}
+
 // Gets the entity being referenced by this EHandle
 Entity* EHandle::Deref() const {
     if (hash == 0) return nullptr;
