@@ -58,7 +58,7 @@ std::string BinView::NextUTF8String() {
 
         if (byte & 0xFF == 0) break;
 
-        out->push_back((byte << 24) >> 24);
+        out.push_back((byte << 24) >> 24);
     }
 
     return out;
