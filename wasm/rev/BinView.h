@@ -26,7 +26,7 @@ public:
     // Reads the next 32 bit floating point number from the data and promotes it to a double
     double NextFloat();
     // Reads the next null terminated string from the data into an empty string buffer
-    void NextUTF8String(std::string* stringOutput); // May be a bit inaccurate - Crabby is verifying
+    std::string NextUTF8String();
     // Reads the next variable length 32 bit integer from the data
     int NextVarUint32();
     // Reads the next signed variable length 32 bit integer from the data
@@ -37,7 +37,7 @@ public:
     // Returns a pointer to the bytes left in the data
     char const* BytesLeftPtr() const;
     // Slices the rest of the bytes in the data into a BinData
-    void SliceRest(BinData* binData) const;
+    BinData SliceRest() const;
   
     // Increases the `this.pos` by `count`
     void Seek(int count);
