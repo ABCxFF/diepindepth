@@ -1,4 +1,5 @@
 #include "BinView.h" 
+#include <cstring>
 
 // Constructs a BinView out of a BinData
 BinView::BinView(BinData const& binData) {
