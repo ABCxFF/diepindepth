@@ -1,5 +1,6 @@
 // Thank you 0x1412 and Crabby for helping with C++
 #include <cstddef>
+#include "BinData.h"
 
 class BinView {
 private:
