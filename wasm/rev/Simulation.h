@@ -46,5 +46,5 @@ public:
     static Simulation* GetSimulation(unsigned short id);
     
     // Deconstructs the simulation - for deconstruction of the managers
-    Simulation::~Simulation();
+    ~Simulation();
 };
