@@ -1,5 +1,5 @@
 // Thank you 0x1412 and Crabby for helping with C++
-typedef unsigned long size_t;
+#include <cstddef>
 
 class BinView {
 private:
