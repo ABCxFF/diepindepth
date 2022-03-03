@@ -21,17 +21,17 @@ int BinView::NextUint8() {
     if (pos + 1 > dataLength) out = 0;
     else out = data[pos++];
   
-    return out & 0xFF;
+    return out;
 }
 
 // Reads the next 32 bit integer from the data
 int BinView::NextUint32() {
     if (pos + 4 > dataLength) return 0;
     
-    return (data[pos++] & 0xFF) |
-           ((data[pos++] & 0xFF) << 8) |
-           ((data[pos++] & 0xFF) << 16) |
-           ((data[pos++] & 0xFF) << 24);
+    return data[pos++] |
+           (data[pos++] << 8) |
+           (data[pos++] << 16) |
+           (data[pos++] << 24);
 }
 
 // Reads the next 32 bit floating point number from the data and promotes it to a double
@@ -50,15 +50,15 @@ double BinView::NextFloat() {
 
 // Reads the next null terminated string from the data into an empty string buffer
 std::string BinView::NextUTF8String() {
-    std::string out("");
+    std::string out;
     char byte;
     
     while (pos < dataLength) {
         byte = NextUint8();
 
-        if (byte & 0xFF == 0) break;
+        if (byte == 0) break;
 
-        out.push_back((byte << 24) >> 24);
+        out.push_back(byte);
     }
 
     return out;
@@ -71,7 +71,7 @@ int BinView::NextVarUint32() {
     out = 0;
     i = 0;
     while (true) {
-        byte = NextUint8() & 0xFF;
+        byte = NextUint8();
         out |= byte << i;
         i += 7;
         if (byte & 0x80 == 0) break;
