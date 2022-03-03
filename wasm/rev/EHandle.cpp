@@ -58,6 +58,7 @@ Entity* EHandle::Deref() const {
     assert(id < 16384);
     
     Entity* entity = entities->GetEntity(id);
-    if (simulation->IDManager->ids[id] + entity->id == 0 || entity->id != id) return nullptr;
+    // Following line is a *bit* inaccurate
+    if (!simulation->IDManager->ids[id] || entity->id != id) return nullptr;
     return entity;
 }
