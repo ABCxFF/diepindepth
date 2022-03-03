@@ -101,7 +101,7 @@ char const* BinView::BytesLeftPtr() const {
 
 // Slices the rest of the bytes in the data into a BinData
 // - (thank you 1412 for help cracking this)
-BinData BinView::SliceRest(void* binData) const {
+BinData BinView::SliceRest() const {
     return { BytesLeftPtr(), BytesLeft() };
 }
 
