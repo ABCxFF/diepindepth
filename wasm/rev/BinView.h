@@ -41,5 +41,5 @@ public:
     // Increases the `this.pos` by `count`
     void Seek(int count);
     // Copies the next *`count`* bytes from the data into `buffer`
-    void BinView::NextBytes(size_t count, void* outputBuffer);
+    void NextBytes(size_t count, void* outputBuffer);
 };
