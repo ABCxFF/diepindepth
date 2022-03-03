@@ -27,7 +27,7 @@ public:
     Simulation(Game* game);
     
     // Getter for the simulation's `id`
-    unsigned short ID();
+    unsigned short GetID();
     // Getter for the simulation's `tick`
     unsigned int Tick();
     // Setter for the simulation's `tick`
