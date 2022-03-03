@@ -6,10 +6,10 @@
 class EHandle {
 private:
     // The id of the simulation the entity is in
-    short simulationId;
+    unsigned short simulationId;
 
     // The entity's id/index
-    short id;
+    unsigned short id;
   
     // The entity's hash
     int hash;
@@ -21,7 +21,7 @@ public:
     EHandle(Entity const* entity);
   
     // Returns the entity's id
-    int ID();
+    unsigned short ID();
     // Overwrites the EHandle from the encoded byte format
     void Decode(Simulation* simulation, BinView& view);
     // Encodes the EHandle into its byte format - appending onto a BinData
