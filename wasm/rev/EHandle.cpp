@@ -59,6 +59,6 @@ Entity* EHandle::Deref() const {
     
     Entity* entity = entities->GetEntity(id);
     // Following line is a *bit* inaccurate
-    if (!simulation->IDManager->ids[id] || entity->id != id) return nullptr;
+    if (!entities->existingIds[id] || entity->id != id) return nullptr;
     return entity;
 }
