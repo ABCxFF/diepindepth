@@ -86,7 +86,7 @@ int BinView::NextVarUint32() {
 int BinView::NextVarInt32() {
     int unsignedValue;
     unsignedValue = NextVarUint32();
-    return (unsignedValue >>> 0) ^ (0 - (unsignedValue & 1));
+    return (unsignedValue >> 0) ^ (0 - (unsignedValue & 1));
 }
 
 // Returns the number of bytes left in the data
