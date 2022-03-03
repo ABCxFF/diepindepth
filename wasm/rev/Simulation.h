@@ -12,15 +12,17 @@ private:
 
     // The game of the simulation
     Game* game;
-
-public:
+    
     // The entity manager of the simulation
     EntityManager entities;
+    
     // The event manager of the simulation
     EventManager events;
+    
     // The system manager of the simulation
     SystemManager systems;
-
+    
+public:
     // Constructs a simulation out of the game
     Simulation(Game* game);
     
