@@ -49,15 +49,19 @@ double BinView::NextFloat() {
 }
 
 // Reads the next null terminated string from the data into an empty string buffer
-void BinView::NextUTF8String(std::string* stringOutput) {
+std::string BinView::NextUTF8String() {
+    std::string out("");
     char byte;
+    
     while (pos < dataLength) {
         byte = NextUint8();
 
         if (byte & 0xFF == 0) break;
 
-        stringOutput->push_back((byte << 24) >> 24);
+        out->push_back((byte << 24) >> 24);
     }
+
+    return out;
 }
 
 // Reads the next variable length 32 bit integer from the data
@@ -94,15 +98,22 @@ int BinView::BytesLeft() const {
 char const* BinView::BytesLeftPtr() const {
     return &data[pos];
 }
+
 // Slices the rest of the bytes in the data into a BinData
-void BinView::SliceRest(void* binData) const {
-    //
+// - (thank you 1412 for help cracking this)
+BinData BinView::SliceRest(void* binData) const {
+    return { BytesLeftPtr(), BytesLeft() };
 }
+
 // Increases the `this.pos` by `count`
 void BinView::Seek(int count) {
-
+    pos += count;
 }
+
 // Copies the next *`count`* bytes from the data into `buffer`
 void BinView::NextBytes(size_t count, void* outputBuffer) {
-
+    if (BytesLeft() < count) return;
+    
+    memcpy(outputBuffer, BytesLeftPtr(), count);
+    Seek(count);
 }
