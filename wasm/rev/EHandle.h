@@ -22,8 +22,10 @@ public:
   
     // Returns the entity's id
     int ID();
-    // Overwrites the entity handle with the encoded EHandle
+    // Overwrites the EHandle from the encoded byte format
     void Decode(Simulation* simulation, BinView& view);
+    // Encodes the EHandle into its byte format - appending onto a BinData
+    void Encode(BinData &out) const;
     // Gets the entity being referenced by this EHandle
     Entity* Deref() const;
 };
