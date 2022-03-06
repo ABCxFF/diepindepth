@@ -45,7 +45,7 @@ class XorShift implements PRNG {
         this._a = a;
         this._b = b;
         this._c = c;
-	}
+    }
     next() {
         this.seed ^= this.seed << this._a;
         this.seed ^= this.seed >>> this._b;
