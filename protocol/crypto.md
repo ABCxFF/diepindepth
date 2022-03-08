@@ -131,7 +131,7 @@ const xorTableShuffler = new PRNG(...);
 function generateXorTable() {
     const table = new Uint8Array(XOR_TABLE_SIZE).map((_, i) => xorTablePRNG.next());
     
-    for (let i = 127; i >= 0; i--) {
+    for (let i = XOR_TABLE_SIZE - 1; i >= 0; i--) {
         // Instead of `(prandom val % i) + 1`, it is `prandom val % (i + 1)` (the modification)
         const index = (xorTableShuffler.next() >>> 0) % (i + 1);
         
