@@ -24,7 +24,7 @@ There are 6 sections that divide up the information collected.
    Including any extra information, fun facts, misc algorithms, and any physics not provided in [Spade Squad](http://spade-squad.com)
 6. Media ([`media/`](./media/))  
    Including screenshots and other forms of media relating to our research in diep
-7. Physics ([`physics/`](./physics/))
+7. Physics ([`physics/`](./physics/))  
    Including information regarding the properties of entities, such as movement and size
 
 Before going too in depth into entity related memory and protocol, it is highly recommended you read [`entities.md`](./entities.md) to understand how entities work.
