@@ -4,7 +4,7 @@ Also known as shuffling/unshuffling, this encryption system is what used to anno
 
 There are 4 things you need to know to understand the system:
 1. Pseudo Random Number Generators
-2. Header Substitution Boxes
+2. Header Jump Tables
 3. Content Xor Tables
 4. Praise M28
 
@@ -76,18 +76,19 @@ class TripleLCG implements PRNG {
 }
 ```  
 
-## Header Substitiution Boxes (s-box)
+## Header Jump Tables (s-box)
+> The cryptographic technical term for this structure is a Subsitution Box "s-box for short"  
 
-These are arrays of 128 bytes generated with PRNGs that are used to shuffle the headers of packets. In this section we will discuss how to generate these lookup tables and how to use / apply them to incoming / outgoing headers.
+These are arrays of 128 bytes generated with PRNGs that are used to shuffle the headers of packets. In this section we will discuss how to generate these tables and how to use / apply them to incoming / outgoing headers.
 
-The generation of an s-box is fairly simple, although something in the algorithm we reversed and will describe is off - unsure yet what exactly, but I will not investigate. First the client will generate an uint8 array of length 128, where each value is its index. Then, the client will shuffle the array using the [Fisher Yates shuffle algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) and a PRNG. This PRNG is called the `sBoxShuffler`, and its PRNG type as well as algorithm changes every new build. The result of this shuffling is the encryption s-box, and the decryption s-box is just an inverse of the table. A code sample is shown.
+The generation of a jump table is fairly simple, although something in the algorithm we reversed and will describe is off - unsure yet what exactly, but I will not investigate. First the client will generate an uint8 array of length 128, where each value is its index. Then, the client will shuffle the array using the [Fisher Yates shuffle algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) and a PRNG. This PRNG is called the `jumpTableShuffler`, and its PRNG type as well as algorithm changes every new build. The result of this shuffling is the encryption jump table, and the decryption jump table is just an inverse of the table. A code sample is shown.
 ```js
-function generateSBox() {
-    const sBoxShuffler = new PRNG(...);
+function generateJumpTable() {
+    const jumpTableShuffler = new PRNG(...);
     const table = new Uint8Array(128).map((_, i) => i);
     
     for (let i = 127; i >= 0; i--) {
-        const index = ((sBoxShuffler.next() >>> 0) % i) + 1;
+        const index = ((jumpTableShuffler.next() >>> 0) % i) + 1;
         
         const temp = table[index];
         table[index] = table[i];
@@ -101,17 +102,17 @@ function generateSBox() {
 }
 ```
 \
-To apply an s-box on a packet header (to encrypt it), you must substitute from value to value a certain number of times, then return the final substitution. Another internal PRNG, which we've named `subtitutionCount`, is made (one for encryption and decryption) to determine the number of times it does the substitution. A full example of this is shown.
+To apply a jump table on a packet header (to encrypt it), you must "jump" or subsitute from value to value a certain number of times, then return the final jump/substitution. Another internal PRNG, which we've named `jumpCount`, is made (one for encryption and decryption) to determine the number of times it subsitutes/jumps. A full example of this is shown.
 ```js
 // This example is only encryption, pretty obvious how to change to decryption though.
 const { encryptionTable } = generateSBox();
-const substitutionCountPRNG = new PRNG(...);
+const jumpCountPRNG = new PRNG(...);
 
 function encryptHeader(header) {
-    const subtitutionCount = (substitutionCountPRNG.next() >>> 0) % 16;
+    const jumpCount = (jumpCountPRNG.next() >>> 0) % 16;
     let position = header;
 
-    for (let i = 0; i <= subtitutionCount; i++) position = encryptionTable[position];
+    for (let i = 0; i <= jumpCount; i++) position = encryptionTable[position];
 
     return position;
 }
@@ -121,7 +122,7 @@ function encryptHeader(header) {
 
 These are tables generated with PRNGs that are used to shuffle the content of packets. The generation of a xor table is simple and fully understood, and its application onto the packet content is even simpler. 
 
-The generation of xor tables are similar to the generation of an s-box, except the values of the initial, unshuffled table are not just their index in the array but instead, each value is generated from another PRNG, which we've called the `xorTable` PRNG. The length of the xor table changes every build, and the length is not the same for serverbound and clientbound packets - an unrelated cryptographic system is used for each. As for the shuffling of the xor table, it's a slightly modified version of the [Fisher Yates shuffle algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) - the modification will be noted in the code sample shown below.
+The generation of xor tables are similar to the generation of a jump table, except the values of the initial, unshuffled table are not just their index in the array but instead, each value is generated from another PRNG, which we've called the `xorTable` PRNG. The length of the xor table changes every build, and the length is not the same for serverbound and clientbound packets - an unrelated cryptographic system is used for each. As for the shuffling of the xor table, it's a slightly modified version of the [Fisher Yates shuffle algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) - the modification will be noted in the code sample shown below.
 
 ```js
 const XOR_TABLE_SIZE = ...; // Changes per build
