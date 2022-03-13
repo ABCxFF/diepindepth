@@ -77,7 +77,7 @@ class TripleLCG implements PRNG {
 ```  
 
 ## Header Jump Tables (s-box)
-> The cryptographic technical term for this structure is a Subsitution Box "s-box for short"  
+> The technical, cryptographic term for this structure is a Subsitution Box "s-box for short"  
 
 These are arrays of 128 bytes generated with PRNGs that are used to shuffle the headers of packets. In this section we will discuss how to generate these tables and how to use / apply them to incoming / outgoing headers.
 
