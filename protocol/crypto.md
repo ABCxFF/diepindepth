@@ -1,6 +1,6 @@
 # Packet Encoding and Decoding
 
-Also known as shuffling/unshuffling, this encryption system is what used to annoy many of the people brave enough to attempt headless botting. We have fully reverse-engineered every part of the encryption system and will discuss it below.
+Also known as shuffling/unshuffling, this encryption system is what used to annoy many of the people brave enough to attempt headless botting. For each packet, a newly generated table is used to shuffle/unshuffle the packet. We have fully reverse-engineered every part of the encryption system and will discuss it below.
 
 There are 4 things you need to know to understand the system:
 1. Pseudo Random Number Generators
@@ -77,7 +77,7 @@ class TripleLCG implements PRNG {
 ```  
 
 ## Header Jump Tables (s-box)
-> The cryptographic technical term for this structure is a Subsitution Box "s-box for short"  
+> The technical, cryptographic term for this structure is a Subsitution Box "s-box for short"  
 
 These are arrays of 128 bytes generated with PRNGs that are used to shuffle the headers of packets. In this section we will discuss how to generate these tables and how to use / apply them to incoming / outgoing headers.
 
