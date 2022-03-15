@@ -81,34 +81,38 @@ class TripleLCG implements PRNG {
 
 These are arrays of 128 bytes generated with PRNGs that are used to shuffle the headers of packets. In this section we will discuss how to generate these tables and how to use / apply them to incoming / outgoing headers.
 
-The generation of a jump table is fairly simple, although something in the algorithm we reversed and will describe is off - unsure yet what exactly, but I will not investigate. First the client will generate an uint8 array of length 128, where each value is its index. Then, the client will shuffle the array using the [Fisher Yates shuffle algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) and a PRNG. This PRNG is called the `jumpTableShuffler`, and its PRNG type as well as algorithm changes every new build. The result of this shuffling is the encryption jump table, and the decryption jump table is just an inverse of the table. A code sample is shown.
-```js
-function generateJumpTable() {
+The generation of a jump table is fairly simple. First, the client will generate an uint8 array of length 128, where each value is its index. Then, the client will shuffle the array using the [Fisher Yates shuffle algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) and a PRNG. This PRNG is called the `jumpTableShuffler`, and its PRNG type as well as algorithm seeds change every new build.
+
+It is worth noting that the clientbound and serverbound jump tables differ slightly. As known, the 0x00 serverbound packet is never shuffled, and hence it should be impossible for any header to ever, after being encoded, become a 0x00 packet by accident. For this reason, only indices 1 - 127 inclusive are actually shuffled, so that 0, and only 0, jumps to 0. In the clientbound jump table though, the 0x01 packet must be preserved. So, after shuffling the entire jump table (0 - 128 inclusive), the game searches for the number 1 inside of the shuffled table, and swaps it with the element at index 1. Finally, to get the decryption jump table of any such encryption jump table, you must inverse it. A code sample is shown.
+```ts
+function generateJumpTable(isClientBound: boolean) {
     const jumpTableShuffler = new PRNG(...);
     const table = new Uint8Array(128).map((_, i) => i);
     
-    for (let i = 127; i >= 0; i--) {
-        const index = ((jumpTableShuffler.next() >>> 0) % i) + 1;
+    for (let i = 127; i >= 1; i--) {
+        const index = ((jumpTableShuffler.next() >>> 0) % (isClientBound ? i + 1 : i)) + (isClientBound ? 0 : 1);
         
         const temp = table[index];
         table[index] = table[i];
         table[i] = temp;
     }
     
+   if (isClientBound) table[table.indexOf(1)] = table[1] = 1;
+
     return {
         encryptionTable: table,
-        decryptionTable: table.map((n, i, l) => l.indexOf(n))
+        decryptionTable: table.map((n, i, l) => l.indexOf(i))
     }
 }
 ```
 \
 To apply a jump table on a packet header (to encrypt it), you must "jump" or subsitute from value to value a certain number of times, then return the final jump/substitution. Another internal PRNG, which we've named `jumpCount`, is made (one for encryption and decryption) to determine the number of times it subsitutes/jumps. A full example of this is shown.
-```js
+```ts
 // This example is only encryption, pretty obvious how to change to decryption though.
-const { encryptionTable } = generateSBox();
 const jumpCountPRNG = new PRNG(...);
 
-function encryptHeader(header) {
+function encryptHeader(header: number, isClientBound: boolean) {
+    const { encryptionTable } = generateJumpTable(isClientBound: boolean);
     const jumpCount = (jumpCountPRNG.next() >>> 0) % 16;
     let position = header;
 
@@ -122,8 +126,7 @@ function encryptHeader(header) {
 
 These are tables generated with PRNGs that are used to shuffle the content of packets. The generation of a xor table is simple and fully understood, and its application onto the packet content is even simpler. 
 
-The generation of xor tables are similar to the generation of a jump table, except the values of the initial, unshuffled table are not just their index in the array but instead, each value is generated from another PRNG, which we've called the `xorTable` PRNG. The length of the xor table changes every build, and the length is not the same for serverbound and clientbound packets - an unrelated cryptographic system is used for each. As for the shuffling of the xor table, it's a slightly modified version of the [Fisher Yates shuffle algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) - the modification will be noted in the code sample shown below.
-
+The generation of xor tables are similar to the generation of a jump table, except the values of the initial, unshuffled table are not just their index in the array but instead, each value is generated from another PRNG, which we've called the `xorTable` PRNG. The length of the xor table changes every build, and the length is not the same for serverbound and clientbound packets - an unrelated cryptographic system is used for each. As for the shuffling of the xor table, it the [Fisher Yates shuffle algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) yet again. Code sample shown
 ```js
 const XOR_TABLE_SIZE = ...; // Changes per build
 const xorTablePRNG = new PRNG(...);
@@ -133,7 +136,6 @@ function generateXorTable() {
     const table = new Uint8Array(XOR_TABLE_SIZE).map((_, i) => xorTablePRNG.next());
     
     for (let i = XOR_TABLE_SIZE - 1; i >= 0; i--) {
-        // Instead of `(prandom val % i) + 1`, it is `prandom val % (i + 1)` (the modification)
         const index = (xorTableShuffler.next() >>> 0) % (i + 1);
         
         const temp = table[index];
@@ -150,10 +152,12 @@ function generateXorTable() {
 All you need to do to apply an xor table to a packet is XOR each byte in the xor table with the corresponding byte in the packet, excluding the header. See below.
 
 ```ts
-// This is an abstract function, we will ignore the fact that
-// certain packets are not encoded (Incoming 0x01, Outgoing 0x00).
-export function encryptPacket(packet: Uint8Array): void {
-    packet[0] = encryptHeader(packet[0]);
+export function encryptPacket(packet: Uint8Array, isClientBound: boolean): void {
+    // Ignored packets = Incoming 0x01, Outgoing 0x00.
+    if (isClientbound && packet[0] === 0x01) return;
+    if (!isClientbound && packet[0] === 0x00) return;
+
+    packet[0] = encryptHeader(packet[0], isClientBound);
 
     const xorTable = generateXorTable();
     for (let i = 1; i < packet.length; i++) packet[i] ^= xorTable[i % XOR_TABLE_SIZE];
