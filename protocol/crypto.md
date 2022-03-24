@@ -27,7 +27,7 @@ class LCG implements PRNG {
     next() {
         const nextSeed = (BigInt(this.seed >>> 0) * this._multiplier + this._increment) % this._modulus;
 
-        this.seed = Number(nextSeed & 0xFFFFFFFFn) | 0; // safely convert to a signed integer
+        this.seed = Number(nextSeed & 0xFFFFFFFFn) | 0; // safely convert to a 32 bit integer
 
         return this.seed;
     }
