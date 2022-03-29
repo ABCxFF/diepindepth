@@ -91,15 +91,15 @@ It's worth noting that not all notifications are sent through this packet. The a
 
 ## **`0x04` Server Info Packet**
 
-This tells the client which gamemode is selected, and sets the server region which is displayed next to the ping when holding L.
+This tells the client which gamemode is selected, as well which server, and sets the server region which is displayed next to the ping when holding L.
 
 Format:
-> `04 stringNT(gamemode) stringNT(host-region)`
+> `04 stringNT(gamemode) stringNT(server uuid) stringNT(host-region)`
 
 Sample Packet (Decoded):
 
 ```
-clientbound <- 04 stringNT("sandbox") stringNT("vultr-amsterdam")
+clientbound <- 04 stringNT("sandbox") stringNT("742a37-f24a-4030-b4bd-2fa3515965af") stringNT("vultr-amsterdam")
 ```
 
 ---
