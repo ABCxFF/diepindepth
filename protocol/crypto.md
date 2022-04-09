@@ -1,6 +1,6 @@
 # Packet Encoding and Decoding
 
-Also known as shuffling/unshuffling, this encryption system is what used to annoy many of the people brave enough to attempt headless botting. For each packet, a newly generated XOR table is used to shuffle/unshuffle the packet. The header jump constant stays constant and does not change for every packet. We have fully reverse-engineered every part of the encryption system and will discuss it below.
+Also known as shuffling/unshuffling, this encryption system is what used to annoy many of the people brave enough to attempt headless botting. For each packet, a newly generated XOR table is used to shuffle/unshuffle the packet. The header jump table stays constant and does not change for every packet. We have fully reverse-engineered every part of the encryption system and will discuss it below.
 
 There are 4 things you need to know to understand the system:
 1. Pseudo Random Number Generators
