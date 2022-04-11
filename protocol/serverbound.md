@@ -165,7 +165,7 @@ This packet has never been observed and has only been seen in server code images
     ... code after unknown
 ```
 
-He also talks about it being related to the Mobile version of the game and is involved in a TPC connection used on mobile.
+He also talks about it being related to the Mobile version of the game and is involved in a TCP connection used on mobile.
 
 
 Format:
