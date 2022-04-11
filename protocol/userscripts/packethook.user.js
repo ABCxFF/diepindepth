@@ -22,7 +22,7 @@ class PacketHook extends EventTarget {
     return {
       BUILD: "50422759e5c26a46ac93d26d3873ad649b9af552",
       SEND_PACKET_INDEX: 130,
-      RECV_PACKET_INDEX: -1,
+      RECV_PACKET_INDEX: 407,
       MALLOC: "ja",
       FREE: "W",
       SOCKET_PTR: 111108
