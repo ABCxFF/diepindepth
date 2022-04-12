@@ -193,9 +193,11 @@ window.alert('Invalid party ID');
 
 ---
 
-## **`0x0A` Player Count Packet**
+## **`0x0A` [Unused] Player Count Packet**
 
-This packet is sent occasionally, sending the total client count encoded in a varuint. This updates the text on the bottom right of the screen "*n* players". This packet is not sent globally across all servers at the same time, and the exact ticks before a player count update are unknown.
+> This packet was no longer used by the server for a long time, but now it is ignored by the client as well. This means that spoofing the following packet will have no affect. (Similar to the now gone [`0x0C` String JS Challenge](#0x0d-unnamed-packet)
+
+This packet would have sent the total client count encoded in a varuint. This would have updated the text on the bottom right of the screen "*n* players". This packet was not sent globally across all servers at the same time, and the exact ticks before a player count update are unknown.
 
 Format:
 > `0A vu(client count)`
