@@ -48,8 +48,8 @@ struct TankDefinition {
   // Bools are one byte
   // For tanks that have a square body
   bool is_square; // @4C
-  // Whether or not the tank is allowed to shoot
-  bool can_shoot; // @4D
+  // True if the tank can not shoot - example, necromancer
+  bool no_reload; // @4D
   // For tanks like manager
   bool can_go_invisible; // @4E
   // Not present in any tanks
