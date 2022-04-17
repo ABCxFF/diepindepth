@@ -101,7 +101,8 @@ struct BarrelDefinition {
   // - The finding of this field was automatically generated, so we haven't looked into this much
   bool force_fire; // @58
 
-  int32_t _no_idea_2;
+  // Bullet Addon - executed on to a bullet when it is fired.
+  int32_t bullet_addon;
   
   // Addon, determines addons to the barrel after render - for example: Traps (the only example)
   // - Values here change every update - they are indexes in the Function Table, for addon generation
