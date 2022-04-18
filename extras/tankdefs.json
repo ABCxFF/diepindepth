@@ -14,40 +14,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 95,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1,
                 "recoil": 1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 1,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -99,62 +99,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": -26,
                 "size": 95,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1,
                 "recoil": 0.75,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 0.9,
                     "damage": 0.65,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 26,
-                "size": 95,
-                "width": 42,
-                "delay": 0.5,
-                "reload": 1,
-                "recoil": 0.75,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 0.9,
-                    "damage": 0.65,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -202,84 +180,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": -26,
                 "size": 80,
-                "width": 42,
+                "width": 1,
                 "delay": 0.5,
                 "reload": 1,
                 "recoil": 0.5,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 0.7,
                     "damage": 0.6,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 26,
-                "size": 80,
-                "width": 42,
-                "delay": 0.5,
-                "reload": 1,
-                "recoil": 0.5,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 0.7,
-                    "damage": 0.6,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 0,
-                "size": 95,
-                "width": 42,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 0.5,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 0.7,
-                    "damage": 0.6,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -331,84 +265,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": -0.7853981633974483,
                 "offset": 0,
                 "size": 95,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1,
                 "recoil": 1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 0.7,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0.7853981633974483,
-                "offset": 0,
-                "size": 95,
-                "width": 42,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.7,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 0,
-                "size": 95,
-                "width": 42,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.7,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -459,106 +349,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 3.141592653589793,
                 "offset": 0,
                 "size": 95,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1,
                 "recoil": 1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 0.75,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": -1.5707963267948966,
-                "offset": 0,
-                "size": 95,
-                "width": 42,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.75,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 1.5707963267948966,
-                "offset": 0,
-                "size": 95,
-                "width": 42,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.75,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 0,
-                "size": 95,
-                "width": 42,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.75,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -606,194 +430,65 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": -0.7853981633974483,
                 "offset": 0,
                 "size": 95,
-                "width": 42,
+                "width": 1,
                 "delay": 0.5,
                 "reload": 1,
                 "recoil": 1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 0.65,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0.7853981633974483,
-                "offset": 0,
-                "size": 95,
-                "width": 42,
-                "delay": 0.5,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.65,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": -2.356194490192345,
-                "offset": 0,
-                "size": 95,
-                "width": 42,
-                "delay": 0.5,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.65,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 2.356194490192345,
-                "offset": 0,
-                "size": 95,
-                "width": 42,
-                "delay": 0.5,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.65,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             },
             {
                 "angle": 3.141592653589793,
                 "offset": 0,
                 "size": 95,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1,
                 "recoil": 1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 0.65,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": -1.5707963267948966,
-                "offset": 0,
-                "size": 95,
-                "width": 42,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.65,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 1.5707963267948966,
-                "offset": 0,
-                "size": 95,
-                "width": 42,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.65,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 0,
-                "size": 95,
-                "width": 42,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.65,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -846,40 +541,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 110,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1.5,
                 "recoil": 3,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 1,
                     "speed": 1.5,
-                    "friction": 0.3,
+                    "scatterRate": 0.3,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -931,40 +626,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 95,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 0.5,
                 "recoil": 1,
-                "isTrapezoid": true,
+                "flags": {
+                    "isTrapezoid": true,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 0.7,
                     "speed": 1,
-                    "friction": 3,
+                    "scatterRate": 3,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -1017,62 +712,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 95,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1,
                 "recoil": 1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 1,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 3.141592653589793,
-                "offset": 0,
-                "size": 80,
-                "width": 42,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 1,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -1123,84 +796,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 95,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1,
                 "recoil": 0.2,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 1,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 3.665191429188092,
-                "offset": 0,
-                "size": 80,
-                "width": 42,
-                "delay": 0.5,
-                "reload": 1,
-                "recoil": 2.5,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.2,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 0.5,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 2.6179938779914944,
-                "offset": 0,
-                "size": 80,
-                "width": 42,
-                "delay": 0.5,
-                "reload": 1,
-                "recoil": 2.5,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.2,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 0.5,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -1253,40 +882,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 95,
-                "width": 71.39999999999999,
+                "width": 1.7,
                 "delay": 0,
                 "reload": 4,
                 "recoil": 15,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 2,
                     "damage": 3,
                     "speed": 0.7,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 0.1
+                    "absorbtionFactor": 0.1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -1341,67 +970,42 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": -1.5707963267948966,
                 "offset": 0,
                 "size": 70,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 6,
                 "recoil": 1,
-                "isTrapezoid": true,
+                "flags": {
+                    "isTrapezoid": true,
+                    "forceFire": true
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
-                "droneCount": 4,
-                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
-                    "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.8,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 1.5707963267948966,
-                "offset": 0,
-                "size": 70,
-                "width": 42,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 1,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 4,
-                "canControlDrones": true,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.7,
-                    "speed": 0.8,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
+                },
+                "droneCount": 4
             }
         ],
         "stats": [
@@ -1448,115 +1052,42 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": -1.5707963267948966,
                 "offset": 0,
                 "size": 70,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 6,
                 "recoil": 1,
-                "isTrapezoid": true,
+                "flags": {
+                    "isTrapezoid": true,
+                    "forceFire": true
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
-                "droneCount": 2,
-                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
-                    "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.8,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 1.5707963267948966,
-                "offset": 0,
-                "size": 70,
-                "width": 42,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 1,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 2,
-                "canControlDrones": true,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.7,
-                    "speed": 0.8,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 0,
-                "size": 70,
-                "width": 42,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 1,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 2,
-                "canControlDrones": true,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.7,
-                    "speed": 0.8,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 3.141592653589793,
-                "offset": 0,
-                "size": 70,
-                "width": 42,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 1,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 2,
-                "canControlDrones": true,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.7,
-                    "speed": 0.8,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
+                },
+                "droneCount": 2
             }
         ],
         "stats": [
@@ -1606,106 +1137,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": -26,
                 "size": 95,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1,
                 "recoil": 1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 0.5,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 26,
-                "size": 95,
-                "width": 42,
-                "delay": 0.5,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.5,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 3.141592653589793,
-                "offset": -26,
-                "size": 95,
-                "width": 42,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.5,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 3.141592653589793,
-                "offset": 26,
-                "size": 95,
-                "width": 42,
-                "delay": 0.5,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.5,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -1753,128 +1218,65 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": -0.7853981633974483,
                 "offset": 0,
                 "size": 80,
-                "width": 42,
-                "delay": 0.66,
+                "width": 1,
+                "delay": 0,
                 "reload": 1,
                 "recoil": 0.7,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 0.55,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0.7853981633974483,
-                "offset": 0,
-                "size": 80,
-                "width": 42,
-                "delay": 0.66,
-                "reload": 1,
-                "recoil": 0.7,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.55,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": -0.39269908169872414,
-                "offset": 0,
-                "size": 95,
-                "width": 42,
-                "delay": 0.33,
-                "reload": 1,
-                "recoil": 0.7,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.55,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0.39269908169872414,
-                "offset": 0,
-                "size": 95,
-                "width": 42,
-                "delay": 0.33,
-                "reload": 1,
-                "recoil": 0.7,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.55,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             },
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 110,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1,
                 "recoil": 0.7,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 0.55,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -1925,40 +1327,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.8,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 120,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 2,
                 "recoil": 3,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 1,
                     "speed": 1.5,
-                    "friction": 0.3,
+                    "scatterRate": 0.3,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -2006,40 +1408,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
-            "devOnly": false
+            "canShoot": true,
+            "devOnly": true
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 75,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1,
                 "recoil": 1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 300,
                     "damage": 7,
                     "speed": 2,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -2087,67 +1489,42 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 4,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": -1.5707963267948966,
                 "offset": 0,
                 "size": 70,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 6,
                 "recoil": 1,
-                "isTrapezoid": true,
+                "flags": {
+                    "isTrapezoid": true,
+                    "forceFire": true
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
-                "droneCount": 0,
-                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
-                    "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.42,
                     "speed": 0.72,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 1.5707963267948966,
-                "offset": 0,
-                "size": 70,
-                "width": 42,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 1,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 0,
-                "canControlDrones": true,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.42,
-                    "speed": 0.72,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
+                },
+                "droneCount": 0
             }
         ],
         "stats": [
@@ -2194,150 +1571,65 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": -26,
                 "size": 95,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1,
                 "recoil": 1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 0.5,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 26,
-                "size": 95,
-                "width": 42,
-                "delay": 0.5,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.5,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 2.0943951023931953,
-                "offset": -26,
-                "size": 95,
-                "width": 42,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.5,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 2.0943951023931953,
-                "offset": 26,
-                "size": 95,
-                "width": 42,
-                "delay": 0.5,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.5,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             },
             {
                 "angle": -2.0943951023931953,
                 "offset": -26,
                 "size": 95,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1,
                 "recoil": 1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 0.5,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": -2.0943951023931953,
-                "offset": 26,
-                "size": 95,
-                "width": 42,
-                "delay": 0.5,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.5,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -2388,62 +1680,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.85,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 110,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 2.5,
                 "recoil": 0.3,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 0.7,
                     "health": 1,
                     "damage": 0.75,
                     "speed": 1.4,
-                    "friction": 0.3,
+                    "scatterRate": 0.3,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 0,
-                "size": 95,
-                "width": 56.7,
-                "delay": 0.2,
-                "reload": 2.5,
-                "recoil": 0.3,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 0.7,
-                    "health": 1,
-                    "damage": 0.75,
-                    "speed": 1.4,
-                    "friction": 0.3,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 0.7
                 }
             }
         ],
@@ -2495,106 +1765,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": -32,
                 "size": 65,
-                "width": 25.2,
+                "width": 0.6,
                 "delay": 0.5,
                 "reload": 1,
                 "recoil": 0.2,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 0.45,
                     "damage": 0.5,
                     "speed": 1.1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 32,
-                "size": 65,
-                "width": 25.2,
-                "delay": 0.75,
-                "reload": 1,
-                "recoil": 0.2,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 0.45,
-                    "damage": 0.5,
-                    "speed": 1.1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": -17,
-                "size": 85,
-                "width": 25.2,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 0.2,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 0.45,
-                    "damage": 0.5,
-                    "speed": 1.1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 17,
-                "size": 85,
-                "width": 25.2,
-                "delay": 0.25,
-                "reload": 1,
-                "recoil": 0.2,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 0.45,
-                    "damage": 0.5,
-                    "speed": 1.1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -2642,40 +1846,44 @@
         "flags": {
             "invisibility": true,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": {
+            "visibilityRateShooting": 0.23,
+            "visibilityRateMoving": 0.08,
+            "invisibilityRate": 0.03
+        },
         "fieldFactor": 0.8,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 120,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 2,
                 "recoil": 3,
-                "isTrapezoid": true,
+                "flags": {
+                    "isTrapezoid": true,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 3.141592653589793,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 1,
                     "speed": 1.5,
-                    "friction": 0.3,
+                    "scatterRate": 0.3,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -2723,40 +1931,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.7,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": "pronounced",
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 120,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 2,
                 "recoil": 3,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 1,
                     "speed": 1.5,
-                    "friction": 0.3,
+                    "scatterRate": 0.3,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -2804,128 +2012,65 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 95,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1,
                 "recoil": 0.2,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 1,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 3.9269908169872414,
-                "offset": 0,
-                "size": 70,
-                "width": 42,
-                "delay": 0.66,
-                "reload": 1,
-                "recoil": 0.2,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.2,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 0.5,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 2.356194490192345,
-                "offset": 0,
-                "size": 70,
-                "width": 42,
-                "delay": 0.66,
-                "reload": 1,
-                "recoil": 0.2,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.2,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 0.5,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 3.665191429188092,
-                "offset": 0,
-                "size": 80,
-                "width": 42,
-                "delay": 0.33,
-                "reload": 1,
-                "recoil": 2.5,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.2,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 0.5,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             },
             {
                 "angle": 2.6179938779914944,
                 "offset": 0,
                 "size": 80,
-                "width": 42,
+                "width": 1,
                 "delay": 0.33,
                 "reload": 1,
                 "recoil": 2.5,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 0.5,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -2973,128 +2118,65 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 95,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1,
                 "recoil": 0.2,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 1,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 1.5707963267948966,
-                "offset": 0,
-                "size": 80,
-                "width": 42,
-                "delay": 0,
-                "reload": 1.5,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.8,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": -1.5707963267948966,
-                "offset": 0,
-                "size": 80,
-                "width": 42,
-                "delay": 0,
-                "reload": 1.5,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.8,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 3.665191429188092,
-                "offset": 0,
-                "size": 80,
-                "width": 42,
-                "delay": 0.5,
-                "reload": 1,
-                "recoil": 2.5,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.2,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 0.5,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             },
             {
                 "angle": 2.6179938779914944,
                 "offset": 0,
                 "size": 80,
-                "width": 42,
+                "width": 1,
                 "delay": 0.5,
                 "reload": 1,
                 "recoil": 2.5,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 0.5,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -3142,64 +2224,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 95,
-                "width": 71.39999999999999,
+                "width": 1.7,
                 "delay": 0,
                 "reload": 4,
                 "recoil": 15,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 2,
                     "damage": 3,
                     "speed": 0.7,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 0.1
-                }
-            },
-            {
-                "angle": 3.141592653589793,
-                "offset": 0,
-                "size": 70,
-                "width": 42,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 1,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 2,
-                "canControlDrones": false,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 1.4,
-                    "damage": 0.7,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 0.1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -3247,43 +2305,46 @@
         "flags": {
             "invisibility": true,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": {
+            "visibilityRateShooting": 0,
+            "visibilityRateMoving": 0.08,
+            "invisibilityRate": 0.03
+        },
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 70,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 3,
                 "recoil": 1,
-                "isTrapezoid": true,
+                "flags": {
+                    "isTrapezoid": true,
+                    "forceFire": true
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
-                "droneCount": 8,
-                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
-                    "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.8,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
+                },
+                "droneCount": 8
             }
         ],
         "stats": [
@@ -3330,403 +2391,120 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
-            "devOnly": false
+            "canShoot": true,
+            "devOnly": true
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 0.01,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 16,
-        "borderWidth": 140,
         "barrels": [
             {
-                "angle": 0.19634954084936207,
+                "angle": 0.2007128639793479,
                 "offset": 0,
                 "size": 60,
-                "width": 10.5,
+                "width": 0.25,
                 "delay": 0,
                 "reload": 6,
                 "recoil": 0,
-                "isTrapezoid": true,
+                "flags": {
+                    "isTrapezoid": true,
+                    "forceFire": true
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
-                "droneCount": 2,
-                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
-                    "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
+                },
+                "droneCount": 2
             },
             {
-                "angle": 0.5890486225480862,
+                "angle": 1.7715091907742444,
                 "offset": 0,
                 "size": 60,
-                "width": 10.5,
+                "width": 0.25,
                 "delay": 0,
                 "reload": 6,
                 "recoil": 0,
-                "isTrapezoid": true,
+                "flags": {
+                    "isTrapezoid": true,
+                    "forceFire": true
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
-                "droneCount": 2,
-                "canControlDrones": false,
                 "bullet": {
                     "type": "drone",
-                    "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
+                },
+                "droneCount": 2
             },
             {
-                "angle": 0.9817477042468103,
+                "angle": 3.3335788713091694,
                 "offset": 0,
                 "size": 60,
-                "width": 10.5,
+                "width": 0.25,
                 "delay": 0,
                 "reload": 6,
                 "recoil": 0,
-                "isTrapezoid": true,
+                "flags": {
+                    "isTrapezoid": true,
+                    "forceFire": true
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
-                "droneCount": 2,
-                "canControlDrones": true,
                 "bullet": {
                     "type": "drone",
-                    "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
+                },
+                "droneCount": 2
             },
             {
-                "angle": 1.3744467859455345,
+                "angle": 4.9131018443640375,
                 "offset": 0,
                 "size": 60,
-                "width": 10.5,
+                "width": 0.25,
                 "delay": 0,
                 "reload": 6,
                 "recoil": 0,
-                "isTrapezoid": true,
+                "flags": {
+                    "isTrapezoid": true,
+                    "forceFire": true
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
-                "droneCount": 2,
-                "canControlDrones": false,
                 "bullet": {
                     "type": "drone",
-                    "sizeRatio": 1,
                     "health": 2,
                     "damage": 0.7,
                     "speed": 0.48,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 1.7671458676442586,
-                "offset": 0,
-                "size": 60,
-                "width": 10.5,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 0,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 2,
-                "canControlDrones": true,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.7,
-                    "speed": 0.48,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 2.159844949342983,
-                "offset": 0,
-                "size": 60,
-                "width": 10.5,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 0,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 2,
-                "canControlDrones": false,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.7,
-                    "speed": 0.48,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 2.552544031041707,
-                "offset": 0,
-                "size": 60,
-                "width": 10.5,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 0,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 2,
-                "canControlDrones": true,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.7,
-                    "speed": 0.48,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 2.9452431127404313,
-                "offset": 0,
-                "size": 60,
-                "width": 10.5,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 0,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 2,
-                "canControlDrones": false,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.7,
-                    "speed": 0.48,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 3.3379421944391554,
-                "offset": 0,
-                "size": 60,
-                "width": 10.5,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 0,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 2,
-                "canControlDrones": true,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.7,
-                    "speed": 0.48,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 3.7306412761378795,
-                "offset": 0,
-                "size": 60,
-                "width": 10.5,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 0,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 2,
-                "canControlDrones": false,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.7,
-                    "speed": 0.48,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 4.12333992150429,
-                "offset": 0,
-                "size": 60,
-                "width": 10.5,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 0,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 2,
-                "canControlDrones": true,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.7,
-                    "speed": 0.48,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 4.516039439535327,
-                "offset": 0,
-                "size": 60,
-                "width": 10.5,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 0,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 2,
-                "canControlDrones": false,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.7,
-                    "speed": 0.48,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 4.908738521234052,
-                "offset": 0,
-                "size": 60,
-                "width": 10.5,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 0,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 2,
-                "canControlDrones": true,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.7,
-                    "speed": 0.48,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 5.301437166600463,
-                "offset": 0,
-                "size": 60,
-                "width": 10.5,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 0,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 2,
-                "canControlDrones": false,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.7,
-                    "speed": 0.48,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 5.6941366846315,
-                "offset": 0,
-                "size": 60,
-                "width": 10.5,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 0,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 2,
-                "canControlDrones": true,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.7,
-                    "speed": 0.48,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 6.086835766330224,
-                "offset": 0,
-                "size": 60,
-                "width": 10.5,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 0,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 2,
-                "canControlDrones": false,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 2,
-                    "damage": 0.7,
-                    "speed": 0.48,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
+                },
+                "droneCount": 2
             }
         ],
         "stats": [
@@ -3773,84 +2551,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": true,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.85,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 110,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 3,
                 "recoil": 0.3,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 0.7,
                     "health": 1,
                     "damage": 0.75,
                     "speed": 1.4,
-                    "friction": 0.3,
+                    "scatterRate": 0.3,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 0,
-                "size": 95,
-                "width": 56.7,
-                "delay": 0.2,
-                "reload": 3,
-                "recoil": 0.3,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 0.7,
-                    "health": 1,
-                    "damage": 0.75,
-                    "speed": 1.4,
-                    "friction": 0.3,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 0,
-                "size": 80,
-                "width": 71.39999999999999,
-                "delay": 0.4,
-                "reload": 3,
-                "recoil": 0.3,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 0.7,
-                    "health": 1,
-                    "damage": 0.75,
-                    "speed": 1.4,
-                    "friction": 0.3,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 0.7
                 }
             }
         ],
@@ -3898,62 +2632,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 110,
-                "width": 42,
+                "width": 1,
                 "delay": 0.5,
                 "reload": 1,
                 "recoil": 0,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 0.7,
                     "health": 1,
                     "damage": 0.1,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 0,
-                "size": 95,
-                "width": 42,
-                "delay": 0,
-                "reload": 0.5,
-                "recoil": 1,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.7,
-                    "speed": 1,
-                    "friction": 3,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 0.7
                 }
             }
         ],
@@ -4008,40 +2720,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 60,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1.5,
                 "recoil": 1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
-                "addon": "trapLauncher",
+                "addon": "trapper",
                 "bullet": {
                     "type": "trap",
-                    "sizeRatio": 0.8,
                     "health": 2,
                     "damage": 1,
                     "speed": 2,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 8,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 0.8
                 }
             }
         ],
@@ -4089,84 +2801,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": -16,
                 "size": 75,
-                "width": 21,
+                "width": 0.5,
                 "delay": 0.66,
                 "reload": 1,
                 "recoil": 1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 0.5,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 16,
-                "size": 75,
-                "width": 21,
-                "delay": 0.33,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.5,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 3.141592653589793,
-                "offset": 0,
-                "size": 60,
-                "width": 54.6,
-                "delay": 0,
-                "reload": 3,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": "trapLauncher",
-                "bullet": {
-                    "type": "trap",
-                    "sizeRatio": 0.8,
-                    "health": 2,
-                    "damage": 1,
-                    "speed": 2,
-                    "friction": 1,
-                    "lifeLength": 8,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -4214,88 +2882,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 60,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1.5,
                 "recoil": 1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
-                "addon": "trapLauncher",
+                "addon": "trapper",
                 "bullet": {
                     "type": "trap",
-                    "sizeRatio": 0.8,
                     "health": 2,
                     "damage": 1,
                     "speed": 2,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 8,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 2.0943951023931953,
-                "offset": 0,
-                "size": 70,
-                "width": 42,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 1,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 1,
-                "canControlDrones": false,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 1.4,
-                    "damage": 0.7,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 4.1887902047863905,
-                "offset": 0,
-                "size": 70,
-                "width": 42,
-                "delay": 0,
-                "reload": 6,
-                "recoil": 1,
-                "isTrapezoid": true,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "droneCount": 1,
-                "canControlDrones": false,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 1,
-                    "health": 1.4,
-                    "damage": 0.7,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 0.8
                 }
             }
         ],
@@ -4343,40 +2963,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 60,
-                "width": 54.6,
+                "width": 1.3,
                 "delay": 0,
                 "reload": 3.3,
                 "recoil": 1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
-                "addon": "trapLauncher",
+                "addon": "trapper",
                 "bullet": {
                     "type": "trap",
-                    "sizeRatio": 1.28,
                     "health": 3.2,
                     "damage": 1.6,
                     "speed": 2,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 8,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1.28
                 }
             }
         ],
@@ -4424,84 +3044,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 60,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1.5,
                 "recoil": 1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
-                "addon": "trapLauncher",
+                "addon": "trapper",
                 "bullet": {
                     "type": "trap",
-                    "sizeRatio": 0.8,
                     "health": 2,
                     "damage": 1,
                     "speed": 2,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 3.2,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 2.0943951023931953,
-                "offset": 0,
-                "size": 60,
-                "width": 42,
-                "delay": 0,
-                "reload": 1.5,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": "trapLauncher",
-                "bullet": {
-                    "type": "trap",
-                    "sizeRatio": 0.8,
-                    "health": 2,
-                    "damage": 1,
-                    "speed": 2,
-                    "friction": 1,
-                    "lifeLength": 3.2,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 4.1887902047863905,
-                "offset": 0,
-                "size": 60,
-                "width": 42,
-                "delay": 0,
-                "reload": 1.5,
-                "recoil": 1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": "trapLauncher",
-                "bullet": {
-                    "type": "trap",
-                    "sizeRatio": 0.8,
-                    "health": 2,
-                    "damage": 1,
-                    "speed": 2,
-                    "friction": 1,
-                    "lifeLength": 3.2,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 0.8
                 }
             }
         ],
@@ -4553,19 +3129,16 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": "smasher",
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [],
         "stats": [
             {
@@ -4612,19 +3185,20 @@
         "flags": {
             "invisibility": true,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0,
-        "visibilityRateMoving": 0.16,
-        "invisibilityRate": 0.003,
+        "invisibility": {
+            "visibilityRateShooting": 0,
+            "visibilityRateMoving": 0.16,
+            "invisibilityRate": 0.003
+        },
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": "landmine",
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [],
         "stats": [
             {
@@ -4670,106 +3244,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": "autoturret",
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": -32,
                 "size": 65,
-                "width": 25.2,
+                "width": 0.6,
                 "delay": 0.5,
                 "reload": 1,
                 "recoil": 0.2,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 0.45,
                     "damage": 0.5,
                     "speed": 1.1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 32,
-                "size": 65,
-                "width": 25.2,
-                "delay": 0.75,
-                "reload": 1,
-                "recoil": 0.2,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 0.45,
-                    "damage": 0.5,
-                    "speed": 1.1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": -17,
-                "size": 85,
-                "width": 25.2,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 0.2,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 0.45,
-                    "damage": 0.5,
-                    "speed": 1.1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 17,
-                "size": 85,
-                "width": 25.2,
-                "delay": 0.25,
-                "reload": 1,
-                "recoil": 0.2,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 0.45,
-                    "damage": 0.5,
-                    "speed": 1.1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -4817,19 +3325,16 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
-            "devOnly": true
+            "canShoot": true,
+            "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": "auto5",
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [],
         "stats": [
             {
@@ -4878,19 +3383,16 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
-            "devOnly": true
+            "canShoot": true,
+            "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": "auto3",
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [],
         "stats": [
             {
@@ -4936,260 +3438,90 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 1.3089969389957472,
                 "offset": 0,
                 "size": 65,
-                "width": 29.4,
-                "delay": 0.833325,
+                "width": 0.7,
+                "delay": 0,
                 "reload": 2,
                 "recoil": 0.1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 0.6,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": -1.3089969389957472,
-                "offset": 0,
-                "size": 65,
-                "width": 29.4,
-                "delay": 0.833325,
-                "reload": 2,
-                "recoil": 0.1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.6,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 1.0471975511965976,
-                "offset": 0,
-                "size": 71,
-                "width": 29.4,
-                "delay": 0.666675,
-                "reload": 2,
-                "recoil": 0.1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.6,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": -1.0471975511965976,
-                "offset": 0,
-                "size": 71,
-                "width": 29.4,
-                "delay": 0.666675,
-                "reload": 2,
-                "recoil": 0.1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.6,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             },
             {
                 "angle": 0.7853981633974483,
                 "offset": 0,
                 "size": 77,
-                "width": 29.4,
-                "delay": 0.5,
+                "width": 0.7,
+                "delay": 0,
                 "reload": 2,
                 "recoil": 0.1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
                     "damage": 0.6,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": -0.7853981633974483,
-                "offset": 0,
-                "size": 77,
-                "width": 29.4,
-                "delay": 0.5,
-                "reload": 2,
-                "recoil": 0.1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.6,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0.5235987755982988,
-                "offset": 0,
-                "size": 83,
-                "width": 29.4,
-                "delay": 0.333325,
-                "reload": 2,
-                "recoil": 0.1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.6,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": -0.5235987755982988,
-                "offset": 0,
-                "size": 83,
-                "width": 29.4,
-                "delay": 0.333325,
-                "reload": 2,
-                "recoil": 0.1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.6,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             },
             {
                 "angle": 0.2617993877991494,
                 "offset": 0,
                 "size": 89,
-                "width": 29.4,
-                "delay": 0.166675,
-                "reload": 2,
-                "recoil": 0.1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.6,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": -0.2617993877991494,
-                "offset": 0,
-                "size": 89,
-                "width": 29.4,
-                "delay": 0.166675,
-                "reload": 2,
-                "recoil": 0.1,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 1,
-                    "health": 1,
-                    "damage": 0.6,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 0,
-                "size": 95,
-                "width": 42,
+                "width": 0.7,
                 "delay": 0,
                 "reload": 2,
                 "recoil": 0.1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 1,
-                    "damage": 1,
+                    "damage": 0.6,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -5237,128 +3569,65 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.85,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 110,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1,
                 "recoil": 0.2,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 0.7,
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1.1,
-                    "friction": 0.3,
+                    "scatterRate": 0.3,
                     "lifeLength": 0.8,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 0,
-                "size": 100,
-                "width": 42,
-                "delay": 0.2,
-                "reload": 1,
-                "recoil": 0.2,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 0.7,
-                    "health": 1,
-                    "damage": 0.2,
-                    "speed": 1.1,
-                    "friction": 0.3,
-                    "lifeLength": 0.8,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 0,
-                "size": 90,
-                "width": 42,
-                "delay": 0.4,
-                "reload": 1,
-                "recoil": 0.2,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 0.7,
-                    "health": 1,
-                    "damage": 0.2,
-                    "speed": 1.1,
-                    "friction": 0.3,
-                    "lifeLength": 0.8,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 0,
-                "size": 80,
-                "width": 42,
-                "delay": 0.6,
-                "reload": 1,
-                "recoil": 0.2,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 0.7,
-                    "health": 1,
-                    "damage": 0.2,
-                    "speed": 1.1,
-                    "friction": 0.3,
-                    "lifeLength": 0.8,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 0.7
                 }
             },
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 70,
-                "width": 42,
+                "width": 1,
                 "delay": 0.8,
                 "reload": 1,
                 "recoil": 0.2,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 0.7,
                     "health": 1,
                     "damage": 0.2,
                     "speed": 1.1,
-                    "friction": 0.3,
+                    "scatterRate": 0.3,
                     "lifeLength": 0.8,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 0.7
                 }
             }
         ],
@@ -5406,40 +3675,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": "autoturret",
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 60,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 1.5,
                 "recoil": 1,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
-                "addon": "trapLauncher",
+                "addon": "trapper",
                 "bullet": {
                     "type": "trap",
-                    "sizeRatio": 0.8,
                     "health": 2,
                     "damage": 1,
                     "speed": 2,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 8,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 0.8
                 }
             }
         ],
@@ -5487,40 +3756,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
-            "devOnly": false
+            "canShoot": true,
+            "devOnly": true
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
-        "maxHealth": 6000,
+        "maxHealth": 50,
         "preAddon": "dombase",
         "postAddon": "dompronounced",
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 80,
-                "width": 34.99965,
+                "width": 0.833,
                 "delay": 0.001,
                 "reload": 3,
                 "recoil": 0,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 100,
                     "damage": 10,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 0.1
+                    "absorbtionFactor": 0.1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -5568,84 +3837,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
-            "devOnly": false
+            "canShoot": true,
+            "devOnly": true
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
-        "maxHealth": 6000,
+        "maxHealth": 50,
         "preAddon": "dombase",
         "postAddon": "dompronounced",
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": -6,
                 "size": 75,
-                "width": 17.50035,
+                "width": 0.417,
                 "delay": 0.666,
                 "reload": 0.3,
                 "recoil": 0,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 0.6,
                     "health": 5,
                     "damage": 1,
                     "speed": 1.2,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 6,
-                "size": 75,
-                "width": 17.50035,
-                "delay": 0.333,
-                "reload": 0.3,
-                "recoil": 0,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 0.6,
-                    "health": 5,
-                    "damage": 1,
-                    "speed": 1.2,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0,
-                "offset": 0,
-                "size": 80,
-                "width": 17.50035,
-                "delay": 0.001,
-                "reload": 0.3,
-                "recoil": 0,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": null,
-                "bullet": {
-                    "type": "bullet",
-                    "sizeRatio": 0.6,
-                    "health": 5,
-                    "damage": 1,
-                    "speed": 1.2,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 0.6
                 }
             }
         ],
@@ -5693,194 +3918,65 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
-            "devOnly": false
+            "canShoot": true,
+            "devOnly": true
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
-        "maxHealth": 6000,
+        "maxHealth": 50,
         "preAddon": "dombase",
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 60,
-                "width": 21,
+                "width": 0.5,
                 "delay": 0,
                 "reload": 1.5,
                 "recoil": 0,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": true
+                },
                 "trapezoidDirection": 0,
-                "addon": "trapLauncher",
+                "addon": "trapper",
                 "bullet": {
                     "type": "trap",
-                    "sizeRatio": 0.8,
                     "health": 20,
                     "damage": 3,
                     "speed": 4,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 3.2,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 0.7853981633974483,
-                "offset": 0,
-                "size": 60,
-                "width": 21,
-                "delay": 0,
-                "reload": 1.5,
-                "recoil": 0,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": "trapLauncher",
-                "bullet": {
-                    "type": "trap",
-                    "sizeRatio": 0.8,
-                    "health": 20,
-                    "damage": 3,
-                    "speed": 4,
-                    "friction": 1,
-                    "lifeLength": 3.2,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 1.5707963267948966,
-                "offset": 0,
-                "size": 60,
-                "width": 21,
-                "delay": 0,
-                "reload": 1.5,
-                "recoil": 0,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": "trapLauncher",
-                "bullet": {
-                    "type": "trap",
-                    "sizeRatio": 0.8,
-                    "health": 20,
-                    "damage": 3,
-                    "speed": 4,
-                    "friction": 1,
-                    "lifeLength": 3.2,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 2.356194490192345,
-                "offset": 0,
-                "size": 60,
-                "width": 21,
-                "delay": 0,
-                "reload": 1.5,
-                "recoil": 0,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": "trapLauncher",
-                "bullet": {
-                    "type": "trap",
-                    "sizeRatio": 0.8,
-                    "health": 20,
-                    "damage": 3,
-                    "speed": 4,
-                    "friction": 1,
-                    "lifeLength": 3.2,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 0.8
                 }
             },
             {
                 "angle": 3.141592653589793,
                 "offset": 0,
                 "size": 60,
-                "width": 21,
+                "width": 0.5,
                 "delay": 0,
                 "reload": 1.5,
                 "recoil": 0,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": true
+                },
                 "trapezoidDirection": 0,
-                "addon": "trapLauncher",
+                "addon": "trapper",
                 "bullet": {
                     "type": "trap",
-                    "sizeRatio": 0.8,
                     "health": 20,
                     "damage": 3,
                     "speed": 4,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 3.2,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 3.9269908169872414,
-                "offset": 0,
-                "size": 60,
-                "width": 21,
-                "delay": 0,
-                "reload": 1.5,
-                "recoil": 0,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": "trapLauncher",
-                "bullet": {
-                    "type": "trap",
-                    "sizeRatio": 0.8,
-                    "health": 20,
-                    "damage": 3,
-                    "speed": 4,
-                    "friction": 1,
-                    "lifeLength": 3.2,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 4.71238898038469,
-                "offset": 0,
-                "size": 60,
-                "width": 21,
-                "delay": 0,
-                "reload": 1.5,
-                "recoil": 0,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": "trapLauncher",
-                "bullet": {
-                    "type": "trap",
-                    "sizeRatio": 0.8,
-                    "health": 20,
-                    "damage": 3,
-                    "speed": 4,
-                    "friction": 1,
-                    "lifeLength": 3.2,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 5.497787143782138,
-                "offset": 0,
-                "size": 60,
-                "width": 21,
-                "delay": 0,
-                "reload": 1.5,
-                "recoil": 0,
-                "isTrapezoid": false,
-                "trapezoidDirection": 0,
-                "addon": "trapLauncher",
-                "bullet": {
-                    "type": "trap",
-                    "sizeRatio": 0.8,
-                    "health": 20,
-                    "damage": 3,
-                    "speed": 4,
-                    "friction": 1,
-                    "lifeLength": 3.2,
-                    "absorbtionFactor": 1
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 0.8
                 }
             }
         ],
@@ -5928,115 +4024,42 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 1.5707963267948966,
                 "offset": -20,
                 "size": 75,
-                "width": 29.4,
+                "width": 0.7,
                 "delay": 0,
                 "reload": 1,
                 "recoil": 1,
-                "isTrapezoid": true,
+                "flags": {
+                    "isTrapezoid": true,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 3.141592653589793,
                 "addon": null,
-                "droneCount": 4294967295,
-                "canControlDrones": false,
                 "bullet": {
                     "type": "drone",
-                    "sizeRatio": 0.7,
                     "health": 1,
                     "damage": 0.15,
                     "speed": 1,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 4.71238898038469,
-                "offset": -20,
-                "size": 75,
-                "width": 29.4,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": true,
-                "trapezoidDirection": 3.141592653589793,
-                "addon": null,
-                "droneCount": 4294967295,
-                "canControlDrones": false,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 0.7,
-                    "health": 1,
-                    "damage": 0.15,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 1.5707963267948966,
-                "offset": 20,
-                "size": 75,
-                "width": 29.4,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": true,
-                "trapezoidDirection": 3.141592653589793,
-                "addon": null,
-                "droneCount": 4294967295,
-                "canControlDrones": true,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 0.7,
-                    "health": 1,
-                    "damage": 0.15,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
-            },
-            {
-                "angle": 4.71238898038469,
-                "offset": 20,
-                "size": 75,
-                "width": 29.4,
-                "delay": 0,
-                "reload": 1,
-                "recoil": 1,
-                "isTrapezoid": true,
-                "trapezoidDirection": 3.141592653589793,
-                "addon": null,
-                "droneCount": 4294967295,
-                "canControlDrones": true,
-                "bullet": {
-                    "type": "drone",
-                    "sizeRatio": 0.7,
-                    "health": 1,
-                    "damage": 0.15,
-                    "speed": 1,
-                    "friction": 1,
-                    "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 0.7
+                },
+                "droneCount": 4294967295
             }
         ],
         "stats": [
@@ -6083,40 +4106,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 95,
-                "width": 96.6,
+                "width": 2.3,
                 "delay": 0,
                 "reload": 4,
                 "recoil": 17,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
                     "type": "bullet",
-                    "sizeRatio": 1,
                     "health": 2,
                     "damage": 3,
                     "speed": 0.7,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 0.05
+                    "absorbtionFactor": 0.05,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -6164,19 +4187,16 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
-        "postAddon": "autosmasher",
+        "postAddon": "autoturret",
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [],
         "stats": [
             {
@@ -6222,19 +4242,16 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": "spike",
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [],
         "stats": [
             {
@@ -6280,43 +4297,42 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 4,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 70,
-                "width": 42,
+                "width": 1,
                 "delay": 0,
                 "reload": 3,
                 "recoil": 1,
-                "isTrapezoid": true,
+                "flags": {
+                    "isTrapezoid": true,
+                    "forceFire": true
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
-                "droneCount": 6,
-                "canControlDrones": true,
                 "bullet": {
-                    "type": "minion",
-                    "sizeRatio": 1,
+                    "type": "drone",
                     "health": 4,
                     "damage": 0.7,
                     "speed": 0.56,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 1
-                }
+                    "absorbtionFactor": 1,
+                    "sizeRatio": 1
+                },
+                "droneCount": 6
             }
         ],
         "stats": [
@@ -6363,19 +4379,16 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
-            "devOnly": true
+            "canShoot": true,
+            "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 1,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": null,
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [],
         "stats": [
             {
@@ -6421,40 +4434,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
         "preAddon": "launcher",
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 80,
-                "width": 71.39999999999999,
+                "width": 1.7,
                 "delay": 0,
                 "reload": 4,
                 "recoil": 3,
-                "isTrapezoid": false,
+                "flags": {
+                    "isTrapezoid": false,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 0,
                 "addon": null,
                 "bullet": {
-                    "type": "skimmer",
-                    "sizeRatio": 1,
+                    "type": "bullet",
                     "health": 3,
                     "damage": 1,
                     "speed": 0.5,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1.3,
-                    "absorbtionFactor": 0.1
+                    "absorbtionFactor": 0.1,
+                    "sizeRatio": 1
                 }
             }
         ],
@@ -6502,40 +4515,40 @@
         "flags": {
             "invisibility": false,
             "zoomAbility": false,
+            "canShoot": true,
             "devOnly": false
         },
-        "visibilityRateShooting": 0.23,
-        "visibilityRateMoving": 0.08,
-        "invisibilityRate": 0.03,
+        "invisibility": null,
         "fieldFactor": 0.9,
         "absorbtionFactor": 1,
-        "speed": 1,
         "maxHealth": 50,
-        "preAddon": "launcher",
+        "preAddon": "rocketeer",
         "postAddon": null,
         "sides": 1,
-        "borderWidth": 15,
         "barrels": [
             {
                 "angle": 0,
                 "offset": 0,
                 "size": 80,
-                "width": 52.5,
+                "width": 1.25,
                 "delay": 0,
                 "reload": 4,
                 "recoil": 3,
-                "isTrapezoid": true,
+                "flags": {
+                    "isTrapezoid": true,
+                    "forceFire": false
+                },
                 "trapezoidDirection": 3.141592653589793,
                 "addon": null,
                 "bullet": {
-                    "type": "rocket",
-                    "sizeRatio": 1,
+                    "type": "bullet",
                     "health": 5,
                     "damage": 1,
                     "speed": 0.3,
-                    "friction": 1,
+                    "scatterRate": 1,
                     "lifeLength": 1,
-                    "absorbtionFactor": 0.1
+                    "absorbtionFactor": 0.1,
+                    "sizeRatio": 1
                 }
             }
         ],
