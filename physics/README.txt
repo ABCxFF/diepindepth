@@ -187,11 +187,12 @@ Bullet Damage Stat = b_DS
 Bullet Damage (see /extras/tankdefs.js) = B_D
 Bullet Absorbtion Factor (see /extras/tankdefs.js) = B_aF
 
-pushFactor = (7 / 3 + b_DS) * B_D
 absorbtionFactor = B_aF
+pushFactor = (7 / 3 + b_DS) * B_D * absorbtionFactor
 
 Absorbtion  factor is  almost  always  1 except for  a couple  of
-special cases. 
+special cases. Notice, the `* absorbtionFactor` in the pushFactor
+formula means that pushFactor scales with absorbtionFactor.
 
 ——————————————————————————— §5 Damage ———————————————————————————
 
