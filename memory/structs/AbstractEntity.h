@@ -41,12 +41,12 @@ struct AbstractEntity {
 
     //** Entity Identification Section `EHandle` **//
 
-    // Self Ent Pointer @30
-    // - points to this entity
-    struct AbstractEntity* self_ptr3; // @30
+    // Simulation Pointer @30
+    // - points to the entity's simulation
+    struct Simulation* simulation; // @30
 
-    // Connection ID, not fully understood but it lets the wasm know which socket this entity was defined by.
-    uint16_t connection_id; // @34
+    // Simulation ID
+    uint16_t simulation_id; // @34
     // Entity id, part of the <id, hash> representation system
     uint16_t id; // @36
     // Entity hash, part of the <id, hash> representation system
