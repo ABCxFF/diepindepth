@@ -135,7 +135,7 @@ The Auto 3 addon creates `3` auto turrets equidistant from the center of the tan
 
 ## Launcher Addon
 
-Launcher is a smaller trapezoid shape below the front of a tank - see the below picture. It is added before the barrel. <br> <img width="256" alt="lancher" src="https://user-images.githubusercontent.com/79597906/134366650-58c537cc-816a-4e4b-bf9d-0c97310b0a16.png"> <br> (Skimmer's barrel has been made opaque for viewing purposes).
+Launcher is a smaller trapezoid shape below the front of a tank - see the below picture. It is added before the barrel. <br> <img width="256" alt="lancher" src="https://user-images.githubusercontent.com/79597906/134366650-58c537cc-816a-4e4b-bf9d-0c97310b0a16.png"> <br> (Skimmer's barrel has been made translucent for viewing purposes).
 
 | Key                  | Value   | Desc                                                                      |
 | -------------------- | ------- | ------------------------------------------------------------------------- |
