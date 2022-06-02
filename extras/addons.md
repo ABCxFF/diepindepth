@@ -137,7 +137,7 @@ The Auto 3 addon creates `3` auto turrets equidistant from the center of the tan
 
 Launcher is a smaller trapezoid shape below the front of a tank - see the below picture. It is added before the barrel. <br> <img width="256" alt="lancher" src="https://user-images.githubusercontent.com/79597906/134366650-58c537cc-816a-4e4b-bf9d-0c97310b0a16.png"> <br> (Skimmer's barrel has been made translucent for viewing purposes).
 
-| Key                  | Value   | Desc                                                                      |
-| -------------------- | ------- | ------------------------------------------------------------------------- |
-| Launcher Width Ratio | `1.3`   | The length (longer side) of the launcher is `1.1x` the radius of the tank |
-| Launcher Size Ratio  | `0.672` | The width of the launcher is `0.56x` the radius of the tank               |
+| Key                  | Value   | Desc                                                                       |
+| -------------------- | ------- | -------------------------------------------------------------------------- |
+| Launcher Width Ratio | `1.31`  | The length (longer side) of the launcher is `1.31x` the radius of the tank |
+| Launcher Size Ratio  | `0.672` | The width of the launcher is `0.56x` the radius of the tank                |
