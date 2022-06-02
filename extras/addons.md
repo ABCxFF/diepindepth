@@ -115,11 +115,11 @@ The Auto Smasher Addon has both a Guard Addon, and an Auto Turret.
 
 Auto Turret is a mounted turret controlled by AI. Its shape was only somewhat able to be reduced from the memory.
 
-| Key                | Value  | Desc                                                                           |
-| ------------------ | ------ | ------------------------------------------------------------------------------ |
-| Turret Width Ratio | `1.1`  | The length (longer side) of the turret barrel is `1.1x` the radius of the tank |
-| Turret Size Ratio  | `0.56` | The size of the turret barrel is `0.56x` the radius of the tank                |
-| Turret Base Ratio  | `0.5`  | The radius of the base is half the radius of the tank                          |
+| Key                | Value   | Desc                                                                           |
+| ------------------ | ------- | ------------------------------------------------------------------------------ |
+| Turret Width Ratio | `1.1`   | The length (longer side) of the turret barrel is `1.1x` the radius of the tank |
+| Turret Size Ratio  | `0.588` | The size of the turret barrel is `0.56x` the radius of the tank                |
+| Turret Base Ratio  | `0.5`   | The radius of the base is half the radius of the tank                          |
 
 ## Auto 5 Addon
 
