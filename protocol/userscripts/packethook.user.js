@@ -21,11 +21,11 @@ class PacketHook extends EventTarget {
   static get CONST() {
     return {
       BUILD: "2f20b6e2209341eacde0bd335d8fb31582758279",
-      SEND_PACKET_INDEX: 121,
+      SEND_PACKET_INDEX: 125,
       RECV_PACKET_INDEX: 463,
       MALLOC: "qa",
       FREE: "Y",
-      SOCKET_PTR: 121
+      SOCKET_PTR: 158472
     }
   }
 
