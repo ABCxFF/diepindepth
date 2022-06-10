@@ -23,10 +23,8 @@ class PacketHook extends EventTarget {
       BUILD: "2f20b6e2209341eacde0bd335d8fb31582758279",
       SEND_PACKET_INDEX: 121,
       RECV_PACKET_INDEX: 463,
-      MALLOC: "ion please see index.7d0c1309.js.LICENSE.txt */
-!function(){var e={729:function(e,t,n){var i;e.exports=(i=n(372),(()=>{",
-      FREE: "ation please see index.7d0c1309.js.LICENSE.txt */
-!function(){var e={729:function(e,t,n){var i;e.exports=(i=n(372),(()=>{",
+      MALLOC: "b",
+      FREE: "b",
       SOCKET_PTR: 121
     }
   }
