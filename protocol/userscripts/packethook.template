@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Diep.io Packet WASM Hook
 // @author       ABC
-// @version      1.0.3
+// @version      1.0.4
 // @namespace    %BUILD
 // @description  %BUILD
 // @match        *://diep.io/
@@ -106,11 +106,14 @@ class PacketHook extends EventTarget {
 
       imports.hook = { mainHook };
       
-      this.HEAPU8 = new Uint8Array(imports.a.memory.buffer);
-      this.HEAP32 = new Int32Array(imports.a.memory.buffer);
 
       return _initWasm(bin, imports).then((wasm) => {
         this.wasm = wasm.instance;
+
+        const memory = Object.values(this.wasm.exports).find(e => e instanceof WebAssembly.Memory);
+
+        this.HEAPU8 = new Uint8Array(memory.buffer);
+        this.HEAP32 = new Int32Array(memory.buffer);
         
         this.malloc = this.wasm.exports[PacketHook.CONST.MALLOC];
         this.free = this.wasm.exports[PacketHook.CONST.FREE];
