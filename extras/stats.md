@@ -1,4 +1,8 @@
-# Table of Contents
+# Stats
+
+In this document, the affects of skills/stats will be described. Each stat is listed in the table contents, along with what it affects and by how much.
+
+### Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Stats Breakdown](#stats-breakdown)
   - [Health Regen](#health-regen)
@@ -9,31 +13,35 @@
   - [Bullet Damage](#bullet-damage)
   - [Reload](#reload)
   - [Movement Speed](#movement-speed)
-- [Trivia](#trivia)
+<!--
+- [Example](#example)
   - [Calculating Bullets vs Bullets](#calculating-bullets-vs-bullets)
   - [Calculating Tank HP vs Bullets](#calculating-tank-hp-vs-bullets)
   - [Calculating Tank HP vs Tank HP](#calculating-tank-hp-vs-tank-hp)
+-->
 
-# Stats Breakdown
+## Stats Breakdown
 A summary of the effects of each stat on the tank.
 - The variable `P` is the number of points invested in that stat.
 - The variable `L` is the current level of the tank.
-- The variable `M` is any additional multipliers, found in [tankdefs.json](/extras/tankdefs.json).
+- The variable `M` is any additional tank multipliers, found in [tankdefs.json](/extras/tankdefs.json).
 
-## Health Regen
+---
+
+### Health Regen
 Regenerates more percentage of the tank's health per second: `0.1 + (0.4 * P)`
 - Each skill point increases the percentage by 0.4%
 - Base regeneration speed is 0.1% of health/sec.
-- "Hyper" regen takes priority after 30 seconds of not being hit, regenerating at 10% of health/sec.
+- "Hyper" regen takes priority after 30 seconds of not being hit, regenerating at 10% of health/sec (stacks with base)
 - Regeneration accelerates with time.
 
-## Max Health
+### Max Health
 Increases the tank's maximum health points: `50 + (2 * (L - 1)) + (20 * P)`
 - Each skill point increases the max HP by 20.
 - Base max HP, or the HP of a level 1 tank, is 50.
 - Every level up adds 2 to the max HP, so at level 45, max HP is already 138 HP.
 
-## Body Damage
+### Body Damage
 Increases collision damage of tank to shape: `20 + (4 * P)` and tank to tank: `30 + (6 * P)`
 - Each skill point increases the damage of collisions; tank-shape by 4 points; tank-tank by 6 points.
 - The base damage for collsions; tank-shape is 20; tank-tank is 30.
@@ -45,32 +53,27 @@ Increases the bullet's speed in background squares per second: `(5 + (4 * P)) * 
 - Base bullet speed is 5 squares/sec.
 - M is the overall multiplier for the bullet's barrel, usually 1, Destroyer is 0.699, Sniper is 1.5, etc.
 
-## Bullet Penetration
+### Bullet Penetration
 Increases the bullet's maximum health points: `(8 + (6 * P)) * M`
 - Each skill point increases the bullet's max HP by 6.
 - Base bullet's max HP is 8.
 - M is the overall multiplier for the bullet's barrel, usually 1, Destroyer is 2, Overlord's drones is 2, etc.
 
-## Bullet Damage
+### Bullet Damage
 Increases the bullet's damage dealt: `(7 + (3 * P)) * M`
 - Each skill point increases the bullet's damage dealt by 3.
 - Base bullet's damage dealt is 7.
 - M is the overall multiplier for the bullet's barrel, usually 1, Destroyer is 3, Overlord's drones is 0.699, etc.
 
-## Reload
-Decreases the bullet's reload speed in seconds: `(0.6 - (0.04 * P)) * M`
-- Each skill point decreases the bullet's reload speed by 0.04 seconds.
-- Base bullet's reload speed is 0.6 seconds.
-- M is the overall multiplier for the bullet's barrel, usually 1, Destroyer is 4, Machine Gun is 0.5, etc.
-- Some tanks like the Streamliner has multiple barrels pointing the same way, thus appears to reload faster despite the multiplier on each barrel is 1.
+### Reload
+Will be posted a later date
 
-## Movement Speed
-Increases the tank's movement speed in squares per second: `(12.75 * (1.07 ^ P)) / 1.015 ^ (L - 1)`
-- Each skill point increases the current move speed by 7%.
-- Base move speed is 12.75 squares/sec.
-- Every level up decreases the move speed by 1.5%, so at level 45, move speed is 6.622230998 sqaures/sec.
+### Movement Speed
+See <https://github.com/ABCxFF/diepindepth/blob/main/physics/README.txt> for more information on movement, and the movement speed stat's effect on movement.
 
-# Trivia
+---
+<!--
+## Example
 With the knowledge about stats from above, this is how to calculate what happens when a tank or a shape collides. 
 
 The following cases assume a direct hit is taken, as opposed to skimming, otherwise there will be more leftovers than usual.
@@ -101,3 +104,4 @@ How much HP left after a max smasher hits a max rammer Destroyer?
 - Destroyer hits until death = 278 / 90 = 3.08888
 - Ratio of health lost = (3.08888 / 4.694444) = 0.6579
 - Leftover HP = 338 * (1 - 0.6579) = 115.62 or around 34%
+-->
