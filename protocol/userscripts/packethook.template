@@ -131,11 +131,11 @@ class PacketHook extends EventTarget {
 
   _hijack() {
     const that = this;
-    window.Object.defineProperty(Object.prototype, "postRun", {
+    window.Object.defineProperty(Object.prototype, "dynCall_v", {
       get() {},
-      set(postRun) {
-        delete Object.prototype.postRun
-        this.postRun = postRun;
+      set(dynCall_v) {
+        delete Object.prototype.dynCall_v
+        this.dynCall_v = dynCall_v;
 
         that.Module = this;
         console.log('Module exports done! Hook.Module');
