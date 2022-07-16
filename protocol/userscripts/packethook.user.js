@@ -2,8 +2,8 @@
 // @name         Diep.io Packet WASM Hook
 // @author       ABC
 // @version      1.0.4
-// @namespace    6ac60ba9d55769e868510c25366547d916b023b3
-// @description  6ac60ba9d55769e868510c25366547d916b023b3
+// @namespace    83cf3c1a7973653e07d8d8d4108ceb2b472fe6c2
+// @description  83cf3c1a7973653e07d8d8d4108ceb2b472fe6c2
 // @match        *://diep.io/
 // @run-at       document-start
 // @require      https://raw.githubusercontent.com/Qwokka/wail.min.js/5e32d36bd7a5e0830d1ff4b64d3587aea13f77da/wail.min.js
@@ -14,18 +14,18 @@
 /*
   Usage is explained in the console during execution.
   
-  Generated for build 6ac60ba9d55769e868510c25366547d916b023b3 of the Addicting Games release branch
+  Generated for build 83cf3c1a7973653e07d8d8d4108ceb2b472fe6c2 of the Addicting Games release branch
 */
 
 class PacketHook extends EventTarget {
   static get CONST() {
     return {
-      BUILD: "6ac60ba9d55769e868510c25366547d916b023b3",
-      SEND_PACKET_INDEX: 128,
-      RECV_PACKET_INDEX: 471,
+      BUILD: "83cf3c1a7973653e07d8d8d4108ceb2b472fe6c2",
+      SEND_PACKET_INDEX: 122,
+      RECV_PACKET_INDEX: 472,
       MALLOC: "sa",
-      FREE: "X",
-      SOCKET_PTR: 119340
+      FREE: "R",
+      SOCKET_PTR: 134824
     }
   }
 
@@ -131,11 +131,11 @@ class PacketHook extends EventTarget {
 
   _hijack() {
     const that = this;
-    window.Object.defineProperty(Object.prototype, "postRun", {
+    window.Object.defineProperty(Object.prototype, "dynCall_v", {
       get() {},
-      set(postRun) {
-        delete Object.prototype.postRun
-        this.postRun = postRun;
+      set(dynCall_v) {
+        delete Object.prototype.dynCall_v
+        this.dynCall_v = dynCall_v;
 
         that.Module = this;
         console.log('Module exports done! Hook.Module');
