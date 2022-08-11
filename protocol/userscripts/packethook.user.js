@@ -2,8 +2,8 @@
 // @name         Diep.io Packet WASM Hook
 // @author       ABC
 // @version      1.0.4
-// @namespace    666e047dedbcc18eeb35b5d91c46792790931a3b
-// @description  666e047dedbcc18eeb35b5d91c46792790931a3b
+// @namespace    666e047dedbcc18eeb35b5d91c46792790931a3b2
+// @description  666e047dedbcc18eeb35b5d91c46792790931a3b2
 // @match        *://diep.io/
 // @run-at       document-start
 // @require      https://raw.githubusercontent.com/Qwokka/wail.min.js/5e32d36bd7a5e0830d1ff4b64d3587aea13f77da/wail.min.js
@@ -14,13 +14,13 @@
 /*
   Usage is explained in the console during execution.
   
-  Generated for build 666e047dedbcc18eeb35b5d91c46792790931a3b of the Addicting Games release branch
+  Generated for build 666e047dedbcc18eeb35b5d91c46792790931a3b2 of the Addicting Games release branch
 */
 
 class PacketHook extends EventTarget {
   static get CONST() {
     return {
-      BUILD: "666e047dedbcc18eeb35b5d91c46792790931a3b",
+      BUILD: "666e047dedbcc18eeb35b5d91c46792790931a3b2",
       SEND_PACKET_INDEX: 123,
       RECV_PACKET_INDEX: 464,
       MALLOC: "sa",
