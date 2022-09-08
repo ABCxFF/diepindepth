@@ -18,18 +18,20 @@ Pseudo random number generators are algorithms which generate sequences of numbe
 ```ts
 class LCG implements PRNG {
     constructor(seed, multiplier, increment, modulus) {
-        this.seed = seed;
-        // these defining factors are all big ints, so that calculation is precise (the seed is an integer though)
-        this._multiplier = multiplier;
-        this._increment = increment;
-        this._modulus = modulus;
+        /* These are all BigInts, because LCG's computation in all
+           cases is 64bit. Yet to find a 32bit LCG in the game. */
+        this.num = new BigUint64Array([BigInt(seed)]);
+ 
+        this._multiplier = BigInt(multiplier);
+        this._increment = BigInt(increment);
+        this._modulus = BigInt(modulus);
     }
     next() {
-        const nextSeed = (BigInt(this.seed >>> 0) * this._multiplier + this._increment) % this._modulus;
+        this.num[0] = (this.num[0] * this._multiplier + this._increment) % this._modulus;
 
-        this.seed = Number(nextSeed & 0xFFFFFFFFn) | 0; // safely convert to a 32 bit integer
-
-        return this.seed;
+        /* Convert from 64bit to 32bit. A 64bit
+           value is never used in the game. */
+        return Number(this.num[0] & 0xFFFFFFFFn);
     }
 }
 ```
@@ -39,7 +41,7 @@ class LCG implements PRNG {
 ```ts
 class XorShift implements PRNG {
     constructor(seed, a, b, c) {
-        this.seed = seed;
+        this.num = new Uint32Array([seed]);
 
         // the actual shifts
         this._a = a;
@@ -47,9 +49,9 @@ class XorShift implements PRNG {
         this._c = c;
     }
     next() {
-        this.seed ^= this.seed << this._a;
-        this.seed ^= this.seed >>> this._b;
-        this.seed ^= this.seed << this._c;
+        this.num[0] ^= this.num[0] << this._a;
+        this.num[0] ^= this.num[0] >> this._b;
+        this.num[0] ^= this.num[0] << this._c;
 
         return this.seed;
     }
@@ -71,7 +73,7 @@ class TripleLCG implements PRNG {
         const b = this.lcgB.next();
         const c = this.lcgC.next();
 
-        return (a + b + c) | 0;
+        return a + b + c;
     }
 }
 ```  
