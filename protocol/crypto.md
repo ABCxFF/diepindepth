@@ -97,8 +97,11 @@ function generateJumpTable(isClientBound: boolean) {
         table[i] = temp;
     }
     
-   if (isClientBound) table[table.indexOf(1)] = table[1] = 1;
-
+    if (isClientBound) {
+        table[table.indexOf(1)] = table[1];
+        table[1] = 1;
+    }
+    
     return {
         encryptionTable: table,
         decryptionTable: table.map((n, i, l) => l.indexOf(i))
