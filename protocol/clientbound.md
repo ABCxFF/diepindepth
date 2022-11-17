@@ -1,4 +1,4 @@
-# **Clientbound Packets**
+# DISCLAIMER: SINCE THE PURCHASE OF DIEP.IO BY ADDICTING GAMES, LESS RESEARCH HAS BEEN PUT INTO CHANGES BY THE NEW DEV TEAM - FOR THIS REASON, SOME OF THIS MAY BE INACCURATE ON NEWER VERSIONS# **Clientbound Packets**
 
 Also known as incoming packets, after being encoded, they are sent from the server to the client. Most of these packets aren't too complex once you understand the basics of a reader, with the exception of the clientbound [`0x00`](#0x00-update-packet) packet.
 
