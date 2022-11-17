@@ -67,13 +67,14 @@ struct AbstractEntity {
     // 4 : HEALTH
     // 5 : not present
     // 6 : EXAMPLE
-    // 7 : ARENA
-    // 8 : NAME
-    // 9 : GUI
-    // 10: POS
-    // 11: STYLE
-    // 12: not present
-    // 13: SCORE
-    // 14: TEAM
+    // 7 : LOBBY
+    // 8 : ARENA
+    // 9 : NAME
+    // 10: GUI
+    // 11: POS
+    // 12: STYLE
+    // 13: not present
+    // 14: SCORE
+    // 15: TEAM
     struct AbstractFieldGroup* field_groups[15]; // @48
 };
