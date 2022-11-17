@@ -9,14 +9,14 @@ ID : NAME      : SIZE
 3 : PHYSICS   : 108
 4 : HEALTH    : 76
 6 : UNUSED    :
-7 : ARENA     : 684
-8 : NAME      : 28
-9 : GUI       : 482
-10: POS       : 152
-11: STYLE     : 112
-13: SCORE     : 36
-14: TEAM      : 36
-(credits to an anonymous provider)
+7 : LOBBY     : ?
+8 : ARENA     : 684
+9 : NAME      : 28
+10: GUI       : 482
+11: POS       : 152
+12: STYLE     : 112
+14: SCORE     : 36
+15: TEAM      : 36
 
     In Emscripten, Pointers are 32 bit.
 */
