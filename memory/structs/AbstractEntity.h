@@ -76,5 +76,5 @@ struct AbstractEntity {
     // 13: not present
     // 14: SCORE
     // 15: TEAM
-    struct AbstractFieldGroup* field_groups[15]; // @48
+    struct AbstractFieldGroup* field_groups[16]; // @48
 };
