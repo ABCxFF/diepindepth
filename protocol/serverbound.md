@@ -1,3 +1,5 @@
+# DISCLAIMER: SINCE THE PURCHASE OF DIEP.IO BY ADDICTING GAMES, LESS RESEARCH HAS BEEN PUT INTO CHANGES BY THE NEW DEV TEAM - FOR THIS REASON, SOME OF THIS MAY BE INACCURATE ON NEWER VERSIONS
+
 # **Serverbound Packets**
 
 Also known as outgoing, these packets, after being encoded, are sent from the client to the server. These packets aren't at all complex, only with the exception of the serverbound `0x01` packet which is the most complex of the serverbound packets (but not too complex).
