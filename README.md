@@ -1,4 +1,6 @@
-This is still being worked on semi-actively, progress updates are posted in the [roadmap](https://github.com/ABCxFF/diepindepth/projects/2)
+This is no longer being worked on actively, progress updates will be low.
+
+See [diepcustom](https://github.com/ABCxFF/diepcustom/) for recent projects (reimplementation [in a sense] of a Diep.IO backend)
 
 ---
 
